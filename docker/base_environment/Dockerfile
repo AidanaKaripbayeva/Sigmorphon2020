@@ -6,9 +6,25 @@ USER root
 RUN conda install -y jupyterlab matplotlib
 RUN conda install -y nltk keras tensorflow
 
-WORKDIR /tmp
-RUN git clone https://github.com/IBM/pytorch-seq2seq.git && \
-	cd pytorch-seq2seq && pip install . && \
-	cd /tmp && rm -rf pytorch-seq2seq
+RUN mkdir /sigmorphon2020 && \
+		cd /sigmorphon2020 && \
+		git clone https://github.com/sigmorphon2020/task0-data.git && \
+		git clone https://github.com/sigmorphon2020/task0-baselines.git && \
+		chmod -R 755 /sigmorphon2020
 
-WORKDIR /workspace
+RUN mkdir /software
+WORKDIR /software
+RUN git clone https://github.com/bharathgs/Awesome-pytorch-list.git
+RUN	git clone https://github.com/pytorch/fairseq.git
+RUN	( git clone https://github.com/pytorch/text.git && cd text && pip install .)
+RUN ( git clone https://github.com/IBM/pytorch-seq2seq.git && \
+	cd pytorch-seq2seq && pip install . )
+
+
+RUN useradd -ms /bin/bash devuser
+
+USER devuser
+WORKDIR /home/devuser
+
+EXPOSE 8888
+CMD ["jupyter","lab","--no-browser", "--ip=0.0.0.0","--port=8888"]
