@@ -3,7 +3,9 @@ MAINTAINER bjlunt2@illinois.edu
 
 USER root
 
-RUN conda install -y jupyterlab matplotlib
+RUN conda config --add channels conda-forge && \
+	conda config --set channel_priority strict
+RUN conda install -y jupyterlab matplotlib pandas
 RUN conda install -y nltk keras tensorflow
 
 RUN mkdir /sigmorphon2020 && \
