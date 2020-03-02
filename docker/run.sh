@@ -5,9 +5,9 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 ###end snippet
 
 IMAGE_TO_RUN="cs546_turkic_user"
+MOUNT_ARGUMENTS="-v $(pwd):/mnt/shared"
 
-
-CONTAINER_ID=$( docker run -d -P ${IMAGE_TO_RUN} )
+CONTAINER_ID=$( docker run -d -P ${MOUNT_ARGUMENTS} ${IMAGE_TO_RUN} )
 CONTAINER_NAME=$( docker inspect --format '{{ .Name }}' ${CONTAINER_ID} )
 HOST_PORT=$( docker inspect --format '{{ (index (index .NetworkSettings.Ports "8888/tcp") 0).HostPort }}' ${CONTAINER_ID})
 #CONTAINER_IP=$( docker inspect --format '{{ .NetworkSettings.IPAddress }}' ${CONTAINER_ID} )
