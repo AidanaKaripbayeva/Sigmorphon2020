@@ -21,3 +21,5 @@ RUN ( git clone https://github.com/IBM/pytorch-seq2seq.git && \
 RUN ( git clone https://github.com/skorch-dev/skorch.git && cd skorch && pip install . )
 RUN ( git clone https://github.com/PyTorchLightning/pytorch-lightning && \
 	cd pytorch-lightning && pip install . )
+
+RUN ( pip install wandb )
