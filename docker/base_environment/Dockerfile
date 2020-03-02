@@ -9,12 +9,6 @@ USER root
 RUN conda install -y jupyterlab matplotlib pandas
 RUN conda install -y nltk keras tensorflow
 
-RUN mkdir /sigmorphon2020 && \
-		cd /sigmorphon2020 && \
-		git clone https://github.com/sigmorphon2020/task0-data.git && \
-		git clone https://github.com/sigmorphon2020/task0-baselines.git && \
-		git clone https://github.com/unimorph/um-canonicalize.git && \
-		chmod -R 755 /sigmorphon2020
 
 RUN mkdir /software
 WORKDIR /software
@@ -28,6 +22,13 @@ RUN ( git clone https://github.com/skorch-dev/skorch.git && cd skorch && pip ins
 RUN ( git clone https://github.com/PyTorchLightning/pytorch-lightning && \
 	cd pytorch-lightning && pip install . )
 
+
+RUN mkdir /sigmorphon2020 && \
+		cd /sigmorphon2020 && \
+		git clone https://github.com/sigmorphon2020/task0-data.git && \
+		git clone https://github.com/sigmorphon2020/task0-baselines.git && \
+		git clone https://github.com/unimorph/um-canonicalize.git && \
+		chmod -R 755 /sigmorphon2020
 
 RUN useradd -ms /bin/bash devuser
 
