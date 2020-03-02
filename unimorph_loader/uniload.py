@@ -68,7 +68,7 @@ unimorph_labels = {
 				"PSS3S","PSS3SF","PSS3SM",
 				"PSSD"]
 ,"Switch-Reference":["CN_R_MN","DS","DSADV","LOG","OR","SEQMA","SIMMA","SS","SSADV"]
-,"Tense":["1DAY","FUT","HOD","IMMMED","PRS","PST","RCT","RMT"]
+,"Tense":["1DAY","FUT","HOD","IMMED","PRS","PST","RCT","RMT"]
 ,"Valency":["APPL","CAUS","DITR","IMPRS","INTR","RECP","REFL","TR"]
 ,"Voice":["ACFOC","ACT","AGFOC","ANTIP","BFOC","CFOC","DIR","IFOC","INV","LFOC","MID","PASS","PFOC"]
 }
