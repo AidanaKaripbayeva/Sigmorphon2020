@@ -6,4 +6,6 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 pushd ${SCRIPT_DIR}
 
-docker build -t cs546_turkic_base ./base_environment
+docker build -t cs546_turkic_base ./base_software
+docker build --no-cache -t cs546_turkic_dataset ./with_dataset
+docker build -t cs546_turkic_user ./user_image
