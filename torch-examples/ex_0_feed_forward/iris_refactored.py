@@ -30,31 +30,38 @@ loss_func = lambda X,Y: ((X-Y)**2).sum()
 
 model = nn.Sequential(
 	nn.Linear(4,5), #linear with 4 inputs and 5 outputs
-	nn.Sigmoid(), #Not sure if I really need multiple sigmoids
+	nn.Sigmoid(), #As an object instead of function for Sequential to hold.
 	nn.Linear(5,3), #5 inputs and 3 outputs.
 	nn.Sigmoid(), #another sigmoid.
 )
 
 #And optimizer for our model, the model automagicaly knows what its parameters are.
-opt = torch.optim.SGD(model.parameters(),lr=0.001)
+opt = torch.optim.SGD(model.parameters(),lr=0.1)
 
-train_dataset = TensorDataset(X_ten, Y_ten)
-train_dataloader = DataLoader(train_dataset,batch_size=15,shuffle=True)
+train_dataset = TensorDataset(X_ten, Y_ten) #keeps X and Y together and lets us slice together.
+train_dataloader = DataLoader(train_dataset,batch_size=15,shuffle=True) #automatically handles batching and shuffling
 
-#Tell the model that we are training
-model.train()
 
-#for 2000 epochs of training
-for i in range(2000):
-
+#for 1000 epochs of training
+for i in range(1000):
 	#Each batch for SGD. The dataloader handles the batching.
-	for xb, yb in train_dataloader:
-		results = model(xb)
-		loss = loss_func(results, yb)
-		loss.backward()
 
-		opt.step()
-		opt.zero_grad()
+	model.train() #Tell the model that we are training. Maybe sets some internal state.
+	for xb, yb in train_dataloader:
+		results = model(xb) #get results on the model all at once for the entire batch
+		loss = loss_func(results, yb) #calculate the total loss on the batch.
+		loss /= xb.shape[0] #loss as loss per item, not total, so that the gradient doesn't change with differen batch sizes.
+		loss.backward() #does back-propagation for the loss, doing it for all items at once.
+
+		opt.step() #One step of the optimizer, adjusts parameters.
+		opt.zero_grad() #Zeros out the gradient for the next batch?
+
+
+	if i % 10 == 0:
+		model.eval() #Tell the model we are doing model evaluation. Sets some internal state.
+		xeval, yeval = train_dataset[:] #just using the full dataset as validation
+		full_loss = loss_func(model(xeval),yeval) / xeval.shape[0] #SSE for dataset.
+		print("Epoch ", i, "Loss", float(full_loss))
 
 #Tell the model that we are evaluating it (not training)
 model.eval()
