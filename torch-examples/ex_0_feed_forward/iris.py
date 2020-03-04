@@ -74,12 +74,15 @@ model = Iris_Two_Layer_NN()
 opt = torch.optim.SGD(model.parameters(),lr=0.001)
 
 train_dataset = TensorDataset(X_ten, Y_ten)
-train_dataloader = DataLoader(train_dataset,batch_size=15)
+train_dataloader = DataLoader(train_dataset,batch_size=15,shuffle=True)
 
 #Tell the model that we are training
 model.train()
 
-for i in range(1000):
+#for 2000 epochs of training
+for i in range(2000):
+
+	#Each batch for SGD. The dataloader handles the batching.
 	for xb, yb in train_dataloader:
 		results = model(xb)
 		loss = loss_func(results, yb)
@@ -87,6 +90,9 @@ for i in range(1000):
 
 		opt.step()
 		opt.zero_grad()
+
+#Tell the model that we are evaluating it (not training)
+model.eval()
 
 print("Pred")
 print( model(X_ten).detach().numpy().argmax(1) )
