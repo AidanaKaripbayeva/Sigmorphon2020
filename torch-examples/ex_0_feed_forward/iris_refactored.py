@@ -4,6 +4,7 @@ import irisdata
 
 X,Y_onehot = irisdata.load_iris_data()
 
+
 import torch
 import torch.autograd as autograd
 import torch.nn as nn
@@ -15,22 +16,6 @@ from torch.utils.data import DataLoader, TensorDataset
 
 torch.manual_seed(1)
 
-class Iris_Two_Layer_NN(nn.Module):
-	def __init__(self):
-		super().__init__()
-		self.a1 = nn.Linear(4,5) #linear with 4 inputs and 5 outputs
-		self.s1 = nn.Sigmoid() #Not sure if I really need multiple sigmoids
-		self.a2 = nn.Linear(5,3) #5 inputs and 3 outputs.
-		self.s2 = nn.Sigmoid() #another sigmoid.
-
-	def forward(self, xb):
-		activation_one = self.a1(xb)
-		nonlinear_one = self.s1(activation_one)
-
-		activation_two = self.a2(nonlinear_one)
-		nonlinear_two = self.s2(activation_two)
-
-		return nonlinear_two
 
 #
 # The data needs to be as tensors, not numpy arrays.
@@ -43,7 +28,12 @@ Y_ten = torch.tensor(Y_onehot,dtype=torch.float32)
 #
 loss_func = lambda X,Y: ((X-Y)**2).sum()
 
-model = Iris_Two_Layer_NN()
+model = nn.Sequential(
+	nn.Linear(4,5), #linear with 4 inputs and 5 outputs
+	nn.Sigmoid(), #Not sure if I really need multiple sigmoids
+	nn.Linear(5,3), #5 inputs and 3 outputs.
+	nn.Sigmoid(), #another sigmoid.
+)
 
 #And optimizer for our model, the model automagicaly knows what its parameters are.
 opt = torch.optim.SGD(model.parameters(),lr=0.001)
