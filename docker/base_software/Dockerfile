@@ -23,4 +23,6 @@ RUN ( git clone https://github.com/PyTorchLightning/pytorch-lightning && \
 	cd pytorch-lightning && pip install . )
 
 RUN ( pip install wandb )
-RUN ( conda install -y tensorboard && pip intall jupyter-tensorboard )
+RUN ( conda install -y tensorboard && pip install jupyter-tensorboard )
+
+RUN ( conda install fire -c conda-forge )
