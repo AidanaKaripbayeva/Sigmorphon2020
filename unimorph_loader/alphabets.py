@@ -1,3 +1,4 @@
+stop_start = "".join([chr(3),chr(2)])
 symbols = ' !"\'()*+,-./0123456789:;=?@^_~'
 roman = 'abcdefghijklmnopqrstuvwxyz'
 latin_diacritic = 'ßàáâäåæèéêëìíîïðñòóôõöøùúûüýþāăąċčďđēĕęġīĭįļņŋōŏœŗšŧūŭųźžƿǟǣǫǿțȭȯȱȳɂɔɛʉʔ'
@@ -18,7 +19,7 @@ def get_master_alphabet(include_unseen_alphabets=True):
     from collections import OrderedDict
     master_alphabet = OrderedDict()
     #all the alphabets that I've
-    alphabets_to_process = [symbols, roman, latin_diacritic, turkish_latin, cyrillic, tones, other]
+    alphabets_to_process = [stop_start, symbols, roman, latin_diacritic, turkish_latin, cyrillic, tones, other]
     if include_unseen_alphabets:
         alphabets_to_process.extend([cyrillic_kazak, common_turkic_alphabet, common_turkic_ipa, common_turkic_cyrillic ])
 
