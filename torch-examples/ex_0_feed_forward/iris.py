@@ -50,7 +50,8 @@ for i in range(1000):
 	for xb, yb in train_dataloader:
 		results = model(xb) #get results on the model all at once for the entire batch
 		loss = loss_func(results, yb) #calculate the total loss on the batch.
-		loss /= xb.shape[0] #loss as loss per item, not total, so that the gradient doesn't change with differen batch sizes.
+		loss /= xb.shape[0] #loss as loss per item, not total, so that the realtive magnitude of the gradient isn't dependent on batch size.
+							#So, Mean Squared Error
 		loss.backward() #does back-propagation for the loss, doing it for all items at once.
 
 		opt.step() #One step of the optimizer, adjusts parameters.
@@ -61,7 +62,7 @@ for i in range(1000):
 	if i % 10 == 0:
 		model.eval() #Tell the model we are doing model evaluation. Sets some internal state.
 		xeval, yeval = train_dataset[:] #just using the full dataset as validation
-		full_loss = loss_func(model(xeval),yeval) / xeval.shape[0] #SSE for dataset.
+		full_loss = loss_func(model(xeval),yeval) / xeval.shape[0] #MSE for dataset.
 		print("Epoch ", i, "Loss", float(full_loss))
 
 #Tell the model that we are evaluating it (not training)
