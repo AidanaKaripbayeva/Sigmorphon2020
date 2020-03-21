@@ -101,7 +101,7 @@ class RNN_Layers(_torch.nn.Module):
 
         output,hidden0 = self.layers[0](x,h_0[0])
         hidden = [hidden0]
-        for l,one_h_0 in zip(self.layers[1:],h_0):
+        for l,one_h_0 in zip(self.layers[1:],h_0[1:]):
             output,h = l(output,one_h_0)
             hidden.append(h)
         return output, tuple(hidden)

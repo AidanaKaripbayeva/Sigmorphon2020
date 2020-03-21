@@ -36,6 +36,8 @@ class RNN_Position_Encoding(nn.Module):
         for i in range(self.chebyshev_freqs):#Could probably also eliminate this loop
             my_output[:,:,2+self.fourier_freqs+i] = _torch.cos((i+1)*_torch.acos(my_output[:,:,0]))
         
+        #This encoding is constant, it doesn't need a backpropagation graph to slow things.
+        #TODO: Find out how to tell it it also doesn't need a gradient.
         my_output = my_output.detach()
         
         if is_packed:
