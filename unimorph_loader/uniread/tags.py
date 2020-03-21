@@ -1,12 +1,8 @@
-
-import pandas as _pn
-
-def read_unimorph_tsv(filename):
-	return _pn.read_csv(filename,sep="\t",names=["lemma","form","features"],dtype=str,na_values=[],keep_default_na=False )
+import yaml as _yml
 
 from collections import OrderedDict
+
 def load_unimorph_tags(filename):
-	import yaml as _yml
 	tag_list = None
 	with open(filename,"r") as infile:
 		tag_list = _yml.safe_load(infile)
