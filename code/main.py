@@ -1,5 +1,6 @@
 import argparse
 import consts
+import data.unimorph_loader.languages as languages
 import experiments.experiment
 from experiments.experiment import Experiment
 import logging
@@ -27,6 +28,12 @@ def get_parser():
     parser.add_argument('--batch-size', type=int, default=[16], nargs='*', help='Batch size(s)')
     parser.add_argument('--dataset', type=str, default=[consts.SIGMORPHON2020], nargs='*',
                         choices=[consts.SIGMORPHON2020], help='Dataset(s) to train on')
+    parser.add_argument('--language-info-dir', type=str, required=True,
+                        help='Root directory for the language information.')
+    parser.add_argument('--read-language-info-from-data', action='store_true',
+                        help='Read the data from the data and store it in the location give by --language-info-dir.'
+                             'If this flag not present, language information is read from the directory given by'
+                             '--language-info-dir.')
     parser.add_argument('--sigmorphon2020-root', type=str, help='Root directory for the SIGMORPHON 2020 dataset')
 
     # Optimizer options
@@ -53,6 +60,15 @@ def get_options(parser=None):
         torch.device(consts.CUDA if torch.cuda.is_available() and not inline_options[consts.NO_GPU] else consts.CPU)
 
     # Load inline_options
+    if not inline_options[consts.READ_LANGUAGE_INFO_FROM_DATA]:
+        try:
+            logging.getLogger(consts.MAIN).log('Processing the dataset for language information.')
+            language_collection = languages.read_language_collection_from_dataset(
+                inline_options[consts.LANGUAGE_INFO_DIR])
+            language_collection.serialize(inline_options[consts.LANGUAGE_INFO_DIR])
+        except FileNotFoundError as _:
+            print('Invalid language file.', file=sys.stderr)
+            exit(66)
     if inline_options[consts.CONTINUE]:
         try:
             options_path = os.path.join(inline_options[consts.EXPORT_DIR], 'options.pickle')

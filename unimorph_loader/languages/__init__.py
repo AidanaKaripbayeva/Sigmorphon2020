@@ -1,5 +1,6 @@
 from data.unimorph_loader.alphabets import Alphabet, get_master_alphabet
 from data.unimorph_loader.uniread import read_unimorph_tsv
+from itertools import chain
 import os
 import re
 separator = "#"
@@ -121,20 +122,22 @@ def read_language_collection_from_dataset(root_dir):
     language_collection = LanguageCollection()
     for language_family_name in os.listdir(root_dir):
         if os.path.isdir(os.path.join(root_dir, language_family_name))\
-                and re.match(r'[a-zA-Z-]*', language_family_name):
+                and re.fullmatch(r'[a-zA-Z-]*', language_family_name):
             language_family = LanguageFamily(language_family_name)
             for language_file in os.listdir(os.path.join(root_dir, language_family_name)):
-                if re.match(r'[a-zA-Z-]*\.trn', language_file):
+                if re.fullmatch(r'[a-zA-Z-]*\.trn', language_file):
                     language_name = language_file[:-4]
+                    print(language_family_name + '/' + language_name)
                     train_data = read_unimorph_tsv(os.path.join(root_dir, language_family_name, language_name + '.trn'))
                     test_data = read_unimorph_tsv(os.path.join(root_dir, language_family_name, language_name + '.dev'))
                     letters = set()
-                    for word in train_data['lemma'] + train_data['form'] + test_data['lemma'] + test_data['form']:
+                    for index, row in chain(train_data.iterrows(), test_data.iterrows()):
+                        word = row['lemma'] + row['form']
                         for letter in word:
                             letters.add(letter)
                     alphabet = Alphabet("".join(sorted(letters)))
                     language = Language(language_name, language_family_name, alphabet)
                     language_family.add_language(language)
-        language_collection.add_language_family(language_family)
+            language_collection.add_language_family(language_family)
     _ = language_collection.get_master_alphabet()
     return language_collection
