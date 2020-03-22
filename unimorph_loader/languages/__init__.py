@@ -9,6 +9,7 @@ separator = "#"
 
 
 class Language:
+    #TODO: using this class variable is fragile. Breaks if you both build and deserialize in the same program execution.
     _count = 0
 
     def __init__(self, name, family, alphabet):
@@ -35,6 +36,7 @@ class Language:
 
 
 class LanguageFamily:
+    #TODO: using this class variable is fragile. Breaks if you both build and deserialize in the same program execution.
     _count = 0
 
     def __init__(self, name):
@@ -87,7 +89,17 @@ class LanguageCollection:
                          ]
             self._master_alphabet = get_master_alphabet(alphabets, reindex=True)
         return self._master_alphabet
-
+        
+    def find_language(self, language_name):
+        """
+        Search the LanguageCollection for a specific language by name.
+        You can use this to get the id of the language and its family.
+        """
+        for one_family in self.language_families.values():
+            if language_name in one_family.languages:
+                return one_family.languages[language_name]
+        raise KeyError("{} not found".format(language_name))
+    
     def serialize(self, filename):
         with open(filename, 'w+') as file:
             print(str(len(self.language_families)), file=file)
