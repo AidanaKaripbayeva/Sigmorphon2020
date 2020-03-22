@@ -10,7 +10,7 @@ from collections import OrderedDict
 TRAIN_MODE = 'trn'
 DEV_MODE = 'dev'
 TEST_MODE = 'tst'
-PADDING_TOKEN = 99
+PADDING_TOKEN = 0
 START_TOKEN_INT = 1
 END_TOKEN_INT = 0
 START_TOKEN_CHAR = chr(2) #ASCII START OF TEXT
@@ -65,7 +65,9 @@ class UnimorphTagOneHotConverter(object):
         a_schema = uniread.schema.load_unimorph_schema_from_yaml(filename)
         return UnimorphTagOneHotConverter(a_schema)
     
-    def __init__(self,schema):
+    def __init__(self,schema=None):
+        if schema is None:
+            schema = uniread.schema.load_default_schema()
         self.schema = schema
         self.tag_to_id = OrderedDict()
         self.tag_to_group = dict()
@@ -103,7 +105,7 @@ def pandas_to_dataset(dataset_or_sets,tag_converter=None,alphabet_converter_in=N
     total_dataframe = pandas.concat(dataset_or_sets,ignore_index=True)
     
     if tag_converter is None:
-        tag_converter = UnimorphTagOneHotConverter.from_schemafile("./tags.yaml")
+        tag_converter = UnimorphTagOneHotConverter()#default schema
     
     if alphabet_converter_in is None:
         fooalpha = alphabets.get_master_alphabet()
@@ -152,8 +154,37 @@ def padded_collate(in_data):
             list(form_strs) )
 
 import torch.utils.data
+import torch.nn.utils.rnn as rnn_utils
 class UnimorphDataLoader(torch.utils.data.DataLoader):
+    
+    @classmethod
+    def packed_collate(in_data):
+        fams, langs, tags_tens, lem_tens, form_tens, tags_strs, lem_strs, form_strs = list(zip(*in_data))
+        return ( torch.stack(fams),
+                torch.stack(langs),
+                torch.stack(tags_tens),
+                rnn_utils.pack_sequence(lem_tens,enforce_sorted=False),
+                rnn_utils.pack_sequence(form_tens,enforce_sorted=False),
+                list(tags_strs),
+                list(lem_strs),
+                list(form_strs) )
+    
+    @classmethod
+    def padded_collate(in_data):
+        fams, langs, tags_tens, lem_tens, form_tens, tags_strs, lem_strs, form_strs = list(zip(*in_data))
+        return (torch.stack(fams),
+                torch.stack(langs),
+                torch.stack(tags_tens),
+                rnn_utils.pad_sequence(lem_tens),
+                rnn_utils.pad_sequence(form_tens),
+                list(tags_strs),
+                list(lem_strs),
+                list(form_strs) )
+    
+    
     def __init__(self,*args, **kwargs):
+        
+        #Allow the user to specify a collate function using the "collate_type" argument
         collator_selection = packed_collate
         if "collate_type" in kwargs:
             if kwargs["collate_type"] in ["pack","packed"]:
@@ -164,6 +195,10 @@ class UnimorphDataLoader(torch.utils.data.DataLoader):
                 raise NotImplementedError("The selected collation type ({}) is unavailable.".kwargs["collate_type"])
             del kwargs["collate_type"]
         
-        if not "collate_fn" in kwargs:
+        if "collate_fn" in kwargs:
+            #TODO: raise a non-fatal warning, is that really what was wanted?
+            raise Exception("You should not provide a collate function to UnimorphDataLoader, it has its own.")
+            pass
+        else:
             kwargs["collate_fn"] = collator_selection
         super(UnimorphDataLoader,self).__init__(*args,**kwargs)
