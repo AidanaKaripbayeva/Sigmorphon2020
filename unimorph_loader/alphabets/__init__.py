@@ -1,4 +1,6 @@
 from collections import OrderedDict
+from functools import reduce
+from data.unimorph_loader.uniread import read_unimorph_tsv
 
 class Alphabet(object):
     #TODO: find the correct decorators to make these constant.
@@ -61,10 +63,24 @@ common_turkic_cyrillic = Alphabet('аәәебџчжддѕфгғҕһҳхыикқ�
 def get_master_alphabet(include_unseen_alphabets=True):
     #all the alphabets that I've
     alphabets_to_process = [stop_start, symbols, roman, latin_diacritic, turkish_latin, cyrillic, tones, other]
-    
     if include_unseen_alphabets:
         alphabets_to_process.extend([cyrillic_kazak, common_turkic_alphabet, common_turkic_ipa, common_turkic_cyrillic ])
-    
-    master_alphabet = reduce(lambda a,b:a+b, alphabets_to_process)
-    
-    return master_alphabet
+
+    return get_unified_alphabet(alphabets_to_process)
+
+
+def get_unified_alphabet(alphabets):
+    unified_alphabet = reduce(lambda a, b: a + b, alphabets)
+    for alphabet in alphabets:
+        for character in alphabet.keys():
+            alphabet[character] = unified_alphabet[character]
+    return unified_alphabet
+
+
+def get_alphabet_from_data_file(data_filename):
+    tsv = read_unimorph_tsv(data_filename)
+    letters = set()
+    for word in tsv['form'] + tsv['lemma']:
+        for letter in word:
+            letters.add(letter)
+    return Alphabet("".join(sorted(letters)))
