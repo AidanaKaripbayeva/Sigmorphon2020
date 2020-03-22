@@ -18,7 +18,10 @@ class Alphabet(object):
                 self.letters[i] = len(self.letters)
         
         self.__quickstring = "".join(list(self.letters.keys()))
-        
+    
+    def __len__(self):
+        return len(self.__quickstring)
+    
     def __iter__(self):
         return iter(self.letters.keys())
         

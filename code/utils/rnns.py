@@ -105,3 +105,6 @@ class RNN_Layers(_torch.nn.Module):
             output,h = l(output,one_h_0)
             hidden.append(h)
         return output, tuple(hidden)
+    
+    def __getitem__(self, index):
+        return self.layers[index]

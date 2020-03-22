@@ -3,7 +3,7 @@ import torch.nn as _nn
 import torch.nn.utils.rnn as _rnn_utils
 import numpy as _np
 
-class RNN_Position_Encoding(nn.Module):
+class RNN_Position_Encoding(_nn.Module):
     def __init__(self,fourier_freqs=0,chebyshev_freqs=0):
         super(RNN_Position_Encoding,self).__init__()
         self.fourier_freqs = fourier_freqs
