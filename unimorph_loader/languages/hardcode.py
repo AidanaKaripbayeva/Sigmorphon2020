@@ -1,24 +1,8 @@
-from data.unimorph_loader.alphabets import Alphabet
+from ..alphabets import Alphabet
 from . import LanguageCollection, LanguageFamily, Language
 
-# Define alphabets
-empty = Alphabet()
-stop_start = empty
-symbols = Alphabet(' !"\'()*+,-./0123456789:;=?@^_~')
-roman = Alphabet('abcdefghijklmnopqrstuvwxyz')
-latin_diacritic = Alphabet('ßàáâäåæèéêëìíîïðñòóôõöøùúûüýþāăąċčďđēĕęġīĭįļņŋōŏœŗšŧūŭųźžƿǟǣǫǿțȭȯȱȳɂɔɛʉʔ')
-turkish_latin = Alphabet("abcçdefgğhıijklmnoöprsştuüvyz")
-cyrillic = Alphabet("абвгдежзийклмнопрстуфхцчшщъыьэюяёіѣҥ")
-tones = Alphabet("⁰¹²³⁴⁵ᵈᵊᵖˀ")
-other = Alphabet("|´ʼίӓӧӱӹᐟḑḗạậẹệọộụ–’")
-
-# https://en.wikipedia.org/wiki/Kazakh_alphabets
-cyrillic_kazak = Alphabet("аәбвгғдеёжзийкқлмнңоөпрстуұүфхһцчшщъыіьэюя")
-
-# https://en.wikipedia.org/wiki/Common_Turkic_Alphabet
-common_turkic_alphabet = Alphabet("aäbcçdefgğhıijklmnñoöpqrsştuüvwxyzʼ")
-common_turkic_ipa = Alphabet("ɑæbdʒtʃdefgɣhɯiʒcklmnŋoøpqrsʃtuyvwxjzʔ")
-common_turkic_cyrillic = Alphabet('аәебџчжддѕфгғҕһҳхыикқлљмнњңоөпрсҫшцттуүвўјзз́ҙ')
+#import all the hard-coded alphabets
+from ..alphabets.standard import *
 
 
 # Define language_families

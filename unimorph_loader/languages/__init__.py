@@ -1,5 +1,5 @@
-from data.unimorph_loader.alphabets import Alphabet, get_master_alphabet
-from data.unimorph_loader.uniread import read_unimorph_tsv
+from ..alphabets import Alphabet, get_master_alphabet
+from ..uniread import read_unimorph_tsv
 import os
 import re
 separator = "#"
