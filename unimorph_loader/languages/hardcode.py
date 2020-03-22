@@ -44,3 +44,4 @@ turkic_family.add_language(Language('common_turkic', 'turkic', common_turkic_alp
 turkic_family.add_language(Language('turkic_ipa', 'turkic', common_turkic_ipa))
 turkic_family.add_language(Language('turkic_cyrillic', 'turkic', common_turkic_cyrillic))
 language_collection.add_language_family(turkic_family)
+language_collection.get_master_alphabet()
