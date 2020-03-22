@@ -1,6 +1,7 @@
 from collections import OrderedDict
-from functools import reduce
 from data.unimorph_loader.uniread import read_unimorph_tsv
+import functools
+import operator
 
 class Alphabet(object):
     #TODO: find the correct decorators to make these constant.
@@ -41,6 +42,15 @@ class Alphabet(object):
     
     def copy(self):
         return Alphabet(str(self))
+    
+    def __call__(self, in_str,include_start=True,include_stop=True):
+        retlist = [self.letters[i] for i in in_str]
+        if include_start:
+            retlist = [self.letters[self.start_token]] + retlist
+        if include_stop:
+            retlist.append(self.letters[self.stop_token])
+        
+        return retlist
         
 empty = Alphabet()
 stop_start = empty
@@ -58,7 +68,7 @@ cyrillic_kazak = Alphabet("аәбвгғдеёжзийкқлмнңоөпрсту�
 #https://en.wikipedia.org/wiki/Common_Turkic_Alphabet
 common_turkic_alphabet = Alphabet("aäbcçdefgğhıijklmnñoöpqrsştuüvwxyzʼ")
 common_turkic_ipa = Alphabet("ɑæbdʒtʃdefgɣhɯiʒcklmnŋoøpqrsʃtuyvwxjzʔ")
-common_turkic_cyrillic = Alphabet('аәәебџчжддѕфгғҕһҳхыикқлљмнњңоөпрсҫшцттуүвўјзз́ҙ')
+common_turkic_cyrillic = Alphabet('аәебџчжддѕфгғҕһҳхыикқлљмнњңоөпрсҫшцттуүвўјзз́ҙ')
 
 def get_master_alphabet(include_unseen_alphabets=True):
     #all the alphabets that I've
@@ -70,7 +80,7 @@ def get_master_alphabet(include_unseen_alphabets=True):
 
 
 def get_unified_alphabet(alphabets):
-    unified_alphabet = reduce(lambda a, b: a + b, alphabets)
+    unified_alphabet = functools.reduce(lambda a, b: a + b, alphabets)
     for alphabet in alphabets:
         for character in alphabet.keys():
             alphabet[character] = unified_alphabet[character]

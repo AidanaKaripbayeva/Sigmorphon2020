@@ -20,3 +20,8 @@ def load_unimorph_schema_from_yaml(filename):
 		thetags[cat] = list(OrderedDict([(i,True) for i in tags_for_cat]).keys())
 	#
 	return thetags
+
+def load_default_schema():
+	import importlib.resources
+	with importlib.resources.path(__package__,"default_tags.yaml") as default_tags_filename:
+		return load_unimorph_schema_from_yaml(default_tags_filename)
