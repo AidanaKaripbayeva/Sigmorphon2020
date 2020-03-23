@@ -1,5 +1,6 @@
 import consts
-import data.unimorph_loader.languages as languages
+from data import dataset
+from data.sigmorphon2020_data_reader import *
 import logging
 from models.seq2seq import Seq2Seq
 import os
@@ -21,20 +22,13 @@ class Experiment:
         self.current_epoch = 0
         self.best_test_score = float('inf')
         self.best_epoch_number = -1
-        self.loss_function = torch.nn.CrossEntropyLoss(ignore_index=unimorph_dataloader.PADDING_TOKEN)
+        self.loss_function = torch.nn.CrossEntropyLoss(ignore_index=dataset.PADDING_TOKEN)
         self.language_collection = pickle.load(config[consts.LANGUAGE_INFO_FILE])
         if config[consts.DATASET] == consts.SIGMORPHON2020:
-            unimorph_dataloader.load_scheme(config[consts.SIGMORPHON2020_ROOT])
-            self.train_loader = torch.utils.data.DataLoader(
-                unimorph_dataloader.create_dataset(self.config[consts.SIGMORPHON2020_ROOT],
-                                                   mode=unimorph_dataloader.TRAIN_MODE),
-                batch_size=self.config[consts.BATCH_SIZE])
-            self.test_loader = torch.utils.data.DataLoader(
-                unimorph_dataloader.create_dataset(self.config[consts.SIGMORPHON2020_ROOT],
-                                                   mode=unimorph_dataloader.DEV_MODE),
-                batch_size=self.config[consts.BATCH_SIZE])
+            self.train_loader = create_data_loader_from_sigmorphon2020(self.config, is_train=True)
+            self.test_loader = create_data_loader_from_sigmorphon2020(self.config, is_train=False)
         if config[consts.MODEL_ARCHITECTURE] == consts.SEQ2SEQ:
-            self.model = Seq2Seq(unimorph_dataloader.embedding, unimorph_dataloader.reverse_embedding)
+            self.model = Seq2Seq(self.train_loader.alphabet_vector_dim, self.train_loader.tags_vector_dim)
         else:
             print('Bad argument: --model-architecture {} is not recognized.'.format(
                 config[consts.MODEL_ARCHITECTURE]),
@@ -85,7 +79,7 @@ class Experiment:
             raise exception
 
     def serialize(self, directory):
-        self.language_collection.serialize(os.path.join(directory, "language_collection.serialized"))
+        pickle.dump(self.language_collection, os.path.join(directory, "language_collection.pickle"))
         with open(os.path.join(directory, "dictionary.pickle"), 'wb') as file:
             pickle.dump({'config': self.config, 'id': self.id, 'current_epoch': self.current_epoch,
                          'best_test_score': self.best_test_score, 'best_epoch_number': self.best_epoch_number}, file)
@@ -95,8 +89,7 @@ class Experiment:
             torch.save(self.optimizer.state_dict(), file)
 
     def deserialize(self, directory):
-        self.language_collection = languages.LanguageCollection()
-        self.language_collection.deserialize(os.path.join(directory, "language_collection.serialized"))
+        self.language_collection = pickle.load(os.path.join(directory, "language_collection.pickle"))
         with open(os.path.join(directory, "dictionary.pickle"), 'rb') as file:
             dictionary = pickle.load(file)
             self.config = dictionary['config']
@@ -113,28 +106,24 @@ class Experiment:
     def train(self):
         self.model.train()
         total_loss = 0.0
-        for batch_idx, (stem, tags, family, language, target) in enumerate(self.train_loader):
-            batch_size = len(stem)
+        for batch_idx, (families, languages, tags, lemmata, forms, tags_strs, lemmata_strs, forms_strs) in\
+                enumerate(self.train_loader):
+            batch_size = len(families)
             self.optimizer.zero_grad()
-            probabilities, outputs = self.model(stem, tags, family, language)
+            probabilities, outputs = self.model(families, languages, tags, lemmata)
             batch_loss = 0.0
             for i in range(batch_size):
-                target_embedded = torch.zeros((probabilities[i].shape[0]))
-                target_embedded[:] = unimorph_dataloader.PADDING_TOKEN
-                target_embedded[:len(target[i])+1] = unimorph_dataloader.embedding(target[i], language[i])[1:]
-                target_embedded = target_embedded.long()
                 logging.getLogger(consts.MAIN).debug(
-                    "stem: {},\ttags: {},\ttarget: {}"
-                    "\noutput: {},".format(stem[i], tags[i],
-                                           unimorph_dataloader.reverse_embedding(target_embedded, language[i]),
-                                           unimorph_dataloader.reverse_embedding(outputs[i], language[i])))
-                batch_loss += self.loss_function(probabilities[i], target_embedded)
+                    "stem: {},\ttarget: {},\ttags: {}\tlanguage: {}/{}"
+                    "\noutput: {},".format(lemmata_strs[i], forms_strs[i], tags_strs[i], families[i], languages[i],
+                                           outputs[i]))
+                batch_loss += self.loss_function(probabilities[i], forms[i])
             batch_loss /= batch_size
             total_loss += batch_loss
             batch_loss.backward()
             self.optimizer.step()
             logging.getLogger(consts.MAIN).info('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
-                self.current_epoch, batch_idx * len(stem), len(self.train_loader.dataset),
+                self.current_epoch, batch_idx * self.config[consts.BATCH_SIZE], len(self.train_loader.dataset),
                 100. * batch_idx / len(self.train_loader), batch_loss.item()))
             wandb.log({'Batch Training Loss': batch_loss})
         wandb.log({'Epoch Training Loss': total_loss / len(self.train_loader)})
@@ -145,24 +134,27 @@ class Experiment:
         test_loss = 0
         correct = 0
         with torch.no_grad():
-            for batch_idx, (stem, tags, family, language, target) in enumerate(self.test_loader):
-                batch_size = len(stem)
-                probabilities, outputs = self.model(stem, tags, family, language)
+            for batch_idx, (families, languages, tags, lemmata, forms, tags_strs, lemmata_strs, forms_strs) in\
+                    enumerate(self.test_loader):
+                batch_size = len(lemmata)
+                probabilities, outputs = self.model(families, languages, tags, lemmata)
                 for i in range(batch_size):
-                    target_embedded = torch.zeros((probabilities[i].shape[0]))
-                    target_embedded[:] = unimorph_dataloader.PADDING_TOKEN
-                    target_embedded[:len(target[i]) + 1] = unimorph_dataloader.embedding(target[i], language[i])[1:]
-                    target_embedded = target_embedded.long()
                     logging.getLogger(consts.MAIN).debug(
-                        "stem: {},\ttags: {},\ttarget: {}"
-                        "\noutput: {},".format(stem[i], tags[i],
-                                               unimorph_dataloader.reverse_embedding(target_embedded, language[i]),
-                                               unimorph_dataloader.reverse_embedding(outputs[i], language[i])))
-                    test_loss += self.loss_function(probabilities[i], target_embedded)
+                        "stem: {},\ttarget: {},\ttags: {}\tlanguage: {}/{}"
+                        "\noutput: {},".format(lemmata_strs[i], forms_strs[i], tags_strs[i], families[i], languages[i],
+                                               outputs[i]))
+                    test_loss += self.loss_function(probabilities[i], forms[i])
 
-                    textual_output = unimorph_dataloader.reverse_embedding(outputs[i])
-                    if textual_output == target:
-                        correct += 1
+                    correct += 1
+                    for j in range(len(outputs[i])):
+                        if j < len(forms[i]):
+                            if outputs[i][j] != forms[i][j]:
+                                correct -= 1
+                                break
+                        else:
+                            if outputs[i][j] != dataset.PADDING_TOKEN:
+                                correct -= 1
+                                break
             test_loss /= len(self.test_loader.dataset)
             test_accuracy = correct / len(self.test_loader.dataset)
             logging.getLogger(consts.MAIN).info('Test set: Average loss: {:.4f}, Accuracy: {}/{} ({:.2f}%)'.format(

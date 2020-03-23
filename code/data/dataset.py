@@ -183,6 +183,8 @@ class UnimorphDataLoader(torch.utils.data.DataLoader):
     
     
     def __init__(self,*args, **kwargs):
+        self.tag_vector_dim = -1 #TODO
+        self.alphabet_vector_dim = -1 #TODO
         
         #Allow the user to specify a collate function using the "collate_type" argument
         collator_selection = packed_collate

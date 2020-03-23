@@ -48,5 +48,5 @@ def create_data_loader_from_sigmorphon2020(config, is_train=True):
                             panda_data_list.append(panda_data)
     # TODO Commandline arguments to choose tag_converter, alphabet_converter_in and alphabet_converter_out.
     dataset = pandas_to_dataset(panda_data_list)
-    data_loader = UnimorphDataLoader(dataset)
+    data_loader = UnimorphDataLoader(dataset=dataset, batch_size=config[consts.BATCH_SIZE])
     return data_loader

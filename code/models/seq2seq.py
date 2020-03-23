@@ -1,35 +1,32 @@
-from data.unimorph_dataloader import decode_tags, START_TOKEN, END_TOKEN, PADDING_TOKEN
-import data.unimorph_dataloader
+from data.alphabets import Alphabet
 import torch
 
 
 class Seq2Seq(torch.nn.Module):
-    def __init__(self, embedding, reverse_embedding, hidden_dim=10, num_layers=3):
+    def __init__(self, alphabet_vector_dim, tag_vector_dim, hidden_dim=10, num_layers=3):
         super().__init__()
-        categories = data.unimorph_dataloader.category2int.keys()
-        self.embedding = embedding
-        self.lstm1 = torch.nn.LSTM(len(categories) + 1, hidden_dim, num_layers, dropout=0.1, bidirectional=False)
-        self.lstm2 = torch.nn.LSTM(len(categories) + 1, hidden_dim, num_layers, dropout=0.1)
+        self.alphabet_vector_dim = alphabet_vector_dim
+        self.tag_vector_dim = tag_vector_dim
+        self.lstm1 = torch.nn.LSTM(tag_vector_dim + alphabet_vector_dim, hidden_dim, num_layers, dropout=0.1,
+                                   bidirectional=False)
+        self.lstm2 = torch.nn.LSTM(tag_vector_dim + alphabet_vector_dim, hidden_dim, num_layers, dropout=0.1)
         self.linear = torch.nn.Linear(hidden_dim, 100)
-        self.reverse_embedding = reverse_embedding
 
-    def forward(self, stem, tags, family, language):
-        batch_size = len(stem)
+    def forward(self, families, languages, tags, lemmata):
+        batch_size = len(families)
         outputs = []
         probabilities = []
         for i in range(batch_size):
             # Encode
-            embedded = self.embedding(stem[i], language[i])
-            tags_vector = decode_tags(tags[i])
-            x = torch.cat([embedded.expand((1, -1)), tags_vector.expand((1, -1)).T.repeat((1, len(embedded)))])
+            x = torch.cat([lemmata[i].expand((1, -1)), tags.expand((1, -1)).T.repeat((1, len(lemmata[i])))])
             x = x.expand((1, x.shape[0], x.shape[1])).transpose(1, 0).transpose(2, 0)
             code, (hidden, cell) = self.lstm1(x)
 
             # Decode
-            output = [START_TOKEN]
+            output = [Alphabet.start_integer]
             probabilities.append([])
             for t in range(30):
-                x = torch.cat([torch.Tensor([[output[-1]]]), tags_vector.expand((1, -1)).T]).T.expand((1, 1, -1))
+                x = torch.cat([torch.Tensor([[output[-1]]]), tags[i].expand((1, -1)).T]).T.expand((1, 1, -1))
                 y, (hidden, cell) = self.lstm2(x, (hidden, cell))
                 prediction = torch.sigmoid(self.linear(y.squeeze(0)))
                 probabilities[i].append(prediction)
