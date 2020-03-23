@@ -1,5 +1,5 @@
 import consts
-from data import unimorph_dataloader
+import data.unimorph_loader.languages as languages
 import logging
 from models.seq2seq import Seq2Seq
 import os
@@ -22,6 +22,7 @@ class Experiment:
         self.best_test_score = float('inf')
         self.best_epoch_number = -1
         self.loss_function = torch.nn.CrossEntropyLoss(ignore_index=unimorph_dataloader.PADDING_TOKEN)
+        self.language_collection = pickle.load(config[consts.LANGUAGE_INFO_FILE])
         if config[consts.DATASET] == consts.SIGMORPHON2020:
             unimorph_dataloader.load_scheme(config[consts.SIGMORPHON2020_ROOT])
             self.train_loader = torch.utils.data.DataLoader(
@@ -84,6 +85,7 @@ class Experiment:
             raise exception
 
     def serialize(self, directory):
+        self.language_collection.serialize(os.path.join(directory, "language_collection.serialized"))
         with open(os.path.join(directory, "dictionary.pickle"), 'wb') as file:
             pickle.dump({'config': self.config, 'id': self.id, 'current_epoch': self.current_epoch,
                          'best_test_score': self.best_test_score, 'best_epoch_number': self.best_epoch_number}, file)
@@ -93,6 +95,8 @@ class Experiment:
             torch.save(self.optimizer.state_dict(), file)
 
     def deserialize(self, directory):
+        self.language_collection = languages.LanguageCollection()
+        self.language_collection.deserialize(os.path.join(directory, "language_collection.serialized"))
         with open(os.path.join(directory, "dictionary.pickle"), 'rb') as file:
             dictionary = pickle.load(file)
             self.config = dictionary['config']
