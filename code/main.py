@@ -29,13 +29,20 @@ def get_parser():
     parser.add_argument('--batch-size', type=int, default=[16], nargs='*', help='Batch size(s)')
     parser.add_argument('--dataset', type=str, default=[consts.SIGMORPHON2020], nargs='*',
                         choices=[consts.SIGMORPHON2020], help='Dataset(s) to train on')
-    parser.add_argument('--language-info-file', type=str, required=True,
-                        help='The language information file.')
+    parser.add_argument('--sigmorphon2020-root', type=str, help='Root directory for the SIGMORPHON 2020 dataset')
+
+    # Language options
+    parser.add_argument('--language-families', type=str, nargs='*',
+                        help='The families of languages to load the data for.'
+                             ' If not provided, all available families will be used.')
+    parser.add_argument('--language-info-file', type=str, required=True, help='The language information file.')
+    parser.add_argument('--languages', type=str, nargs='*',
+                        help='The languages to load the data for.'
+                             ' If not provided, all available languages will be used.')
     parser.add_argument('--read-language-info-from-data', action='store_true',
                         help='Read the data from the data and store it in the location give by --language-info-dir.'
-                             'If this flag not present, language information is read from the directory given by'
-                             '--language-info-dir.')
-    parser.add_argument('--sigmorphon2020-root', type=str, help='Root directory for the SIGMORPHON 2020 dataset')
+                             ' If this flag not present, language information is read from the directory given by'
+                             ' --language-info-dir.')
 
     # Optimizer options
     parser.add_argument('--optimizer', type=str, default=[consts.ADADELTA], choices=[consts.ADADELTA], nargs='*',
