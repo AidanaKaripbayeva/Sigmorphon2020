@@ -10,19 +10,22 @@ from collections import OrderedDict
 TRAIN_MODE = 'trn'
 DEV_MODE = 'dev'
 TEST_MODE = 'tst'
-PADDING_TOKEN = 0
-START_TOKEN_INT = 1
-END_TOKEN_INT = 0
-START_TOKEN_CHAR = chr(2) #ASCII START OF TEXT
-END_TOKEN_CHAR = chr(3) #ASCII END OF TEXT
+#PADDING_TOKEN = 0
+#START_TOKEN_INT = 1
+#END_TOKEN_INT = 0
+#START_TOKEN_CHAR = chr(2) #ASCII START OF TEXT
+#END_TOKEN_CHAR = chr(3) #ASCII END OF TEXT
 
 from . import alphabets #relative import, only way to get the module to work
 
 class UnimorphDataset(torch.utils.data.Dataset):
     """
     """
-    def __init__(self, family_tensor, language_tensor, tags_tensor, lemma_tensor_list, form_tensor_list, tags_str_list, lemmata_str_list, forms_str_list ):
+    def __init__(self, input_alphabet, output_alphabet, family_tensor, language_tensor, tags_tensor, lemma_tensor_list, form_tensor_list, tags_str_list, lemmata_str_list, forms_str_list ):
         super(UnimorphDataset,self).__init__()
+        
+        self.alphabet_input = input_alphabet
+        self.alphabet_output = output_alphabet
         
         #TODO: an assertion that makes sure everything is the same length.
         self.families = family_tensor
@@ -40,7 +43,15 @@ class UnimorphDataset(torch.utils.data.Dataset):
                                 self.tags_str[index], self.lemmata_str[index], self.forms_str[index])
     
     def __add__(self, other):
-        return UnimorphDataset(
+        
+        if self.alphabet_input != other.alphabet_input:
+            raise Exception("You can't currently combine UnimorphDataset objects with different input alphabets.")
+            #TODO: Add the ability to combine UnimorphDataset objects with different alphabets.
+        if self.alphabet_output != other.alphabet_output:
+            raise Exception("You can't currently combine UnimorphDataset objects with different output alphabets.")
+            #TODO: Add that ability.
+        
+        return UnimorphDataset(self.alphabet_input, self.alphabet_output,
                                 torch.cat([self.families, other.families]),
                                 torch.cat([self.languages, other.languages]),
                                 torch.cat([self.self.tags,other.tags]),
@@ -66,7 +77,7 @@ def pandas_to_dataset(dataset_or_sets,tag_converter=None,alphabet_converter_in=N
     if tag_converter is None or tag_converter is "masked_vectors":
         tag_converter = UnimorphTagMaskedVectorConverter(mask_value=-1)#Marc asked for -1
     elif tag_converter is "one_hot":
-        tag_converter = UnimorphTagOneHotConverter()#default schema
+        tag_converter = UnimorphTagBitVectorConverter()#default schema
     
     if alphabet_converter_in is None:
         fooalpha = alphabets.get_master_alphabet()
@@ -86,7 +97,8 @@ def pandas_to_dataset(dataset_or_sets,tag_converter=None,alphabet_converter_in=N
     lemma_tensor_list = [ torch.LongTensor(alphabet_converter_in(i)) for i in total_dataframe["lemma"] ]
     form_tensor_list = [ torch.LongTensor(alphabet_converter_out(i)) for i in total_dataframe["form"] ]
     
-    return UnimorphDataset(family_tensor, lang_tensor,
+    return UnimorphDataset(alphabet_converter_in, alphabet_converter_out,
+                    family_tensor, lang_tensor,
                     tags_tensor, lemma_tensor_list, form_tensor_list,
                     total_dataframe["tags"].to_list(), total_dataframe["lemma"].to_list(), total_dataframe["form"].to_list()
                     )

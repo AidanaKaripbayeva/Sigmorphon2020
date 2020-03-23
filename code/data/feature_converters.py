@@ -5,7 +5,10 @@ import torch
 
 from . import uniread
 
-class UnimorphTagOneHotConverter(object):
+class UnimorphTagBitVectorConverter(object):
+    """
+    Tool for converting a unimorph tag string into a 0/1 bit vector.
+    """
     group_splitter = re.compile(";")
     tag_splitter = re.compile("/|\+")
     non_detector = re.compile("non{(.*)}")
@@ -13,7 +16,7 @@ class UnimorphTagOneHotConverter(object):
     @classmethod
     def from_schemafile(blah,filename):
         a_schema = uniread.schema.load_unimorph_schema_from_yaml(filename)
-        return UnimorphTagOneHotConverter(a_schema)
+        return UnimorphTagBitVectorConverter(a_schema)
     
     def __init__(self,schema=None):
         if schema is None:
@@ -72,7 +75,7 @@ class UnimorphTagMaskedVectorConverter(object):
         if schema is None:
             schema = uniread.schema.load_default_schema()
         self.schema = schema
-        self.one_hot_converter = UnimorphTagOneHotConverter(schema)
+        self.one_hot_converter = UnimorphTagBitVectorConverter(schema)
         self.mask_value = mask_value
         self.mask = torch.CharTensor(len(self.schema),len(self.one_hot_converter)).zero_()
         mask_offset = 0

@@ -1,14 +1,26 @@
 from collections import OrderedDict
+from abc import ABC
 
-class Alphabet(object):
+class AlphabetConverterMixin(ABC):
+    def __call__(self, in_str, include_start=True,include_stop=True):
+        raise NotImplementedError("")
+
+class Alphabet(AlphabetConverterMixin, object):
     #TODO: find the correct decorators to make these constant.
-    stop_token = chr(3)
+    stop_token = chr(3)#ASCII End of text
     stop_integer = 0
-    start_token = chr(2)
+    start_token = chr(2)#ASCII Start of text
     start_integer = 1
+    unknown_token = chr(26)#ASCII Substitution
+    unknown_integer = 2
+    NUM_SPECIAL = 3
     
     def __init__(self,in_str=""):
-        self.letters = OrderedDict([(Alphabet.stop_token, Alphabet.stop_integer), (Alphabet.start_token, Alphabet.start_integer)])
+        super().__init__()
+        self.letters = OrderedDict([(Alphabet.stop_token, Alphabet.stop_integer),
+                                    (Alphabet.start_token, Alphabet.start_integer),
+                                    (Alphabet.unknown_token, Alphabet.unknown_integer)]
+                                    )
         #works for any iterable, thus also a copy constructor for an Alphabet
         for i in in_str:
             #TODO: an assertion that this is a character and not a string.
@@ -38,7 +50,7 @@ class Alphabet(object):
         return __name__ + ".Alphabet(" + str(self) + ")"
     
     def __add__(self, other):
-        return Alphabet(str(self)+str(other))
+        return Alphabet(sorted(str(self)+str(other)))
     
     def __call__(self, in_str,include_start=True,include_stop=True):
         retlist = [self.letters[i] for i in in_str]
@@ -48,6 +60,9 @@ class Alphabet(object):
             retlist.append(self.letters[self.stop_token])
         
         return retlist
+    
+    def __eq__(self, other):
+        return self.__quickstring == other.__quickstring
     
     def sort(self):
         return Alphabet(sorted(str(self.__quickstring)))
