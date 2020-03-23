@@ -23,12 +23,32 @@ class Experiment:
         self.best_test_score = float('inf')
         self.best_epoch_number = -1
         self.loss_function = torch.nn.CrossEntropyLoss(ignore_index=dataset.PADDING_TOKEN)
-        self.language_collection = pickle.load(config[consts.LANGUAGE_INFO_FILE])
+        assert config[consts.DATASET] in [consts.SIGMORPHON2020]
         if config[consts.DATASET] == consts.SIGMORPHON2020:
-            self.train_loader = create_data_loader_from_sigmorphon2020(self.config, is_train=True)
-            self.test_loader = create_data_loader_from_sigmorphon2020(self.config, is_train=False)
+            logging.getLogger(consts.MAIN).info('Creating the training dataset.')
+            self.train_loader, tag_dimension = create_data_loader_from_sigmorphon2020(self.config, is_train=True)
+            logging.getLogger(consts.MAIN).info('Creating the testing dataset.')
+            self.test_loader, _ = create_data_loader_from_sigmorphon2020(self.config, is_train=False)
+        if config[consts.NO_READ_LANGUAGE_INFO_FROM_DATA] or\
+                not os.path.exists(config[consts.LANGUAGE_INFO_FILE]):
+            try:
+                logging.getLogger(consts.MAIN).info('Processing the dataset for language information.')
+                if consts.SIGMORPHON2020 in config[consts.DATASET]:
+                    self.language_collection = \
+                        compile_language_collection_from_sigmorphon2020(config[consts.SIGMORPHON2020_ROOT])
+                    with open(config[consts.LANGUAGE_INFO_FILE], 'wb+') as file:
+                        pickle.dump(self.language_collection, file)
+                    config[consts.NO_READ_LANGUAGE_INFO_FROM_DATA] = False
+            except FileNotFoundError as _:
+                print('Invalid language file.', file=sys.stderr)
+                exit(66)
+        else:
+            logging.getLogger(consts.MAIN).info('Loading language information from ' +
+                                                config[consts.LANGUAGE_INFO_FILE] + ".")
+            with open(config[consts.LANGUAGE_INFO_FILE], 'rb') as file:
+                self.language_collection = pickle.load(file)
         if config[consts.MODEL_ARCHITECTURE] == consts.SEQ2SEQ:
-            self.model = Seq2Seq(self.train_loader.alphabet_vector_dim, self.train_loader.tags_vector_dim)
+            self.model = Seq2Seq(len(self.language_collection.get_master_alphabet()), tag_dimension)
         else:
             print('Bad argument: --model-architecture {} is not recognized.'.format(
                 config[consts.MODEL_ARCHITECTURE]),
@@ -79,7 +99,8 @@ class Experiment:
             raise exception
 
     def serialize(self, directory):
-        pickle.dump(self.language_collection, os.path.join(directory, "language_collection.pickle"))
+        with open(os.path.join(directory, "language_collection.pickle"), 'wb') as file:
+            pickle.dump(self.language_collection, file)
         with open(os.path.join(directory, "dictionary.pickle"), 'wb') as file:
             pickle.dump({'config': self.config, 'id': self.id, 'current_epoch': self.current_epoch,
                          'best_test_score': self.best_test_score, 'best_epoch_number': self.best_epoch_number}, file)
@@ -89,7 +110,8 @@ class Experiment:
             torch.save(self.optimizer.state_dict(), file)
 
     def deserialize(self, directory):
-        self.language_collection = pickle.load(os.path.join(directory, "language_collection.pickle"))
+        with open(os.path.join(directory, "language_collection.pickle"), 'rb') as file:
+            self.language_collection = pickle.load(file)
         with open(os.path.join(directory, "dictionary.pickle"), 'rb') as file:
             dictionary = pickle.load(file)
             self.config = dictionary['config']
@@ -116,7 +138,8 @@ class Experiment:
                 logging.getLogger(consts.MAIN).debug(
                     "stem: {},\ttarget: {},\ttags: {}\tlanguage: {}/{}"
                     "\noutput: {},".format(lemmata_strs[i], forms_strs[i], tags_strs[i], families[i], languages[i],
-                                           outputs[i]))
+                                           outputs[i]))#TODO print output in textual form
+                print('####', probabilities[i].shape, forms[i].shape)
                 batch_loss += self.loss_function(probabilities[i], forms[i])
             batch_loss /= batch_size
             total_loss += batch_loss

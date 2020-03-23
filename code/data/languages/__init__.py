@@ -68,7 +68,7 @@ class LanguageCollection:
 
     def add_language(self, name, family, alphabet):
         language = Language(self.language_count, name, family, alphabet)
-        self.language_families['family'].add_language(language)
+        self.language_families[family].add_language(language)
         self.language_count += 1
         return language
 

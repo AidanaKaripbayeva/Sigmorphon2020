@@ -1,9 +1,10 @@
 from .alphabets import Alphabet
+from .dataset import pandas_to_dataset, UnimorphDataLoader, UnimorphTagOneHotConverter
 from .languages import LanguageCollection
 from .uniread import read_unimorph_tsv
 import consts
+from data.uniread.schema import load_unimorph_schema_from_yaml
 from itertools import chain
-from .dataset import pandas_to_dataset, UnimorphDataLoader
 import os
 import re
 
@@ -32,7 +33,7 @@ def compile_language_collection_from_sigmorphon2020(root_dir):
     return language_collection
 
 
-def create_data_loader_from_sigmorphon2020(config, is_train=True):
+def create_data_loader_from_sigmorphon2020(config, is_train=True, tag_converter=None):
     root_dir = config[consts.SIGMORPHON2020_ROOT]
     panda_data_list = []
     for language_family_name in os.listdir(root_dir):
@@ -47,6 +48,8 @@ def create_data_loader_from_sigmorphon2020(config, is_train=True):
                             panda_data = read_unimorph_tsv(os.path.join(root_dir, language_family_name, language_file))
                             panda_data_list.append(panda_data)
     # TODO Commandline arguments to choose tag_converter, alphabet_converter_in and alphabet_converter_out.
-    dataset = pandas_to_dataset(panda_data_list)
+    if tag_converter is None:
+        tag_converter = UnimorphTagOneHotConverter()
+    dataset = pandas_to_dataset(panda_data_list, tag_converter=tag_converter)
     data_loader = UnimorphDataLoader(dataset=dataset, batch_size=config[consts.BATCH_SIZE])
-    return data_loader
+    return data_loader, tag_converter.get_output_dimension()

@@ -32,14 +32,14 @@ def get_parser():
     parser.add_argument('--sigmorphon2020-root', type=str, help='Root directory for the SIGMORPHON 2020 dataset')
 
     # Language options
-    parser.add_argument('--language-families', type=str, nargs='*',
+    parser.add_argument('--language-families', type=str, nargs='*', default=[],
                         help='The families of languages to load the data for.'
                              ' If not provided, all available families will be used.')
     parser.add_argument('--language-info-file', type=str, required=True, help='The language information file.')
-    parser.add_argument('--languages', type=str, nargs='*',
+    parser.add_argument('--languages', type=str, nargs='*', default=[],
                         help='The languages to load the data for.'
                              ' If not provided, all available languages will be used.')
-    parser.add_argument('--read-language-info-from-data', action='store_true',
+    parser.add_argument('--no-read-language-info-from-data', action='store_true',
                         help='Read the data from the data and store it in the location give by --language-info-dir.'
                              ' If this flag not present, language information is read from the directory given by'
                              ' --language-info-dir.')
@@ -68,16 +68,6 @@ def get_options(parser=None):
         torch.device(consts.CUDA if torch.cuda.is_available() and not inline_options[consts.NO_GPU] else consts.CPU)
 
     # Load inline_options
-    if not inline_options[consts.READ_LANGUAGE_INFO_FROM_DATA]:
-        try:
-            logging.getLogger(consts.MAIN).log('Processing the dataset for language information.')
-            if consts.SIGMORPHON2020 in inline_options[consts.DATASET]:
-                language_collection =\
-                    compile_language_collection_from_sigmorphon2020(inline_options[consts.SIGMORPHON2020_ROOT])
-                pickle.dump(language_collection, inline_options[consts.LANGUAGE_INFO_FILE])
-        except FileNotFoundError as _:
-            print('Invalid language file.', file=sys.stderr)
-            exit(66)
     if inline_options[consts.CONTINUE]:
         try:
             options_path = os.path.join(inline_options[consts.EXPORT_DIR], 'options.pickle')
