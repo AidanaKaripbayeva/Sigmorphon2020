@@ -56,9 +56,7 @@ class Alphabet(object):
         return Alphabet(str(self))
 
     def encode(self):
-        return ( "{}".format(self.__quickstring) )
+        return self.__quickstring
 
     def decode(code: str):
-        quick_string = code
-        out = Alphabet(quick_string)
-        return out
+        return Alphabet(code)

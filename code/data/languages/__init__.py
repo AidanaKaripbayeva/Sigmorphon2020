@@ -1,26 +1,19 @@
-
 from ..alphabets import Alphabet, get_master_alphabet
 from ..uniread import read_unimorph_tsv
-
 from itertools import chain
 import os
 import re
-separator = "#"
+
+
+separator = "\t"
 
 
 class Language:
-    #TODO: using this class variable is fragile. Breaks if you both build and deserialize in the same program execution.
-    _count = 0
-
-    def __init__(self, name, family, alphabet):
-        self.id = Language._count
+    def __init__(self, language_id, name, family, alphabet):
+        self.id = language_id
         self.name = name
         self.family = family
         self.alphabet = alphabet
-        Language._count += 1
-
-    def __getstate__(self):
-        raise Exception("Not serializable")
 
     def encode(self):
         return ("{}" + separator + "{}" + separator + "{}").format(self.id, self.name, self.family)
@@ -36,21 +29,14 @@ class Language:
 
 
 class LanguageFamily:
-    #TODO: using this class variable is fragile. Breaks if you both build and deserialize in the same program execution.
-    _count = 0
-
-    def __init__(self, name):
-        self.id = LanguageFamily._count
+    def __init__(self, language_family_id, name):
+        self.id = language_family_id
         self.name = name
         self.languages = {}
         self._master_alphabet = None
-        LanguageFamily._count += 1
 
     def __iter__(self):
         return self.languages.__iter__()
-
-    def __getstate__(self):
-        raise Exception("Not serializable")
 
     def add_language(self, language):
         self.languages[language.name] = language
@@ -74,12 +60,21 @@ class LanguageFamily:
 
 class LanguageCollection:
     def __init__(self):
+        self._master_alphabet = None
         self.language_families = {}
-        self._master_alphabet = None
+        self.language_count = 0
 
-    def add_language_family(self, language_family):
-        self.language_families[language_family.name] = language_family
+    def add_language_family(self, name):
+        language_family = LanguageFamily(len(self.language_families), name)
+        self.language_families[name] = language_family
         self._master_alphabet = None
+        return language_family
+
+    def add_language(self, name, family, alphabet):
+        language = Language(self.language_count, name, family, alphabet)
+        self.language_families['family'].add_language(language)
+        self.language_count += 1
+        return language
 
     def get_master_alphabet(self):
         if self._master_alphabet is None:
@@ -100,58 +95,25 @@ class LanguageCollection:
                 return one_family.languages[language_name]
         raise KeyError("{} not found".format(language_name))
     
-    def serialize(self, filename):
-        with open(filename, 'w+') as file:
-            print(str(len(self.language_families)), file=file)
-            num_language = 0
-            for _, language_family in self.language_families.items():
-                print(language_family.encode(), file=file)
-                num_language += len(language_family.languages)
-            print(num_language, file=file)
-            for _, language_family in self.language_families.items():
-                for _, language in language_family.languages.items():
-                    print(language.alphabet.encode(), file=file)
-                    print(language.encode(), file=file)
-            print(self._master_alphabet.encode(), file=file)
-
-    def deserialize(self, filename):
-        with open(filename, 'r') as file:
-            num_language_families = int(file.readline()[:-1])
-            for i in range(num_language_families):
-                line = file.readline()[:-1]
-                language_family = LanguageFamily.decode(line)
-                self.language_families[language_family.name] = language_family
-            num_languages = int(file.readline()[:-1])
-            for i in range(num_languages):
-                line = file.readline()[:-1]
-                alphabet = Alphabet.decode(line)
-                line = file.readline()[:-1]
-                language = Language.decode(line, alphabet)
-                self.language_families[language.family].add_language(language)
-            line = file.readline()[:-1]
-            self._master_alphabet = Alphabet.decode(line)
-
-
-def read_language_collection_from_dataset(root_dir):
-    language_collection = LanguageCollection()
-    for language_family_name in os.listdir(root_dir):
-        if os.path.isdir(os.path.join(root_dir, language_family_name))\
-                and re.fullmatch(r'[a-zA-Z-]*', language_family_name):
-            language_family = LanguageFamily(language_family_name)
-            for language_file in os.listdir(os.path.join(root_dir, language_family_name)):
-                if re.fullmatch(r'[a-zA-Z-]*\.trn', language_file):
-                    language_name = language_file[:-4]
-                    print(language_family_name + '/' + language_name)
-                    train_data = read_unimorph_tsv(os.path.join(root_dir, language_family_name, language_name + '.trn'))
-                    test_data = read_unimorph_tsv(os.path.join(root_dir, language_family_name, language_name + '.dev'))
-                    letters = set()
-                    for index, row in chain(train_data.iterrows(), test_data.iterrows()):
-                        word = row['lemma'] + row['form']
-                        for letter in word:
-                            letters.add(letter)
-                    alphabet = Alphabet("".join(sorted(letters)))
-                    language = Language(language_name, language_family_name, alphabet)
-                    language_family.add_language(language)
-            language_collection.add_language_family(language_family)
-    _ = language_collection.get_master_alphabet()
-    return language_collection
+    def compile_from_dataset(root_dir):
+        language_collection = LanguageCollection()
+        for language_family_name in os.listdir(root_dir):
+            if os.path.isdir(os.path.join(root_dir, language_family_name)) \
+                    and re.fullmatch(r'[a-zA-Z-]*', language_family_name):
+                language_collection.add_language_family(language_family_name)
+                for language_file in os.listdir(os.path.join(root_dir, language_family_name)):
+                    if re.fullmatch(r'[a-zA-Z-]*\.trn', language_file):
+                        language_name = language_file[:-4]
+                        train_data = read_unimorph_tsv(
+                            os.path.join(root_dir, language_family_name, language_name + '.trn'))
+                        test_data = read_unimorph_tsv(
+                            os.path.join(root_dir, language_family_name, language_name + '.dev'))
+                        letters = set()
+                        for index, row in chain(train_data.iterrows(), test_data.iterrows()):
+                            word = row['lemma'] + row['form']
+                            for letter in word:
+                                letters.add(letter)
+                        alphabet = Alphabet("".join(sorted(letters)))
+                        language_collection.add_language(language_name, language_family_name, alphabet)
+        _ = language_collection.get_master_alphabet()
+        return language_collection

@@ -1,5 +1,4 @@
 import consts
-from data import unimorph_dataloader
 import data.unimorph_loader.languages as languages
 import logging
 from models.seq2seq import Seq2Seq
@@ -23,8 +22,7 @@ class Experiment:
         self.best_test_score = float('inf')
         self.best_epoch_number = -1
         self.loss_function = torch.nn.CrossEntropyLoss(ignore_index=unimorph_dataloader.PADDING_TOKEN)
-        self.language_collection = languages.LanguageCollection()
-        self.language_collection.deserialize(config[consts.LANGUAGE_INFO_DIR])
+        self.language_collection = pickle.load(config[consts.LANGUAGE_INFO_FILE])
         if config[consts.DATASET] == consts.SIGMORPHON2020:
             unimorph_dataloader.load_scheme(config[consts.SIGMORPHON2020_ROOT])
             self.train_loader = torch.utils.data.DataLoader(

@@ -1,6 +1,6 @@
 import argparse
 import consts
-import data.unimorph_loader.languages as languages
+from data.languages import LanguageCollection
 import experiments.experiment
 from experiments.experiment import Experiment
 import logging
@@ -28,8 +28,8 @@ def get_parser():
     parser.add_argument('--batch-size', type=int, default=[16], nargs='*', help='Batch size(s)')
     parser.add_argument('--dataset', type=str, default=[consts.SIGMORPHON2020], nargs='*',
                         choices=[consts.SIGMORPHON2020], help='Dataset(s) to train on')
-    parser.add_argument('--language-info-dir', type=str, required=True,
-                        help='Root directory for the language information.')
+    parser.add_argument('--language-info-file', type=str, required=True,
+                        help='The language information file.')
     parser.add_argument('--read-language-info-from-data', action='store_true',
                         help='Read the data from the data and store it in the location give by --language-info-dir.'
                              'If this flag not present, language information is read from the directory given by'
@@ -63,9 +63,10 @@ def get_options(parser=None):
     if not inline_options[consts.READ_LANGUAGE_INFO_FROM_DATA]:
         try:
             logging.getLogger(consts.MAIN).log('Processing the dataset for language information.')
-            language_collection = languages.read_language_collection_from_dataset(
-                inline_options[consts.LANGUAGE_INFO_DIR])
-            language_collection.serialize(inline_options[consts.LANGUAGE_INFO_DIR])
+            if consts.SIGMORPHON2020 in inline_options[consts.DATASET]:
+                language_collection =\
+                    LanguageCollection.compile_from_dataset(inline_options[consts.SIGMORPHON2020_ROOT])
+            pickle.dump(language_collection, inline_options[consts.LANGUAGE_INFO_FILE])
         except FileNotFoundError as _:
             print('Invalid language file.', file=sys.stderr)
             exit(66)
