@@ -164,8 +164,8 @@ class Experiment:
                 for i in range(batch_size):
                     logging.getLogger(consts.MAIN).debug(
                         "stem: {},\ttarget: {},\ttags: {}\tlanguage: {}/{}"
-                        "\noutput: {},".format(lemmata_strs[i], forms_strs[i], tags_strs[i], families[i], languages[i],
-                                               outputs[i]))
+                        "\noutput: {},".format(lemmata_strs[i], forms_strs[i], tags_strs[i], families[i],
+                                               languages[i], outputs[i]))
                     test_loss += self.loss_function(probabilities[i], forms[i])
 
                     correct += 1

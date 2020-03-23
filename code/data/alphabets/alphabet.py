@@ -54,9 +54,3 @@ class Alphabet(object):
 
     def copy(self):
         return Alphabet(str(self))
-
-    def encode(self):
-        return self.__quickstring
-
-    def decode(code: str):
-        return Alphabet(code)

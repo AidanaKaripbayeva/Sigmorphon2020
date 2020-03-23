@@ -11,18 +11,6 @@ class Language:
         self.family = family
         self.alphabet = alphabet
 
-    def encode(self):
-        return ("{}" + separator + "{}" + separator + "{}").format(self.id, self.name, self.family)
-
-    def decode(code: str, alphabet):
-        original_id, name, family = code.split(separator)
-        out = Language(name, family, None)
-        out.id = original_id
-        out.name = name
-        out.family = family
-        out.alphabet = alphabet
-        return out
-
 
 class LanguageFamily:
     def __init__(self, language_family_id, name):
@@ -43,15 +31,6 @@ class LanguageFamily:
             alphabets = [language.alphabet for _, language in self.languages]
             self._master_alphabet = get_master_alphabet(alphabets, reindex=False)
         return self._master_alphabet
-
-    def encode(self):
-        return ("{}" + separator + "{}").format(self.id, self.name)
-
-    def decode(code: str):
-        original_id, name = code.split(separator)
-        out = LanguageFamily(name)
-        out.id = original_id
-        return out
 
 
 class LanguageCollection:
