@@ -139,7 +139,6 @@ class Experiment:
                     "stem: {},\ttarget: {},\ttags: {}\tlanguage: {}/{}"
                     "\noutput: {},".format(lemmata_strs[i], forms_strs[i], tags_strs[i], families[i], languages[i],
                                            outputs[i]))#TODO print output in textual form
-                print('####', probabilities[i].shape, forms[i].shape)
                 batch_loss += self.loss_function(probabilities[i], forms[i])
             batch_loss /= batch_size
             total_loss += batch_loss

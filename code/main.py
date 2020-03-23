@@ -40,7 +40,8 @@ def get_parser():
                         help='The languages to load the data for.'
                              ' If not provided, all available languages will be used.')
     parser.add_argument('--no-read-language-info-from-data', action='store_true',
-                        help='Read the data from the data and store it in the location give by --language-info-dir.'
+                        help='Don\'t read the data from the data and store it in the location give by '
+                             '--language-info-dir. '
                              ' If this flag not present, language information is read from the directory given by'
                              ' --language-info-dir.')
 
