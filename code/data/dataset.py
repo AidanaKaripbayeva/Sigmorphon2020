@@ -54,48 +54,7 @@ class UnimorphDataset(torch.utils.data.Dataset):
         #TODO: assert that everything is the same length?
         return len(self.forms_str)
 
-from . import uniread
-class UnimorphTagOneHotConverter(object):
-    group_splitter = re.compile(";")
-    tag_splitter = re.compile("/|\+")
-    non_detector = re.compile("non{(.*)}")
-    
-    @classmethod
-    def from_schemafile(blah,filename):
-        a_schema = uniread.schema.load_unimorph_schema_from_yaml(filename)
-        return UnimorphTagOneHotConverter(a_schema)
-    
-    def __init__(self,schema=None):
-        if schema is None:
-            schema = uniread.schema.load_default_schema()
-        self.schema = schema
-        self.tag_to_id = OrderedDict()
-        self.tag_to_group = dict()
-
-        for i,group in enumerate(self.schema):
-            for j,tag in enumerate(self.schema[group]):
-                self.tag_to_id[tag] = len(self.tag_to_id)
-                self.tag_to_group[tag] = group
-    
-    def __call__(self, tagstring):
-        all_tags = list()
-        for taggroup in self.group_splitter.split(tagstring):
-            for one_tag in self.tag_splitter.split(taggroup):
-                non_match = self.non_detector.match(one_tag)
-                if non_match is None:
-                    all_tags.append(one_tag)
-                else:
-                    for t in schema[tag_to_group[non_match.group(1)]]:
-                        all_tags.append(t)
-        
-        hot_vector = torch.LongTensor(len(self.tag_to_id))
-        hot_vector.zero_()
-        
-        for t in all_tags:
-            hot_vector[self.tag_to_id[t]] = 1
-        
-        return hot_vector
-                
+from .feature_converters import *
         
 def pandas_to_dataset(dataset_or_sets,tag_converter=None,alphabet_converter_in=None,alphabet_converter_out=None):
     if isinstance(dataset_or_sets, pandas.DataFrame):
@@ -104,7 +63,9 @@ def pandas_to_dataset(dataset_or_sets,tag_converter=None,alphabet_converter_in=N
     
     total_dataframe = pandas.concat(dataset_or_sets,ignore_index=True)
     
-    if tag_converter is None:
+    if tag_converter is None or tag_converter is "masked_vectors":
+        tag_converter = UnimorphTagMaskedVectorConverter(mask_value=-1)#Marc asked for -1
+    elif tag_converter is "one_hot":
         tag_converter = UnimorphTagOneHotConverter()#default schema
     
     if alphabet_converter_in is None:
@@ -129,39 +90,18 @@ def pandas_to_dataset(dataset_or_sets,tag_converter=None,alphabet_converter_in=N
                     tags_tensor, lemma_tensor_list, form_tensor_list,
                     total_dataframe["tags"].to_list(), total_dataframe["lemma"].to_list(), total_dataframe["form"].to_list()
                     )
-    
-import torch.nn.utils.rnn as rnn_utils
-def packed_collate(in_data):
-    fams, langs, tags_tens, lem_tens, form_tens, tags_strs, lem_strs, form_strs = list(zip(*in_data))
-    return ( torch.stack(fams),
-            torch.stack(langs),
-            torch.stack(tags_tens),
-            rnn_utils.pack_sequence(lem_tens,enforce_sorted=False),
-            rnn_utils.pack_sequence(form_tens,enforce_sorted=False),
-            list(tags_strs),
-            list(lem_strs),
-            list(form_strs) )
-
-def padded_collate(in_data):
-    fams, langs, tags_tens, lem_tens, form_tens, tags_strs, lem_strs, form_strs = list(zip(*in_data))
-    return (torch.stack(fams),
-            torch.stack(langs),
-            torch.stack(tags_tens),
-            rnn_utils.pad_sequence(lem_tens),
-            rnn_utils.pad_sequence(form_tens),
-            list(tags_strs),
-            list(lem_strs),
-            list(form_strs) )
 
 import torch.utils.data
 import torch.nn.utils.rnn as rnn_utils
 class UnimorphDataLoader(torch.utils.data.DataLoader):
     
     @classmethod
-    def packed_collate(in_data):
+    def packed_collate(cls,in_data):
         fams, langs, tags_tens, lem_tens, form_tens, tags_strs, lem_strs, form_strs = list(zip(*in_data))
-        return ( torch.stack(fams),
-                torch.stack(langs),
+        fams = [i.repeat(len(j)) for i,j in zip(fams,lem_tens)]
+        langs = [i.repeat(len(j)) for i,j in zip(langs,lem_tens)]
+        return ( rnn_utils.pack_sequence(fams,enforce_sorted=False),
+                rnn_utils.pack_sequence(langs,enforce_sorted=False),
                 torch.stack(tags_tens),
                 rnn_utils.pack_sequence(lem_tens,enforce_sorted=False),
                 rnn_utils.pack_sequence(form_tens,enforce_sorted=False),
@@ -170,10 +110,12 @@ class UnimorphDataLoader(torch.utils.data.DataLoader):
                 list(form_strs) )
     
     @classmethod
-    def padded_collate(in_data):
+    def padded_collate(cls,in_data):
         fams, langs, tags_tens, lem_tens, form_tens, tags_strs, lem_strs, form_strs = list(zip(*in_data))
-        return (torch.stack(fams),
-                torch.stack(langs),
+        fams = [i.repeat(len(j)) for i,j in zip(fams,lem_tens)]
+        langs = [i.repeat(len(j)) for i,j in zip(langs,lem_tens)]
+        return (rnn_utils.pad_sequence(fams,enforce_sorted=False),
+                rnn_utils.pad_sequence(langs,enforce_sorted=False),
                 torch.stack(tags_tens),
                 rnn_utils.pad_sequence(lem_tens),
                 rnn_utils.pad_sequence(form_tens),
@@ -186,21 +128,20 @@ class UnimorphDataLoader(torch.utils.data.DataLoader):
         self.tag_vector_dim = -1 #TODO
         self.alphabet_vector_dim = -1 #TODO
         
+        if "collate_fn" in kwargs:
+            #TODO: raise a non-fatal warning, is that really what was wanted?
+            raise Exception("You should not provide a collate function to UnimorphDataLoader, it has its own.")
+        
         #Allow the user to specify a collate function using the "collate_type" argument
-        collator_selection = packed_collate
+        collator_selection = self.packed_collate
         if "collate_type" in kwargs:
             if kwargs["collate_type"] in ["pack","packed"]:
-                collator_selection = packed_collate
+                collator_selection = self.packed_collate
             elif kwargs["collate_type"] in ["pad","padded"]:
-                collator_selection = padded_collate
+                collator_selection = self.padded_collate
             else:
                 raise NotImplementedError("The selected collation type ({}) is unavailable.".kwargs["collate_type"])
             del kwargs["collate_type"]
         
-        if "collate_fn" in kwargs:
-            #TODO: raise a non-fatal warning, is that really what was wanted?
-            raise Exception("You should not provide a collate function to UnimorphDataLoader, it has its own.")
-            pass
-        else:
-            kwargs["collate_fn"] = collator_selection
+        kwargs["collate_fn"] = collator_selection
         super(UnimorphDataLoader,self).__init__(*args,**kwargs)
