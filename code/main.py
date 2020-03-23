@@ -1,6 +1,7 @@
 import argparse
 import consts
 from data.languages import LanguageCollection
+from data.sigmorphon2020_data_reader import compile_language_collection_from_sigmorphon2020
 import experiments.experiment
 from experiments.experiment import Experiment
 import logging
@@ -65,8 +66,8 @@ def get_options(parser=None):
             logging.getLogger(consts.MAIN).log('Processing the dataset for language information.')
             if consts.SIGMORPHON2020 in inline_options[consts.DATASET]:
                 language_collection =\
-                    LanguageCollection.compile_from_dataset(inline_options[consts.SIGMORPHON2020_ROOT])
-            pickle.dump(language_collection, inline_options[consts.LANGUAGE_INFO_FILE])
+                    compile_language_collection_from_sigmorphon2020(inline_options[consts.SIGMORPHON2020_ROOT])
+                pickle.dump(language_collection, inline_options[consts.LANGUAGE_INFO_FILE])
         except FileNotFoundError as _:
             print('Invalid language file.', file=sys.stderr)
             exit(66)
