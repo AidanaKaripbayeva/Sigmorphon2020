@@ -1,3 +1,7 @@
+"""
+Defines constants for semantic strings (e.g. keys to dictionaries). These should be used to avoid string programming
+and the hazards of that, e.g. unchecked typos in strings.
+"""
 ADADELTA = 'adadelta'
 BATCH_SIZE = 'batch_size'
 CATEGORIES = 'categories'
