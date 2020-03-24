@@ -15,7 +15,6 @@ class Seq2Seq(torch.nn.Module):
         self.hidden_dim = hidden_dim
         # The number of layers in the LSTM units in the encoder and in the decoder.
         self.num_layers = num_layers
-        print(alphabet_size, tag_vector_dim, embedding_dim, hidden_dim, num_layers)
 
         # Create the embedding layer for the encoder.
         self.embedding = torch.nn.Embedding(alphabet_size, embedding_dim)

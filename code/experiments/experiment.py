@@ -37,7 +37,7 @@ class Experiment:
         self.current_epoch = 0
         self.best_test_score = float('inf')
         self.best_epoch_number = -1
-        self.loss_function = torch.nn.CrossEntropyLoss(ignore_index=dataset.PADDING_TOKEN)
+        self.loss_function = torch.nn.CrossEntropyLoss(ignore_index=Alphabet.padding_integer)
 
         # Find the corresponding dataset.
         assert config[consts.DATASET] in [consts.SIGMORPHON2020]
