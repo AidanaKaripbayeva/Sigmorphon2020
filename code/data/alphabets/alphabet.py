@@ -46,9 +46,10 @@ class Alphabet(AlphabetConverterMixin, object):
     start_integer = 1
     unknown_token = chr(26)#ASCII Substitution
     unknown_integer = 2
-    padding_token = chr(23)#ASCII End of transmission
-    padding_integer = 3
-    NUM_SPECIAL = 4
+    #We decided to use the stop token as the padding token.
+    #padding_token = chr(23)#ASCII End of transmission
+    #padding_integer = 3
+    NUM_SPECIAL = 3
 
     def __init__(self,in_str="",in_counts=None):
         super().__init__()
