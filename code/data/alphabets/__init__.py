@@ -2,7 +2,7 @@
 import functools
 import operator
 
-from .alphabet import Alphabet
+from .alphabet import Alphabet, AlphabetCounts
 from . import standard
 
 def get_master_alphabet(alphabets=None, reindex=False):

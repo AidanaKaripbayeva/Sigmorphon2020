@@ -1,6 +1,5 @@
-from ..alphabets import Alphabet
-from . import LanguageCollection, LanguageFamily, Language
-# import all the hard-coded alphabets
+"""Constructs a hard-coded collection of languages with their hierarchies and alphabets."""
+from . import LanguageCollection
 from ..alphabets.standard import *
 
 
