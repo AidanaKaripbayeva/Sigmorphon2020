@@ -1,5 +1,6 @@
 from .alphabets import Alphabet
-from .dataset import pandas_to_dataset, UnimorphDataLoader, UnimorphTagOneHotConverter
+from .dataset import pandas_to_dataset, UnimorphDataLoader
+from .feature_converters import UnimorphTagBitVectorConverter
 from .languages import LanguageCollection
 from .uniread import read_unimorph_tsv
 import consts
@@ -91,11 +92,11 @@ def create_data_loader_from_sigmorphon2020(config, is_train=True, tag_converter=
                             panda_data_list.append(panda_data)
     # TODO Commandline arguments to choose tag_converter, alphabet_converter_in and alphabet_converter_out.
     if tag_converter is None:
-        tag_converter = UnimorphTagOneHotConverter()
+        tag_converter = UnimorphTagBitVectorConverter()
 
     # Instantiate a `DataSet` object from the collected list of Pandas `DataFrame`s.
     dataset = pandas_to_dataset(panda_data_list, tag_converter=tag_converter)
     # Instantiate a `DataLoader` object from the `DataSet` object with the proper batch size.
     data_loader = UnimorphDataLoader(dataset=dataset, batch_size=config[consts.BATCH_SIZE])
 
-    return data_loader, tag_converter.get_output_dimension()
+    return data_loader, 356 # TODO: Replace hardcoded 356 with the dimension of the tag vector

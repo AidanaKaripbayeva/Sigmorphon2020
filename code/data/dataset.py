@@ -12,11 +12,6 @@ import yaml
 TRAIN_MODE = 'trn'
 DEV_MODE = 'dev'
 TEST_MODE = 'tst'
-#PADDING_TOKEN = 0
-#START_TOKEN_INT = 1
-#END_TOKEN_INT = 0
-#START_TOKEN_CHAR = chr(2) #ASCII START OF TEXT
-#END_TOKEN_CHAR = chr(3) #ASCII END OF TEXT
 
 
 class UnimorphDataset(torch.utils.data.Dataset):
