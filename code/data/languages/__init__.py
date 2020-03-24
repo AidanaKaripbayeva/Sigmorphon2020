@@ -7,7 +7,11 @@ separator = "\t"
 
 
 class Language:
+    """
+    Data class holding the information about a language, including its name, its family name and its alphabet.
+    """
     def __init__(self, language_id, name, family, alphabet):
+        """Protected method. Only to be used by LanngugeCollection."""
         self.id = language_id
         self.name = name
         self.family_id = None
@@ -17,21 +21,15 @@ class Language:
     def __repr__(self):
         return "Language({})".format(self.encode())
 
-    def encode(self):
-        return ("{}" + separator + "{}" + separator + "{}" + separator + "{}" + separator + "{}").format(self.id, self.family_id, self.name, self.family, self.alphabet)
-
-    def decode(code: str, alphabet):
-        original_id, name, family = code.split(separator)
-        out = Language(name, family, None)
-        out.id = original_id
-        out.name = name
-        out.family = family
-        out.alphabet = alphabet
-        return out
-
 
 class LanguageFamily:
+    """
+    Data class holding the information about a language family, including its name, the names of its known languages
+    and its master alphabet. A master alphabet is a hypothetical alphabet that is created by taking the union of the
+    alpabets of the langauges in this family.
+    """
     def __init__(self, language_family_id, name):
+        """Protected method. Only to be used by LanngugeCollection."""
         self.id = language_family_id
         self.name = name
         self.languages = OrderedDict()
@@ -47,27 +45,28 @@ class LanguageFamily:
         return self.languages[index]
     
     def add_language(self, language):
+        """Protected method. Only to be used by LanguageCollection class."""
         self.languages[language.name] = language
         language.family_id = self.id
         self._master_alphabet = None
     
     def get_master_alphabet(self):
+        """
+        Lazily constructs and returns the master alphabet of this family.
+
+        :return: An Alphabet object.
+        """
         if self._master_alphabet is None:
             alphabets = [language.alphabet for _,language in self.languages.items()]
             self._master_alphabet = get_master_alphabet(alphabets, reindex=True)
         return self._master_alphabet
 
-    def encode(self):
-        return ("{}" + separator + "{}").format(self.id, self.name)
-
-    def decode(code: str):
-        original_id, name = code.split(separator)
-        out = LanguageFamily(name)
-        out.id = original_id
-        return out
-
 
 class LanguageCollection:
+    """
+    A data class containing a list of language families and their master alphabet. A master alphabet is a
+    hypothetical alphabet that is created by taking the union of the alpabets of of a langauge collection.
+    """
     
     @classmethod
     def save_tsv(cls, filelike, lang_collection):
@@ -101,12 +100,26 @@ class LanguageCollection:
         self.language_count = 0
 
     def add_language_family(self, name):
+        """
+        Instantiates and adds a new family of languages to the collection.
+
+        :param name: The name of the family as a string.
+        :return: The instantiated LanguageFamily object.
+        """
         language_family = LanguageFamily(len(self.language_families), name)
         self.language_families[name] = language_family
         self._master_alphabet = None
         return language_family
 
     def add_language(self, name, family, alphabet):
+        """
+        Instantiates and adds a new language to the corresponding language family in the collection.
+
+        :param name: The name of the language as a string.
+        :param family: The name of the language family as a string.
+        :param alphabet: The alphabet of the language as an Alphabet object.
+        :return: The instantiated Language object.
+        """
         language = Language(self.language_count, name, family, alphabet)
         if not family in self:
             self.add_language_family(family)
@@ -116,6 +129,11 @@ class LanguageCollection:
         return language
 
     def get_master_alphabet(self):
+        """
+        Lazily constructs and returns the master alphabet of the collection.
+
+        :return: An Alphabet object.
+        """
         if self._master_alphabet is None:
             alphabets = [family.get_master_alphabet() for family in self.language_families.values()
                          ]

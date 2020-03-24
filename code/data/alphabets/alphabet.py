@@ -125,10 +125,4 @@ class Alphabet(AlphabetConverterMixin, object):
 
     def copy(self):
         return Alphabet(str(self),self.counts)
-
-    def encode(self):
-        return self.__quickstring
-
-    @staticmethod
-    def decode(code: str):
-        return Alphabet(code)
+    

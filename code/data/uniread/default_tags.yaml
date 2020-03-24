@@ -20,10 +20,13 @@ categories:
     - HUM
     - NHUM
   'Argument Marking':
+    - NO1
     - NO1S
     - NO1P
+    - NO2
     - NO2S
     - NO2P
+    - NO3
     - NO3S
     - NO3P
     - AC1S
@@ -60,6 +63,7 @@ categories:
     - BE3S
     - BE3P
   Aspect:
+    - ITER
     - IPFV
     - PFV
     - PRF
@@ -218,9 +222,24 @@ categories:
     - LGSPEC_MULT
     - LGSPEC_ATTR
     - LGSPEC_EMPH
+    - LGSPEC_NMLZ
+    - LGSPEC_CSL
+    - LGSPEC_INCH
+    - LGSPEC_CAR
+    - LGPSEC_CAR
+    - LGSPEC_CONSEC
+    - LGSPEC_DIST
+    - LGSPEC_LAT
   Interrogativity:
     - DECL
     - INT
+  Language Specific:
+    - LGSPEC1
+    - LGSPEC2
+    - LGSPEC3
+    - LGSPEC4
+    - LGSPEC5
+    - LGSPEC6
   Mood:
     - IND
     - INDF3
@@ -268,6 +287,7 @@ categories:
     - AUX
     - V.AGT
     - V.PTCP
+    - V.PTCP.PST
     - V.MSDR
     - V.CVB
     - V.CVB.GEN
@@ -413,6 +433,7 @@ ordering:
   - 'Gender and Noun Class'
   - 'Information Structure'
   - Interrogativity
+  - Language Specific
   - Mood
   - Number
   - New
