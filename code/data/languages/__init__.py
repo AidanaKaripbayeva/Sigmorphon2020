@@ -1,6 +1,6 @@
 from collections import OrderedDict
 
-from ..alphabets import Alphabet, get_master_alphabet
+from ..alphabets import Alphabet, AlphabetCounts, get_master_alphabet
 
 
 separator = "\t"
@@ -54,7 +54,7 @@ class LanguageFamily:
     def get_master_alphabet(self):
         if self._master_alphabet is None:
             alphabets = [language.alphabet for _,language in self.languages.items()]
-            self._master_alphabet = get_master_alphabet(alphabets, reindex=False)
+            self._master_alphabet = get_master_alphabet(alphabets, reindex=True)
         return self._master_alphabet
 
     def encode(self):
@@ -72,16 +72,17 @@ class LanguageCollection:
     @classmethod
     def save_tsv(cls, filelike, lang_collection):
         for lang in lang_collection.list():
-            filelike.write("\t".join( [str(lang.id), str(lang.family_id), str(lang.name), str(lang.family), str(lang.alphabet)])  + "\n")
+            filelike.write("\t".join( [str(lang.id), str(lang.family_id), str(lang.name), str(lang.family), str(lang.alphabet), str( lang.alphabet.counts ) ])  + "\n")
     
     @classmethod
     def from_tsv(cls, filelike):
         to_return = LanguageCollection()
         for row in filelike:#TODO: do this better with getline/readline or the inbuilt csv features in python
-            id, fam_id, name, fam, alphstring = row.strip().split("\t")
+            id, fam_id, name, fam, alphstring, alphcounts = row.strip().split("\t")
             #This isn't ideal, but for the moment I am going to have to assume that the
             #TSV file was written in order.
-            to_return.add_language(name, fam, Alphabet(alphstring))
+            deserialized_counts = AlphabetCounts.decode(alphcounts)
+            to_return.add_language(name, fam, Alphabet(alphstring, deserialized_counts) )
         return to_return
             
             
@@ -111,14 +112,16 @@ class LanguageCollection:
             self.add_language_family(family)
         self.language_families[family].add_language(language)
         self.language_count += 1
+        self._master_alphabet = None
         return language
 
     def get_master_alphabet(self):
         if self._master_alphabet is None:
-            alphabets = [language.alphabet
-                         for _, family in self.language_families.items()
-                         for _, language in family.languages.items()
+            alphabets = [family.get_master_alphabet() for family in self.language_families.values()
                          ]
+            for al in alphabets:
+                assert al.counts is not None
+                print(al.counts)
             self._master_alphabet = get_master_alphabet(alphabets, reindex=True)
         return self._master_alphabet
     
