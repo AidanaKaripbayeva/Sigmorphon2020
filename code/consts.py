@@ -2,7 +2,6 @@
 Defines constants for semantic strings (e.g. keys to dictionaries). These should be used to avoid string programming
 and the hazards of that, e.g. unchecked typos in strings.
 """
-ADADELTA = 'adadelta'
 BATCH_SIZE = 'batch_size'
 CATEGORIES = 'categories'
 CHECKPOINT_STEP = 'checkpoint_step'
@@ -29,6 +28,5 @@ NO_READ_LANGUAGE_INFO_FROM_DATA = 'no_read_language_info_from_data'
 NUM_EPOCHS = 'num_epochs'
 OPTIMIZER = 'optimizer'
 ORDERING = 'ordering'
-SEQ2SEQ = 'seq2seq'
 SIGMORPHON2020 = 'sigmorphon2020'
 SIGMORPHON2020_ROOT = 'sigmorphon2020_root'
