@@ -124,7 +124,7 @@ class Alphabet(AlphabetConverterMixin, object):
         return Alphabet(sorted(str(self.__quickstring)), self.counts)
 
     def copy(self):
-        return Alphabet(str(self))
+        return Alphabet(str(self),self.counts)
 
     def encode(self):
         return self.__quickstring
