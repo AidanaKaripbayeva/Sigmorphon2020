@@ -3,7 +3,7 @@ import glob, os
 
 from .languages import LanguageCollection
 
-class Sigmorphon2020Task0Data(object):
+class SigmorphonData_Factory(object):
     
     @classmethod
     def get_instance():

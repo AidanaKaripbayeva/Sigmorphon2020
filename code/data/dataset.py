@@ -1,6 +1,6 @@
 from . import alphabets  # relative import, only way to get the module to work
 from . import uniread
-from collections import OrderedDict
+from collections import OrderedDict, namedtuple
 import os
 import pandas
 import re
@@ -37,6 +37,11 @@ class UnimorphDataset(torch.utils.data.Dataset):
         self.tags_str = tags_str_list
         self.lemmata_str = lemmata_str_list
         self.forms_str = forms_str_list
+    
+    def get_dimensionality(self):#Sahand wanted a way to ask the dataset about its dimensions.
+        return {"input_symbols":len(self.alphabet_input),"output_symbols":len(self.alphabet_output),
+                    "tags":self.tags_tensor[0].shape,
+                    }
 
     def __getitem__(self, index):
         return (self.families[index], self.languages[index], self.tags[index], self.lemmata[index], self.forms[index],
@@ -107,34 +112,47 @@ def pandas_to_dataset(dataset_or_sets,tag_converter=None,alphabet_converter_in=N
                     )
 
 class UnimorphDataLoader(torch.utils.data.DataLoader):
-
+    inputs_type = namedtuple("inputs",("family","language","tags","lemma"))
+    outputs_type = namedtuple("outputs",("form","tags_str","lemma_str","form_str"))
+    
+    
     @classmethod
     def packed_collate(cls,in_data):
         fams, langs, tags_tens, lem_tens, form_tens, tags_strs, lem_strs, form_strs = list(zip(*in_data))
         fams = [i.repeat(len(j)) for i,j in zip(fams,lem_tens)]
         langs = [i.repeat(len(j)) for i,j in zip(langs,lem_tens)]
-        return ( rnn_utils.pack_sequence(fams,enforce_sorted=False),
-                rnn_utils.pack_sequence(langs,enforce_sorted=False),
-                torch.stack(tags_tens),
-                rnn_utils.pack_sequence(lem_tens, enforce_sorted=False),
-                rnn_utils.pack_sequence(form_tens, enforce_sorted=False),
-                list(tags_strs),
-                list(lem_strs),
-                list(form_strs))
+        return ( cls.inputs_type(
+                    rnn_utils.pack_sequence(fams,enforce_sorted=False),
+                    rnn_utils.pack_sequence(langs,enforce_sorted=False),
+                    torch.stack(tags_tens),
+                    rnn_utils.pack_sequence(lem_tens, enforce_sorted=False)
+                ),
+                cls.outputs_type(
+                    rnn_utils.pack_sequence(form_tens, enforce_sorted=False),
+                    list(tags_strs),
+                    list(lem_strs),
+                    list(form_strs)
+                    )
+                )
 
     @classmethod
     def padded_collate(cls,in_data):
         fams, langs, tags_tens, lem_tens, form_tens, tags_strs, lem_strs, form_strs = list(zip(*in_data))
         fams = [i.repeat(len(j)) for i,j in zip(fams,lem_tens)]
         langs = [i.repeat(len(j)) for i,j in zip(langs,lem_tens)]
-        return (rnn_utils.pad_sequence(fams,enforce_sorted=False),
-                rnn_utils.pad_sequence(langs,enforce_sorted=False),
-                torch.stack(tags_tens),
-                rnn_utils.pad_sequence(lem_tens),
-                rnn_utils.pad_sequence(form_tens),
-                list(tags_strs),
-                list(lem_strs),
-                list(form_strs) )
+        return (cls.inputs_type(
+                    rnn_utils.pad_sequence(fams,enforce_sorted=False),
+                    rnn_utils.pad_sequence(langs,enforce_sorted=False),
+                    torch.stack(tags_tens),
+                    rnn_utils.pad_sequence(lem_tens)
+                ),
+                cls.outputs_type(
+                    rnn_utils.pad_sequence(form_tens),
+                    list(tags_strs),
+                    list(lem_strs),
+                    list(form_strs)
+                    )
+                )
     
     
     def __init__(self,*args, **kwargs):
