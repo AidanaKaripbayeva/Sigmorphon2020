@@ -197,6 +197,8 @@ class Experiment:
         for batch_idx, (input_batch, output_batch) in enumerate(self.train_loader):
             # Zero out the previous gradient information.
             self.optimizer.zero_grad()
+            if batch_idx == 3:
+                break
 
             # Split the batch into semantic parts.
             family = input_batch.family
@@ -210,7 +212,6 @@ class Experiment:
 
             # Run the model on this batch of data.
             probabilities, outputs = self.model(family, language, tags, lemma)
-            print('@@@', (len(family), len(language), tags.shape, len(lemma)))
 
             # Compute the batch loss.
             batch_loss = 0.0
@@ -218,10 +219,16 @@ class Experiment:
             for i in range(batch_size):
                 output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
                                       for integral in outputs[i]])
+                language_family =\
+                    self.train_loader.dataset.language_collection.language_families[int(family[i][0])]
+                language_object = language_family.languages[int(language[i][0])]
                 logging.getLogger(consts.MAIN).debug(
-                    "stem: {},\ttarget: {},\ttags: {}"
-                    "\tlanguage: {}/{}\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], family[i][0],
-                                                           language[i][0], output_str))
+                    "stem: {},"
+                    "\ttarget: {},"
+                    "\ttags: {}"
+                    "\tlanguage: {}/{}"
+                    "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], language_family.name,
+                                            language_object.name, output_str))
                 padding = torch.LongTensor([Alphabet.stop_integer] * (self.model.output_length - len(form[i])))
                 target = torch.cat([form[i], padding])
                 batch_loss += self.loss_function(probabilities[i], target)
@@ -273,15 +280,16 @@ class Experiment:
                 for i in range(batch_size):
                     output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
                                           for integral in outputs[i]])
-                    family_name = self.train_loader.language_collection.language_families[family[i][0]].name
-                    language_name = self.train_loader.language_collection.language_families[family[i][0]].name
+                    language_family = \
+                        self.train_loader.dataset.language_collection.language_families[int(family[i][0])]
+                    language_object = language_family.languages[int(language[i][0])]
                     logging.getLogger(consts.MAIN).debug(
                         "stem: {},"
                         "\ttarget: {},"
                         "\ttags: {}"
                         "\tlanguage: {}/{}"
-                        "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], family_name,
-                                                                 language[i][0], output_str))
+                        "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], language_family.name,
+                                                language_object.name, output_str))
                     # Keep track of loss and accuracy.
                     padding = torch.LongTensor([Alphabet.stop_integer] * (self.model.output_length - len(form[i])))
                     target = torch.cat([form[i], padding])
