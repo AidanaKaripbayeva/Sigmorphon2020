@@ -42,8 +42,7 @@ class Experiment:
         if config[consts.DATASET] == consts.SIGMORPHON2020:
             # Create a data loader factory.
             data_loader_factory = SigmorphonData_Factory(config[consts.SIGMORPHON2020_ROOT],
-                                                         config[consts.LANGUAGE_INFO_FILE],
-                                                         feature_converters.UnimorphTagBitVectorConverter())
+                                                         config[consts.LANGUAGE_INFO_FILE])
             # Create a data loader for the training data.
             logging.getLogger(consts.MAIN).info('Creating the training dataset.')
             dataloader_kwargs = {'batch_size': self.config[consts.BATCH_SIZE]}
