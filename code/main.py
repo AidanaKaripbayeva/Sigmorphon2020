@@ -3,6 +3,8 @@ import consts
 import experiments.experiment
 from experiments.experiment import Experiment
 import logging
+from models import ModelFactory
+from optimizers import OptimizerFactory
 import os
 import pickle
 import sys
@@ -15,7 +17,13 @@ def get_parser():
 
     :return: argparse.ArgumentParser
     """
-    parser = argparse.ArgumentParser()
+    # Get parsers for various model architectures.
+    model_parser = ModelFactory.get_all_parsers()
+    # Get parsers for various optimizers.
+    optimizer_parser = OptimizerFactory.get_all_parsers()
+    # Add parent parsers.
+    parent_parsers = model_parser + optimizer_parser
+    parser = argparse.ArgumentParser(parents=parent_parsers)
 
     # Generic options
     parser.add_argument('--checkpoint-step', type=int, default=1,
@@ -49,17 +57,13 @@ def get_parser():
                              ' --language-info-dir.')
 
     # Optimizer options
-    parser.add_argument('--optimizer', type=str, default=[consts.ADADELTA], choices=[consts.ADADELTA], nargs='*',
-                        help='Optimizer algorithm(s)')
-    parser.add_argument('--lr', type=float, default=[0.1], nargs='*', help='Learning rate(s)')
-    parser.add_argument('--lr-decay', type=float, default=[0.1], nargs='*', help='Learning rate decay factor(s)')
-    parser.add_argument('--lr-step-size', type=int, default=[20], nargs='*',
-                        help='Number(s) of steps between successive learning rate decays')
+    parser.add_argument('--optimizer', type=str, default=[OptimizerFactory.optimizers[0]],
+                        choices=OptimizerFactory.optimizers, nargs='*', help='Optimizer algorithm(s)')
     parser.add_argument('--num-epochs', type=int, default=30, help='Number(s) of epochs')
 
     # Model options
-    parser.add_argument('--model-architecture', type=str, default=[consts.SEQ2SEQ], nargs='*',
-                        choices=[consts.SEQ2SEQ], help='Model architecture(s)')
+    parser.add_argument('--model-architecture', type=str, default=[ModelFactory.architectures[0]], nargs='*',
+                        choices=ModelFactory.architectures, help='Model architecture(s)')
 
     return parser
 
@@ -127,27 +131,8 @@ def get_options(parser=None):
                     print('Missing argument: --sigmorphon2020-root', file=sys.stderr)
                     exit(66)
             else:
-                print('Bad argument: --dataset {} is not recognized.'.format(options[consts.DATASET]), file=sys.stderr)
-                exit(64)
-        for optimizer in options[consts.OPTIMIZER]:
-            if optimizer == consts.ADADELTA:
-                if len(options[consts.LR]) == 0:
-                    print('Missing argument: --lr.', file=sys.stderr)
-                    exit(64)
-            else:
-                print('Bad argument: --optimizer {} not recognized.'.format(optimizer), file=sys.stderr)
-                exit(64)
-        for lr in options[consts.LR]:
-            if lr <= 0:
-                print('Bad argument: --lr must be non-negative.', file=sys.stderr)
-                exit(64)
-        for lr_decay in options[consts.LR_DECAY]:
-            if not 0 < lr_decay < 1:
-                print('Bad argument: --lr-decay must be in (0,1).', file=sys.stderr)
-                exit(64)
-        for lr_step_size in options[consts.LR_STEP_SIZE]:
-            if lr_step_size <= 0:
-                print('Bad argument: --lr-step-size must be non-negative.', file=sys.stderr)
+                print('Bad argument: --dataset {} is not recognized.'.format(options[consts.DATASET]),
+                      file=sys.stderr)
                 exit(64)
         if options[consts.NUM_EPOCHS] <= 0:
             print('Bad argument: --num-epochs must be positive.', file=sys.stderr)
@@ -188,24 +173,15 @@ def iterate_optimizer_configs(options):
     If multiple optimizers are chosen, creates a separate configuration dictionary for each choice of the optimizer.
 
     :param options: A dictionary object containing the parsed command-line arguments.
-    :return: A dictionary object for each choice of the model architecture, containing the options specific to that choice.
+    :return: A dictionary object for each choice of the model architecture, containing the options specific to that
+    choice.
     """
     for batch_size in options[consts.BATCH_SIZE]:
         for optimizer in options[consts.OPTIMIZER]:
-            if optimizer == consts.ADADELTA:
-                for lr in options[consts.LR]:
-                    for lr_decay in options[consts.LR_DECAY]:
-                        for lr_step_size in options[consts.LR_STEP_SIZE]:
-                            config = options.copy()
-                            config[consts.BATCH_SIZE] = batch_size
-                            config[consts.OPTIMIZER] = optimizer
-                            config[consts.LR] = lr
-                            config[consts.LR_DECAY] = lr_decay
-                            config[consts.LR_STEP_SIZE] = lr_step_size
-                            yield config
-            else:
-                print('Bad argument: --optimizer {} not recognized.'.format(optimizer), file=sys.stderr)
-                exit(64)
+            config = options.copy()
+            config[consts.BATCH_SIZE] = batch_size
+            config[consts.OPTIMIZER] = optimizer
+            yield config
 
 
 def iterate_configs(parser=None, options=None):
@@ -241,8 +217,8 @@ def iterate_configs(parser=None, options=None):
         # Walk through different configurations of hyperparameters.
         for config2 in iterate_model_architecture_configs(config1):
             for config3 in iterate_dataset_configs(config2):
-                for config in iterate_optimizer_configs(config3):
-                    yield config
+                for config4 in iterate_optimizer_configs(config3):
+                    yield config4
 
 
 def main():
@@ -308,7 +284,8 @@ def main():
                                               "experiment_%09d" % experiment_id,
                                               "epoch_%09d" % dictionary[consts.EPOCH_NUMBER])
                 # Create an experiment for the configuration at hand.
-                experiment = Experiment(config=config, experiment_id=experiment_id, load_from_directory=checkpoint_dir)
+                experiment = Experiment(config=config, experiment_id=experiment_id,
+                                        load_from_directory=checkpoint_dir)
             # If this is a new experiment.
             else:
                 logger.info('starting on config: {}'.format(str(config)))

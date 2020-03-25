@@ -17,9 +17,10 @@ TEST_MODE = 'tst'
 class UnimorphDataset(torch.utils.data.Dataset):
     """
     """
-    def __init__(self, input_alphabet, output_alphabet, family_tensor, language_tensor, tags_tensor, lemma_tensor_list, form_tensor_list, tags_str_list, lemmata_str_list, forms_str_list ):
+    def __init__(self, input_alphabet, output_alphabet, family_tensor, language_tensor, tags_tensor, lemma_tensor_list, form_tensor_list, tags_str_list, lemmata_str_list, forms_str_list, language_collection=None):
         super(UnimorphDataset,self).__init__()
         
+        self.language_collection = language_collection
         self.alphabet_input = input_alphabet
         self.alphabet_output = output_alphabet
         
@@ -34,7 +35,10 @@ class UnimorphDataset(torch.utils.data.Dataset):
         self.forms_str = forms_str_list
     
     def get_dimensionality(self):#Sahand wanted a way to ask the dataset about its dimensions.
-        return {"input_symbols":len(self.alphabet_input),"output_symbols":len(self.alphabet_output),
+        return {"num_families":None if self.language_collection is None else len(self.language_collection.families),
+            "num_languages":None if self.language_collection is None else len(self.langauge_collection),
+             "input_symbols":len(self.alphabet_input),
+             "output_symbols":len(self.alphabet_output),
                     "tags":self.tags_tensor[0].shape,
                     }
 
@@ -51,6 +55,9 @@ class UnimorphDataset(torch.utils.data.Dataset):
             raise Exception("You can't currently combine UnimorphDataset objects with different output alphabets.")
             #TODO: Add that ability.
         
+        if self.language_collection is not None and other.language_collection is not None and self.language_collection != other.language_collection:
+            raise Exception("You can only add together datasets with compatible language collections.")
+        
         return UnimorphDataset(self.alphabet_input, self.alphabet_output,
                                 torch.cat([self.families, other.families]),
                                 torch.cat([self.languages, other.languages]),
@@ -59,7 +66,8 @@ class UnimorphDataset(torch.utils.data.Dataset):
                                 self.forms + other.forms,
                                 self.tags_str + other.tags_str,
                                 self.lemmata_str + other.lemmata_str,
-                                self.forms_str + other.forms_str
+                                self.forms_str + other.forms_str,
+                                language_collection = self.language_collection
                                 )
     def __len__(self):
         # TODO: assert that everything is the same length?
@@ -106,66 +114,4 @@ def pandas_to_dataset(dataset_or_sets,tag_converter=None,alphabet_converter_in=N
                     total_dataframe["form"].to_list()
                     )
 
-class UnimorphDataLoader(torch.utils.data.DataLoader):
-    inputs_type = namedtuple("inputs",("family","language","tags","lemma"))
-    outputs_type = namedtuple("outputs",("form","tags_str","lemma_str","form_str"))
-    
-    
-    @classmethod
-    def packed_collate(cls,in_data):
-        fams, langs, tags_tens, lem_tens, form_tens, tags_strs, lem_strs, form_strs = list(zip(*in_data))
-        fams = [i.repeat(len(j)) for i,j in zip(fams,lem_tens)]
-        langs = [i.repeat(len(j)) for i,j in zip(langs,lem_tens)]
-        return ( cls.inputs_type(
-                    rnn_utils.pack_sequence(fams,enforce_sorted=False),
-                    rnn_utils.pack_sequence(langs,enforce_sorted=False),
-                    torch.stack(tags_tens),
-                    rnn_utils.pack_sequence(lem_tens, enforce_sorted=False)
-                ),
-                cls.outputs_type(
-                    rnn_utils.pack_sequence(form_tens, enforce_sorted=False),
-                    list(tags_strs),
-                    list(lem_strs),
-                    list(form_strs)
-                    )
-                )
-
-    @classmethod
-    def padded_collate(cls,in_data):
-        fams, langs, tags_tens, lem_tens, form_tens, tags_strs, lem_strs, form_strs = list(zip(*in_data))
-        fams = [i.repeat(len(j)) for i,j in zip(fams,lem_tens)]
-        langs = [i.repeat(len(j)) for i,j in zip(langs,lem_tens)]
-        return (cls.inputs_type(
-                    rnn_utils.pad_sequence(fams,enforce_sorted=False),
-                    rnn_utils.pad_sequence(langs,enforce_sorted=False),
-                    torch.stack(tags_tens),
-                    rnn_utils.pad_sequence(lem_tens)
-                ),
-                cls.outputs_type(
-                    rnn_utils.pad_sequence(form_tens),
-                    list(tags_strs),
-                    list(lem_strs),
-                    list(form_strs)
-                    )
-                )
-    
-    
-    def __init__(self,*args, **kwargs):
-        
-        if "collate_fn" in kwargs:
-            #TODO: raise a non-fatal warning, is that really what was wanted?
-            raise Exception("You should not provide a collate function to UnimorphDataLoader, it has its own.")
-        
-        #Allow the user to specify a collate function using the "collate_type" argument
-        collator_selection = self.packed_collate
-        if "collate_type" in kwargs:
-            if kwargs["collate_type"] in ["pack","packed"]:
-                collator_selection = self.packed_collate
-            elif kwargs["collate_type"] in ["pad","padded"]:
-                collator_selection = self.padded_collate
-            else:
-                raise NotImplementedError("The selected collation type ({}) is unavailable.".kwargs["collate_type"])
-            del kwargs["collate_type"]
-        
-        kwargs["collate_fn"] = collator_selection
-        super(UnimorphDataLoader,self).__init__(*args,**kwargs)
+from .dataloader import *

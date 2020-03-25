@@ -1,8 +1,8 @@
-import consts
 from data import dataset
 from data.sigmorphon2020_data_reader import *
 import logging
-from models.seq2seq import Seq2Seq
+from models import ModelFactory
+from optimizers import OptimizerFactory
 import os
 import pickle
 import shutil
@@ -31,7 +31,6 @@ class Experiment:
         created. Else, an already serialized experiment will be read from the directory that is pointed to by this
         argument.
         """
-
         self.config = config
         self.id = experiment_id
         self.current_epoch = 0
@@ -39,62 +38,55 @@ class Experiment:
         self.best_epoch_number = -1
         self.loss_function = torch.nn.CrossEntropyLoss(ignore_index=Alphabet.padding_integer)
 
-        # Find the corresponding dataset.
-        assert config[consts.DATASET] in [consts.SIGMORPHON2020]
-        if config[consts.DATASET] == consts.SIGMORPHON2020:
-            # Create a data loader for the training data.
-            logging.getLogger(consts.MAIN).info('Creating the training dataset.')
-            self.train_loader, tag_dimension = create_data_loader_from_sigmorphon2020(self.config, is_train=True)
-            # Create a data loader for the testing data.
-            logging.getLogger(consts.MAIN).info('Creating the testing dataset.')
-            self.test_loader, _ = create_data_loader_from_sigmorphon2020(self.config, is_train=False)
-        else:
-            raise Exception('Unsupported dataset.')
+        if True:  # TODO: fix up this block after the new data loader interface arrives.
+            # Find the corresponding dataset.
+            assert config[consts.DATASET] in [consts.SIGMORPHON2020]
+            if config[consts.DATASET] == consts.SIGMORPHON2020:
+                # Create a data loader for the training data.
+                logging.getLogger(consts.MAIN).info('Creating the training dataset.')
+                self.train_loader, tag_dimension = create_data_loader_from_sigmorphon2020(self.config, is_train=True)
+                # Create a data loader for the testing data.
+                logging.getLogger(consts.MAIN).info('Creating the testing dataset.')
+                self.test_loader, _ = create_data_loader_from_sigmorphon2020(self.config, is_train=False)
+            else:
+                raise Exception('Unsupported dataset.')
 
-        # Check if the user wants to construct language information from file or if they want to load it from a
-        # previously serialized file.
-        if config[consts.NO_READ_LANGUAGE_INFO_FROM_DATA] or\
-                not os.path.exists(config[consts.LANGUAGE_INFO_FILE]):
-            # Process the data set to construct the language information.
-            try:
-                logging.getLogger(consts.MAIN).info('Processing the dataset for language information.')
-                if consts.SIGMORPHON2020 in config[consts.DATASET]:
-                    self.language_collection = \
-                        compile_language_collection_from_sigmorphon2020(config[consts.SIGMORPHON2020_ROOT])
-                    # Store the resulting information for future use in other experiments.
-                    with open(config[consts.LANGUAGE_INFO_FILE], 'wb+') as file:
-                        pickle.dump(self.language_collection, file)
-                    # Mark a flag so the future experiments of the current execution won't process for language
-                    # information again.
-                    config[consts.NO_READ_LANGUAGE_INFO_FROM_DATA] = False
-                else:
-                    raise Exception('Unsupported dataset.')
-            except FileNotFoundError as _:
-                print('Invalid language file.', file=sys.stderr)
-                exit(66)
-        # If the user wants to load the language information from a previously serialized file.
-        else:
-            logging.getLogger(consts.MAIN).info('Loading language information from ' +
-                                                config[consts.LANGUAGE_INFO_FILE] + ".")
-            with open(config[consts.LANGUAGE_INFO_FILE], 'rb') as file:
-                self.language_collection = pickle.load(file)
+            # Check if the user wants to construct language information from file or if they want to load it from a
+            # previously serialized file.
+            if config[consts.NO_READ_LANGUAGE_INFO_FROM_DATA] or\
+                    not os.path.exists(config[consts.LANGUAGE_INFO_FILE]):
+                # Process the data set to construct the language information.
+                try:
+                    logging.getLogger(consts.MAIN).info('Processing the dataset for language information.')
+                    if consts.SIGMORPHON2020 in config[consts.DATASET]:
+                        self.language_collection = \
+                            compile_language_collection_from_sigmorphon2020(config[consts.SIGMORPHON2020_ROOT])
+                        # Store the resulting information for future use in other experiments.
+                        with open(config[consts.LANGUAGE_INFO_FILE], 'wb+') as file:
+                            pickle.dump(self.language_collection, file)
+                        # Mark a flag so the future experiments of the current execution won't process for language
+                        # information again.
+                        config[consts.NO_READ_LANGUAGE_INFO_FROM_DATA] = False
+                    else:
+                        raise Exception('Unsupported dataset.')
+                except FileNotFoundError as _:
+                    print('Invalid language file.', file=sys.stderr)
+                    exit(66)
+            # If the user wants to load the language information from a previously serialized file.
+            else:
+                logging.getLogger(consts.MAIN).info('Loading language information from ' +
+                                                    config[consts.LANGUAGE_INFO_FILE] + ".")
+                with open(config[consts.LANGUAGE_INFO_FILE], 'rb') as file:
+                    self.language_collection = pickle.load(file)
+
+            self.train_loader.language_collection = self.language_collection
+            self.train_loader.tag_dimension = 356
 
         # Instantiate the model indicated by the configurations.
-        if config[consts.MODEL_ARCHITECTURE] == consts.SEQ2SEQ:
-            self.model = Seq2Seq(len(self.language_collection.get_master_alphabet()), tag_dimension)
-        else:
-            print('Bad argument: --model-architecture {} is not recognized.'.format(
-                config[consts.MODEL_ARCHITECTURE]),
-                file=sys.stderr)
-            exit(64)
+        self.model = ModelFactory.create_model(config[consts.MODEL_ARCHITECTURE], self.train_loader, self.config)
 
         # Instantiate the optimizer indicated by the configurations.
-        if config[consts.OPTIMIZER] == consts.ADADELTA:
-            self.optimizer = torch.optim.Adadelta(self.model.parameters(), lr=config[consts.LR])
-        else:
-            print('Bad argument: --optimizer {} is not recognized.'.format(config[consts.OPTIMIZER]),
-                  file=sys.stderr)
-            exit(64)
+        self.optimizer = OptimizerFactory.create_optimizer(config[consts.OPTIMIZER], self.model, self.config)
 
         # If the `load_from_directory` argument is given, load the state of the experiment from a file.
         if load_from_directory is not None:
