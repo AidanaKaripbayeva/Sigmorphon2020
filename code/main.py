@@ -43,11 +43,12 @@ def get_parser():
     parser.add_argument('--sigmorphon2020-root', type=str, help='Root directory for the SIGMORPHON 2020 dataset')
 
     # Language options
-    parser.add_argument('--language-families', type=str, nargs='*', default=[],
+    parser.add_argument('--language-families', type=str, nargs='*', default=None,
                         help='The families of languages to load the data for.'
                              ' If not provided, all available families will be used.')
-    parser.add_argument('--language-info-file', type=str, required=True, help='The language information file.')
-    parser.add_argument('--languages', type=str, nargs='*', default=[],
+    parser.add_argument('--language-info-file', type=str, default='lang_config.tsv',
+                        help='The language information file.')
+    parser.add_argument('--languages', type=str, nargs='*', default=None,
                         help='The languages to load the data for.'
                              ' If not provided, all available languages will be used.')
 

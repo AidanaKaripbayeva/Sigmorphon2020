@@ -77,7 +77,7 @@ class SigmorphonData_Factory(object):
             
         if families is not None:
             for f in families:
-                for l in self.known_language_collection[f]:
+                for l in set(self.known_language_collection[f]).intersection(set(self.language_files)):
                     languages.add(l)
         
         #TODO: More detailed code about alphabets.
