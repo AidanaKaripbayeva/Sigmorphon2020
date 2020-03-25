@@ -109,7 +109,7 @@ class SigmorphonData_Factory(object):
                     alphabet_converter_in=alphabet_inout,
                     alphabet_converter_out=alphabet_inout
         )
-        ds.language_collection = self.language_collection
+        ds.language_collection = self.known_language_collection
         
         dl = dataloader.UnimorphDataLoader(ds,**dataloader_kwargs)
         
