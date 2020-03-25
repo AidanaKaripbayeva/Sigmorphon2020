@@ -38,7 +38,7 @@ class UnimorphTagBitVectorConverter(object):
                 if non_match is None:
                     all_tags.append(one_tag)
                 else:
-                    for t in schema[tag_to_group[non_match.group(1)]]:
+                    for t in self.schema[self.tag_to_group[non_match.group(1)]]:
                         all_tags.append(t)
         
         hot_vector = torch.LongTensor(len(self.tag_to_index))
@@ -46,7 +46,7 @@ class UnimorphTagBitVectorConverter(object):
         
         for t in all_tags:
             hot_vector[self.tag_to_index[t]] = 1
-        
+
         return hot_vector.detach()
     
     def __len__(self):

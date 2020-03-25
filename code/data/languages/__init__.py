@@ -34,7 +34,7 @@ class LanguageFamily:
         self.name = name
         self.languages = OrderedDict()
         self._master_alphabet = None
-    
+
     def __len__(self):
         return len(self.languages)
     
@@ -46,7 +46,7 @@ class LanguageFamily:
     
     def add_language(self, language):
         """Protected method. Only to be used by LanguageCollection class."""
-        self.languages[language.name] = language
+        self.languages[language.name] = self.languages[language.id] = language
         language.family_id = self.id
         self._master_alphabet = None
     
@@ -91,7 +91,7 @@ class LanguageCollection:
         import importlib.resources
         with importlib.resources.path(__package__,"{}_alphabets.tsv".format(alphabet_choice)) as presaved_filename:
             with open(presaved_filename) as presaved_filelike:
-    		          return cls.from_tsv(presaved_filelike)
+                return cls.from_tsv(presaved_filelike)
         pass
     
     def __init__(self):
@@ -107,7 +107,7 @@ class LanguageCollection:
         :return: The instantiated LanguageFamily object.
         """
         language_family = LanguageFamily(len(self.language_families), name)
-        self.language_families[name] = language_family
+        self.language_families[name] = self.language_families[language_family.id] = language_family
         self._master_alphabet = None
         return language_family
 

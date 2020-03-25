@@ -3,10 +3,12 @@ import torch
 
 
 class Seq2Seq(torch.nn.Module):
-    def __init__(self, alphabet_size, tag_vector_dim, embedding_dim=40, hidden_dim=10, num_layers=3):
+    def __init__(self, alphabet_size, num_languages, tag_vector_dim, embedding_dim=40, hidden_dim=10, num_layers=3, output_length=50):
         super().__init__()
         # The number of different letters in the alphabet.
         self.alphabet_size = alphabet_size
+        # Then number of different languages.
+        self.num_languages = num_languages
         # The dimension of the tag vector.
         self.tag_vector_dim = tag_vector_dim
         # The dimension of the output of the embedding layer.
@@ -15,19 +17,21 @@ class Seq2Seq(torch.nn.Module):
         self.hidden_dim = hidden_dim
         # The number of layers in the LSTM units in the encoder and in the decoder.
         self.num_layers = num_layers
+        # The length of the output string (including the start, end and padding tokens).
+        self.output_length = output_length
 
         # Create the embedding layer for the encoder.
         self.embedding = torch.nn.Embedding(alphabet_size, embedding_dim)
         # Create the LSTM unit for the encoder.
-        self.lstm1 = torch.nn.LSTM(tag_vector_dim + embedding_dim, hidden_dim, num_layers, dropout=0.1,
+        self.lstm1 = torch.nn.LSTM(tag_vector_dim[0] + embedding_dim, hidden_dim, num_layers, dropout=0.1,
                                    bidirectional=False)
         # Create the LSTM unit for the decoder.
-        self.lstm2 = torch.nn.LSTM(tag_vector_dim + alphabet_size, alphabet_size, num_layers, dropout=0.1)
+        self.lstm2 = torch.nn.LSTM(tag_vector_dim[0] + alphabet_size, alphabet_size, num_layers, dropout=0.1)
         # Create the final linear layer for the decoder.
         self.linear = torch.nn.Linear(alphabet_size, alphabet_size)
 
     def forward(self, families, languages, tags, lemmata):
-        batch_size = len(lemmata)
+        batch_size = len(tags)
         batch_outputs = []  # Will hold the integral representation of the characters to be output for this batch.
         batch_probabilities = []   # Will hold the probability vectors for this batch.
         tags = tags.float()
@@ -38,12 +42,13 @@ class Seq2Seq(torch.nn.Module):
             outputs = []  # Will hold the integral representation of the characters to be output for this input.
 
             # Encode
+            # lemmata[i].shape == (seq_length,)
             x = self.embedding(lemmata[i]).float()
             # x.shape == (seq_length, embedding_dim)
-            x = torch.cat([x.T, tags[i, :].expand((1, -1)).repeat((len(lemmata[i]), 1)).T]).T
             # tags[i, :].shape == (tag_vector_dim)
             # tags[i, :].expand((1, -1)).shape == (1, tag_vector_dim)
             # tags[i, :].expand((1, -1)).repeat((len(lemmata[i]), 1)).shape == (seq_length, tag_vector_dim)
+            x = torch.cat([x.T, tags[i, :].expand((1, -1)).repeat((len(lemmata[i]), 1)).T]).T
             # x.shape == (seq_length, tag_vector_dim + embedding_dim)
             x = x.expand((1, x.shape[0], x.shape[1]))
             # x.shape == (1, seq_length, tag_vector_dim + embedding_dim)
@@ -62,7 +67,7 @@ class Seq2Seq(torch.nn.Module):
             hidden = torch.zeros(self.num_layers, 1, self.alphabet_size)
             cell = torch.zeros(self.num_layers, 1, self.alphabet_size)
             # For each position after the start token, in this output sequence ...
-            for t in range(30):
+            for t in range(self.output_length - 1):
                 # probabilities[-1].shape == (1, alphabet_size)
                 # tags[i, :].shape == (tag_vector_dim)
                 # tags[i, :].expand((1, -1)).shape == (1, tag_vector_dim)
