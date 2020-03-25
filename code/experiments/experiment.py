@@ -197,8 +197,6 @@ class Experiment:
         for batch_idx, (input_batch, output_batch) in enumerate(self.train_loader):
             # Zero out the previous gradient information.
             self.optimizer.zero_grad()
-            if batch_idx == 3:
-                break
 
             # Split the batch into semantic parts.
             family = input_batch.family
