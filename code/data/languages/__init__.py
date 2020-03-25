@@ -19,7 +19,7 @@ class Language:
         self.alphabet = alphabet
     
     def __repr__(self):
-        return "Language({})".format(self.encode())
+        return "Language({})".format(self.name)
 
 
 class LanguageFamily:
