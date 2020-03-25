@@ -74,7 +74,7 @@ class Alphabet(AlphabetConverterMixin, object):
                 raise NotImplementedError("holding counts in a list is not yet supported")
             else:
                 #import pdb; pdb.set_trace()
-                print(type(in_counts))
+                #print(type(in_counts))
                 raise NotImplementedError("Unsupported type for counts")
             #enforce order of this alphabet on counts.
             self.counts = AlphabetCounts(([(one_char, in_counts.get(one_char, 0)) for one_char in self.__quickstring]))

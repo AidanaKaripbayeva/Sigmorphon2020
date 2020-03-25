@@ -137,9 +137,6 @@ class LanguageCollection:
         if self._master_alphabet is None:
             alphabets = [family.get_master_alphabet() for family in self.language_families.values()
                          ]
-            for al in alphabets:
-                assert al.counts is not None
-                print(al.counts)
             self._master_alphabet = get_master_alphabet(alphabets, reindex=True)
         return self._master_alphabet
     
