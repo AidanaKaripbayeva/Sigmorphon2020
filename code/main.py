@@ -50,11 +50,6 @@ def get_parser():
     parser.add_argument('--languages', type=str, nargs='*', default=[],
                         help='The languages to load the data for.'
                              ' If not provided, all available languages will be used.')
-    parser.add_argument('--no-read-language-info-from-data', action='store_true',
-                        help='Don\'t read the data from the data and store it in the location give by '
-                             '--language-info-dir. '
-                             ' If this flag not present, language information is read from the directory given by'
-                             ' --language-info-dir.')
 
     # Optimizer options
     parser.add_argument('--optimizer', type=str, default=[OptimizerFactory.optimizers[0]],
@@ -291,8 +286,10 @@ def main():
                 logger.info('starting on config: {}'.format(str(config)))
                 # Create an experiment for the configuration at hand.
                 experiment = Experiment(config=config, experiment_id=experiment_id)
+
             # Run the present experiment.
             experiment_test_score = experiment.run()
+
             # Record the results of the experiment and compare them to the results so far.
             logger.info('Experiment {} test score: {}'.format(experiment_id, experiment_test_score))
             if experiment_test_score > best_experiment_test_score:
@@ -300,16 +297,20 @@ def main():
                 best_experiment_id = experiment_id
                 best_epoch_num = experiment.best_epoch_number
                 best_config = config
+
             # Store the best results so far in a file.
             with open(status_path, 'wb') as file:
                 pickle.dump([best_experiment_test_score, best_experiment_id, best_epoch_num, best_config, status],
                             file)
             experiment_id += 1
+
         # Mark the execution as over.
         status = 'ended'
+
         # Store the best results in a file.
         with open(status_path, 'wb') as file:
             pickle.dump([best_experiment_test_score, best_experiment_id, best_epoch_num, best_config, status], file)
+            
     # Report the best results.
     logger.info('Execution is over. Best experiment test score: {}'
                 '\nBest experiment config: {}'.format(best_experiment_test_score, str(best_config)))

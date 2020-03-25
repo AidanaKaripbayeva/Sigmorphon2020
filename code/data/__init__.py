@@ -101,11 +101,12 @@ class SigmorphonData_Factory(object):
             if "test" in types and l_files.test is not None:
                 pandas_dataframes.append(uniread.read_unimorph_tsv(l_files.test, family=fam_id, language=lang_id))
         
-        
+        #TODO: Optionally this should just get an alphabet of the languages/families requested
         alphabet_inout = self.known_language_collection.get_master_alphabet()
         
         ds = dataset.pandas_to_dataset(
                     pandas_dataframes,
+                    tag_converter="bit_vector",
                     alphabet_converter_in=alphabet_inout,
                     alphabet_converter_out=alphabet_inout
         )

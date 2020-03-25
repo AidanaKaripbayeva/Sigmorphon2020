@@ -1,6 +1,7 @@
 from . import alphabets  # relative import, only way to get the module to work
 from . import uniread
 from collections import OrderedDict, namedtuple
+import consts
 import os
 import pandas
 import re
@@ -19,7 +20,7 @@ class UnimorphDataset(torch.utils.data.Dataset):
     """
     def __init__(self, input_alphabet, output_alphabet, family_tensor, language_tensor, tags_tensor, lemma_tensor_list, form_tensor_list, tags_str_list, lemmata_str_list, forms_str_list, language_collection=None):
         super(UnimorphDataset,self).__init__()
-        
+
         self.language_collection = language_collection
         self.alphabet_input = input_alphabet
         self.alphabet_output = output_alphabet
@@ -35,12 +36,14 @@ class UnimorphDataset(torch.utils.data.Dataset):
         self.forms_str = forms_str_list
     
     def get_dimensionality(self):#Sahand wanted a way to ask the dataset about its dimensions.
-        return {"num_families":None if self.language_collection is None else len(self.language_collection.families),
-            "num_languages":None if self.language_collection is None else len(self.langauge_collection),
-             "input_symbols":len(self.alphabet_input),
-             "output_symbols":len(self.alphabet_output),
-                    "tags":self.tags_tensor[0].shape,
-                    }
+        return {consts.NUM_FAMILIES:
+                None if self.language_collection is None else len(self.language_collection.language_families),
+                consts.NUM_LANGUAGES:
+                None if self.language_collection is None else len(self.language_collection),
+                consts.INPUT_SYMBOLS: len(self.alphabet_input),
+                consts.OUTPUT_SYMBOLS: len(self.alphabet_output),
+                consts.TAGS: self.tags[0].shape
+                }
 
     def __getitem__(self, index):
         return (self.families[index], self.languages[index], self.tags[index], self.lemmata[index], self.forms[index],
@@ -83,10 +86,12 @@ def pandas_to_dataset(dataset_or_sets,tag_converter=None,alphabet_converter_in=N
     
     total_dataframe = pandas.concat(dataset_or_sets,ignore_index=True)
     
-    if tag_converter is None or tag_converter is "masked_vectors":
-        tag_converter = UnimorphTagMaskedVectorConverter(mask_value=-1)#Marc asked for -1
-    elif tag_converter is "one_hot":
+    if tag_converter is None or tag_converter == "one_hot" or tag_converter == "bit_vector":
         tag_converter = UnimorphTagBitVectorConverter()#default schema
+    elif tag_converter == "masked_vectors":
+        tag_converter = UnimorphTagMaskedVectorConverter(mask_value=-1)#Marc asked for -1
+    else:
+        raise NotImplementedError("That tagconverter is not yet available.")
     
     if alphabet_converter_in is None:
         fooalpha = alphabets.get_master_alphabet()
@@ -102,10 +107,10 @@ def pandas_to_dataset(dataset_or_sets,tag_converter=None,alphabet_converter_in=N
     lang_tensor = torch.LongTensor(total_dataframe["language"].to_numpy())
 
     tags_tensor = torch.stack([tag_converter(i) for i in total_dataframe["tags"]])
-    
+
     lemma_tensor_list = [ torch.LongTensor(alphabet_converter_in(i)) for i in total_dataframe["lemma"] ]
     form_tensor_list = [ torch.LongTensor(alphabet_converter_out(i)) for i in total_dataframe["form"] ]
-    
+
     return UnimorphDataset(alphabet_converter_in, alphabet_converter_out,
                     family_tensor, lang_tensor,
                     tags_tensor, lemma_tensor_list, form_tensor_list,

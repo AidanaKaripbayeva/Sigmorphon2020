@@ -1,5 +1,6 @@
 from .seq2seq import Seq2Seq
 import argparse
+import consts
 
 
 class ModelFactory:
@@ -9,19 +10,19 @@ class ModelFactory:
     architectures = ['seq2seq']
 
     @staticmethod
-    def create_model(architecture_name, data_loader, config):
+    def create_model(architecture_name, config, dimensionality):
         """
         Given the name of the model architecture and its corresponding arguments, instantiates and returns a model.
 
         :param architecture_name: Architecture name as a string.
-        :param data_loader: The data_loader to be interfacing this model.
         :param config: The command-line arguments, as a dictionary object.
+        :param dimensionality: A dictionary object informing the model of the dimensions of the different input parts.
         :return: The instantiated model.
         """
         if architecture_name == 'seq2seq':
-            # TODO: Make this work with Bryan's data loader factory
-            return Seq2Seq(len(data_loader.language_collection.get_master_alphabet()),
-                           data_loader.tag_dimension,
+            return Seq2Seq(dimensionality[consts.INPUT_SYMBOLS],
+                           dimensionality[consts.NUM_LANGUAGES],
+                           dimensionality[consts.TAGS],
                            embedding_dim=int(config['seq2seq_embedding_dimension']),
                            hidden_dim=config['seq2seq_hidden_dimension'],
                            num_layers=config['seq2seq_num_layers'])

@@ -1,4 +1,4 @@
-from data import dataset
+from data import feature_converters, SigmorphonData_Factory
 from data.sigmorphon2020_data_reader import *
 import logging
 from models import ModelFactory
@@ -6,7 +6,6 @@ from optimizers import OptimizerFactory
 import os
 import pickle
 import shutil
-import sys
 import time
 import torch
 import wandb
@@ -36,54 +35,35 @@ class Experiment:
         self.current_epoch = 0
         self.best_test_score = float('inf')
         self.best_epoch_number = -1
-        self.loss_function = torch.nn.CrossEntropyLoss(ignore_index=Alphabet.padding_integer)
+        self.loss_function = torch.nn.CrossEntropyLoss(ignore_index=Alphabet.stop_integer)
 
-        if True:  # TODO: fix up this block after the new data loader interface arrives.
-            # Find the corresponding dataset.
-            assert config[consts.DATASET] in [consts.SIGMORPHON2020]
-            if config[consts.DATASET] == consts.SIGMORPHON2020:
-                # Create a data loader for the training data.
-                logging.getLogger(consts.MAIN).info('Creating the training dataset.')
-                self.train_loader, tag_dimension = create_data_loader_from_sigmorphon2020(self.config, is_train=True)
-                # Create a data loader for the testing data.
-                logging.getLogger(consts.MAIN).info('Creating the testing dataset.')
-                self.test_loader, _ = create_data_loader_from_sigmorphon2020(self.config, is_train=False)
-            else:
-                raise Exception('Unsupported dataset.')
-
-            # Check if the user wants to construct language information from file or if they want to load it from a
-            # previously serialized file.
-            if config[consts.NO_READ_LANGUAGE_INFO_FROM_DATA] or\
-                    not os.path.exists(config[consts.LANGUAGE_INFO_FILE]):
-                # Process the data set to construct the language information.
-                try:
-                    logging.getLogger(consts.MAIN).info('Processing the dataset for language information.')
-                    if consts.SIGMORPHON2020 in config[consts.DATASET]:
-                        self.language_collection = \
-                            compile_language_collection_from_sigmorphon2020(config[consts.SIGMORPHON2020_ROOT])
-                        # Store the resulting information for future use in other experiments.
-                        with open(config[consts.LANGUAGE_INFO_FILE], 'wb+') as file:
-                            pickle.dump(self.language_collection, file)
-                        # Mark a flag so the future experiments of the current execution won't process for language
-                        # information again.
-                        config[consts.NO_READ_LANGUAGE_INFO_FROM_DATA] = False
-                    else:
-                        raise Exception('Unsupported dataset.')
-                except FileNotFoundError as _:
-                    print('Invalid language file.', file=sys.stderr)
-                    exit(66)
-            # If the user wants to load the language information from a previously serialized file.
-            else:
-                logging.getLogger(consts.MAIN).info('Loading language information from ' +
-                                                    config[consts.LANGUAGE_INFO_FILE] + ".")
-                with open(config[consts.LANGUAGE_INFO_FILE], 'rb') as file:
-                    self.language_collection = pickle.load(file)
-
-            self.train_loader.language_collection = self.language_collection
-            self.train_loader.tag_dimension = 356
+        # Find the corresponding dataset.
+        assert config[consts.DATASET] in [consts.SIGMORPHON2020]
+        if config[consts.DATASET] == consts.SIGMORPHON2020:
+            # Create a data loader factory.
+            data_loader_factory = SigmorphonData_Factory(config[consts.SIGMORPHON2020_ROOT],
+                                                         config[consts.LANGUAGE_INFO_FILE],
+                                                         feature_converters.UnimorphTagBitVectorConverter())
+            # Create a data loader for the training data.
+            logging.getLogger(consts.MAIN).info('Creating the training dataset.')
+            dataloader_kwargs = {'batch_size': self.config[consts.BATCH_SIZE]}
+            self.train_loader = data_loader_factory.get_dataset(type=[consts.TRAIN],
+                                                                families=self.config[consts.LANGUAGE_FAMILIES],
+                                                                languages=self.config[consts.LANGUAGES],
+                                                                dataloader_kwargs=dataloader_kwargs)
+            # Create a data loader for the testing data.
+            logging.getLogger(consts.MAIN).info('Creating the testing dataset.')
+            self.test_loader = data_loader_factory.get_dataset(type=[consts.DEV],
+                                                               families=self.config[consts.LANGUAGE_FAMILIES],
+                                                               languages=self.config[consts.LANGUAGES],
+                                                               dataloader_kwargs=dataloader_kwargs)
+        else:
+            raise Exception('Unsupported dataset.')
 
         # Instantiate the model indicated by the configurations.
-        self.model = ModelFactory.create_model(config[consts.MODEL_ARCHITECTURE], self.train_loader, self.config)
+        self.model = ModelFactory.create_model(config[consts.MODEL_ARCHITECTURE],
+                                               self.config,
+                                               self.train_loader.dataset.get_dimensionality())
 
         # Instantiate the optimizer indicated by the configurations.
         self.optimizer = OptimizerFactory.create_optimizer(config[consts.OPTIMIZER], self.model, self.config)
@@ -160,8 +140,8 @@ class Experiment:
         :param directory: A string pointing to the directory where the checkpoint is to be created.
         """
         # Store the language information.
-        with open(os.path.join(directory, "language_collection.pickle"), 'wb') as file:
-            pickle.dump(self.language_collection, file)
+        # with open(os.path.join(directory, "language_collection.pickle"), 'wb') as file:
+        #     pickle.dump(self.language_collection, file)
 
         # Store the configuration of this experiment and the record of the best results so far.
         with open(os.path.join(directory, "dictionary.pickle"), 'wb') as file:
@@ -182,8 +162,8 @@ class Experiment:
         :param directory: A string pointing to the directory where the checkpoint is at.
         """
         # Load the language collection.
-        with open(os.path.join(directory, "language_collection.pickle"), 'rb') as file:
-            self.language_collection = pickle.load(file)
+        # with open(os.path.join(directory, "language_collection.pickle"), 'rb') as file:
+        #     self.language_collection = pickle.load(file)
 
         # Load the configuration of this experiment and the record of the best results so far.
         with open(os.path.join(directory, "dictionary.pickle"), 'rb') as file:
@@ -214,23 +194,37 @@ class Experiment:
 
         total_loss = 0.0
         # For each batch of data ...
-        for batch_idx, (families, languages, tags, lemmata, forms, tags_strs, lemmata_strs, forms_strs) in\
-                enumerate(self.train_loader):
+        for batch_idx, (input_batch, output_batch) in enumerate(self.train_loader):
             # Zero out the previous gradient information.
             self.optimizer.zero_grad()
 
+            # Split the batch into semantic parts.
+            family = input_batch.family
+            language = input_batch.language
+            tags = input_batch.tags
+            lemma = input_batch.lemma
+            form = output_batch.form
+            tags_str = output_batch.tags_str
+            lemma_str = output_batch.lemma_str
+            form_str = output_batch.form_str
+
             # Run the model on this batch of data.
-            probabilities, outputs = self.model(families, languages, tags, lemmata)
+            probabilities, outputs = self.model(family, language, tags, lemma)
+            print('@@@', (len(family), len(language), tags.shape, len(lemma)))
 
             # Compute the batch loss.
             batch_loss = 0.0
-            batch_size = len(families)
+            batch_size = len(tags)
             for i in range(batch_size):
+                output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
+                                      for integral in outputs[i]])
                 logging.getLogger(consts.MAIN).debug(
-                    "stem: {},\ttarget: {},\ttags: {}\tlanguage: {}/{}"
-                    "\noutput: {},".format(lemmata_strs[i], forms_strs[i], tags_strs[i], families[i], languages[i],
-                                           outputs[i]))#TODO print output in textual form
-                batch_loss += self.loss_function(probabilities[i], forms[i])
+                    "stem: {},\ttarget: {},\ttags: {}"
+                    "\tlanguage: {}/{}\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], family[i][0],
+                                                           language[i][0], output_str))
+                padding = torch.LongTensor([Alphabet.stop_integer] * (self.model.output_length - len(form[i])))
+                target = torch.cat([form[i], padding])
+                batch_loss += self.loss_function(probabilities[i], target)
 
             # Update model parameter.
             batch_loss.backward()
@@ -260,31 +254,40 @@ class Experiment:
         correct = 0
         with torch.no_grad():
             # For each batch of data ...
-            for batch_idx, (families, languages, tags, lemmata, forms, tags_strs, lemmata_strs, forms_strs) in\
-                    enumerate(self.test_loader):
+            for batch_idx, (input_batch, output_batch) in enumerate(self.test_loader):
+                # Split the batch into semantic parts.
+                family = input_batch.family
+                language = input_batch.language
+                tags = input_batch.tags
+                lemma = input_batch.lemma
+                form = output_batch.form
+                tags_str = output_batch.tags_str
+                lemma_str = output_batch.lemma_str
+                form_str = output_batch.form_str
+
                 # Run the model on this batch of data.
-                probabilities, outputs = self.model(families, languages, tags, lemmata)
+                probabilities, outputs = self.model(family, language, tags, lemma)
 
                 # Compute the loss and the accuracy on this batch.
-                batch_size = len(lemmata)
+                batch_size = len(tags)
                 for i in range(batch_size):
+                    output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
+                                          for integral in outputs[i]])
+                    family_name = self.train_loader.language_collection.language_families[family[i][0]].name
+                    language_name = self.train_loader.language_collection.language_families[family[i][0]].name
                     logging.getLogger(consts.MAIN).debug(
-                        "stem: {},\ttarget: {},\ttags: {}\tlanguage: {}/{}"
-                        "\noutput: {},".format(lemmata_strs[i], forms_strs[i], tags_strs[i], families[i],
-                                               languages[i], outputs[i]))
-                    # Aggregate the loss.
-                    test_loss += self.loss_function(probabilities[i], forms[i])
-                    # Check if the answer was correct.
-                    correct += 1
-                    for j in range(len(outputs[i])):
-                        if j < len(forms[i]):
-                            if outputs[i][j] != forms[i][j]:
-                                correct -= 1
-                                break
-                        else:
-                            if outputs[i][j] != dataset.PADDING_TOKEN:
-                                correct -= 1
-                                break
+                        "stem: {},"
+                        "\ttarget: {},"
+                        "\ttags: {}"
+                        "\tlanguage: {}/{}"
+                        "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], family_name,
+                                                                 language[i][0], output_str))
+                    # Keep track of loss and accuracy.
+                    padding = torch.LongTensor([Alphabet.stop_integer] * (self.model.output_length - len(form[i])))
+                    target = torch.cat([form[i], padding])
+                    test_loss += self.loss_function(probabilities[i], target)
+                    if target == output_str:
+                        correct += 1
 
             # Compute and log the total loss and accuracy.
             test_loss /= len(self.test_loader.dataset)
