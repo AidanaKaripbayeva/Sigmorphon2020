@@ -32,13 +32,11 @@ class Seq2Seq(torch.nn.Module):
 
     def forward(self, families, languages, tags, lemmata):
         batch_size = len(tags)
-        batch_outputs = []  # Will hold the integral representation of the characters to be output for this batch.
         batch_probabilities = []   # Will hold the probability vectors for this batch.
 
         # For each input in this batch ...
         for i in range(batch_size):
             probabilities = []  # Will hold the probability vectors for this input.
-            outputs = []  # Will hold the integral representation of the characters to be output for this input.
 
             # Encode
             # lemmata[i].shape == (seq_length,)
@@ -60,7 +58,6 @@ class Seq2Seq(torch.nn.Module):
             start_vector = torch.zeros((1, self.alphabet_size))
             start_vector[0, Alphabet.start_integer] = 1   # One-hot representation of the start token.
             # Start with a sequence containing only the start token.
-            outputs.append(Alphabet.start_integer)
             probabilities.append(start_vector)
             # Initialize the LSTM with zero vectors.
             hidden = torch.zeros(self.num_layers, 1, self.alphabet_size)
@@ -79,10 +76,8 @@ class Seq2Seq(torch.nn.Module):
                 prediction = torch.sigmoid(self.linear(y.squeeze(0)))  # The prob. vector for this place in the output.
                 # prediction.shape == (1, alphabet_size)
                 probabilities.append(prediction)
-                outputs.append(prediction.argmax(1))
             # Put the results in the list.
             batch_probabilities.append(torch.cat(probabilities))
-            batch_outputs.append(outputs)
 
         # Report the results of this batch.
-        return batch_probabilities, batch_outputs
+        return batch_probabilities

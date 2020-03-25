@@ -208,7 +208,8 @@ class Experiment:
             form_str = output_batch.form_str
 
             # Run the model on this batch of data.
-            probabilities, outputs = self.model(family, language, tags, lemma)
+            probabilities = self.model(family, language, tags, lemma)
+            outputs = [torch.argmax(probability, dim=1) for probability in probabilities]
 
             # Compute the batch loss.
             batch_loss = 0.0
@@ -270,7 +271,8 @@ class Experiment:
                 form_str = output_batch.form_str
 
                 # Run the model on this batch of data.
-                probabilities, outputs = self.model(family, language, tags, lemma)
+                probabilities = self.model(family, language, tags, lemma)
+                outputs = [torch.argmax(probability, dim=1) for probability in probabilities]
 
                 # Compute the loss and the accuracy on this batch.
                 batch_size = len(tags)
@@ -288,7 +290,7 @@ class Experiment:
                         "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], language_family.name,
                                                 language_object.name, output_str))
                     # Keep track of loss and accuracy.
-                    padding = torch.LongTensor([Alphabet.stop_integer] * (self.model.output_length - len(form[i])))
+                    padding = torch.LongTensor([Alphabet.stop_integer] * (len(outputs[i]) - len(form[i])))
                     target = torch.cat([form[i], padding])
                     test_loss += self.loss_function(probabilities[i], target)
                     if target == output_str:
