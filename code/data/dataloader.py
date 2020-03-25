@@ -65,19 +65,19 @@ class UnimorphDataLoader(torch.utils.data.DataLoader):
         fams, langs, tags_tens, lem_tens, form_tens, tags_strs, lem_strs, form_strs = list(zip(*in_data))
         fams = [i.repeat(len(j)) for i,j in zip(fams,lem_tens)]
         langs = [i.repeat(len(j)) for i,j in zip(langs,lem_tens)]
-        return (cls.inputs_type(
-            fams,
-            langs,
-            torch.stack(tags_tens),
-            lem_tens
-        ),
+        return ( cls.inputs_type(
+                    rnn_utils.pack_sequence(fams,enforce_sorted=False),
+                    rnn_utils.pack_sequence(langs,enforce_sorted=False),
+                    torch.stack(tags_tens),
+                    rnn_utils.pack_sequence(lem_tens, enforce_sorted=False)
+                ),
                 cls.outputs_type(
-                    form_tens,
+                    rnn_utils.pack_sequence(form_tens, enforce_sorted=False),
                     list(tags_strs),
                     list(lem_strs),
                     list(form_strs)
+                    )
                 )
-        )
 
     @classmethod
     def padded_collate(cls,in_data):

@@ -1,10 +1,10 @@
-import glob
-import os
+import glob, os
+
 from collections import namedtuple, OrderedDict
+
 from .languages import LanguageCollection
 from . import dataset, dataloader
 from . import uniread
-
 
 class SigmorphonData_Factory(object):
     available_files = namedtuple("available_files",("train","dev","test"))
@@ -13,20 +13,19 @@ class SigmorphonData_Factory(object):
     def get_instance():
         pass
 
-    def __init__(self, dir,lang_config_filename="lang_config.tsv", tag_converter=None):
+    def __init__(self, dir,lang_config_filename="lang_config.tsv"):
         self.dir = dir
         self.available_languages = list()
         self.known_language_collection = None # Handled later
         self.known_languages = list() #
         self.unknown_languages = list() #Not used
         self.language_files = OrderedDict() # OrderedDict
-        self.tag_converter = tag_converter
         
         #OrderedDict([(l.name, self.available_files(None,None,None)) for
         #                                    lname in self.known_language_collection.list()])
                                             
         #Default language collections
-        self.known_language_collection = LanguageCollection.get_default("full")
+        self.known_language_collection = LanguageCollection.get_default("individual")
         #user specified language collections
         full_expected_config_file = os.path.join(dir, lang_config_filename)
         if os.path.exists(full_expected_config_file) and os.path.isfile(full_expected_config_file):
@@ -104,10 +103,9 @@ class SigmorphonData_Factory(object):
         
         
         alphabet_inout = self.known_language_collection.get_master_alphabet()
-
+        
         ds = dataset.pandas_to_dataset(
                     pandas_dataframes,
-                    tag_converter=self.tag_converter,
                     alphabet_converter_in=alphabet_inout,
                     alphabet_converter_out=alphabet_inout
         )
