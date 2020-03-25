@@ -41,7 +41,7 @@ class UnimorphTagBitVectorConverter(object):
                     for t in self.schema[self.tag_to_group[non_match.group(1)]]:
                         all_tags.append(t)
         
-        hot_vector = torch.LongTensor(len(self.tag_to_index))
+        hot_vector = torch.BoolTensor(len(self.tag_to_index))
         hot_vector.zero_()
         
         for t in all_tags:
@@ -85,10 +85,19 @@ class UnimorphTagMaskedVectorConverter(object):
         
     
     def __call__(self, tagstring):
-        hot_vector = self.one_hot_converter(tagstring)
+        if isinstance(tagstring, str):
+            hot_vector = self.one_hot_converter(tagstring)
+        elif isinstance(tagstring, torch.Tensor):
+            hot_vector = tagstring
+        else:
+            raise TypeError("Can't handle input of that type")
+        
         #hot_vector = hot_vector.repeat(len(self.schema),1)
+        if hot_vector.ndim == 1:
+            hot_vector = (self.mask_value)*(1-self.mask) + hot_vector*self.mask
+        elif hot_vector.ndim == 2:
+            tmpmask = self.mask[None,:,:]
+            hot_vector = (self.mask_value)*(1-tmpmask) + hot_vector[:,None,:]*tmpmask
         
-        hot_vector = (self.mask_value)*(1-self.mask) + hot_vector*self.mask
-        
-        #TODO: Finish
+        #TODO: Finish. Make sure that the returned matrix knows it doesn't need a gradient.
         return hot_vector.detach()

@@ -98,6 +98,25 @@ class UnimorphDataLoader(torch.utils.data.DataLoader):
                     )
                 )
     
+    @classmethod
+    def unpacked_collate(cls,in_data):
+        fams, langs, tags_tens, lem_tens, form_tens, tags_strs, lem_strs, form_strs = list(zip(*in_data))
+        fams = [i.repeat(len(j)) for i,j in zip(fams,lem_tens)]
+        langs = [i.repeat(len(j)) for i,j in zip(langs,lem_tens)]
+        return ( cls.inputs_type(
+                    fams,
+                    langs,
+                    tags_tens,
+                    lem_tens
+                ),
+                cls.outputs_type(
+                    form_tens,
+                    list(tags_strs),
+                    list(lem_strs),
+                    list(form_strs)
+                    )
+                )
+    
     
     def __init__(self,*args, **kwargs):
         
@@ -112,9 +131,11 @@ class UnimorphDataLoader(torch.utils.data.DataLoader):
                 collator_selection = self.packed_collate
             elif kwargs["collate_type"] in ["pad","padded"]:
                 collator_selection = self.padded_collate
+            elif kwargs["collate_type"] in ["nothing","unpacked"]:
+                collator_selection = self.unpacked_collate
             else:
                 raise NotImplementedError("The selected collation type ({}) is unavailable.".kwargs["collate_type"])
             del kwargs["collate_type"]
         
         kwargs["collate_fn"] = collator_selection
-        super(UnimorphDataLoader,self).__init__(*args,**kwargs)
+        super().__init__(*args,**kwargs)

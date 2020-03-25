@@ -86,10 +86,12 @@ def pandas_to_dataset(dataset_or_sets,tag_converter=None,alphabet_converter_in=N
     
     total_dataframe = pandas.concat(dataset_or_sets,ignore_index=True)
     
-    if tag_converter is None or tag_converter == "masked_vectors":
-        tag_converter = UnimorphTagMaskedVectorConverter(mask_value=-1)#Marc asked for -1
-    elif tag_converter == "one_hot":
+    if tag_converter is None or tag_converter == "one_hot" or tag_converter == "bit_vector":
         tag_converter = UnimorphTagBitVectorConverter()#default schema
+    elif tag_converter == "masked_vectors":
+        tag_converter = UnimorphTagMaskedVectorConverter(mask_value=-1)#Marc asked for -1
+    else:
+        raise NotImplementedError("That tagconverter is not yet available.")
     
     if alphabet_converter_in is None:
         fooalpha = alphabets.get_master_alphabet()
