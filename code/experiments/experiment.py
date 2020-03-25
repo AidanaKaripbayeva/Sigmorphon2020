@@ -226,7 +226,7 @@ class Experiment:
                     "\tlanguage: {}/{}"
                     "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], language_family.name,
                                             language_object.name, output_str))
-                padding = torch.LongTensor([Alphabet.stop_integer] * (self.model.output_length - len(form[i])))
+                padding = torch.LongTensor([Alphabet.stop_integer] * (len(outputs[i]) - len(form[i])))
                 target = torch.cat([form[i], padding])
                 batch_loss += self.loss_function(probabilities[i], target)
 
