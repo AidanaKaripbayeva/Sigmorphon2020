@@ -34,7 +34,6 @@ class Seq2Seq(torch.nn.Module):
         batch_size = len(tags)
         batch_outputs = []  # Will hold the integral representation of the characters to be output for this batch.
         batch_probabilities = []   # Will hold the probability vectors for this batch.
-        tags = tags.float()
 
         # For each input in this batch ...
         for i in range(batch_size):
@@ -45,10 +44,10 @@ class Seq2Seq(torch.nn.Module):
             # lemmata[i].shape == (seq_length,)
             x = self.embedding(lemmata[i]).float()
             # x.shape == (seq_length, embedding_dim)
-            # tags[i, :].shape == (tag_vector_dim)
-            # tags[i, :].expand((1, -1)).shape == (1, tag_vector_dim)
-            # tags[i, :].expand((1, -1)).repeat((len(lemmata[i]), 1)).shape == (seq_length, tag_vector_dim)
-            x = torch.cat([x.T, tags[i, :].expand((1, -1)).repeat((len(lemmata[i]), 1)).T]).T
+            # tags[i].shape == (tag_vector_dim)
+            # tags[i].expand((1, -1)).shape == (1, tag_vector_dim)
+            # tags[i].expand((1, -1)).repeat((len(lemmata[i]), 1)).shape == (seq_length, tag_vector_dim)
+            x = torch.cat([x.T, tags[i].float().expand((1, -1)).repeat((len(lemmata[i]), 1)).T]).T
             # x.shape == (seq_length, tag_vector_dim + embedding_dim)
             x = x.expand((1, x.shape[0], x.shape[1]))
             # x.shape == (1, seq_length, tag_vector_dim + embedding_dim)
@@ -69,9 +68,9 @@ class Seq2Seq(torch.nn.Module):
             # For each position after the start token, in this output sequence ...
             for t in range(self.output_length - 1):
                 # probabilities[-1].shape == (1, alphabet_size)
-                # tags[i, :].shape == (tag_vector_dim)
-                # tags[i, :].expand((1, -1)).shape == (1, tag_vector_dim)
-                x = torch.cat([probabilities[-1].T, tags[i, :].expand((1, -1)).T]).T.expand((1, 1, -1))
+                # tags[i].shape == (tag_vector_dim)
+                # tags[i].expand((1, -1)).shape == (1, tag_vector_dim)
+                x = torch.cat([probabilities[-1].T, tags[i].float().expand((1, -1)).T]).T.expand((1, 1, -1))
                 # x.shape == (1, 1, alphabet_size + tag_vector_dim)
                 # hidden.shape = (num_layers, 1, alphabet_size)
                 # cell.shape = (num_layers, 1, alphabet_size)
