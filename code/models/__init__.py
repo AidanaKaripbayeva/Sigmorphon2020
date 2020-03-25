@@ -1,4 +1,5 @@
 from .seq2seq import Seq2Seq
+from .dumbcopy import DumbCopy
 import argparse
 import consts
 
@@ -7,7 +8,7 @@ class ModelFactory:
     """
     Factory class in charge of creating models and their corresponding argument parsers.
     """
-    architectures = ['seq2seq']
+    architectures = ['seq2seq',"dummy"]
 
     @staticmethod
     def create_model(architecture_name, config, dimensionality):
@@ -26,6 +27,13 @@ class ModelFactory:
                            embedding_dim=int(config['seq2seq_embedding_dimension']),
                            hidden_dim=config['seq2seq_hidden_dimension'],
                            num_layers=config['seq2seq_num_layers'])
+        elif architecture_name == 'dummy':
+            return DumbCopy(dimensionality[consts.INPUT_SYMBOLS],
+                           dimensionality[consts.NUM_LANGUAGES],
+                           dimensionality[consts.TAGS],
+                           embedding_dim=int(config['dummy_embedding_dimension']),
+                           hidden_dim=config['dummy_hidden_dimension'],
+                           num_layers=config['dummy_num_layers'])
         else:
             raise Exception('Architecture \'{}\' not supported.'.format(architecture_name))
 
@@ -46,6 +54,14 @@ class ModelFactory:
                                 help='The dimension of the hidden layer in the LSTM unit in the encoder.')
             parser.add_argument('--seq2seq-num-layers', type=int, default=3,
                                 help='The number of layers in the LSTM units in the encoder and in the decoder.')
+        elif architecture_name == 'dummy':
+            parser.add_argument('--dummy-embedding-dimension', type=int, default=40,
+                                help='The dimension of the output of the embedding layer.')
+            parser.add_argument('--dummy-hidden-dimension', type=int, default=10,
+                                help='The dimension of the hidden layer in the LSTM unit in the encoder.')
+            parser.add_argument('--dummy-num-layers', type=int, default=3,
+                                help='The number of layers in the LSTM units in the encoder and in the decoder.')
+        
         else:
             raise Exception('Architecture \'{}\' not supported.'.format(architecture_name))
 

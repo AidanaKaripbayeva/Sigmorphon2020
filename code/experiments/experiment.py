@@ -227,8 +227,12 @@ class Experiment:
                     "\tlanguage: {}/{}"
                     "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], language_family.name,
                                             language_object.name, output_str))
-                padding = torch.LongTensor([Alphabet.stop_integer] * (len(outputs[i]) - len(form[i])))
-                target = torch.cat([form[i], padding])
+                #padding = torch.LongTensor([Alphabet.stop_integer] * (len(outputs[i]) - len(form[i])))
+                #target = torch.cat([form[i], padding])
+                target = form[i]
+                #print(lemma_str[i], form_str[i])
+                #print("probabilities[i].shape",probabilities[i].shape)
+                #print("target.shape",target.shape)
                 batch_loss += self.loss_function(probabilities[i], target)
 
             # Update model parameter.
@@ -241,6 +245,9 @@ class Experiment:
                 self.current_epoch, batch_idx * self.config[consts.BATCH_SIZE], len(self.train_loader.dataset),
                 100. * batch_idx / len(self.train_loader), batch_loss.item() / batch_size))
             wandb.log({'Batch Training Loss': batch_loss})
+            
+            if batch_idx % 100 == 0:
+                logging.getLogger(consts.MAIN).info('\tTrain Epoch: {} {}'.format( lemma[0], outputs[0] ) )
 
         # Log and report the outcome of this epoch.
         wandb.log({'Epoch Training Loss': total_loss / len(self.train_loader)})
