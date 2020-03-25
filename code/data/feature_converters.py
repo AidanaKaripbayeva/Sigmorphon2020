@@ -41,7 +41,7 @@ class UnimorphTagBitVectorConverter(object):
                     for t in self.schema[self.tag_to_group[non_match.group(1)]]:
                         all_tags.append(t)
         
-        hot_vector = torch.BoolTensor(len(self.tag_to_index),requires_gradient=False)
+        hot_vector = torch.BoolTensor(len(self.tag_to_index))
         hot_vector.zero_()
         
         for t in all_tags:
