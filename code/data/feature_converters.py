@@ -77,7 +77,7 @@ class UnimorphTagMaskedVectorConverter(object):
         self.schema = schema
         self.one_hot_converter = UnimorphTagBitVectorConverter(schema)
         self.mask_value = mask_value
-        self.mask = torch.CharTensor(len(self.schema),len(self.one_hot_converter),requires_gradient=False).zero_()
+        self.mask = torch.CharTensor(len(self.schema),len(self.one_hot_converter)).zero_()
         mask_offset = 0
         for row_id, schema_group in enumerate(self.schema.values()):
             self.mask[row_id, mask_offset:mask_offset+len(schema_group)] = 1
