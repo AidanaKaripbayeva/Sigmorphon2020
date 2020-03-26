@@ -19,6 +19,27 @@ class Experiment:
     The class steering the flow of an experiment, persisting its intermediary results and reporting its final result.
     """
 
+    class AutoPaddedLoss(object):
+        def __init__(self, loss, pad_index=Alphabet.stop_integer):
+            self.loss = loss
+            self.pad_index = pad_index
+        
+        def __call__(self, probs, target):
+            L_probs = probs.shape[0]
+            L_target = target.shape[0]
+            
+            if L_probs < L_target:
+                #TODO: Fewer assumptions about the shape of probs
+                extra_probs = torch.zeros(L_target-L_probs, probs.shape[1])
+                extra_probs[:,self.pad_index] = 1
+                probs = torch.cat([probs, extra_probs])
+                
+            
+            if L_target < L_probs:
+                target = torch.cat([target] + [torch.full((L_probs-L_target,),self.pad_index,dtype=torch.long)])
+            
+            return self.loss(probs,target)
+
     def __init__(self, config, experiment_id, load_from_directory=None):
         """
         Initializes an experiment by initializing its variables, loading the corresponding dataset, loading the
@@ -35,8 +56,10 @@ class Experiment:
         self.current_epoch = 0
         self.best_test_score = float('inf')
         self.best_epoch_number = -1
-        self.loss_function = torch.nn.CrossEntropyLoss(ignore_index=Alphabet.stop_integer)
-
+        self.loss_function = self.AutoPaddedLoss(torch.nn.CrossEntropyLoss(ignore_index=Alphabet.unknown_integer) )
+        self.model = None
+        self.optimizer = None
+        
         # Find the corresponding dataset.
         assert config[consts.DATASET] in [consts.SIGMORPHON2020]
         if config[consts.DATASET] == consts.SIGMORPHON2020:
@@ -227,13 +250,7 @@ class Experiment:
                     "\tlanguage: {}/{}"
                     "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], language_family.name,
                                             language_object.name, output_str))
-                #padding = torch.LongTensor([Alphabet.stop_integer] * (len(outputs[i]) - len(form[i])))
-                #target = torch.cat([form[i], padding])
-                target = form[i]
-                #print(lemma_str[i], form_str[i])
-                #print("probabilities[i].shape",probabilities[i].shape)
-                #print("target.shape",target.shape)
-                batch_loss += self.loss_function(probabilities[i], target)
+                batch_loss += self.loss_function(probabilities[i], form[i])
 
             # Update model parameter.
             batch_loss.backward()
@@ -246,9 +263,6 @@ class Experiment:
                 100. * batch_idx / len(self.train_loader), batch_loss.item() / batch_size))
             wandb.log({'Batch Training Loss': batch_loss})
             
-            if batch_idx % 100 == 0:
-                logging.getLogger(consts.MAIN).info('\tTrain Epoch: {} {}'.format( lemma[0], outputs[0] ) )
-
         # Log and report the outcome of this epoch.
         wandb.log({'Epoch Training Loss': total_loss / len(self.train_loader)})
         return total_loss / len(self.train_loader)
