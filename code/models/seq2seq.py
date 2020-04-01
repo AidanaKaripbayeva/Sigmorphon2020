@@ -30,7 +30,7 @@ class Seq2Seq(torch.nn.Module):
         # Create the final linear layer for the decoder.
         self.linear = torch.nn.Linear(alphabet_size, alphabet_size)
 
-    def forward(self, families, languages, tags, lemmata):
+    def forward(self, families, languages, tags, lemmata, targets=None):
         batch_size = len(tags)
         batch_probabilities = []   # Will hold the probability vectors for this batch.
 
