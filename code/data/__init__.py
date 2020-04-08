@@ -5,6 +5,7 @@ from collections import namedtuple, OrderedDict
 from .languages import LanguageCollection
 from . import dataset, dataloader
 from . import uniread
+import pdb
 
 class SigmorphonData_Factory(object):
     available_files = namedtuple("available_files",("train","dev","test"))
@@ -88,7 +89,7 @@ class SigmorphonData_Factory(object):
         for l_name in languages:
             lang_id = -1
             fam_id = -1
-            
+
             the_language = self.known_language_collection.find_language(l_name)
             lang_id = the_language.id
             fam_id = the_language.family_id
@@ -101,9 +102,10 @@ class SigmorphonData_Factory(object):
             if "test" in types and l_files.test is not None:
                 pandas_dataframes.append(uniread.read_unimorph_tsv(l_files.test, family=fam_id, language=lang_id))
         
-        #TODO: Optionally this should just get an alphabet of the languages/families requested
-        alphabet_inout = self.known_language_collection.get_master_alphabet()
-        
+        #TODO: Now it gets the alphabet for the languages specified (should also handle for families specified, and possibly master if desired).
+        #alphabet_inout = self.known_language_collection.get_master_alphabet()
+        alphabet_inout = self.known_language_collection.get_alphabet_for_languages(languages)
+
         ds = dataset.pandas_to_dataset(
                     pandas_dataframes,
                     tag_converter="bit_vector",

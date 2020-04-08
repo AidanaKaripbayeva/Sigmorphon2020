@@ -2,7 +2,7 @@ from collections import OrderedDict
 
 from ..alphabets import Alphabet, AlphabetCounts, get_master_alphabet
 
-
+import pdb
 separator = "\t"
 
 
@@ -139,7 +139,14 @@ class LanguageCollection:
                          ]
             self._master_alphabet = get_master_alphabet(alphabets, reindex=True)
         return self._master_alphabet
-    
+
+    def get_alphabet_for_languages(self, languages):
+        alphabets = [None] * len (languages)
+        for i in range(len(languages)):
+            alphabets[i] = self.find_language(languages[i]).alphabet
+
+        return get_master_alphabet(alphabets, reindex = True)
+
     def __len__(self):
         return self.language_count
     
