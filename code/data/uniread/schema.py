@@ -23,6 +23,6 @@ def load_unimorph_schema_from_yaml(filename):
 
 
 def load_default_schema():
-    import importlib.resources
-    with importlib.resources.path(__package__,"default_tags.yaml") as default_tags_filename:
+    import importlib_resources
+    with importlib_resources.path(__package__,"default_tags.yaml") as default_tags_filename:
         return load_unimorph_schema_from_yaml(default_tags_filename)

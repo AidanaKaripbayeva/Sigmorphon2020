@@ -29,7 +29,7 @@ class AlphabetCounts(OrderedDict):
         return str(self)
     
     @staticmethod
-    def decode(in_str: str):
+    def decode(in_str):
         return AlphabetCounts(in_str)
     
 

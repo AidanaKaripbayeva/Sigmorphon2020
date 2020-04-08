@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
 from .alphabet import Alphabet
 
 # Define alphabets
@@ -19,4 +21,4 @@ common_turkic_alphabet = Alphabet("aäbcçdefgğhıijklmnñoöpqrsştuüvwxyzʼ"
 common_turkic_ipa = Alphabet("ɑæbdʒtʃdefgɣhɯiʒcklmnŋoøpqrsʃtuyvwxjzʔ")
 common_turkic_cyrillic = Alphabet('аәебџчжддѕфгғҕһҳхыикқлљмнњңоөпрсҫшцттуүвўјзз́ҙ')
 
-kitchen_sink_alphabet = stop_start + symbols + roman + latin_diacritic + turkish_latin + cyrillic + tones + other + cyrillic_kazak + common_turkic_alphabet + common_turkic_ipa + common_turkic_cyrillic
+kitchen_sink_alphabet = symbols + roman + latin_diacritic + turkish_latin + cyrillic + tones + other + cyrillic_kazak + common_turkic_alphabet + common_turkic_ipa + common_turkic_cyrillic
