@@ -1,0 +1,3302 @@
+,lemma,form,tags,family,language
+0,slaq¹,nslaq¹ renq²⁴,V;PROG;PL;3,4,2
+1,yqwi⁴,yqwi⁴ renq⁴,V;PFV;PL;3,4,2
+2,yno¹,kno¹,V;PROSP;SG;3,4,2
+3,sti⁴,xtyi⁴²,V;PROSP;SG;2,4,2
+4,yqwi⁴,yqwi⁴ wa⁴²,V;PFV;PL;1+EXCL,4,2
+5,kwa¹⁴,kwa¹⁴,V;PFV;SG;3,4,2
+6,sna³,xna²⁰,V;PROSP;SG;2,4,2
+7,yja¹,ntyja²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+8,nten³,sten¹⁴ renq⁰,V;PROSP;PL;3,4,2
+9,lu¹,nlon⁴,V;HAB;SG;1,4,2
+10,skonq³,skonq³ wa⁴²,V;PFV;PL;1+EXCL,4,2
+11,nya¹⁴,nya¹⁴,V;PFV;SG;3,4,2
+12,ntsiq³,ntsenq²en¹,V;PROG;PL;1+INCL,4,2
+13,yqan⁴²,yqan²⁴ wan⁴,V;PROSP;PL;2,4,2
+14,yja¹,ntyja¹,V;PROG;SG;3,4,2
+15,ja¹,ntjan⁴,V;HAB;SG;1,4,2
+16,ykuq²,ntykonq²on¹,V;PROG;PL;1+INCL,4,2
+17,ndon⁴²,ndyon²⁴,V;HAB;SG;3,4,2
+18,ntqan¹,ntqan⁴,V;HAB;SG;1,4,2
+19,xqwa¹⁰,xqwa²⁰,V;PROSP;SG;2,4,2
+20,xin⁴²,xin⁴² renq⁴,V;PROSP;PL;3,4,2
+21,ntykonq⁴²,ntykonq⁴² wa²,V;PFV;PL;1+EXCL,4,2
+22,ston⁴²,ston⁴² renq⁴,V;PFV;PL;3,4,2
+23,lya¹⁴,jlya¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+24,ne¹⁴,nni¹⁰ wa⁴²,V;PROG;PL;1+EXCL,4,2
+25,ja¹,ntja¹,V;PROG;SG;3,4,2
+26,ntyka²,ntyka² wa⁴²,V;PROG;PL;1+EXCL,4,2
+27,ncha¹,kcha²⁰ renq²⁴,V;PROSP;PL;3,4,2
+28,swenq³,nswenq¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+29,kwa¹⁴,kwa¹⁴ renq⁰,V;PFV;PL;3,4,2
+30,qne⁴²,nqne²⁴ renq³²,V;HAB;PL;3,4,2
+31,yla³,yla³ renq²⁴,V;PFV;PL;3,4,2
+32,skwen¹,nskwen²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+33,la¹,yla¹,V;PFV;SG;3,4,2
+34,ji¹,ntji²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+35,ncha¹,ncha²⁰,V;HAB;SG;3,4,2
+36,sqan¹,nsqan¹,V;PROG;SG;3,4,2
+37,sne³,sne¹,V;PFV;SG;2,4,2
+38,lkwi¹,lkwi¹,V;PFV;SG;3,4,2
+39,skanq³,skanq¹⁴,V;PROSP;SG;3,4,2
+40,ntaq³,ntaq³ wa⁴²,V;PFV;PL;1+EXCL,4,2
+41,qu¹⁴,qu¹⁴ renq⁰,V;PROSP;PL;3,4,2
+42,yjwiq²,ntjwiq²,V;PROG;SG;3,4,2
+43,nkqwa¹,tyqwa⁴²,V;PROSP;SG;2,4,2
+44,xta¹,stan¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+45,ykwenq¹,ykwenq⁴²,V;PFV;SG;2,4,2
+46,nlyu¹,tlyu⁴²,V;PROSP;SG;2,4,2
+47,nden⁴²,ten⁴,V;PROSP;SG;1,4,2
+48,xqan¹,ntxqan¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+49,nkin²,ntykin² wan¹,V;HAB;PL;2,4,2
+50,xin⁴²,nxin⁴² wa³²,V;HAB;PL;1+EXCL,4,2
+51,ytsen⁴²,ntsen³²,V;PROG;SG;2,4,2
+52,sti⁴,sti⁴²,V;PFV;SG;2,4,2
+53,ytsen⁴²,nne¹⁴ qne⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+54,xin²,xin⁴⁰,V;PFV;SG;1,4,2
+55,nkwi¹,ntykwen²⁰,V;HAB;SG;1,4,2
+56,xyaq²,xyaq renq¹,V;PFV;PL;3,4,2
+57,naq¹,nnaq²⁰ renq²⁴,V;HAB;PL;3,4,2
+58,xin²,nxin¹⁴ renq⁰,V;HAB;PL;3,4,2
+59,kwi¹,tykwen²⁰,V;PROSP;SG;1,4,2
+60,stan¹⁴,nstan¹ wan⁰,V;PROG;PL;2,4,2
+61,saq²,sanq²an¹,V;PFV;PL;1+INCL,4,2
+62,slaq¹,nslaq¹,V;PROG;SG;3,4,2
+63,ytiq⁴,ntiq³² renq⁴,V;PROG;PL;3,4,2
+64,ntson¹⁴,ntson¹⁴,V;PFV;SG;3,4,2
+65,nton³,nton³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+66,sti⁴,sten²⁰,V;PFV;SG;1,4,2
+67,nglu³,nglu¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+68,nkwi¹,ykwi²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+69,ywi⁴²,ywi⁴²,V;PFV;SG;3,4,2
+70,ntykanq³,ntykanq¹⁴,V;HAB;PL;1+INCL,4,2
+71,kwan¹,ntkwan⁴,V;HAB;SG;3,4,2
+72,ylu³,ndlu³ wa⁴²,V;PROG;PL;1+EXCL,4,2
+73,nkjwi⁴²,nkjwi⁴²,V;PFV;SG;3,4,2
+74,nkeq³,ntkeq¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+75,sqwe¹⁴,sqwe¹⁴ wan⁰,V;PFV;PL;2,4,2
+76,nkwi¹,ykwen²⁰en³²,V;PROSP;PL;1+INCL,4,2
+77,xqwa¹⁰,xqwa¹⁰ wa⁴²,V;PFV;PL;1+EXCL,4,2
+78,ykwiq⁴,ntykwiq⁴²,V;PROG;SG;2,4,2
+79,ntyqo¹,ntyqo¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+80,ji¹,jin⁴,V;PFV;SG;1,4,2
+81,swenq³,swenq¹,V;PFV;SG;2,4,2
+82,jlya⁴²,jlya³²,V;PFV;SG;2,4,2
+83,qne¹,nqne²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+84,lkwi¹,tkwi²⁰,V;PROSP;SG;3,4,2
+85,qan⁴,nkqan⁴ wa⁴²,V;PROG;PL;1+EXCL,4,2
+86,qa²⁴,ntqan¹⁰,V;PROG;PL;1+INCL,4,2
+87,ji¹,ntji¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+88,stan¹⁴,nstan¹⁰,V;PROG;PL;1+INCL,4,2
+89,ntiqi¹,ntiqi¹,V;PROG;SG;3,4,2
+90,sqwe²⁴,sqwe²⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+91,sne³,sne¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+92,nchaq⁴²,nchaq³²,V;PFV;SG;2,4,2
+93,ndlyu¹,ndlyu³²,V;PROG;SG;3,4,2
+94,sqi²,ntsqi²,V;PROG;SG;3,4,2
+95,yqo²,yqo² wa⁴²,V;PFV;PL;1+EXCL,4,2
+96,ndyu²,ntyu² wan¹,V;PROSP;PL;2,4,2
+97,ykuq²,ntykuq²⁰,V;HAB;SG;2,4,2
+98,qa²⁴,qan²⁴,V;PROSP;PL;1+INCL,4,2
+99,yjoq⁴,ntyjoq³² renq⁴,V;PROG;PL;3,4,2
+100,nlyu¹,nlyu¹ renq²⁴,V;PROG;PL;3,4,2
+101,sqna¹,sqna⁴²,V;PFV;SG;2,4,2
+102,sqan¹,sqan¹an¹,V;PFV;PL;1+INCL,4,2
+103,sqya¹,sqya¹ renq²⁴,V;PFV;PL;3,4,2
+104,nkeq³,ntkeq¹⁴ renq¹,V;HAB;PL;3,4,2
+105,sen¹,nsen⁴,V;HAB;SG;1,4,2
+106,nchin¹,nchin³²,V;PROG;SG;1,4,2
+107,naq¹,nnaq¹ renq²⁴,V;PROG;PL;3,4,2
+108,nge⁴²,ke²⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+109,lya¹⁴,lyan⁴⁰,V;PFV;SG;1,4,2
+110,jwi³,ja¹⁴,V;PROSP;SG;3,4,2
+111,slya²⁴,xlyan¹⁴,V;PROSP;PL;1+INCL,4,2
+112,qya³,ntyqya¹⁴,V;HAB;SG;3,4,2
+113,xyaq²,nxyaq² wan¹,V;HAB;PL;2,4,2
+114,kwa³,kwa¹⁴ wan⁰,V;PROSP;PL;2,4,2
+115,naq¹⁴,nnyaq¹⁴,V;HAB;PL;1+INCL,4,2
+116,yo²,ko¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+117,ngwa²,ngwan²,V;PFV;SG;1,4,2
+118,sqya¹,sqya⁴²,V;PFV;SG;2,4,2
+119,ntykwan²,ntykwan²an¹,V;HAB;PL;1+INCL,4,2
+120,ji¹,ntyji⁴²,V;PROG;SG;2,4,2
+121,nkya⁴²,kyan⁴²,V;PROSP;SG;2,4,2
+122,nkqi¹,ntyqi¹,V;PROG;SG;3,4,2
+123,nti¹,nti¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+124,ntaq³,ntanq²an¹,V;PFV;PL;1+INCL,4,2
+125,nten³,nten¹⁴,V;HAB;SG;3,4,2
+126,nkin²,ntykin² renq¹,V;HAB;PL;3,4,2
+127,slya²⁴,nxlya¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+128,qa²⁴,qa²⁴,V;PROSP;SG;3,4,2
+129,ntyi¹,ntyin⁴,V;HAB;SG;1,4,2
+130,sqi²,xqi¹⁴⁰ wan¹,V;PROSP;PL;2,4,2
+131,slaq¹,nslaq¹ wan²⁴,V;PROG;PL;2,4,2
+132,sqwe¹⁴,sqwe¹⁴ renq⁰,V;PROSP;PL;3,4,2
+133,yjaq³,ntjaq²⁰,V;PROG;SG;2,4,2
+134,qen⁴,ntqe⁴ wa⁴²,V;PROG;PL;1+EXCL,4,2
+135,slaq¹,slaq²⁰ renq²⁴,V;PROSP;PL;3,4,2
+136,sqwa¹⁴,ntsqwan⁴⁰,V;PROG;SG;1,4,2
+137,qya⁴²,ntqya²⁴,V;HAB;SG;3,4,2
+138,nge⁴²,kin¹⁴,V;PROSP;PL;1+INCL,4,2
+139,ntyja²,ntyja² renq¹,V;PROG;PL;3,4,2
+140,nkeq³,nkeq³ wa⁴²,V;PFV;PL;1+EXCL,4,2
+141,xka²⁴,nxka²⁴ wan³²,V;HAB;PL;2,4,2
+142,sne¹⁴,sne²⁰,V;PFV;SG;2,4,2
+143,ntqan¹,ntqan²⁰an³²,V;HAB;PL;1+INCL,4,2
+144,xlyu⁴²,nxlyu²⁴,V;HAB;SG;3,4,2
+145,ntykwa⁴,ntykwa⁴,V;PFV;SG;3,4,2
+146,ytsaq³,ktsaq¹⁴,V;PROSP;SG;3,4,2
+147,sqwa¹⁴,ntsqwa¹⁰,V;PROG;SG;3,4,2
+148,ntyqya¹,ntyqya²⁰ renq²⁴,V;HAB;PL;3,4,2
+149,jen²,ntjen²,V;PROG;SG;3,4,2
+150,nna¹,nna⁴²,V;PROG;SG;2,4,2
+151,ylu³,ndlyu¹⁴,V;HAB;SG;3,4,2
+152,sen¹,sen¹ wan²⁴,V;PROG;PL;2,4,2
+153,jwi³,ntyji² renq¹,V;PROG;PL;3,4,2
+154,lya¹⁴,nlya¹⁰ wa⁴²,V;PROG;PL;1+EXCL,4,2
+155,ndyu²,ndyon⁴⁰,V;HAB;SG;1,4,2
+156,ngyla³,ngyla¹,V;PROG;SG;2,4,2
+157,sen¹,sen¹,V;PFV;SG;3,4,2
+158,ykwanq¹,ykwanq²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+159,xqan¹,ntxqan¹,V;PROG;SG;3,4,2
+160,qya⁴²,ntqya²⁴ renq³²,V;HAB;PL;3,4,2
+161,la¹,yla¹ renq²⁴,V;PFV;PL;3,4,2
+162,skwa³,xkwa¹⁴ wan⁰,V;PROSP;PL;2,4,2
+163,yqwe²,yqwe² wa⁴²,V;PFV;PL;1+EXCL,4,2
+164,sla¹,slan¹an¹,V;PFV;PL;1+INCL,4,2
+165,ykwiq⁴,ntykwiq³² wan⁴,V;PROG;PL;2,4,2
+166,yna⁴²,na²⁴ renq³²,V;HAB;PL;3,4,2
+167,ntykwa⁴,ntykwa⁴ wa⁴²,V;PFV;PL;1+EXCL,4,2
+168,kwa¹⁴,tykwan⁴⁰,V;PROSP;SG;1,4,2
+169,jen²,tyjin²⁰,V;PROSP;SG;2,4,2
+170,ntykwa⁴,ntykwa⁴ wan⁴,V;PFV;PL;2,4,2
+171,ston⁴²,nston²⁴ renq³²,V;HAB;PL;3,4,2
+172,ynaq¹,nnaq²⁰,V;HAB;SG;3,4,2
+173,kwa³,nkwa¹⁴ renq⁰,V;HAB;PL;3,4,2
+174,ntsu⁴²,ntson⁴,V;PFV;SG;1,4,2
+175,yqan⁴²,yqan²⁴,V;PROSP;SG;3,4,2
+176,skwaq¹,nskwaq¹ wan²⁴,V;PROG;PL;2,4,2
+177,qen⁴,ntqe⁴²,V;PROG;SG;2,4,2
+178,ngyla³,kila³,V;PROSP;SG;3,4,2
+179,nkeq³,nkenq²en¹,V;PFV;PL;1+INCL,4,2
+180,nxin⁴²,kxin¹⁴,V;PROSP;SG;3,4,2
+181,skanq³,skanq¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+182,sqya¹,nsqya¹,V;PROG;SG;3,4,2
+183,saq²,nsaq²⁰,V;HAB;SG;2,4,2
+184,jwi³,jan¹⁴,V;PROSP;PL;1+INCL,4,2
+185,ykwiq⁴,ykwiq⁴,V;PFV;SG;3,4,2
+186,yna⁴²,na²⁴,V;HAB;SG;3,4,2
+187,skonq³,ntkonq¹⁴,V;HAB;PL;1+INCL,4,2
+188,ntsiq³,ktsiq²⁰,V;PROSP;SG;2,4,2
+189,ntiqi¹,tiqi⁴⁰,V;PROSP;SG;2,4,2
+190,xin²,xin²an¹,V;PFV;PL;1+INCL,4,2
+191,ntsu⁴²,nchu²⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+192,nchin¹,nchin¹,V;PFV;SG;3,4,2
+193,ytsen⁴²,ntsen³²,V;PROG;SG;1,4,2
+194,yna⁴²,kna²⁴ wan³²,V;PROSP;PL;2,4,2
+195,xlyu⁴²,xlyu⁴² renq⁴,V;PFV;PL;3,4,2
+196,xkwan¹⁴,nxkwan¹⁴ wan⁰,V;HAB;PL;2,4,2
+197,yno¹,nno¹ wa⁴²,V;HAB;PL;1+EXCL,4,2
+198,ntiqi¹,tiqi²⁰ renq²⁴,V;PROSP;PL;3,4,2
+199,ngwa²,ka²⁴ wan³²,V;PROSP;PL;2,4,2
+200,slaq¹,slaq⁴²,V;PFV;SG;2,4,2
+201,yo²,ndyo² wan¹,V;PROG;PL;2,4,2
+202,nchin¹,nchin⁴,V;HAB;SG;1,4,2
+203,qen⁴,ntyqin⁴,V;HAB;SG;3,4,2
+204,lo²⁴,nlon¹⁴,V;PROG;PL;1+INCL,4,2
+205,ntiqi¹,ntiqi¹ wan²⁴,V;PROG;PL;2,4,2
+206,ndlyu¹,ndlyon¹on¹,V;PFV;PL;1+INCL,4,2
+207,sna³,nsna³,V;PROG;SG;3,4,2
+208,skonq³,ntskonq³,V;PROG;SG;3,4,2
+209,slu¹⁴,nslon⁴⁰,V;HAB;SG;1,4,2
+210,yja¹,ntyjan⁴,V;HAB;SG;1,4,2
+211,yqwi⁴,sqwen²⁴en³²,V;PROG;PL;1+INCL,4,2
+212,ytsen⁴²,nne¹en¹,V;PROG;PL;1+INCL,4,2
+213,nxin⁴²,kxin⁴,V;PROSP;SG;1,4,2
+214,nkwa³,ntkwa³ wa⁴²,V;PROG;PL;1+EXCL,4,2
+215,nglu³,nglon⁴⁰,V;HAB;SG;1,4,2
+216,ntyja²,ntyja²,V;HAB;SG;3,4,2
+217,ngon²,ngon¹,V;PFV;SG;2,4,2
+218,qa²⁴,ntqa²⁴ renq³²,V;HAB;PL;3,4,2
+219,nkqwa⁴²,ntyqwa⁴²,V;HAB;SG;2,4,2
+220,ykuq²,ntykuq¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+221,ykwenq¹,ykwenq¹en¹,V;PFV;PL;1+INCL,4,2
+222,skwa³,skwan²an¹,V;PFV;PL;1+INCL,4,2
+223,ndya³,ndya³,V;PROG;SG;3,4,2
+224,nkya⁴²,kya²⁴,V;PROSP;SG;3,4,2
+225,sqi²,ntsqi² wa⁴²,V;PROG;PL;1+EXCL,4,2
+226,ja¹,ja⁴²,V;PROSP;SG;2,4,2
+227,stan¹⁴,stan¹⁴ renq⁰,V;PROSP;PL;3,4,2
+228,qne⁴²,nqnen²⁰,V;HAB;SG;1,4,2
+229,naq¹⁴,naq¹⁴ renq⁰,V;PFV;PL;3,4,2
+230,slaq¹,slaq¹ wan²⁴,V;PFV;PL;2,4,2
+231,ntykwa⁴,ntykwa⁴ renq⁴,V;HAB;PL;3,4,2
+232,ntiqi¹,ntiqi⁴⁰,V;HAB;SG;2,4,2
+233,ntqen¹,ntyqin³²,V;HAB;SG;1,4,2
+234,yqan⁴²,ntyqan¹an¹,V;PROG;PL;1+INCL,4,2
+235,ntsen⁴²,ktsen⁴,V;PROSP;SG;1,4,2
+236,skwaq¹,skwaq¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+237,ngon²,nskwan²an¹,V;PROG;PL;1+INCL,4,2
+238,sqyu¹,nsqyu¹ renq²⁴,V;PROG;PL;3,4,2
+239,ngya⁴²,ngya²⁴ renq³²,V;PROG;PL;3,4,2
+240,ndlyu⁴²,ndlyu⁴² wan⁴,V;PFV;PL;2,4,2
+241,sna³,nsna³ wan²⁴,V;PROG;PL;2,4,2
+242,ngya⁴²,kya²⁴,V;PROSP;SG;3,4,2
+243,ntykonq⁴²,ntykonq²⁴,V;HAB;SG;1,4,2
+244,yna⁴²,yna⁴² wan⁴,V;PFV;PL;2,4,2
+245,ndiyan³²,tyan²⁰,V;PROSP;SG;1,4,2
+246,sqan¹,sqan²⁰ renq²⁴,V;PROSP;PL;3,4,2
+247,ntiqi¹,ntqen¹en¹,V;PROG;PL;1+INCL,4,2
+248,skanq³,skanq²an¹,V;PFV;PL;1+INCL,4,2
+249,jlya⁴²,ntjlyan²⁴,V;HAB;SG;1,4,2
+250,ntyi¹,ktyin⁴,V;PROSP;SG;1,4,2
+251,ndon⁴²,tyon²⁴ wan³²,V;PROSP;PL;2,4,2
+252,ndyi⁴,tyin⁴,V;PROSP;SG;1,4,2
+253,ntkonq³,ntkonq¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+254,ntykwen³,ntykwen¹,V;PROG;SG;2,4,2
+255,nkqwa⁴²,ntyqwa²⁴,V;HAB;SG;3,4,2
+256,yja¹,ntyjan²⁰an³²,V;HAB;PL;1+INCL,4,2
+257,skanq³,skanq¹⁴ renq⁰,V;PROSP;PL;3,4,2
+258,la¹,nla¹ wan²⁴,V;PROG;PL;2,4,2
+259,yjaq³,yjaq³ wan²⁴,V;PFV;PL;2,4,2
+260,ngya⁴²,kyan¹⁴,V;PROSP;PL;1+INCL,4,2
+261,sen¹,sen⁴²en⁴²,V;PFV;PL;1+INCL,4,2
+262,qu¹⁴,ntqu¹ renq⁰,V;PROG;PL;3,4,2
+263,skanq³,ntskanq¹⁴ renq⁰,V;HAB;PL;3,4,2
+264,yku⁴,ntykon²⁴on³²,V;HAB;PL;1+INCL,4,2
+265,xqwa¹⁰,nxqwa¹⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+266,nkwa³,ntykwa³,V;HAB;SG;3,4,2
+267,yna³,ynan⁴⁰,V;PFV;SG;1,4,2
+268,sqyu¹,sqyu¹,V;PFV;SG;3,4,2
+269,xtyiq¹⁰,xtenq⁴⁰,V;PFV;SG;1,4,2
+270,ntkonq³,ntkonq¹⁴,V;HAB;PL;1+INCL,4,2
+271,nkya⁴²,ngyan²⁰,V;HAB;SG;1,4,2
+272,ntykwan²,ntykwan² wa⁴²,V;PROG;PL;1+EXCL,4,2
+273,xne¹⁰,nxnen²en¹,V;PROG;PL;1+INCL,4,2
+274,yqwi⁴,ntqwi⁴,V;HAB;SG;3,4,2
+275,xin⁴²,nxin³²,V;PROG;SG;3,4,2
+276,sne³,sne²⁰,V;PROSP;SG;2,4,2
+277,ynaq¹,ynanq⁴,V;PFV;SG;1,4,2
+278,snyaq¹,snyaq¹renq²⁴,V;PROSP;PL;3,4,2
+279,ntson¹⁴,ntson¹ renq⁰,V;PROG;PL;3,4,2
+280,sne³,nsne³ wa⁴²,V;PROG;PL;1+EXCL,4,2
+281,ngya⁴²,ngya²⁴ wa⁴²,V;PROG;PL;1+EXCL,4,2
+282,ntykwa⁴,ntykwa³² renq⁴,V;PROG;PL;3,4,2
+283,xkwen¹⁴,nxkwen⁴⁰,V;HAB;SG;1,4,2
+284,ndon⁴²,tyon²⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+285,ntsaq⁴²,ntsanq³²,V;PROG;SG;1,4,2
+286,ndon⁴²,ndon⁴² wan⁴,V;PROG;PL;2,4,2
+287,swenq³,nswenq³ renq²⁴,V;PROG;PL;3,4,2
+288,jen²,ntyjin¹⁴,V;HAB;PL;1+INCL,4,2
+289,xlyu⁴²,xlyu²⁴ wan⁴,V;PROSP;PL;2,4,2
+290,ne⁴²,nn³² qne³² renq⁴,V;PROG;PL;3,4,2
+291,sqwa¹⁴,sqwan¹⁴,V;PFV;PL;1+INCL,4,2
+292,ntyinq³,ntyinq³,V;PFV;SG;3,4,2
+293,ntson¹⁴,ntson²⁰,V;HAB;SG;2,4,2
+294,ntykwa⁴,ntykwa⁴,V;HAB;SG;3,4,2
+295,ykwenq¹,tykwenq⁴²,V;PROSP;SG;2,4,2
+296,skonq³,skonq³ renq²⁴,V;PFV;PL;3,4,2
+297,qne¹,qne¹ wan²⁴,V;PFV;PL;2,4,2
+298,xne¹⁰,xne¹⁴ renq⁰,V;PROSP;PL;3,4,2
+299,sti⁴,nstyin⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+300,ja¹,ntja¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+301,ntyka²,tyka² wan¹,V;PROSP;PL;2,4,2
+302,nkin²,skin⁴⁰,V;PROSP;SG;1,4,2
+303,stan¹⁴,nstan⁴⁰,V;HAB;SG;1,4,2
+304,ylaq⁴,ylaq⁴ wa⁴²,V;PFV;PL;1+EXCL,4,2
+305,yla³,kla¹⁴ renq⁰,V;PROSP;PL;3,4,2
+306,ngwa²,ka²⁴ renq³²,V;PROSP;PL;3,4,2
+307,skwan⁴,nxkwan²⁰,V;HAB;SG;3,4,2
+308,xka²⁴,xka²⁴ renq³²,V;PFV;PL;3,4,2
+309,nkin²,ntykin¹,V;PROG;SG;2,4,2
+310,yla³,ndlan⁴⁰,V;PROG;SG;1,4,2
+311,nxi²,xin²in¹,V;PFV;PL;1+INCL,4,2
+312,jwi³,ntyji¹,V;PROG;SG;2,4,2
+313,ntsiq³,ntsiq¹⁴ wan²⁴,V;HAB;PL;2,4,2
+314,xka²⁴,nxka¹,V;PROG;SG;3,4,2
+315,yja¹,tyjan⁴,V;PROSP;SG;1,4,2
+316,ntsa²⁴,ktsa²⁴,V;PROSP;SG;3,4,2
+317,nxi²,xin²,V;PFV;SG;3,4,2
+318,ynaq¹,nnaq¹ wan²⁴,V;PROG;PL;2,4,2
+319,nsuq³,nsuq¹,V;PROG;SG;2,4,2
+320,ntykwen³,ntykwen³ renq²⁴,V;PROG;PL;3,4,2
+321,qnyi¹,nqnyi¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+322,ykuq²,ykuq² wa⁴²,V;PFV;PL;1+EXCL,4,2
+323,yqan⁴²,ntyqan³² wan⁴,V;PROG;PL;2,4,2
+324,xoq²,xoq¹,V;PFV;SG;2,4,2
+325,nten³,nten³ wa⁴²,V;PROG;PL;1+EXCL,4,2
+326,nge⁴²,ndye²⁴,V;HAB;SG;3,4,2
+327,jen²,ntyjin¹⁴,V;HAB;SG;3,4,2
+328,nxi²,nxin² wan¹,V;HAB;PL;2,4,2
+329,nkonq⁴²,ntkonq¹on¹,V;PROG;PL;1+INCL,4,2
+330,xtyiq¹⁰,nxtyiq¹⁰,V;PROG;SG;3,4,2
+331,xin⁴²,nxin³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+332,yqwi⁴,sqwi⁴²,V;PROG;SG;2,4,2
+333,ntsen⁴²,ntsen³²,V;PROG;SG;1,4,2
+334,sqyu¹,sqyu¹ wan²⁴,V;PFV;PL;2,4,2
+335,nda³,nda¹,V;PROG;SG;3,4,2
+336,xkwen¹⁴,nxkwen¹⁴ wan⁰,V;HAB;PL;2,4,2
+337,ndywiq³,tywiq²⁰,V;PROSP;SG;2,4,2
+338,kwa¹⁴,ntykwan¹⁴,V;HAB;PL;1+INCL,4,2
+339,jen²,tyjin¹⁴ renq⁰,V;PROSP;PL;3,4,2
+340,yqwe²,ntqwe² wan¹,V;PROG;PL;2,4,2
+341,ykwiq⁴,ntykwenq²⁴en³²,V;HAB;PL;1+INCL,4,2
+342,naq¹,knaq²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+343,sqwe²⁴,nsqwe²⁴ renq³²,V;HAB;PL;3,4,2
+344,sqna¹,sqna¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+345,sqyu¹,sqyu²⁰ wan²⁴,V;PROSP;PL;2,4,2
+346,yqan⁴²,ntyqan³² renq⁴,V;PROG;PL;3,4,2
+347,ntiqi¹,ntiqi²⁰,V;HAB;SG;3,4,2
+348,kwa³,kwa¹⁴ renq⁰,V;PROSP;PL;3,4,2
+349,son³,xon²⁰on³²,V;PROSP;PL;1+INCL,4,2
+350,nchaq⁴²,kchaq²⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+351,yla³,kla²⁰,V;PROSP;SG;2,4,2
+352,ykwiq⁴,ntykwiq³²,V;PROG;SG;3,4,2
+353,sla¹,nsla²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+354,ykwenq¹,ntykwenq²⁰wa⁴²,V;HAB;PL;1+EXCL,4,2
+355,nkqi¹,kqi²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+356,sqwe²⁴,nsqwen¹⁴,V;HAB;SG;1,4,2
+357,kwan¹,ntkwan⁴ wan⁴,V;HAB;PL;2,4,2
+358,la¹,nla⁴²,V;HAB;SG;2,4,2
+359,xyaq²,xyaq² wa⁴²,V;PROSP;PL;1+EXCL,4,2
+360,sqwe²⁴,sqwe²⁴,V;PFV;SG;3,4,2
+361,nkqwa¹,nkqwa¹,V;PFV;SG;3,4,2
+362,sna³,nxna¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+363,swenq³,nswenq³ wa⁴²,V;PROG;PL;1+EXCL,4,2
+364,xla³,xla³,V;PROSP;SG;3,4,2
+365,lqa³,ntqa³ wa⁴²,V;PROG;PL;1+EXCL,4,2
+366,yjoq⁴,kjoq⁴,V;PROSP;SG;3,4,2
+367,qa²⁴,qan²⁴,V;PFV;PL;1+INCL,4,2
+368,ntyka²,ntykan²,V;PFV;SG;1,4,2
+369,ja¹,ntyja⁴²,V;HAB;SG;2,4,2
+370,kwa¹⁴,tykwa¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+371,nya¹⁴,nnya²⁰,V;PROG;SG;2,4,2
+372,ykwanq¹,ykwanq⁴²,V;PROSP;SG;2,4,2
+373,yku⁴,yku⁴,V;PFV;SG;3,4,2
+374,xin²,xin² wa⁴²,V;PFV;PL;1+EXCL,4,2
+375,kwan¹,ntkwan⁴ renq⁴,V;HAB;PL;3,4,2
+376,ntiqi¹,tiqi²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+377,ywi⁴²,ntjwi⁴²,V;HAB;SG;2,4,2
+378,ji¹,ji²⁰in³²,V;PROSP;PL;1+INCL,4,2
+379,nton⁴²,nton³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+380,ntsa²⁴,ktsa²⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+381,lya¹⁴,nlya¹⁴,V;HAB;SG;3,4,2
+382,ntqo¹,ntqo¹ renq²⁴,V;PFV;PL;3,4,2
+383,ytiq⁴,ytiq⁴ wa⁴²,V;PFV;PL;1+EXCL,4,2
+384,skwa³,xkwa¹⁴ renq⁰,V;PROSP;PL;3,4,2
+385,ndyu²,ndyu²,V;HAB;SG;3,4,2
+386,ylu³,klu¹⁴ wan⁰,V;PROSP;PL;2,4,2
+387,nya¹⁴,nya²⁰,V;PFV;SG;2,4,2
+388,skwaq¹,skwaq¹ wan²⁴,V;PFV;PL;2,4,2
+389,ji¹,ntyjin⁴,V;HAB;SG;1,4,2
+390,la¹,kla⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+391,lu¹,nlu²⁰,V;HAB;SG;3,4,2
+392,ntyqya¹,ntyqya²⁰,V;HAB;SG;3,4,2
+393,ntykwan²,tykwan² renq¹,V;PROSP;PL;3,4,2
+394,lo²⁴,lo²⁴ renq³²,V;PFV;PL;3,4,2
+395,kwa³,kwan⁴⁰,V;PFV;SG;1,4,2
+396,qa²⁴,qa²⁴ wan³²,V;PFV;PL;2,4,2
+397,sqyu¹,sqyu¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+398,jwi³,jwi³,V;PFV;SG;3,4,2
+399,son³,nxon⁴⁰,V;HAB;SG;2,4,2
+400,skonq³,skonq¹,V;PFV;SG;2,4,2
+401,naq¹,nnaq²⁰,V;HAB;SG;3,4,2
+402,nkwa³,ntykwa³ wa⁴²,V;HAB;PL;1+EXCL,4,2
+403,kwan¹,kwan²⁴an³²,V;PFV;PL;1+INCL,4,2
+404,jwi³,ntyji²⁰,V;HAB;SG;2,4,2
+405,jlya⁴²,jlyan²⁴,V;PROSP;SG;1,4,2
+406,nge⁴²,ndyin¹in¹,V;PROG;PL;1+INCL,4,2
+407,ykuq²,kuq²⁰,V;PROSP;SG;2,4,2
+408,ngya⁴²,ngya²⁴ wan³²,V;PROG;PL;2,4,2
+409,la¹,yla⁴²,V;PFV;SG;2,4,2
+410,qen⁴,qen⁴²,V;PFV;SG;2,4,2
+411,sla¹,sla¹ wan²⁴,V;PFV;PL;2,4,2
+412,ndlyu¹,ndlyu²⁰ wan²⁴,V;HAB;PL;2,4,2
+413,ntykwen³,tykwen⁴⁰,V;PROSP;SG;1,4,2
+414,nchin¹,kchin⁴,V;PROSP;SG;1,4,2
+415,ne¹⁴,ni¹⁴ renq⁰,V;PFV;PL;3,4,2
+416,ntsen⁴²,ntsen³²,V;PROG;SG;2,4,2
+417,nkwa³,ntkwa¹,V;HAB;SG;2,4,2
+418,yqwe²,yqwe²,V;PFV;SG;3,4,2
+419,nton⁴²,kton¹⁴ renq⁰,V;PROSP;PL;3,4,2
+420,ne¹⁴,nni¹⁴ wan⁰,V;HAB;PL;2,4,2
+421,ntyqya¹,ntyqyan⁴,V;PFV;SG;1,4,2
+422,qa²⁴,ntqan²⁴,V;HAB;SG;1,4,2
+423,sqna¹,nsqna¹ renq²⁴,V;PROG;PL;3,4,2
+424,qya³,qya²⁰,V;PROSP;SG;2,4,2
+425,ytsaq³,ytsaq³ wan²⁴,V;PFV;PL;2,4,2
+426,jwi³,ja¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+427,nti¹,nti¹ renq²⁴,V;PFV;PL;3,4,2
+428,ykwanq¹,ntykwanq³²,V;PROG;SG;1,4,2
+429,saq²,saq¹,V;PFV;SG;2,4,2
+430,sne³,nsne¹⁴ renq⁰,V;HAB;PL;3,4,2
+431,slya²⁴,nslya²⁴ renq³²,V;PROG;PL;3,4,2
+432,kwa¹⁴,ntykwa¹⁴,V;HAB;SG;3,4,2
+433,nden⁴²,nden²⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+434,slya²⁴,slyan¹⁴,V;PFV;PL;1+INCL,4,2
+435,ntyqya¹,ntyqya¹,V;PFV;SG;3,4,2
+436,naq¹,naq¹,V;PFV;SG;3,4,2
+437,qen⁴,ntqen²⁴en³²,V;PROG;PL;1+INCL,4,2
+438,nton³,ntyon⁴²,V;HAB;SG;2,4,2
+439,jlya⁴²,ntjlya⁴²,V;HAB;SG;2,4,2
+440,xne¹⁰,xne¹⁰,V;PFV;SG;3,4,2
+441,nkqwa¹,nkqwa⁴²,V;PROG;SG;2,4,2
+442,nxi²,nxin⁴⁰,V;PROG;SG;1,4,2
+443,xlyu⁴²,nxlyu³² wan⁴,V;PROG;PL;2,4,2
+444,swi²⁰,swi⁴²,V;PFV;SG;2,4,2
+445,qne⁴²,nqne²⁴ wan³²,V;HAB;PL;2,4,2
+446,ja¹,jan⁴,V;PFV;SG;1,4,2
+447,ntykonq⁴²,ntykonq³²,V;PROG;SG;2,4,2
+448,ngwa²,ka²⁴,V;PROSP;SG;3,4,2
+449,slya²⁴,slya²⁴ renq³²,V;PFV;PL;3,4,2
+450,swenq³,swenq¹⁴,V;PROSP;SG;3,4,2
+451,nti¹,nti³²,V;PROG;SG;3,4,2
+452,xkwan¹⁴,xkwan¹⁴,V;PFV;PL;1+INCL,4,2
+453,qu¹⁴,ntqon¹⁰,V;PROG;PL;1+INCL,4,2
+454,ngyla³,xla³ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+455,stan¹⁴,nstan¹⁴,V;HAB;SG;3,4,2
+456,ntyqo¹,ntyqon²⁰on³²,V;HAB;PL;1+INCL,4,2
+457,nton⁴²,nton³²,V;PROG;SG;2,4,2
+458,qne¹,nqne²⁰,V;HAB;SG;3,4,2
+459,ntsu⁴²,ktson⁴,V;PROSP;SG;1,4,2
+460,sqwe²⁴,sqwe²⁴ renq³²,V;PROSP;PL;3,4,2
+461,ntsen⁴²,ntsen⁴,V;PFV;SG;1,4,2
+462,sqna¹,nsqna²⁰an³²,V;HAB;PL;1+INCL,4,2
+463,sqya¹,sqya¹ wan²⁴,V;PFV;PL;2,4,2
+464,ykwiq⁴,ntykwiq⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+465,ywi⁴²,kwen¹⁴,V;PROSP;PL;1+INCL,4,2
+466,nge⁴²,ngen⁴² renq⁴,V;PFV;PL;3,4,2
+467,ndywan²,ndywan² wa⁴²,V;HAB;PL;1+EXCL,4,2
+468,xtyiq¹⁰,nxtyiq¹⁴ wan⁰,V;HAB;PL;2,4,2
+469,xyaq²,nxyaq¹,V;PROG;SG;2,4,2
+470,qan⁴,qan⁴,V;PFV;SG;3,4,2
+471,ytsaq³,ktsaq¹⁴ renq²⁴,V;PROSP;PL;3,4,2
+472,nglu³,nglon⁴⁰,V;PROG;SG;1,4,2
+473,xlyu⁴²,nxlyu⁴²,V;HAB;SG;2,4,2
+474,qne¹,kqne²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+475,kwa³,kwa³ renq²⁴,V;PFV;PL;3,4,2
+476,ngya⁴²,ngya²⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+477,xne¹⁰,nxne¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+478,snyaq¹,nsnyaq¹wan²⁴,V;PROG;PL;2,4,2
+479,xin⁴²,xin⁴⁰,V;PFV;SG;1,4,2
+480,nkqi¹,ntqi²⁰,V;HAB;SG;3,4,2
+481,nkqwa¹,nkqwan¹an¹,V;PROG;PL;1+INCL,4,2
+482,nden⁴²,nden³²,V;PFV;SG;2,4,2
+483,skwaq¹,nskwaq⁴²,V;PROG;SG;2,4,2
+484,skwan⁴,skwan⁴,V;PFV;SG;3,4,2
+485,nna¹,nna¹,V;PROG;SG;3,4,2
+486,nton³,nton³²,V;PFV;SG;2,4,2
+487,lo²⁴,nlo²⁴ wan³²,V;HAB;PL;2,4,2
+488,skwen¹,nskwen³²,V;PROG;SG;1,4,2
+489,ngon²,ndgon⁴⁰,V;HAB;SG;1,4,2
+490,ntykonq⁴²,ntykonq²⁴,V;PFV;SG;1,4,2
+491,saq²,nsanq²an¹,V;PROG;PL;1+INCL,4,2
+492,xin⁴²,nxin⁴²,V;HAB;SG;3,4,2
+493,nten³,nten¹⁴ wan⁰,V;HAB;PL;2,4,2
+494,ston⁴²,nston³² wan⁴,V;PROG;PL;2,4,2
+495,nton³,ntyon¹⁴ wan⁰,V;HAB;PL;2,4,2
+496,snyaq¹,nsnyaq²⁰ wan²⁴,V;HAB;PL;2,4,2
+497,xqwa¹⁰,nxqwa¹ renq⁰,V;HAB;PL;3,4,2
+498,sti⁴,son⁴²on⁴²,V;PROG;PL;1+INCL,4,2
+499,yqwi⁴,ntqwen²⁴en³²,V;HAB;PL;1+INCL,4,2
+500,nti¹,nten¹en¹,V;PROG;PL;1+INCL,4,2
+501,sne¹⁴,nsne¹⁰,V;PROG;SG;3,4,2
+502,nda³,ta⁴²,V;PROSP;SG;2,4,2
+503,yta⁴,yta⁴²,V;PFV;SG;2,4,2
+504,sqwa¹⁴,sqwa²⁰,V;PROSP;SG;2,4,2
+505,kwa¹⁴,ntkwa²⁰,V;PROG;SG;2,4,2
+506,sne³,sne¹⁴ wan⁰,V;PROSP;PL;2,4,2
+507,nglu³,nglu³,V;PROG;SG;3,4,2
+508,ntaq³,ntanq⁴⁰,V;PROG;SG;1,4,2
+509,nglu³,nglu¹,V;PFV;SG;2,4,2
+510,styi¹,styi⁴²,V;PROSP;SG;2,4,2
+511,slu¹⁴,nslu¹⁴ renq⁰,V;HAB;PL;3,4,2
+512,yjoq⁴,ntjoq⁴²,V;PROG;SG;2,4,2
+513,xkwen¹⁴,nxkwen²⁰,V;HAB;SG;2,4,2
+514,nchuq⁴,nchuq⁴,V;HAB;SG;3,4,2
+515,xqwa¹⁰,nxqwan¹⁰,V;PROG;PL;1+INCL,4,2
+516,nxin⁴²,kxin²⁰,V;PROSP;SG;2,4,2
+517,styi¹,nstyi¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+518,ykwen²,kwen¹⁴ wan⁰,V;PROSP;PL;2,4,2
+519,son³,nxon²⁰ renq²⁴,V;HAB;PL;3,4,2
+520,ytsaq³,ntsaq²⁰,V;HAB;SG;2,4,2
+521,sqya¹,xqya²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+522,ntsen⁴²,ntsen⁴² renq⁴,V;PFV;PL;3,4,2
+523,qa²⁴,ntqa⁴²,V;HAB;SG;2,4,2
+524,swenq³,swenq⁴⁰,V;PROSP;SG;1,4,2
+525,xoq²,nxoq²,V;HAB;SG;3,4,2
+526,ston⁴²,ston²⁴ renq³²,V;PROSP;PL;3,4,2
+527,ngon²,nskwan² wan¹,V;PROG;PL;2,4,2
+528,xkuq²,xkonq¹,V;PFV;SG;1,4,2
+529,ynaq¹,nnaq⁴²,V;HAB;SG;2,4,2
+530,ja¹,jan²⁰an³²,V;PROSP;PL;1+INCL,4,2
+531,ntyka²,ntyka² wan¹,V;HAB;PL;2,4,2
+532,nkqi¹,nkqi⁴²,V;PFV;SG;2,4,2
+533,ytiq⁴,ntiq⁴²,V;PROG;SG;2,4,2
+534,ndywan²,ndywan² wan¹,V;PFV;PL;2,4,2
+535,yo²,yo² wan¹,V;PFV;PL;2,4,2
+536,qya⁴²,qya⁴² wan⁴,V;PFV;PL;2,4,2
+537,ylu³,ndlu³ renq²⁴,V;PROG;PL;3,4,2
+538,sta¹,sta¹,V;PFV;SG;3,4,2
+539,yjaq³,ntyjaq¹⁴,V;HAB;SG;3,4,2
+540,yta⁴,kta⁴,V;PROSP;SG;3,4,2
+541,sqyu¹,sqyu²⁰,V;PROSP;SG;3,4,2
+542,ykwiq⁴,ntykwenq¹⁴en¹,V;PROG;PL;1+INCL,4,2
+543,skanq³,skanq¹⁴,V;PROSP;PL;1+INCL,4,2
+544,ntyqo¹,ntyqo¹ wan²⁴,V;PFV;PL;2,4,2
+545,nkonq⁴²,konq²⁴,V;PROSP;SG;3,4,2
+546,ndon⁴²,ndon⁴² renq⁴,V;PROG;PL;3,4,2
+547,xlyu⁴²,xlyu³²,V;PFV;SG;2,4,2
+548,yo²,ndyo¹⁴ renq⁰,V;HAB;PL;3,4,2
+549,yo²,yo² wa⁴²,V;PFV;PL;1+EXCL,4,2
+550,qya³,ntyqya¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+551,yja¹,tyja²⁰ renq²⁴,V;PROSP;PL;3,4,2
+552,ywi⁴²,ywen⁴,V;PFV;SG;1,4,2
+553,sqya¹,nxqya²⁰,V;HAB;SG;3,4,2
+554,styi¹,nstyin²⁰in³²,V;HAB;PL;1+INCL,4,2
+555,nsuq³,ksuq¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+556,ya⁴²,ya⁴² wan⁴,V;PFV;PL;2,4,2
+557,qya⁴²,ntqyan¹⁴,V;HAB;PL;1+INCL,4,2
+558,ntyqo¹,ntyqon²⁰,V;PFV;SG;1,4,2
+559,qne¹,qne¹,V;PFV;SG;3,4,2
+560,ytsen⁴²,ntsen¹⁴,V;HAB;SG;3,4,2
+561,ngyla³,kila¹,V;PROSP;SG;2,4,2
+562,ndywan²,ndywan² renq¹,V;PFV;PL;3,4,2
+563,ytsen⁴²,ne⁴³² qne³²renq⁴,V;PFV;PL;3,4,2
+564,qu¹⁴,ntqu¹ wan⁰,V;PROG;PL;2,4,2
+565,nge⁴²,ndye³²,V;PROG;SG;3,4,2
+566,naq¹,knaq²⁰an³²,V;PROSP;PL;1+INCL,4,2
+567,ntykwen³,ntykwen¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+568,kwa¹⁴,ntkwan⁴⁰,V;PROG;SG;1,4,2
+569,ntsu⁴²,ntsu⁴² wa⁴²,V;PFV;PL;1+EXCL,4,2
+570,ntykanq³,tykanq¹⁴,V;PROSP;PL;1+INCL,4,2
+571,jlya⁴²,ntjlya²⁴ wan³²,V;HAB;PL;2,4,2
+572,nkeq³,kinq¹⁴,V;PROSP;PL;1+INCL,4,2
+573,nten³,nten³ wa⁴²,V;PFV;PL;1+EXCL,4,2
+574,ngwa²,ndyga²⁴ wan³²,V;HAB;PL;2,4,2
+575,ytsaq³,ntsanq¹,V;PROG;SG;1,4,2
+576,swenq³,swenq¹⁴,V;PROSP;PL;1+INCL,4,2
+577,sla¹,nsla¹ renq²⁴,V;PROG;PL;3,4,2
+578,yqan⁴²,yqan⁴² renq⁴,V;PFV;PL;3,4,2
+579,ntqan¹,ntqan⁴²,V;PROG;SG;2,4,2
+580,ntyka²,ntykan²,V;PROG;SG;1,4,2
+581,skwaq¹,skwaq¹ renq²⁴,V;PFV;PL;3,4,2
+582,ndywiq³,tywiq¹⁴,V;PROSP;SG;3,4,2
+583,nda³,nda⁴²,V;HAB;SG;2,4,2
+584,skwaq¹,nskwaq²⁰ wan²⁴,V;HAB;PL;2,4,2
+585,ntykonq⁴²,tykonq¹⁴ renq⁰,V;PROSP;PL;3,4,2
+586,ytsaq³,ytsanq¹,V;PFV;SG;1,4,2
+587,qen⁴,ntyqin⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+588,xqwa¹⁰,xqwan⁴⁰,V;PFV;SG;1,4,2
+589,skonq³,skonq³ wan²⁴,V;PFV;PL;2,4,2
+590,xkwen¹⁴,xkwen¹⁴⁰ wa⁴²,V;PFV;PL;1+EXCL,4,2
+591,lo²⁴,klon⁴⁰,V;PROSP;SG;1,4,2
+592,kwa¹⁴,ntkwan¹⁰,V;PROG;PL;1+INCL,4,2
+593,yqwi⁴,ntqwi⁴ renq⁴,V;HAB;PL;3,4,2
+594,ntyjyuq¹,kyjyonq⁴,V;PROSP;SG;1,4,2
+595,ykuq²,ykonq¹,V;PFV;SG;1,4,2
+596,ncha¹,kcha²⁰,V;PROSP;SG;3,4,2
+597,ntykwan¹⁴,tykwan²⁰,V;PROSP;SG;2,4,2
+598,ykwenq¹,ntykwenq³²,V;PROG;SG;1,4,2
+599,sen¹,sen²⁰,V;PROSP;SG;3,4,2
+600,nkjwi⁴²,kjan⁴,V;PROSP;SG;1,4,2
+601,slaq¹,nslaq²⁰ wan²⁴,V;HAB;PL;2,4,2
+602,ntyja²,tyja¹,V;PROSP;SG;2,4,2
+603,nden⁴²,ten²⁴ wan³²,V;PROSP;PL;2,4,2
+604,xqan¹,ntxqan²⁰ wan²⁴,V;HAB;PL;2,4,2
+605,yqan⁴²,ntyqan²⁴,V;HAB;SG;1,4,2
+606,sqna¹,sqna⁴²,V;PROSP;SG;2,4,2
+607,ndywiq³,ndywiq¹,V;PROG;SG;2,4,2
+608,ntykwen³,ntykwen¹,V;PFV;SG;2,4,2
+609,ji¹,ntji²⁰ wan²⁴,V;HAB;PL;2,4,2
+610,skwan²,nskwan⁴⁰,V;PROG;SG;1,4,2
+611,ykuq²,ntykonq¹⁴,V;HAB;PL;1+INCL,4,2
+612,nyi¹⁴,nnyi¹ renq⁰,V;PROG;PL;3,4,2
+613,lqa³,lqa³,V;PFV;SG;3,4,2
+614,ston⁴²,ston⁴,V;PROSP;SG;1,4,2
+615,ja¹,ja¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+616,yqwe²,ntyqwe²⁰,V;HAB;SG;2,4,2
+617,sqwi¹⁴,sqwi²⁰,V;PROSP;SG;2,4,2
+618,xqan¹,ntxqan¹ wan²⁴,V;PROG;PL;2,4,2
+619,ntyqo¹,ntyqo¹ renq²⁴,V;PROG;PL;3,4,2
+620,nxi²,kxin² renq¹,V;PROSP;PL;1+EXCL,4,2
+621,xyaq²,nxyaq²,V;PROG;SG;3,4,2
+622,xlyu⁴²,nxlyon⁴,V;HAB;SG;1,4,2
+623,xkuq²,nxkuq²,V;PROG;SG;3,4,2
+624,nya¹⁴,nnya¹⁴,V;HAB;PL;1+INCL,4,2
+625,ndlyu¹,ndlyon²⁰on³²,V;PROG;PL;1+INCL,4,2
+626,ntyi¹,ktyi²⁰,V;PROSP;SG;3,4,2
+627,lya¹⁴,jlya¹⁴ renq³²,V;PROSP;PL;3,4,2
+628,ntaq³,ntaq³ renq²⁴,V;PROG;PL;3,4,2
+629,yqwe²,ntyqwe¹,V;PROG;SG;2,4,2
+630,xtyiq¹⁰,xtenq⁴⁰,V;PROSP;SG;1,4,2
+631,sti⁴,nstyin⁴ wan⁴,V;HAB;PL;2,4,2
+632,ncha¹,ncha⁴²,V;PROG;SG;2,4,2
+633,nchaq⁴²,nchaq⁴²,V;PFV;SG;3,4,2
+634,skonq³,ntkonq⁴⁰,V;HAB;SG;1,4,2
+635,xku²⁰,xku⁴²,V;PROSP;SG;2,4,2
+636,ja¹,ja⁴²,V;PFV;SG;2,4,2
+637,xin²,kxin⁴⁰,V;PROSP;SG;1,4,2
+638,ylu³,ndlyu¹⁴ renq⁰,V;HAB;PL;3,4,2
+639,xkwan¹⁴,nxkwan⁴⁰,V;PROG;SG;1,4,2
+640,yqo²,ntyqo²⁰,V;HAB;SG;2,4,2
+641,nton³,ntyon¹⁴,V;HAB;SG;3,4,2
+642,kwan¹,ntkwan⁴,V;HAB;SG;1,4,2
+643,ylaq⁴,klaq⁴ renq⁴,V;PROSP;PL;3,4,2
+644,nkqi¹,nkqi¹ renq²⁴,V;PFV;PL;3,4,2
+645,yo²,ndyon²on¹,V;PROG;PL;1+INCL,4,2
+646,nyi¹⁴,knyi¹⁴ wan⁰,V;PROSP;PL;2,4,2
+647,ntyi¹,ntyi²⁰,V;HAB;SG;3,4,2
+648,slya²⁴,xlya¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+649,ndywan²,tywan²an¹,V;PROSP;PL;1+INCL,4,2
+650,nchin¹,nchin²⁰,V;HAB;SG;3,4,2
+651,ntykaq¹,tykanq⁴,V;PROSP;SG;1,4,2
+652,slaq¹,slaq²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+653,sen¹,sen¹,V;PROG;SG;3,4,2
+654,ykwen²,ntykwen²,V;PROG;SG;3,4,2
+655,ntyja²,tyjan⁴⁰,V;PROSP;SG;1,4,2
+656,ntykanq³,tykanq¹⁴ renq⁰,V;PROSP;PL;3,4,2
+657,xqan¹,ntxqan³²,V;PROG;SG;1,4,2
+658,ykwiq⁴,tykwiq⁴ renq⁴,V;PROSP;PL;3,4,2
+659,sla¹,nsla²⁰,V;HAB;SG;3,4,2
+660,ndywiq³,ndywenq²,V;PROG;SG;1,4,2
+661,ntykanq³,ntykanq⁴⁰,V;PFV;SG;1,4,2
+662,son³,nson⁴⁰,V;PROG;SG;2,4,2
+663,ykuq²,ykonq²on¹,V;PFV;PL;1+INCL,4,2
+664,xin⁴²,xin⁴²an⁴²,V;PFV;PL;1+INCL,4,2
+665,yjoq⁴,ntyjonq²⁴on³²,V;HAB;PL;1+INCL,4,2
+666,yqo²,ntyqo¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+667,nlyu¹,nlyu²⁰ renq²⁴,V;HAB;PL;3,4,2
+668,nkqi¹,kqi²⁰,V;PROSP;SG;3,4,2
+669,ntsen⁴²,ktsen²⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+670,xin²,nxin¹in¹,V;PROG;PL;1+INCL,4,2
+671,ntsiq³,ntsiq¹,V;PFV;SG;2,4,2
+672,kwi¹,ndwi⁴²,V;PROG;SG;2,4,2
+673,ngyla³,nxla³ wa⁴²,V;PROG;PL;1+EXCL,4,2
+674,xtya²⁰,nxtya²⁰,V;HAB;SG;3,4,2
+675,xkwan¹⁴,xkwan⁴⁰,V;PFV;SG;1,4,2
+676,swi²⁰,nswi⁴²,V;PROG;SG;2,4,2
+677,ykwiq⁴,ykwiq⁴²,V;PFV;SG;2,4,2
+678,stan¹⁴,nstan¹ renq⁰,V;PROG;PL;3,4,2
+679,ntykonq⁴²,ntykonq⁴² renq⁴,V;PFV;PL;2,4,2
+680,skwaq¹,skwanq⁴,V;PFV;SG;1,4,2
+681,qne¹,nqne¹ wan²⁴,V;PROG;PL;2,4,2
+682,ykwenq¹,tykwenq²⁰en³²,V;PROSP;PL;1+INCL,4,2
+683,qne⁴²,nqnen¹⁴,V;HAB;PL;1+INCL,4,2
+684,ntqo¹,tyqon²⁰on³²,V;PROSP;PL;1+INCL,4,2
+685,yqo²,yqo¹,V;PFV;SG;2,4,2
+686,ntqan¹,ntqan²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+687,sti⁴,sti⁴ wa⁴²,V;PFV;PL;1+EXCL,4,2
+688,ntyjyuq¹,ntyjyuq²⁰,V;HAB;SG;3,4,2
+689,xyaq²,nxyaq² renq¹,V;PROG;PL;3,4,2
+690,xyaq²,nxyaq¹,V;HAB;SG;2,4,2
+691,sna³,nxna¹⁴ renq⁰,V;HAB;PL;3,4,2
+692,sqyu¹,nsqyu¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+693,ya⁴²,nkya²⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+694,jwi³,ntyji² wan¹,V;PROG;PL;2,4,2
+695,xti²⁰,xti⁴²,V;PROSP;SG;2,4,2
+696,nkqi¹,ntqi¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+697,xtyiq¹⁰,nxtyiq¹⁰ wa⁴²,V;PROG;PL;1+EXCL,4,2
+698,ndyi⁴,ndyi³²,V;PROG;SG;2,4,2
+699,yno¹,nno¹ renq²⁴,V;HAB;PL;3,4,2
+700,xla³,nxla³,V;PROG;SG;3,4,2
+701,yjaq³,ntyjanq¹⁴,V;PROSP;PL;1+INCL,4,2
+702,sta¹,sta²⁰ wan²⁴,V;PROSP;PL;2,4,2
+703,ngon²,ndgon⁴⁰,V;PROG;SG;1,4,2
+704,skonq³,ntkonq¹⁴ renq⁰,V;HAB;PL;3,4,2
+705,nge⁴²,ndyin¹⁴,V;HAB;PL;1+INCL,4,2
+706,skwan⁴,nskwan¹an¹,V;PROG;PL;1+INCL,4,2
+707,ntqan¹,ntqan¹ wan²⁴,V;PFV;PL;2,4,2
+708,ntaq³,ntaq³ wa⁴²,V;PROG;PL;1+EXCL,4,2
+709,ykwanq¹,ykwanq²⁰an³²,V;PROSP;PL;1+INCL,4,2
+710,ndon⁴²,ndon³²,V;PROG;SG;2,4,2
+711,ntykaq¹,ntykaq⁴²,V;HAB;SG;2,4,2
+712,sqna¹,sqna¹ wan²⁴,V;PFV;PL;2,4,2
+713,ntsu⁴²,ktsu⁴²,V;PROSP;SG;2,4,2
+714,nkin²,nkin⁴⁰,V;PFV;SG;1,4,2
+715,ntqo¹,ntyqon²⁰on³²,V;HAB;PL;1+INCL,4,2
+716,lkwi¹,lkwi⁴²,V;PFV;SG;2,4,2
+717,ndywan²,ndywan²,V;PFV;SG;3,4,2
+718,yqu²,yqu¹,V;PFV;SG;2,4,2
+719,yna⁴²,kna⁴²,V;PROSP;SG;2,4,2
+720,ykuq²,ntykuq¹⁴,V;HAB;SG;3,4,2
+721,xlyu⁴²,xlyon¹on¹,V;PROSP;PL;1+INCL,4,2
+722,xka²⁴,nxkan¹⁴,V;HAB;PL;1+INCL,4,2
+723,ntykwa⁴,ntykwa⁴²,V;PFV;SG;2,4,2
+724,naq¹,naq¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+725,yqan⁴²,yqan²⁴,V;PROSP;SG;1,4,2
+726,yna⁴²,yna³²,V;PFV;SG;2,4,2
+727,nduq⁴²,ndyonq²⁴,V;HAB;SG;1,4,2
+728,qne⁴²,nqnen¹en¹,V;PROG;PL;1+INCL,4,2
+729,swi²⁰,swi²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+730,skwen¹,skwen⁴,V;PFV;SG;1,4,2
+731,yku⁴,yku⁴ renq⁴,V;PFV;PL;3,4,2
+732,ntqen¹,ntqen¹en¹,V;PFV;PL;1+INCL,4,2
+733,nton⁴²,kton²⁰,V;PROSP;SG;2,4,2
+734,nya¹⁴,nnya¹⁴,V;HAB;SG;3,4,2
+735,slya²⁴,slyan²⁴,V;PFV;SG;1,4,2
+736,yjwiq²,yjwiq²,V;PFV;SG;3,4,2
+737,ntyja²,ntyja² renq¹,V;HAB;PL;3,4,2
+738,yjwiq²,ntjwiq¹⁴,V;HAB;SG;3,4,2
+739,sne¹⁴,nsne¹,V;PROG;SG;2,4,2
+740,ntyqo¹,ntyqo²⁰ wan²⁴,V;HAB;PL;2,4,2
+741,kwi¹,ndwi¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+742,sla¹,sla¹ renq²⁴,V;PFV;PL;3,4,2
+743,ykwenq¹,ntykwenq¹ wan²⁴,V;PROG;PL;2,4,2
+744,nkin²,ntykin²,V;PROG;SG;3,4,2
+745,ntykonq⁴²,ntykonq³² renq⁴,V;PROG;PL;3,4,2
+746,ylu³,klu¹⁴⁰,V;PROSP;PL;1+EXCL,4,2
+747,nchaq⁴²,kchaq²⁴ wan³²,V;PROSP;PL;2,4,2
+748,kwan¹,ntkwan³²,V;PROG;SG;1,4,2
+749,xqwa¹⁰,xqwa¹ wan⁰,V;PFV;PL;2,4,2
+750,nkwa³,kwa³ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+751,xkwan¹⁴,nxkwan¹⁴,V;HAB;SG;3,4,2
+752,sta¹,sta²⁰ renq²⁴,V;PROSP;PL;3,4,2
+753,ntqo¹,ntqon¹on¹,V;PROG;PL;1+INCL,4,2
+754,ntsen⁴²,ntsen⁴²,V;HAB;SG;2,4,2
+755,yqwi⁴,ntqwi⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+756,nkin²,skin²en¹,V;PROSP;PL;1+INCL,4,2
+757,ntqen¹,ntqen¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+758,snyaq¹,snyaq¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+759,sqwa¹⁴,sqwan⁴⁰,V;PFV;SG;1,4,2
+760,ngya⁴²,nkyqan³²,V;PFV;SG;1,4,2
+761,nchuq⁴,nchuq³² wan⁴,V;PROG;PL;2,4,2
+762,ykuq²,ykuq² renq¹,V;PFV;PL;3,4,2
+763,qen⁴,qen⁴ renq⁴,V;PFV;PL;3,4,2
+764,yla³,ndla¹⁴ renq⁰,V;HAB;PL;3,4,2
+765,xin²,xin¹,V;PFV;SG;2,4,2
+766,ntqen¹,ntqen¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+767,skwan⁴,xkwan²⁰,V;PROSP;SG;3,4,2
+768,ntyqo¹,ntyqo⁴²,V;PFV;SG;2,4,2
+769,nkonq⁴²,konq²⁴,V;PROSP;SG;1,4,2
+770,ntsu⁴²,ktson²⁴on³²,V;PROSP;PL;1+INCL,4,2
+771,xti²⁰,nxti²⁰,V;HAB;SG;3,4,2
+772,nkwa³,ntykwa³ wan²⁴,V;HAB;PL;2,4,2
+773,jlyo³²,jlyo³²,V;PROSP;SG;2,4,2
+774,xin⁴²,xin⁴² renq⁴,V;PFV;PL;3,4,2
+775,yja¹,ntja¹ wan²⁴,V;PFV;PL;2,4,2
+776,stan¹⁴,nstan²⁰,V;HAB;SG;2,4,2
+777,kwi¹,kwi¹,V;PFV;SG;3,4,2
+778,ntson¹⁴,ntson¹ wan⁰,V;PROG;PL;2,4,2
+779,sqan¹,ntsqan⁴²,V;HAB;SG;2,4,2
+780,yqan⁴²,ntyqan²⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+781,sqwe²⁴,nsqwe⁴²,V;HAB;SG;2,4,2
+782,lya¹⁴,lyan¹⁴,V;PFV;PL;1+INCL,4,2
+783,ntykwen³,ntykwen¹⁴,V;HAB;SG;3,4,2
+784,nten³,sten¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+785,nti¹,nten¹en¹,V;PFV;PL;1+INCL,4,2
+786,xka²⁴,xka²⁴ wa⁴²,V;PFV;PL;1+EXCL,4,2
+787,ndlyu¹,ndlyu¹ wan²⁴,V;PFV;PL;2,4,2
+788,ndlyu⁴²,ndlyon⁴²,V;HAB;SG;1,4,2
+789,sen⁴²,nse³²,V;PFV;SG;2,4,2
+790,naq¹⁴,naq¹⁴⁰ wa⁴²,V;PFV;PL;1+EXCL,4,2
+791,nglu³,nglu³ wa²⁴,V;PROG;PL;2,4,2
+792,ntyinq³,ktyinq¹⁴ wan⁰,V;PROSP;PL;2,4,2
+793,skwen¹,nskwen⁴,V;HAB;SG;1,4,2
+794,nchuq⁴,nchuq⁴ wan⁴,V;HAB;PL;2,4,2
+795,qu¹⁴,qu¹⁴ wan⁰,V;PROSP;PL;2,4,2
+796,qan⁴,nkqan⁴ renq⁴,V;PROG;PL;3,4,2
+797,yqwi⁴,tyqwen²⁰,V;PROSP;SG;1,4,2
+798,nglu³,klu¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+799,xin²,nxin¹⁴ wan⁰,V;HAB;PL;2,4,2
+800,ntyqo¹,tyqo²⁰ wan²⁴,V;PROSP;PL;2,4,2
+801,ston⁴²,nston¹on¹,V;PROG;PL;1+INCL,4,2
+802,kwa¹⁴,kwa¹⁴ wan⁰,V;PFV;PL;2,4,2
+803,xta¹,nstan¹⁴ renq⁰,V;HAB;PL;3,4,2
+804,nlyu¹,klyu²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+805,nkonq⁴²,ntkonq³² wan⁴,V;PROG;PL;2,4,2
+806,ytsaq³,ntsaq¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+807,ntaq³,ntaq³,V;PROG;SG;3,4,2
+808,ytsaq³,ktsanq¹⁴,V;PROSP;PL;1+INCL,4,2
+809,yo²,yon²on¹,V;PFV;PL;1+INCL,4,2
+810,qu¹⁴,qu¹⁴ wan⁰,V;PFV;PL;2,4,2
+811,ntyi¹,ntyi¹ renq²⁴,V;PFV;PL;3,4,2
+812,nxin⁴²,nxin³²,V;PROG;SG;3,4,2
+813,ykwaq⁴,tykwanq⁴,V;PROSP;SG;1,4,2
+814,skonq³,ntskonq³ wa⁴²,V;PROG;PL;1+EXCL,4,2
+815,ntqo¹,tyqon²⁰,V;PROSP;SG;1,4,2
+816,nten³,nten⁴⁰,V;HAB;SG;1,4,2
+817,sqwi¹⁴,nsqwi¹⁴,V;HAB;SG;3,4,2
+818,ntyqya¹,tyqya²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+819,nti¹,nti¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+820,ntqo¹,ntyqo²⁰,V;HAB;SG;3,4,2
+821,nten³,nten¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+822,skanq³,ntskanq¹⁴,V;HAB;PL;1+INCL,4,2
+823,sta¹,nsta¹ wan²⁴,V;PROG;PL;2,4,2
+824,kwan¹,ntkwan³²,V;PROG;SG;3,4,2
+825,ntykonq⁴²,tykonq²⁴,V;PROSP;SG;1,4,2
+826,qya³,qya¹⁴,V;PROSP;SG;3,4,2
+827,xta¹,stan¹⁴,V;PROSP;PL;1+INCL,4,2
+828,yno¹,yno¹ renq²⁴,V;PFV;PL;3,4,2
+829,nten³,nten²en¹,V;PFV;PL;1+INCL,4,2
+830,lya¹⁴,nlyan¹⁴,V;HAB;PL;1+INCL,4,2
+831,xqan¹,xqan²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+832,nkqwa⁴²,nkqwan⁴²,V;PFV;SG;1,4,2
+833,lo²⁴,klo²⁴ renq³²,V;PROSP;PL;3,4,2
+834,yqan⁴²,yqan⁴²,V;PROSP;SG;2,4,2
+835,ylu³,klu¹⁴ renq⁰,V;PROSP;PL;3,4,2
+836,ywi⁴²,ntjwi²⁴ wan³²,V;HAB;PL;2,4,2
+837,ndlyu¹,ndlyon²⁰on³²,V;HAB;PL;1+INCL,4,2
+838,nkonq⁴²,nkonq⁴²on⁴²,V;PFV;PL;1+INCL,4,2
+839,slaq¹,nslanq³²,V;PROG;SG;1,4,2
+840,sne¹⁴,sne¹⁴,V;PROSP;SG;3,4,2
+841,ntykwen³,ntykwen³ wa⁴²,V;PFV;PL;1+EXCL,4,2
+842,xtyiq¹⁰,xtyiq¹⁰ wa⁴²,V;PFV;PL;1+EXCL,4,2
+843,ngwa²,ngwa² wa²,V;PFV;PL;1+EXCL,4,2
+844,qnyi¹,qnyi²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+845,yno¹,nno¹ wan²⁴,V;HAB;PL;2,4,2
+846,sqyu¹,sqyu⁴²,V;PFV;SG;2,4,2
+847,ytsen⁴²,ne⁴² qne³² wan⁴,V;PFV;PL;2,4,2
+848,nkin²,ntykin²⁰,V;HAB;SG;2,4,2
+849,xtya²⁰,xtya⁴²,V;PFV;SG;2,4,2
+850,yqu²,ntqon⁴⁰,V;PROG;SG;1,4,2
+851,kwan¹,kwan⁴²,V;PROSP;SG;2,4,2
+852,ndlyu⁴²,ndlyu⁴²,V;HAB;SG;3,4,2
+853,kwa¹⁴,tykwan¹⁴,V;PROSP;PL;1+INCL,4,2
+854,sqan¹,nsqan¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+855,xlyu⁴²,xlyon⁴,V;PFV;SG;1,4,2
+856,ylaq⁴,nlaq⁴ renq⁴,V;PROG;PL;3,4,2
+857,nchaq⁴²,nchaq⁴² renq⁴,V;PFV;PL;3,4,2
+858,sti⁴,nsu⁴²,V;PROG;SG;3,4,2
+859,ntsen⁴²,ntsen²⁴,V;HAB;SG;3,4,2
+860,xki¹,xki⁴²,V;PFV;SG;2,4,2
+861,yna⁴²,na²⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+862,ytsen⁴²,nne³² qne³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+863,ntykwan²,ntykwan¹,V;HAB;SG;2,4,2
+864,nkwi¹,ntykwen²⁰en³²,V;HAB;PL;1+INCL,4,2
+865,yqan⁴²,yqan⁴²,V;PFV;SG;3,4,2
+866,sqna¹,nsqna¹ wan²⁴,V;PROG;PL;2,4,2
+867,jen²,ntyjin¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+868,nkwa³,nkwa³ wa⁴²,V;PFV;PL;1+EXCL,4,2
+869,qnyi¹,kqni²⁰,V;PROSP;SG;3,4,2
+870,ytsen⁴²,ytsen³²,V;PFV;SG;2,4,2
+871,qnyi¹,qnyin²⁰in³²,V;PROSP;PL;1+INCL,4,2
+872,yjaq³,ntyjaq¹⁴ wan⁰,V;PROSP;PL;2,4,2
+873,ston⁴²,nston²⁴ wan³²,V;HAB;PL;2,4,2
+874,ndlyu⁴²,ndlyu³²,V;PFV;SG;2,4,2
+875,lya¹⁴,lya¹⁴ renq⁰,V;PFV;PL;3,4,2
+876,ytsaq³,ytsaq³,V;PFV;SG;3,4,2
+877,ston⁴²,ston²⁴ wan³²,V;PROSP;PL;2,4,2
+878,nkwa³,ntkwan⁴⁰,V;HAB;SG;1,4,2
+879,sna³,nxnan⁴⁰,V;HAB;SG;1,4,2
+880,sqwa¹⁴,sqwa¹⁴,V;PROSP;SG;3,4,2
+881,jlya⁴²,jlya²⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+882,stan¹⁴,nstan¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+883,ne¹⁴,nen⁴⁰,V;PROG;SG;1,4,2
+884,ntkonq³,ntkonq⁴⁰,V;PROG;SG;1,4,2
+885,yno¹,kno¹ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+886,kwa³,kwa³ wan²⁴,V;PFV;PL;2,4,2
+887,sqwe¹⁴,nsqwe¹⁴ wan⁰,V;HAB;PL;2,4,2
+888,qne⁴²,nqne³² wan⁴,V;PROG;PL;2,4,2
+889,nge⁴²,ndye³² wan⁴,V;PROG;PL;2,4,2
+890,qen⁴,tyqin⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+891,snyaq¹,snyaq¹wan²⁴,V;PFV;PL;2,4,2
+892,nglu³,nglu³ wa⁴²,V;PROG;PL;1+EXCL,4,2
+893,xoq²,nxoq¹,V;PROG;SG;2,4,2
+894,naq¹⁴,nanq⁴⁰,V;PFV;SG;1,4,2
+895,nlyu¹,klyu²⁰ renq²⁴,V;PROSP;PL;3,4,2
+896,son³,xon²⁰ wan²⁴,V;PROSP;PL;2,4,2
+897,ntyi¹,ntyi²⁰ renq²⁴,V;HAB;PL;3,4,2
+898,nchin¹,kchin²⁰,V;PROSP;SG;3,4,2
+899,nchuq⁴,nchonq⁴²,V;PFV;SG;2,4,2
+900,ya⁴²,nkya²⁴ wan³²,V;PROG;PL;2,4,2
+901,ylaq⁴,nlanq¹,V;PROG;SG;1,4,2
+902,ntykwan²,tykwan¹,V;PROSP;SG;2,4,2
+903,skwaq¹,nchkwaq⁴²,V;HAB;SG;2,4,2
+904,sqyu¹,sqyu¹ renq²⁴,V;PFV;PL;3,4,2
+905,ykwiq⁴,ntykwenq²⁰,V;HAB;SG;1,4,2
+906,ya⁴²,nkyan¹⁴,V;PROG;PL;1+INCL,4,2
+907,ndya³,ndya³,V;HAB;SG;3,4,2
+908,lu¹,nlu¹ renq²⁴,V;PROG;PL;3,4,2
+909,ytsen⁴²,ytsen⁴,V;PFV;SG;1,4,2
+910,nxin⁴²,nxin⁴²,V;PFV;SG;2,4,2
+911,sqna¹,nsqnan³²,V;PROG;SG;1,4,2
+912,ntyqo¹,ntyqo¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+913,nkin²,nkin²en¹,V;PFV;PL;1+INCL,4,2
+914,yna⁴²,nnan³²,V;PROG;SG;1,4,2
+915,sqya¹,sqya¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+916,yqwe²,kqwe¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+917,slu¹⁴,slon¹⁴,V;PFV;PL;1+INCL,4,2
+918,yjoq⁴,ntyjoq³²,V;PROG;SG;3,4,2
+919,skwen¹,skwen¹ renq²⁴,V;PFV;PL;3,4,2
+920,swi²⁰,swen⁴,V;PROSP;SG;1,4,2
+921,qya³,ntyqyan⁴⁰,V;HAB;SG;1,4,2
+922,qan⁴,ntyqan⁴ renq⁴,V;HAB;PL;3,4,2
+923,lo²⁴,klo²⁴ wan³²,V;PROSP;PL;2,4,2
+924,ji¹,ji¹ wan²⁴,V;PFV;PL;2,4,2
+925,qan⁴,ntyqan⁴²,V;HAB;SG;2,4,2
+926,ndywiq³,ndywiq²,V;PROG;SG;3,4,2
+927,jlya⁴²,ntjlya³²,V;PROG;SG;3,4,2
+928,nge⁴²,ndye²⁴ wan³²,V;HAB;PL;2,4,2
+929,ngwa²,ndygan¹⁴,V;HAB;PL;1+INCL,4,2
+930,la¹,nla⁴,V;HAB;SG;3,4,2
+931,qnyi¹,nqnyin¹in¹,V;PROG;PL;1+INCL,4,2
+932,ykwenq¹,ntykwenq¹ renq²⁴,V;PROG;PL;3,4,2
+933,sqya¹,xqya²⁰ renq²⁴,V;PROSP;PL;3,4,2
+934,yqo²,yqon²on¹,V;PFV;PL;1+INCL,4,2
+935,ne¹⁴,nnin⁴⁰,V;PROSP;SG;1,4,2
+936,ntkonq³,ntkonq¹,V;PFV;SG;2,4,2
+937,ndyi⁴,ndyi⁴,V;HAB;SG;3,4,2
+938,ndiyan³²,jyan²⁰,V;PROG;SG;1,4,2
+939,naq¹,nnaq¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+940,ndywan²,ndywan² wa⁴²,V;PROG;PL;1+EXCL,4,2
+941,xqwa¹⁰,nxqwa¹⁰,V;PROG;SG;3,4,2
+942,ntsa²⁴,ktsa²⁴ renq³²,V;PROSP;PL;3,4,2
+943,yla³,klan⁴⁰,V;PROSP;SG;1,4,2
+944,lya¹⁴,jlyan¹⁴,V;PROSP;PL;1+INCL,4,2
+945,xkwen¹⁴,xkwen¹⁴ renq⁰,V;PROSP;PL;3,4,2
+946,ylaq⁴,nlyanq²⁰,V;HAB;SG;1,4,2
+947,ntaq³,ntaq²⁰,V;HAB;SG;2,4,2
+948,ntsu⁴²,ntsu³²,V;PROG;SG;3,4,2
+949,ntykanq³,ntykanq³ wan¹⁴,V;PFV;PL;2,4,2
+950,nsuq³,ksuq²⁰,V;PROSP;SG;2,4,2
+951,ngwa²,ngwa²,V;PFV;SG;3,4,2
+952,nya¹⁴,nnya²⁰,V;HAB;SG;2,4,2
+953,sqi²,xqin¹⁴,V;PROSP;PL;1+INCL,4,2
+954,ndyu²,ndyon⁴⁰,V;PFV;SG;1,4,2
+955,yjoq⁴,ntyjonq¹,V;PROG;SG;1,4,2
+956,ykuq²,ykuq²,V;PFV;SG;3,4,2
+957,sti⁴,nstyin⁴,V;HAB;SG;3,4,2
+958,ston⁴²,nston⁴,V;HAB;SG;1,4,2
+959,nkqi¹,nkqi¹,V;PFV;SG;3,4,2
+960,sqwa¹⁴,sqwan¹⁴,V;PROSP;PL;1+INCL,4,2
+961,nkwi¹,ntykwi⁴²,V;HAB;SG;2,4,2
+962,slya²⁴,xlya²⁴,V;PROSP;SG;3,4,2
+963,sqna¹,sqna¹an¹,V;PFV;PL;1+INCL,4,2
+964,ntaq³,ntaq³ renq²⁴,V;PFV;PL;3,4,2
+965,la¹,yla¹ wan²⁴,V;PFV;PL;2,4,2
+966,nyi¹⁴,nnyi¹⁰,V;PROG;PL;1+INCL,4,2
+967,qya⁴²,kqyan²⁴,V;PROSP;SG;1,4,2
+968,qnyi¹,nqnin⁴,V;HAB;SG;1,4,2
+969,qa²⁴,qa²⁴ wa⁴²,V;PFV;PL;1+EXCL,4,2
+970,son³,nxon⁴,V;HAB;SG;1,4,2
+971,yqu²,yqu² renq¹,V;PFV;PL;3,4,2
+972,naq¹⁴,nyaq²⁰,V;PROSP;SG;2,4,2
+973,lya¹⁴,nlya²⁰,V;HAB;SG;2,4,2
+974,ykwen²,ykwen⁴⁰,V;PFV;SG;1,4,2
+975,nden⁴²,nden⁴²,V;HAB;SG;2,4,2
+976,nyi¹⁴,nyi¹⁴,V;PFV;SG;3,4,2
+977,yqo²,yqo²,V;PFV;SG;3,4,2
+978,ntyinq³,ntyinq¹,V;PFV;SG;2,4,2
+979,slya²⁴,slya²⁴ wan³²,V;PFV;PL;2,4,2
+980,ntsu⁴²,nchu⁴,V;HAB;SG;3,4,2
+981,nchaq⁴²,nchanq⁴,V;HAB;SG;1,4,2
+982,sqi²,sqi² renq¹,V;PFV;PL;3,4,2
+983,slya²⁴,xlya³²,V;PROSP;SG;2,4,2
+984,nti¹,kti²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+985,swi²⁰,swi²⁰ wan²⁴,V;PFV;PL;2,4,2
+986,nti¹,kti⁴²,V;PROSP;SG;2,4,2
+987,ykwenq¹,ntykwenq²⁰ renq²⁴,V;HAB;PL;3,4,2
+988,lkwi¹,ntykwen⁴,V;HAB;SG;1,4,2
+989,nkqwa¹,tyqwa²⁰ renq²⁴,V;PROSP;PL;3,4,2
+990,ntykwan¹⁴,ntykwan¹⁴,V;PFV;SG;3,4,2
+991,ntyinq³,ntyinq²in¹,V;PFV;PL;1+INCL,4,2
+992,nchaq⁴²,nchaq³²,V;PROG;SG;2,4,2
+993,yta⁴,ntya⁴²,V;HAB;SG;2,4,2
+994,sta¹,nsta¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+995,ntyqya¹,ntyqyan²⁰an³²,V;HAB;PL;1+INCL,4,2
+996,ntykonq⁴²,ntykonq³²,V;PROG;SG;3,4,2
+997,sti⁴,styin⁴,V;PROSP;SG;3,4,2
+998,ntson¹⁴,ntson²⁰,V;PROG;SG;2,4,2
+999,ynaq¹,naq¹an¹,V;PROG;PL;1+INCL,4,2
+1000,slaq¹,nslaq¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+1001,nsuq³,nsuq³ wa⁴²,V;PROG;PL;1+EXCL,4,2
+1002,ykwenq¹,ntykwenq¹en¹,V;PROG;PL;1+INCL,4,2
+1003,sqwi¹⁴,sqwi¹⁴,V;PROSP;SG;3,4,2
+1004,qne¹,qne¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+1005,kwan¹,kwan⁴,V;PROSP;SG;3,4,2
+1006,xla³,nchla³,V;HAB;SG;3,4,2
+1007,ngwa²,ndygan²⁴,V;HAB;SG;1,4,2
+1008,nti¹,nten²⁰en³²,V;HAB;PL;1+INCL,4,2
+1009,ntyqya¹,ntyqya⁴²,V;PFV;SG;2,4,2
+1010,ntsaq⁴²,nchaq⁴²,V;HAB;SG;2,4,2
+1011,nkya⁴²,kyan²⁰,V;PROSP;SG;1,4,2
+1012,ya⁴²,ntyqan²⁰,V;HAB;SG;1,4,2
+1013,ndon⁴²,ndon²⁰,V;PROG;SG;1,4,2
+1014,nyi¹⁴,nyi¹⁴ renq⁰,V;PFV;PL;3,4,2
+1015,yqu²,ntyqu¹⁴,V;HAB;SG;3,4,2
+1016,xti²⁰,xti²⁰,V;PFV;SG;3,4,2
+1017,ne¹⁴,nni¹⁴ wan⁰,V;PROSP;PL;2,4,2
+1018,nchaq⁴²,nchaq²⁴ wan³²,V;HAB;PL;2,4,2
+1019,nton⁴²,nton⁴²,V;PFV;SG;3,4,2
+1020,ntykwan²,ntykwan² wa⁴²,V;PFV;PL;1+EXCL,4,2
+1021,xin²,nxin²⁰,V;HAB;SG;2,4,2
+1022,yta⁴,ntan³²,V;PROG;SG;1,4,2
+1023,nyi¹⁴,nyi¹⁴,V;PROSP;SG;3,4,2
+1024,xlyu⁴²,xlyu⁴² wan⁴,V;PFV;PL;2,4,2
+1025,saq²,nsanq¹⁴,V;HAB;PL;1+INCL,4,2
+1026,nkeq³,keq¹⁴ renq¹,V;PROSP;PL;3,4,2
+1027,skanq³,skanq⁴⁰,V;PFV;SG;1,4,2
+1028,lo²⁴,nlon¹⁴,V;HAB;PL;1+INCL,4,2
+1029,sla¹,nslan¹an¹,V;PROG;PL;1+INCL,4,2
+1030,xqwa¹⁰,nxqwan¹⁰,V;HAB;PL;1+INCL,4,2
+1031,yqan⁴²,yqan⁴² wan⁴,V;PFV;PL;2,4,2
+1032,xta¹,stan² renq¹,V;PFV;PL;3,4,2
+1033,nkqwa⁴²,nkwa³²,V;PFV;SG;2,4,2
+1034,xku²⁰,nxku¹,V;PROG;SG;3,4,2
+1035,xla³,xlan³,V;PROSP;SG;1,4,2
+1036,nxin⁴²,nxin²⁰,V;HAB;SG;2,4,2
+1037,ntykwan²,ntykwan⁴⁰,V;PROG;SG;1,4,2
+1038,ne⁴²,nen⁴,V;PFV;SG;1,4,2
+1039,jen²,jen²en¹,V;PFV;PL;1+INCL,4,2
+1040,kwan¹,kwan⁴ renq⁴,V;PROSP;PL;3,4,2
+1041,sqwe²⁴,nsqwe²⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1042,yqwe²,kqwen⁴⁰,V;PROSP;SG;1,4,2
+1043,xyaq²,xyanq⁴⁰,V;PFV;SG;1,4,2
+1044,ntykwen³,ntykwen²⁰,V;HAB;SG;2,4,2
+1045,jinyiq²,nynyiq¹⁴ wan⁰,V;HAB;PL;2,4,2
+1046,nten³,nten³ renq²⁴,V;PROG;PL;3,4,2
+1047,lya¹⁴,nlyan¹⁰,V;PROG;SG;3,4,2
+1048,nti¹,nti⁴²,V;HAB;SG;2,4,2
+1049,ykwanq¹,ntykwanq⁴²,V;PROG;SG;2,4,2
+1050,qen⁴²,ntqe³²,V;PROG;SG;2,4,2
+1051,sne³,nsne³ wan²⁴,V;PROG;PL;2,4,2
+1052,sne¹⁴,sne¹⁴ wan⁰,V;PFV;PL;2,4,2
+1053,xqan¹,ntxqan¹an¹,V;PROG;PL;1+INCL,4,2
+1054,ntqo¹,tyqo¹ wan²⁴,V;PROSP;PL;2,4,2
+1055,nglu³,nglu³ renq²⁴,V;PFV;PL;3,4,2
+1056,ntkonq³,ntkonq³ renq²⁴,V;PROG;PL;3,4,2
+1057,sqwe¹⁴,sqwen⁴⁰,V;PFV;SG;1,4,2
+1058,ntyjyuq¹,ntyjyuq⁴²,V;HAB;SG;2,4,2
+1059,qan⁴,ntyqan²⁰,V;HAB;SG;1,4,2
+1060,yja¹,ntja⁴²,V;PFV;SG;2,4,2
+1061,xqwa¹⁰,xqwa¹ renq⁰,V;PFV;PL;3,4,2
+1062,yqan⁴²,yqan⁴² wa⁴²,V;PFV;PL;1+EXCL,4,2
+1063,ntqo¹,ntyqon²⁰,V;HAB;SG;1,4,2
+1064,la¹,ylan⁴,V;PFV;SG;1,4,2
+1065,stan¹⁴,nstan¹⁴ wan⁰,V;HAB;PL;2,4,2
+1066,ntqan¹,tqan²⁰ renq²⁴,V;PROSP;PL;3,4,2
+1067,xtya²⁰,xtya²⁰,V;PFV;SG;3,4,2
+1068,ytsen⁴²,ne⁴² qne³² wa⁴²,V;PFV;PL;1+EXCL,4,2
+1069,ntykwan²,ntykwan²,V;HAB;SG;3,4,2
+1070,qne⁴²,qnen¹,V;PFV;SG;1,4,2
+1071,ylu³,ylu³ wa⁴²,V;PFV;PL;1+EXCL,4,2
+1072,ntsen⁴²,ntsen³²,V;PROG;SG;3,4,2
+1073,ykwenq¹,ykwenq¹ renq²⁴,V;PFV;PL;3,4,2
+1074,ntykwen³,tykwen¹⁴,V;PROSP;SG;3,4,2
+1075,nlyu¹,nlyu²⁰ wan²⁴,V;HAB;PL;2,4,2
+1076,skwaq¹,nchkwanq⁴,V;HAB;SG;1,4,2
+1077,son³,xon²⁰,V;PROSP;SG;3,4,2
+1078,kwi¹,tywi²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1079,stan¹⁴,stan¹⁴ wan⁰,V;PROSP;PL;2,4,2
+1080,ntyka²,tyka² renq¹,V;PROSP;PL;3,4,2
+1081,nchuq⁴,nchonq²⁰,V;HAB;SG;1,4,2
+1082,ntykwan²,ntykwan² wan¹,V;PFV;PL;2,4,2
+1083,ngwa²,kan²⁴,V;PROSP;SG;1,4,2
+1084,qnyi¹,nqni⁴⁰,V;HAB;SG;2,4,2
+1085,nchuq⁴,kchuq²⁴,V;PROSP;SG;3,4,2
+1086,yla³,ylan²an¹,V;PFV;PL;1+INCL,4,2
+1087,skwen¹,skwen²⁰ renq²⁴,V;PROSP;PL;3,4,2
+1088,nxi²,nxin² renq¹,V;HAB;PL;3,4,2
+1089,ne¹⁴,nni¹⁰,V;PROG;PL;1+INCL,4,2
+1090,swenq³,nswenq¹⁴,V;HAB;PL;1+INCL,4,2
+1091,xkwan¹⁴,xkwan¹⁴ renq⁰,V;PROSP;PL;3,4,2
+1092,nkqwa¹,nkqwa¹,V;PROG;SG;3,4,2
+1093,nden⁴²,ten²⁴ renq³²,V;PROSP;PL;3,4,2
+1094,kwa¹⁴,ntykwa¹⁴ renq⁰,V;HAB;PL;3,4,2
+1095,snyaq¹,nsnyaq¹renq²⁴,V;HAB;PL;3,4,2
+1096,qen⁴²,ntqen²⁴,V;HAB;SG;1,4,2
+1097,la¹,kla⁴an³²,V;PROSP;PL;1+INCL,4,2
+1098,ndon⁴²,tyon⁴²,V;PROSP;SG;2,4,2
+1099,ntsaq⁴²,nchaq⁴,V;HAB;SG;3,4,2
+1100,ntyi¹,ntyi³² renq²⁴,V;PROG;PL;3,4,2
+1101,ntyi¹,ntyi¹ wan²⁴,V;PFV;PL;2,4,2
+1102,ynaq¹,nnaq²⁰ wan²⁴,V;HAB;PL;2,4,2
+1103,xkwen¹⁴,nxkwen¹⁴,V;HAB;PL;1+INCL,4,2
+1104,sqwa¹⁴,sqwa¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1105,xoq²,xoq²,V;PFV;SG;3,4,2
+1106,ndlyu⁴²,tlyon⁴²on⁴²,V;PROSP;PL;1+INCL,4,2
+1107,yqo²,kqon¹⁴,V;PROSP;PL;1+INCL,4,2
+1108,ntykanq³,ntykanq³,V;PFV;SG;3,4,2
+1109,ywi⁴²,ywi³²,V;PFV;SG;2,4,2
+1110,sqi²,nchsqin⁴⁰,V;HAB;SG;1,4,2
+1111,ntsen⁴²,ntsen³² renq⁴,V;PROG;PL;3,4,2
+1112,xkwen¹⁴,nxkwen¹ wan⁰,V;PROG;PL;2,4,2
+1113,nkjwi⁴²,kja⁴²,V;PROSP;SG;2,4,2
+1114,sla¹,nsla¹,V;PROG;SG;3,4,2
+1115,stan¹⁴,stan⁴⁰,V;PFV;SG;1,4,2
+1116,ngyla³,xlan²an¹,V;PROSP;PL;1+INCL,4,2
+1117,ytsen⁴²,ntsen⁴,V;HAB;SG;1,4,2
+1118,nchuq⁴,nchuq³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+1119,nna¹,kna²⁰,V;PROSP;SG;3,4,2
+1120,xkwan¹⁴,nxkwan¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1121,yna³,nan⁴⁰,V;PROG;SG;1,4,2
+1122,sqyu¹,sqyu²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1123,qya⁴²,ntqya³² renq⁴,V;PROG;PL;3,4,2
+1124,yla³,ndla³ wa⁴²,V;PROG;PL;1+EXCL,4,2
+1125,ntyi¹,ntyi⁴²,V;HAB;SG;2,4,2
+1126,sen¹,sen¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+1127,sqan¹,sqan²⁰ wan²⁴,V;PROSP;PL;2,4,2
+1128,qen⁴,qen²⁰,V;PFV;SG;1,4,2
+1129,xkwen¹⁴,xkwen²⁰,V;PFV;SG;2,4,2
+1130,xtyiq¹⁰,xtyiq¹⁴ wan⁰,V;PROSP;PL;2,4,2
+1131,nkin²,nkin² wa⁴²,V;PROG;PL;1+EXCL,4,2
+1132,yqwe²,ntyqwe¹⁴,V;HAB;SG;3,4,2
+1133,sqwa¹⁴,ntsqwa¹ wan⁰,V;PROG;PL;2,4,2
+1134,xqwa¹⁰,xqwan¹⁰,V;PFV;PL;1+INCL,4,2
+1135,ntsu⁴²,nchu⁴²,V;HAB;SG;2,4,2
+1136,slaq¹,nslaq⁴²,V;PROG;SG;2,4,2
+1137,yo²,yon¹,V;PFV;SG;1,4,2
+1138,ntykwan²,tykwan²,V;PROSP;SG;3,4,2
+1139,jen²,ntjen² renq¹,V;PROG;PL;3,4,2
+1140,ntykwen³,ntykwen¹⁴,V;HAB;PL;1+INCL,4,2
+1141,kwa³,ntkwa³ renq²⁴,V;PROG;PL;3,4,2
+1142,xkwen¹⁴,nxkwen¹⁰ wa⁴²,V;PROG;PL;1+EXCL,4,2
+1143,ne⁴²,ne⁴²,V;PFV;SG;3,4,2
+1144,ja¹,ntjan³²,V;PROG;SG;1,4,2
+1145,yku⁴,ku⁴ renq⁴,V;PROSP;PL;3,4,2
+1146,ytsen⁴²,kne¹⁴,V;PROSP;PL;1+INCL,4,2
+1147,sne¹⁴,nsnen⁴⁰,V;PROG;SG;1,4,2
+1148,sqan¹,sqan⁴²,V;PFV;SG;2,4,2
+1149,yjaq³,ntyjaq²⁰,V;PROSP;SG;2,4,2
+1150,ntyjanq²,ntyjanq¹⁴,V;HAB;SG;3,4,2
+1151,nkjwi⁴²,ntyji³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+1152,styi¹,nstyi²⁰,V;HAB;SG;3,4,2
+1153,ngya⁴²,ngyan¹⁴,V;HAB;PL;1+INCL,4,2
+1154,snyaq¹,snyanq⁴,V;PROSP;SG;1,4,2
+1155,skonq³,skonq⁴⁰,V;PROSP;SG;1,4,2
+1156,nda³,nda³,V;PFV;SG;3,4,2
+1157,qya⁴²,kqyan¹⁴,V;PROSP;PL;1+INCL,4,2
+1158,ntaq³,ktaq²⁰,V;PROSP;SG;2,4,2
+1159,ne¹⁴,nne¹⁰,V;PROG;SG;3,4,2
+1160,slu¹⁴,slu²⁰,V;PFV;SG;2,4,2
+1161,styi¹,nstyin⁴,V;HAB;SG;1,4,2
+1162,sen¹,sen⁴² wa⁴²,V;PFV;PL;1+EXCL,4,2
+1163,lqa³,qa¹⁴ wan⁰,V;PROSP;PL;2,4,2
+1164,ndyu²,ndyu² renq¹,V;PROG;PL;3,4,2
+1165,qen⁴²,ntyqen²⁴,V;HAB;SG;3,4,2
+1166,xla³,nchla¹,V;HAB;SG;2,4,2
+1167,sen¹,sen²⁰en³²,V;PROSP;PL;1+INCL,4,2
+1168,ne¹⁴,nni¹ wan⁰,V;PROG;PL;2,4,2
+1169,nya¹⁴,knya¹⁴ wan⁰,V;PROSP;PL;2,4,2
+1170,lo²⁴,lon⁴⁰,V;PFV;SG;1,4,2
+1171,ji¹,ji¹in¹,V;PFV;PL;1+INCL,4,2
+1172,yqwi⁴,tyqwi⁴ renq⁴,V;PROSP;PL;3,4,2
+1173,nxi²,kxin²,V;PROSP;SG;3,4,2
+1174,ykwaq⁴,ntykwaq⁴,V;HAB;SG;3,4,2
+1175,qan⁴,tyqan²⁴an³²,V;PROSP;PL;1+INCL,4,2
+1176,yna⁴²,ynan⁴,V;PFV;SG;1,4,2
+1177,nglu³,nglu¹⁴ wa⁰,V;HAB;PL;2,4,2
+1178,ndlyu¹,tlyu²⁰ renq²⁴,V;PROSP;PL;3,4,2
+1179,kwa³,kwan⁴⁰,V;PROSP;SG;1,4,2
+1180,ntyinq³,ktyinq⁴⁰,V;PROSP;SG;1,4,2
+1181,nkjwi⁴²,ntyji³² wan⁴,V;PROG;PL;2,4,2
+1182,sne¹⁴,sne¹⁴,V;PFV;PL;1+INCL,4,2
+1183,naq¹⁴,nnyanq⁴⁰,V;HAB;SG;1,4,2
+1184,ne⁴²,kne⁴²,V;PROSP;SG;2,4,2
+1185,sna³,nsnan²an¹,V;PROG;PL;1+INCL,4,2
+1186,sqyu¹,nsqyu²⁰ renq²⁴,V;HAB;PL;3,4,2
+1187,qa²⁴,qa²⁴ renq³²,V;PROSP;PL;3,4,2
+1188,ntyjanq²,ntyjanq²,V;PROG;SG;3,4,2
+1189,xka²⁴,nxka²⁴,V;HAB;SG;3,4,2
+1190,nkjwi⁴²,nkjwi³²,V;PFV;SG;2,4,2
+1191,nton⁴²,ntyon⁴⁰,V;HAB;SG;1,4,2
+1192,ytsen⁴²,nne¹⁴,V;HAB;PL;1+INCL,4,2
+1193,xin²,nxin⁴⁰,V;HAB;SG;1,4,2
+1194,ntiqi¹,tqen⁴,V;PROSP;SG;1,4,2
+1195,naq¹,knaq²⁰ wan²⁴,V;PROSP;PL;2,4,2
+1196,ynaq¹,ynaq¹,V;PFV;SG;3,4,2
+1197,sqwi¹⁴,sqwi¹⁴,V;PFV;SG;3,4,2
+1198,xta¹,nxstan⁴⁰,V;HAB;SG;1,4,2
+1199,ndywan²,ndywan² wa⁴²,V;PFV;PL;1+EXCL,4,2
+1200,yna⁴²,na⁴²,V;HAB;SG;2,4,2
+1201,ja¹,ja¹ wan²⁴,V;PFV;PL;2,4,2
+1202,sna³,nsna³ wa⁴²,V;PROG;PL;1+EXCL,4,2
+1203,ntqan¹,tqan²⁰,V;PROSP;SG;3,4,2
+1204,nton⁴²,ntyon¹⁴,V;HAB;PL;1+INCL,4,2
+1205,yta⁴,kta⁴²,V;PROSP;SG;2,4,2
+1206,ytsen⁴²,nne¹⁴ qne⁰ wan³²,V;HAB;PL;2,4,2
+1207,nkqi¹,nkqin⁴,V;PFV;SG;1,4,2
+1208,ntykonq⁴²,ntykonq¹⁴ wa⁰,V;HAB;PL;2,4,2
+1209,xin⁴²,nxin⁴²,V;HAB;SG;1,4,2
+1210,yqo²,kqon²⁰,V;PROSP;SG;1,4,2
+1211,jen²,ntyjin¹⁴ wan⁰,V;HAB;PL;2,4,2
+1212,nton⁴²,nton⁴²on⁴²,V;PFV;PL;1+INCL,4,2
+1213,nya¹⁴,nnya¹⁰,V;PROG;PL;1+INCL,4,2
+1214,lu¹,klu⁴²,V;PROSP;SG;2,4,2
+1215,ndyu²,ntyu² renq¹,V;PROSP;PL;3,4,2
+1216,ykwanq¹,ykwanq¹ renq²⁴,V;PFV;PL;3,4,2
+1217,skwaq¹,nskwaq²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1218,ykwanq¹,ntykwanq⁴,V;HAB;SG;1,4,2
+1219,nkwa³,nkwa³ renq²⁴,V;PFV;PL;3,4,2
+1220,nton³,ntyon¹⁴,V;HAB;PL;1+INCL,4,2
+1221,ndyu²,ndyu² wa⁴²,V;HAB;PL;1+EXCL,4,2
+1222,sqna¹,sqna²⁰ wan²⁴,V;PROSP;PL;2,4,2
+1223,nduq⁴²,tyuq⁴²,V;PROSP;SG;2,4,2
+1224,nkjwi⁴²,nkjwi⁴² renq⁴,V;PFV;PL;3,4,2
+1225,jlyo³²,jlyon³²,V;PROSP;SG;1,4,2
+1226,yqwi⁴,sqwi⁴ wan⁴,V;PROG;PL;2,4,2
+1227,stan¹⁴,stan¹⁴,V;PFV;PL;1+INCL,4,2
+1228,yla³,yla³ wan²⁴,V;PFV;PL;2,4,2
+1229,ntqo¹,ntyqo¹ wan²⁴,V;HAB;PL;2,4,2
+1230,nkwa³,kwa³,V;PROSP;SG;3,4,2
+1231,xlyu⁴²,nxlyon¹on¹,V;PROG;PL;1+INCL,4,2
+1232,xyaq²,xyaq² wan¹,V;PROSP;PL;2,4,2
+1233,sna³,xna¹⁴,V;PROSP;SG;3,4,2
+1234,nton⁴²,kton¹⁴ wan⁰,V;PROSP;PL;2,4,2
+1235,ykwanq¹,ntykwanq²⁰,V;HAB;SG;3,4,2
+1236,nxi²,nxin²,V;HAB;SG;3,4,2
+1237,ndlyu¹,ndlyu¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+1238,skwaq¹,nskwaq¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+1239,xkwen¹⁴,xkwen⁴⁰,V;PROSP;SG;1,4,2
+1240,yja¹,ntyjan³²,V;PROG;SG;1,4,2
+1241,ylaq⁴,ylaq⁴ wan⁴,V;PFV;PL;2,4,2
+1242,yqan⁴²,yqan⁴²an⁴²,V;PFV;PL;1+INCL,4,2
+1243,yjaq³,yjaq³,V;PFV;SG;3,4,2
+1244,ndyu²,ntyu² wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1245,ykuq²,ntykuq² renq¹,V;PROG;PL;3,4,2
+1246,yqan⁴²,yqan¹⁴,V;PROSP;PL;1+INCL,4,2
+1247,yqan⁴²,ntyqan³²,V;PROG;SG;3,4,2
+1248,lkwi¹,tkwi⁴²,V;PROSP;SG;2,4,2
+1249,saq²,nsanq⁴⁰,V;PROG;SG;1,4,2
+1250,sna³,xna¹⁴ renq⁰,V;PROSP;PL;3,4,2
+1251,sen⁴²,ksen⁴,V;PROSP;SG;1,4,2
+1252,nkin²,nkin² wa⁴²,V;PFV;PL;1+EXCL,4,2
+1253,xti²⁰,nxti¹,V;PROG;SG;3,4,2
+1254,slu¹⁴,nslu¹⁰,V;PROG;SG;3,4,2
+1255,nden⁴²,nden⁴,V;HAB;SG;1,4,2
+1256,yno¹,nno¹on¹,V;HAB;PL;1+INCL,4,2
+1257,ytsaq³,ktsaq¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1258,xkwan¹⁴,xkwan¹⁴,V;PFV;SG;3,4,2
+1259,ndyu²,ndyu² wa⁴²,V;PROG;PL;1+EXCL,4,2
+1260,ne⁴²,nne¹⁴ qne⁰ wan³²,V;HAB;PL;2,4,2
+1261,ntykaq¹,ntykaq¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+1262,qa²⁴,qa²⁴,V;PFV;SG;3,4,2
+1263,nkjwi⁴²,nkjwen⁴²en⁴²,V;PFV;PL;1+INCL,4,2
+1264,ncha¹,ncha⁴²,V;PFV;SG;2,4,2
+1265,lu¹,klu²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1266,ne⁴²,ne⁴²en⁴²,V;PFV;PL;1+INCL,4,2
+1267,nge⁴²,ndye³²,V;PROG;SG;2,4,2
+1268,nkjwi⁴²,ntyji³²,V;PROG;SG;3,4,2
+1269,xti²⁰,xten⁴,V;PROSP;SG;1,4,2
+1270,jinyiq²,ynyiq¹⁴ wan⁰,V;PROSP;PL;2,4,2
+1271,ngwa²,ngan²⁴,V;PROG;SG;1,4,2
+1272,ntqo¹,ntqo¹ wan²⁴,V;PROG;PL;2,4,2
+1273,ngya⁴²,ngyan⁴²an,V;PFV;PL;1+INCL,4,2
+1274,ntyinq³,ntyinq³ renq²⁴,V;PFV;PL;3,4,2
+1275,xin²,nxin¹⁴,V;PROG;SG;3,4,2
+1276,ja¹,ntja¹ renq²⁴,V;PROG;PL;3,4,2
+1277,ndya³,ndyan³,V;PROG;SG;1,4,2
+1278,ntqo¹,ntyqo⁴²,V;PROG;SG;2,4,2
+1279,sen¹,nsen²⁰ renq²⁴,V;HAB;PL;3,4,2
+1280,sne¹⁴,sne¹⁴ wan⁰,V;PROSP;PL;2,4,2
+1281,yqo²,kqo¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1282,naq¹,naq¹ renq²⁴,V;PFV;PL;3,4,2
+1283,qu¹⁴,qu¹⁴,V;PFV;SG;3,4,2
+1284,jlyo³²,njlyon³²,V;PROG;SG;1,4,2
+1285,ntyqya¹,ntyqya²⁰ wan²⁴,V;HAB;PL;2,4,2
+1286,xne¹⁰,xne³ wan²⁴,V;PFV;PL;2,4,2
+1287,stan¹⁴,stan¹⁴ renq⁰,V;PFV;PL;3,4,2
+1288,nkwa³,ntkwa³ renq²⁴,V;PROG;PL;3,4,2
+1289,jlya⁴²,ntjlya²⁴,V;HAB;SG;3,4,2
+1290,ndyu²,ndyu² renq¹,V;PFV;PL;3,4,2
+1291,sqwe²⁴,sqwe²⁴ wan³²,V;PROSP;PL;2,4,2
+1292,nchaq⁴²,nchaq²⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1293,ynaq¹,nnanq³²,V;PROG;SG;1,4,2
+1294,yku⁴,ntyku³² renq⁴,V;PROG;PL;3,4,2
+1295,yku⁴,ntyku³²,V;PROG;SG;3,4,2
+1296,ndon⁴²,ndon⁴²,V;PROG;SG;3,4,2
+1297,ywi⁴²,kwi²⁴,V;PROSP;SG;3,4,2
+1298,yqwe²,kqwe¹⁴ renq⁰,V;PROSP;PL;3,4,2
+1299,ntyqo¹,tyqo⁴²,V;PROSP;SG;2,4,2
+1300,yja¹,ntjan⁴,V;PFV;SG;1,4,2
+1301,sqwe²⁴,nsqwe²⁴ wan³²,V;PROG;PL;2,4,2
+1302,lqa³,qan⁴⁰,V;PROSP;SG;1,4,2
+1303,ntson¹⁴,ktson¹⁴ renq⁰,V;PROSP;PL;3,4,2
+1304,yjaq³,ntjanq²⁰,V;PROG;SG;1,4,2
+1305,ngya⁴²,nkya⁴²,V;PROG;SG;2,4,2
+1306,nda³,ta²⁰,V;PROSP;SG;3,4,2
+1307,xoq²,xoq²,V;PROSP;SG;3,4,2
+1308,qan⁴,nkqan⁴ wan⁴,V;PROG;PL;2,4,2
+1309,swenq³,swenq³ wan²⁴,V;PFV;PL;2,4,2
+1310,ndyu²,ndyu² wan¹,V;PROG;PL;2,4,2
+1311,kwa³,ntkwan¹⁴,V;HAB;PL;1+INCL,4,2
+1312,ntsiq³,ntsiq¹,V;PROG;SG;2,4,2
+1313,lu¹,nlu⁴²,V;HAB;SG;2,4,2
+1314,jinyiq²,ynyiq²,V;PROG;SG;3,4,2
+1315,xka²⁴,xkan²⁴,V;PROSP;SG;1,4,2
+1316,ntqo¹,ntyqo¹ renq²⁴,V;HAB;PL;3,4,2
+1317,xkwen¹⁴,nxkwen¹⁰,V;PROG;PL;1+INCL,4,2
+1318,ntqan¹,tqan²⁰an³²,V;PROSP;PL;1+INCL,4,2
+1319,skwa³,nxkwa¹⁴ wan⁰,V;HAB;PL;2,4,2
+1320,skwen¹,nskwen⁴²,V;PROG;SG;2,4,2
+1321,ywi⁴²,ntjwi³²,V;PROG;SG;2,4,2
+1322,sne¹⁴,sne¹⁴ renq⁰,V;PFV;PL;3,4,2
+1323,kwa¹⁴,kwan¹⁴,V;PFV;PL;1+INCL,4,2
+1324,jlyo³²,njlyo³²,V;PROG;SG;2,4,2
+1325,sqna¹,nsqna¹,V;PROG;SG;3,4,2
+1326,yku⁴,yku⁴²,V;PFV;SG;2,4,2
+1327,qya³,qyan⁴⁰,V;PROSP;SG;1,4,2
+1328,xin²,nxin⁴⁰,V;PROG;SG;1,4,2
+1329,ykuq²,konq¹⁴,V;PROSP;PL;1+INCL,4,2
+1330,qan⁴,nkqan²⁴an³²,V;PROG;PL;1+INCL,4,2
+1331,nya¹⁴,nnya¹⁴ renq⁰,V;HAB;PL;3,4,2
+1332,sen¹,nsen²⁰,V;HAB;SG;3,4,2
+1333,kwa³,kwa³ wa⁴²,V;PFV;PL;1+EXCL,4,2
+1334,nkeq³,ntkeq² renq¹,V;PROG;PL;3,4,2
+1335,sqya¹,xqya²⁰an³²,V;PROSP;PL;1+INCL,4,2
+1336,ykwiq⁴,ntykwiq⁴²,V;HAB;SG;2,4,2
+1337,swenq³,nswenq²en¹,V;PROG;PL;1+INCL,4,2
+1338,ntsen⁴²,ntsen²⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1339,xla³,xla¹,V;PROSP;SG;2,4,2
+1340,qu¹⁴,qon¹⁴,V;PROSP;PL;1+INCL,4,2
+1341,ndlyu⁴²,ndlyu³²,V;PROG;SG;2,4,2
+1342,ntyqya¹,ntyqya¹ renq²⁴,V;PFV;PL;3,4,2
+1343,ntyja²,ntyjan⁴⁰,V;PROG;SG;1,4,2
+1344,swenq³,swenq²en¹,V;PFV;PL;1+INCL,4,2
+1345,ntsu⁴²,ntson⁴²on⁴²,V;PFV;PL;1+INCL,4,2
+1346,jlya⁴²,ntjlya³²,V;PROG;SG;2,4,2
+1347,sqyu¹,nsqyu²⁰ wan²⁴,V;HAB;PL;2,4,2
+1348,ntqen¹,ntyqin²⁰en³²,V;HAB;PL;1+INCL,4,2
+1349,yta⁴,ntan⁴ wan⁴,V;HAB;PL;2,4,2
+1350,ja¹,ntja²⁰ wan²⁴,V;HAB;PL;2,4,2
+1351,nchaq⁴²,nchaq²⁴ renq³²,V;HAB;PL;3,4,2
+1352,xqan¹,ntxqan⁴²,V;HAB;SG;2,4,2
+1353,xkwen¹⁴,xkwen¹⁴ renq⁰,V;PFV;PL;3,4,2
+1354,slu¹⁴,nslu²⁰,V;PROG;SG;2,4,2
+1355,xtyiq¹⁰,nxtenq⁴⁰,V;HAB;SG;1,4,2
+1356,yna³,na³ wan²⁴,V;PROG;PL;2,4,2
+1357,ntsen⁴²,ntsen³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+1358,yqwi⁴,tyqwi⁴ wan⁴,V;PROSP;PL;2,4,2
+1359,ntyka²,ntyka²,V;PROG;SG;3,4,2
+1360,nsuq³,nsuq³,V;PFV;SG;3,4,2
+1361,nkonq⁴²,nkonq⁴² wan⁴,V;PFV;PL;2,4,2
+1362,ykwen²,kwen¹⁴,V;PROSP;PL;1+INCL,4,2
+1363,nge⁴²,ndye³² renq⁴,V;PROG;PL;3,4,2
+1364,sne¹⁴,snen⁴⁰,V;PROSP;SG;1,4,2
+1365,ya⁴²,nkya⁴²,V;HAB;SG;2,4,2
+1366,nkonq⁴²,nkonq²⁴,V;PFV;SG;1,4,2
+1367,ndlyu¹,ndlyu²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1368,slu¹⁴,nslu¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1369,nyi¹⁴,knyi¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1370,xtyiq¹⁰,xtyiq¹⁴ renq⁰,V;PROSP;PL;3,4,2
+1371,ntyjanq²,ntyjanq⁴⁰,V;PROG;SG;1,4,2
+1372,ykwanq¹,ykwanq⁴²,V;PFV;SG;2,4,2
+1373,yqwe²,ntqwe² wa⁴²,V;PROG;PL;1+EXCL,4,2
+1374,nkwi¹,ykwi²⁰ wan²⁴,V;PROSP;PL;2,4,2
+1375,ylaq⁴,nlaq³²,V;PROG;SG;3,4,2
+1376,ntykanq³,ntykanq³ wa⁴²,V;PFV;PL;1+EXCL,4,2
+1377,xyaq²,xyaq² renq¹,V;PROSP;PL;3,4,2
+1378,xka²⁴,xka²⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1379,qne¹,qnen⁴,V;PFV;SG;1,4,2
+1380,kwa¹⁴,tykwa¹⁴ renq⁰,V;PROSP;PL;3,4,2
+1381,nkwa³,nkwa³ wan²⁴,V;PFV;PL;2,4,2
+1382,qnyi¹,knyi⁴⁰,V;PROSP;SG;2,4,2
+1383,yta⁴,ntan⁴ renq⁴,V;HAB;PL;3,4,2
+1384,ntykanq³,ntykanq³ renq¹,V;PFV;PL;3,4,2
+1385,sne³,sne²en¹,V;PFV;PL;1+INCL,4,2
+1386,la¹,nla¹ renq²⁴,V;PROG;PL;3,4,2
+1387,ntyqya¹,ntyqyan¹an¹,V;PROG;PL;1+INCL,4,2
+1388,sqna¹,sqna²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1389,skwa³,nxkwa¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1390,nchaq⁴²,nchaq⁴² wan⁴,V;PFV;PL;2,4,2
+1391,ndlyu¹,ndlyu²⁰ wa⁴²,V;PROG;PL;1+EXCL,4,2
+1392,nlyu¹,lyu¹ renq²⁴,V;PFV;PL;3,4,2
+1393,xkwen¹⁴,xkwen⁴⁰,V;PFV;SG;1,4,2
+1394,kwa¹⁴,tykwa¹⁴ wan⁰,V;PROSP;PL;2,4,2
+1395,xtyiq¹⁰,nxtyiq²⁰,V;HAB;SG;2,4,2
+1396,ntiqi¹,ntqen³²,V;PROG;SG;1,4,2
+1397,ytsen⁴²,ktsen¹⁴,V;PROSP;SG;3,4,2
+1398,swenq³,swenq⁴⁰,V;PFV;SG;1,4,2
+1399,ntykanq³,tykanq¹⁴,V;PROSP;SG;3,4,2
+1400,sne¹⁴,snen⁴⁰,V;PFV;SG;1,4,2
+1401,nkeq³,ntkenq²en¹,V;PROG;PL;1+INCL,4,2
+1402,xtyiq¹⁰,xtyiq¹ renq⁰,V;PFV;PL;3,4,2
+1403,ncha¹,kchan²⁰an³²,V;PROSP;PL;1+INCL,4,2
+1404,ntsiq³,ntsenq¹⁴,V;HAB;PL;1+INCL,4,2
+1405,nton³,nton²on¹,V;PFV;PL;1+INCL,4,2
+1406,ncha¹,ncha¹ wan²⁴,V;PROG;PL;2,4,2
+1407,ntqan¹,ntqan¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+1408,ntqo¹,tyqo¹ renq²⁴,V;PROSP;PL;3,4,2
+1409,ndon⁴²,ndon¹,V;PFV;SG;1,4,2
+1410,ntqo¹,ntyqo¹ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1411,ne⁴²,nne³²,V;PROG;SG;3,4,2
+1412,sqna¹,nsqna⁴²,V;HAB;SG;2,4,2
+1413,ntyjyuq¹,ntyjyonq¹on¹,V;PFV;PL;1+INCL,4,2
+1414,xta¹,nxstanE,V;PROG;SG;3,4,2
+1415,ntiqi¹,ntiqi¹ wan²⁴,V;PFV;PL;2,4,2
+1416,ntsiq³,ktsenq⁴⁰,V;PROSP;SG;1,4,2
+1417,ytiq⁴,ytenq¹,V;PFV;SG;1,4,2
+1418,nduq⁴²,ndyuq²⁴,V;HAB;SG;3,4,2
+1419,ndlyu⁴²,tlyu⁴² renq⁴,V;PROSP;PL;3,4,2
+1420,xku²⁰,xkon²⁰,V;PROSP;SG;1,4,2
+1421,yna⁴²,yna⁴² wa⁴²,V;PFV;PL;1+EXCL,4,2
+1422,nchaq⁴²,kchanq¹⁴,V;PROSP;PL;1+INCL,4,2
+1423,xla³,xlan³,V;PFV;SG;1,4,2
+1424,qya⁴²,qya⁴²,V;PFV;SG;3,4,2
+1425,ne⁴²,nne³² qne³² wan⁴,V;PROG;PL;2,4,2
+1426,qan⁴,tyqan⁴,V;PROSP;SG;3,4,2
+1427,sqwi¹⁴,nsqwi³,V;PROG;SG;3,4,2
+1428,ngyla³,ngylan³,V;PROG;SG;1,4,2
+1429,ne¹⁴,nni¹⁴ renq⁰,V;PROSP;PL;3,4,2
+1430,ntykwen³,ntykwen²en¹,V;PROG;PL;1+INCL,4,2
+1431,ntsiq³,ktsiq¹⁴,V;PROSP;SG;3,4,2
+1432,skwen¹,nskwen¹,V;PROG;SG;3,4,2
+1433,xlyu⁴²,nxlyu³²,V;PROG;SG;3,4,2
+1434,nkqwa⁴²,nkqwa⁴²,V;PFV;SG;3,4,2
+1435,qu¹⁴,qu¹⁴ renq⁰,V;PFV;PL;3,4,2
+1436,yno¹,ntqen²⁰,V;PROG;SG;1,4,2
+1437,nglu³,nglon¹⁴,V;HAB;PL;1+INCL,4,2
+1438,ntyinq³,ktyinq¹⁴,V;PROSP;SG;3,4,2
+1439,skonq³,ntkonq¹⁴ wan⁰,V;HAB;PL;2,4,2
+1440,ywi⁴²,ywen⁴²an⁴²,V;PFV;PL;1+INCL,4,2
+1441,yjoq⁴,kjonq²⁴on³²,V;PROSP;PL;1+INCL,4,2
+1442,ntson¹⁴,ntson¹⁴,V;HAB;SG;3,4,2
+1443,ntyjanq²,ntyjanqE,V;PROG;SG;2,4,2
+1444,xtyiq¹⁰,nxtyiq¹⁰ renq⁰,V;PROG;PL;3,4,2
+1445,nchuq⁴,nchuq⁴,V;PFV;SG;3,4,2
+1446,nyi¹⁴,knyi¹⁴,V;PROSP;PL;1+INCL,4,2
+1447,skwan²,skwan¹,V;PFV;SG;2,4,2
+1448,ntykaq¹,ntykanq²⁰ renq²⁴,V;HAB;PL;3,4,2
+1449,skwaq¹,nskwanq³²,V;PROG;SG;1,4,2
+1450,yqu²,kqon⁴⁰,V;PROSP;SG;1,4,2
+1451,xin²,nxin¹⁴,V;HAB;SG;3,4,2
+1452,nduq⁴²,ntyuq²⁴ renq³²,V;PROSP;PL;3,4,2
+1453,sti⁴,sti⁴ wan⁴,V;PFV;PL;2,4,2
+1454,ndya³,ndyan¹,V;HAB;SG;2,4,2
+1455,yna⁴²,yna⁴² renq⁴,V;PFV;PL;3,4,2
+1456,jwi³,ntyjin⁴⁰,V;PROG;SG;1,4,2
+1457,ntyinq³,ntyinq¹⁴ renq⁰,V;HAB;PL;3,4,2
+1458,xin²,kxin¹⁴,V;PROSP;SG;3,4,2
+1459,skwaq¹,nskwaq²⁰an³²,V;HAB;PL;1+INCL,4,2
+1460,ne¹⁴,nen⁴⁰,V;PFV;SG;1,4,2
+1461,sla¹,slan⁴,V;PFV;SG;1,4,2
+1462,ntyjanq²,tyjanq¹⁴,V;PROSP;SG;3,4,2
+1463,ntsiq³,ntsiq¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1464,ytsaq³,ntsaq¹,V;PROG;SG;2,4,2
+1465,lo²⁴,nlon⁴⁰,V;PROG;SG;1,4,2
+1466,saq²,saq² wa⁴²,V;PFV;PL;1+EXCL,4,2
+1467,ntaq³,ntanq⁴⁰,V;HAB;SG;1,4,2
+1468,jlya⁴²,jlya²⁴,V;PROSP;SG;3,4,2
+1469,xne¹⁰,xne³ wa⁴²,V;PFV;PL;1+EXCL,4,2
+1470,slu¹⁴,slon⁴⁰,V;PROSP;SG;1,4,2
+1471,nchuq⁴,kchonq⁴²,V;PROSP;SG;2,4,2
+1472,xin²,nxin¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1473,ykwiq⁴,ykwenq²⁴en³²,V;PFV;PL;1+INCL,4,2
+1474,ston⁴²,ston⁴²,V;PFV;SG;3,4,2
+1475,ntqan¹,tqan²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1476,yjwiq²,kjwenq⁴⁰,V;PROSP;SG;1,4,2
+1477,ykuq²,ykuq¹,V;PFV;SG;2,4,2
+1478,kwa³,ntkwa³ wan²⁴,V;PROG;PL;2,4,2
+1479,ntykwa⁴,tykwa⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1480,xin²,nxin¹ wan¹,V;PROG;PL;2,4,2
+1481,ntyinq³,ntyinq²in¹,V;PROG;PL;1+INCL,4,2
+1482,qya⁴²,ntqya³²,V;PROG;SG;2,4,2
+1483,yku⁴,ntyku⁴²,V;HAB;SG;2,4,2
+1484,ntyinq³,ktyinq¹⁴ renq⁰,V;PROSP;PL;3,4,2
+1485,yta⁴,yta⁴,V;PFV;SG;3,4,2
+1486,ngya⁴²,nkya⁴²,V;HAB;SG;2,4,2
+1487,ntiqi¹,ntiqi²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1488,yo²,ndyo¹⁴,V;HAB;SG;3,4,2
+1489,nton⁴²,nton³² renq⁴,V;PROG;PL;3,4,2
+1490,sta¹,stan⁴,V;PFV;SG;1,4,2
+1491,ndya³,ndyan³,V;HAB;SG;1,4,2
+1492,skwan²,nskwan²,V;PROG;SG;3,4,2
+1493,ngon²,ngon²,V;PFV;SG;3,4,2
+1494,ykwanq¹,ykwanq¹an¹,V;PFV;PL;1+INCL,4,2
+1495,qa²⁴,ntqa²⁴,V;HAB;SG;3,4,2
+1496,ntyinq³,ntyinq³ wan²⁴,V;PFV;PL;2,4,2
+1497,ja¹,ntja¹ wan²⁴,V;PROG;PL;2,4,2
+1498,ykwaq⁴,ntykwanq⁴,V;PFV;SG;1,4,2
+1499,kwi¹,tywi²⁰ renq²⁴,V;PROSP;PL;3,4,2
+1500,jinyiq²,jinyiq² wan¹,V;PFV;PL;2,4,2
+1501,ylaq⁴,nlaq⁴²,V;PROG;SG;2,4,2
+1502,xqwa¹⁰,xqwa¹⁰,V;PROSP;SG;3,4,2
+1503,ndya³,ndyan¹,V;PROG;SG;2,4,2
+1504,nkin²,nkin²en¹,V;PROG;PL;1+INCL,4,2
+1505,qya⁴²,ntqya²⁴ wan³²,V;HAB;PL;2,4,2
+1506,yna⁴²,ynan⁴²an⁴²,V;PFV;PL;1+INCL,4,2
+1507,nsuq³,nsuq¹⁴,V;HAB;SG;3,4,2
+1508,ne¹⁴,nni¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1509,skanq³,skanq¹,V;PFV;SG;2,4,2
+1510,skwen¹,nskwen²⁰ wan²⁴,V;HAB;PL;2,4,2
+1511,xqan¹,ntxqan²⁰ renq²⁴,V;HAB;PL;3,4,2
+1512,nchuq⁴,nchonq⁴²,V;HAB;SG;2,4,2
+1513,sqyu¹,nsqyon¹on¹,V;PROG;PL;1+INCL,4,2
+1514,nkin²,nkin² renq¹,V;PFV;PL;3,4,2
+1515,snyaq¹,snyanq⁴,V;PFV;SG;1,4,2
+1516,nkin²,skin¹⁴,V;PROSP;SG;3,4,2
+1517,nxi²,xin² renq¹,V;PFV;PL;3,4,2
+1518,nten³,nten³,V;PFV;SG;3,4,2
+1519,skwan⁴,skwan²⁴an³²,V;PFV;PL;1+INCL,4,2
+1520,skwan⁴,nxkwan⁴²,V;HAB;SG;2,4,2
+1521,ja¹,jan¹an¹,V;PFV;PL;1+INCL,4,2
+1522,xne¹⁰,nxne¹⁴ wan⁰,V;HAB;PL;2,4,2
+1523,nxi²,nxin⁴⁰,V;PFV;SG;1,4,2
+1524,nkqwa⁴²,ntyqwan²⁴,V;HAB;SG;1,4,2
+1525,ylaq⁴,klaq⁴,V;PROSP;SG;3,4,2
+1526,ytsen⁴²,nne³² qne³² wan⁴,V;PROG;PL;2,4,2
+1527,skanq³,ntskanq³ wan¹⁴,V;PROG;PL;2,4,2
+1528,nkqi¹,ntqi¹ renq²⁴,V;PROG;PL;3,4,2
+1529,ytiq⁴,ntyenq²⁴en³²,V;HAB;PL;1+INCL,4,2
+1530,skwaq¹,skwaq¹an¹,V;PFV;PL;1+INCL,4,2
+1531,slaq¹,slaq²⁰ wan²⁴,V;PROSP;PL;2,4,2
+1532,ykuq²,ntykuq¹⁴ wan⁰,V;HAB;PL;2,4,2
+1533,la¹,kla⁴ renq⁴,V;PROSP;PL;3,4,2
+1534,nkjwi⁴²,nkjwen⁴⁰,V;PFV;SG;1,4,2
+1535,qne¹,qne¹en¹,V;PFV;PL;1+INCL,4,2
+1536,nkjwi⁴²,ntyjin¹in¹,V;PROG;PL;1+INCL,4,2
+1537,sqya¹,nsqyan³²,V;PROG;SG;1,4,2
+1538,ykwanq¹,ykwanq¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+1539,jwi³,ntyji²,V;PROG;SG;3,4,2
+1540,nton⁴²,ntyon¹⁴ renq⁰,V;HAB;PL;3,4,2
+1541,qu¹⁴,ntqon⁴⁰,V;PROG;SG;1,4,2
+1542,nge⁴²,ndye²⁴ renq³²,V;HAB;PL;3,4,2
+1543,xqan¹,xqan⁴,V;PROSP;SG;1,4,2
+1544,ntiqi¹,ntiqi¹,V;PFV;SG;3,4,2
+1545,ykwen²,ntykwen² wan¹,V;PROG;PL;2,4,2
+1546,nten³,nten²⁰,V;HAB;SG;2,4,2
+1547,ntyja²,ntyjan²an¹,V;HAB;PL;1+INCL,4,2
+1548,skonq³,skonq⁴⁰,V;PFV;SG;1,4,2
+1549,nti¹,nti²⁰ renq²⁴,V;HAB;PL;3,4,2
+1550,jwi³,ja¹⁴ renq⁰,V;PROSP;PL;3,4,2
+1551,snyaq¹,nsnyanq⁴,V;HAB;SG;1,4,2
+1552,yku⁴,ykon¹,V;PFV;SG;1,4,2
+1553,stan¹⁴,nstan¹⁰,V;PROG;SG;3,4,2
+1554,nti¹,kti²⁰ wan²⁴,V;PROSP;PL;2,4,2
+1555,ndya³,tya³,V;PROSP;SG;3,4,2
+1556,xla³,nxla¹,V;PROG;SG;2,4,2
+1557,swi²⁰,swi⁴²,V;PROSP;SG;2,4,2
+1558,ntiqi¹,ntiqi¹ renq²⁴,V;PFV;PL;3,4,2
+1559,kwa¹⁴,ntykwan⁴⁰,V;HAB;SG;1,4,2
+1560,ntykwan¹⁴,tykwan¹⁴,V;PROSP;SG;3,4,2
+1561,nkya⁴²,nkya⁴²,V;PFV;SG;3,4,2
+1562,xyaq²,nxyanq²an¹,V;PROG;PL;1+INCL,4,2
+1563,ndlyu¹,ndlyon⁴,V;PFV;SG;1,4,2
+1564,nkwi¹,ntkwen³²,V;PROG;SG;1,4,2
+1565,ykwaq⁴,ykwaq⁴,V;PFV;SG;3,4,2
+1566,nton⁴²,nton³,V;PROG;SG;3,4,2
+1567,ntqen¹,tyqin²⁰en³²,V;PROSP;PL;1+INCL,4,2
+1568,qen⁴²,ntqen³²,V;PROG;SG;1,4,2
+1569,ykwenq¹,ntykwenq⁴,V;HAB;SG;1,4,2
+1570,ywi⁴²,ywi⁴² renq⁴,V;PFV;PL;3,4,2
+1571,ntykanq³,tykanq²⁰,V;PROSP;SG;2,4,2
+1572,nsuq³,nsuq¹,V;PFV;SG;2,4,2
+1573,stan¹⁴,nstan¹⁰ wa⁴²,V;PROG;PL;1+EXCL,4,2
+1574,sne¹⁴,nsne¹⁴ renq⁰,V;HAB;PL;3,4,2
+1575,xtyiq¹⁰,xtenq¹⁴,V;PROSP;PL;1+INCL,4,2
+1576,lqa³,ntqa³²,V;PROG;SG;2,4,2
+1577,ntyjanq²,ntyjanq⁴⁰,V;PFV;SG;1,4,2
+1578,slu¹⁴,slu²⁰,V;PROSP;SG;2,4,2
+1579,ne¹⁴,ne¹⁰,V;PROG;SG;2,4,2
+1580,ntyqya¹,tyqya²⁰ renq²⁴,V;PROSP;PL;3,4,2
+1581,nglu³,nglon²on¹,V;PROG;PL;1+INCL,4,2
+1582,sne¹⁴,sne¹⁴ renq⁰,V;PROSP;PL;3,4,2
+1583,yo²,ndyo²⁰,V;HAB;SG;2,4,2
+1584,lo²⁴,nlo²⁴ wa⁴²,V;PROG;PL;1+EXCL,4,2
+1585,sti⁴,sten²⁴en³²,V;PFV;PL;1+INCL,4,2
+1586,ston⁴²,nston²⁴,V;HAB;SG;3,4,2
+1587,nton⁴²,kton¹⁴,V;PROSP;SG;3,4,2
+1588,son³,nxon²⁰ wan²⁴,V;HAB;PL;2,4,2
+1589,xin⁴²,xin⁴²,V;PROSP;SG;3,4,2
+1590,ntqo¹,ntqo¹,V;PFV;SG;3,4,2
+1591,swenq³,swenq¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1592,sqwe²⁴,nsqwe²⁴ wa⁴²,V;PROG;PL;1+EXCL,4,2
+1593,xin⁴²,xin⁴² wan⁴,V;PROSP;PL;2,4,2
+1594,ne⁴²,ne⁴² qne³² wan⁴,V;PFV;PL;2,4,2
+1595,slu¹⁴,slu¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1596,ngwa²,nga²⁴,V;PROG;SG;3,4,2
+1597,xqwa¹⁰,xqwa²⁰,V;PFV;SG;2,4,2
+1598,nkonq⁴²,konq⁴²,V;PROSP;SG;2,4,2
+1599,xta¹,xtan⁴⁰,V;PROSP;SG;1,4,2
+1600,nkqwa¹,ntyqwa²⁰ renq²⁴,V;HAB;PL;3,4,2
+1601,ykuq²,ntykuq²,V;PROG;SG;3,4,2
+1602,yqwi⁴,ntqwi⁴²,V;HAB;SG;2,4,2
+1603,nduq⁴²,nduq³² wan⁴,V;PROG;PL;2,4,2
+1604,ngya⁴²,kya²⁴ renq³²,V;PROSP;PL;3,4,2
+1605,sqya¹,nsqya¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+1606,lo²⁴,nlo²⁴,V;HAB;SG;3,4,2
+1607,nden⁴²,ten²⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1608,nkqi¹,ntqin²⁰on³²,V;HAB;PL;1+INCL,4,2
+1609,ytsen⁴²,ytsen⁴²,V;PFV;SG;3,4,2
+1610,nkonq⁴²,nkonq⁴²,V;PFV;SG;3,4,2
+1611,qne⁴²,nqne⁴²,V;HAB;SG;2,4,2
+1612,qya⁴²,ndyuq⁴²,V;HAB;SG;2,4,2
+1613,ytiq⁴,ktiq⁴ wan⁴,V;PROSP;PL;2,4,2
+1614,slaq¹,nslaq²⁰ renq²⁴,V;HAB;PL;3,4,2
+1615,xtya²⁰,xtya⁴²,V;PROSP;SG;2,4,2
+1616,ntyjyuq¹,kyjyuq²⁰ renq²⁴,V;PROSP;PL;3,4,2
+1617,ngon²,xkwan²an¹,V;PROSP;PL;1+INCL,4,2
+1618,sqya¹,sqya¹,V;PFV;SG;3,4,2
+1619,kwa¹⁴,ntkwa¹⁰ wa⁴²,V;PROG;PL;1+EXCL,4,2
+1620,xta¹,nstan¹⁴ wan⁰,V;HAB;PL;2,4,2
+1621,sqan¹,sqan²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1622,ntaq³,ntaq³ wan²⁴,V;PROG;PL;2,4,2
+1623,son³,nson¹ renq²⁴,V;PROG;PL;3,4,2
+1624,nda³,ndan⁴,V;PFV;SG;1,4,2
+1625,ndyi⁴,tyi⁴²,V;PROSP;SG;2,4,2
+1626,xkwan¹⁴,nxkwan²⁰,V;HAB;SG;2,4,2
+1627,yja¹,ntyjan¹an¹,V;PROG;PL;1+INCL,4,2
+1628,nton³,nton² wan⁴,V;PFV;PL;2,4,2
+1629,nden⁴²,nden¹en¹,V;PROG;PL;1+INCL,4,2
+1630,nya¹⁴,nya¹⁴ wan⁰,V;PFV;PL;2,4,2
+1631,qne⁴²,nqnen¹,V;PROG;SG;1,4,2
+1632,jlya⁴²,ntjlyan³²,V;PROG;SG;1,4,2
+1633,xtyiq¹⁰,nxtyiq¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1634,xne¹⁰,xnen⁴⁰,V;PFV;SG;1,4,2
+1635,yqwi⁴,yqwi⁴²,V;PFV;SG;2,4,2
+1636,ntyka²,ntyka² renq¹,V;PROG;PL;3,4,2
+1637,ntiqi¹,ntqen⁴,V;HAB;SG;1,4,2
+1638,yjoq⁴,yjoq⁴ wa⁴²,V;PFV;PL;1+EXCL,4,2
+1639,kwi¹,kwi¹ renq²⁴,V;PFV;PL;3,4,2
+1640,ya⁴²,nkya⁴²,V;PROG;SG;2,4,2
+1641,lu¹,lu¹ renq²⁴,V;PFV;PL;3,4,2
+1642,ykwen²,ntykwen² wa⁴²,V;PROG;PL;1+EXCL,4,2
+1643,sqna¹,sqna²⁰,V;PROSP;SG;3,4,2
+1644,ylu³,klon¹⁴,V;PROSP;PL;1+INCL,4,2
+1645,snyaq¹,snyaq²⁰ an³²,V;PROSP;PL;1+INCL,4,2
+1646,sna³,sna³ wa⁴²,V;PFV;PL;1+EXCL,4,2
+1647,sta¹,nstan¹an¹,V;PROG;PL;1+INCL,4,2
+1648,sla¹,sla⁴²,V;PFV;SG;2,4,2
+1649,saq²,saq² wan¹,V;PFV;PL;2,4,2
+1650,yla³,ndlan⁴⁰,V;HAB;SG;1,4,2
+1651,kwi¹,ndwi¹ wan²⁴,V;PROG;PL;2,4,2
+1652,ytsaq³,ntsaq¹⁴ wan²⁴,V;HAB;PL;2,4,2
+1653,ntyqya¹,ntyqya¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+1654,ntqen¹,ntqen¹,V;PROG;SG;3,4,2
+1655,jinyiq²,jnyiq²⁰,V;PROSP;SG;2,4,2
+1656,ndyu²,ndyu¹,V;PFV;SG;2,4,2
+1657,ne⁴²,knen¹⁴,V;PROSP;SG;1,4,2
+1658,yqwe²,ntyqwen⁴⁰,V;HAB;SG;1,4,2
+1659,jlyo³²,jlyo³²,V;PFV;SG;2,4,2
+1660,nsuq³,nsuq¹⁴ wan²⁴,V;HAB;PL;2,4,2
+1661,xkwen¹⁴,xkwen²⁰,V;PROSP;SG;2,4,2
+1662,sqwe²⁴,nsqwe²⁴ wan³²,V;HAB;PL;2,4,2
+1663,sla¹,sla²⁰ wan²⁴,V;PROSP;PL;2,4,2
+1664,slaq¹,slaq²⁰,V;PROSP;SG;3,4,2
+1665,xyaq²,xyaq²,V;PFV;SG;3,4,2
+1666,kwa³,kwa¹⁴,V;PROSP;SG;3,4,2
+1667,xyaq²,nxyaq² renq¹,V;HAB;PL;3,4,2
+1668,ntqan¹,tqan⁴,V;PROSP;SG;1,4,2
+1669,sen¹,sen⁴²,V;PROSP;SG;2,4,2
+1670,ntsiq³,ntsiq³,V;PROG;SG;3,4,2
+1671,ywi⁴²,ntjwen¹⁴,V;HAB;PL;1+INCL,4,2
+1672,qne⁴²,qne³²,V;PFV;SG;2,4,2
+1673,ntqen¹,tyqin²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1674,ntyja²,ntyja¹,V;PROG;SG;2,4,2
+1675,nglu³,klu¹⁴,V;PROSP;SG;3,4,2
+1676,qya³,qya³ wa⁴²,V;PFV;PL;1+EXCL,4,2
+1677,sne¹⁴,sne¹⁴,V;PROSP;PL;1+INCL,4,2
+1678,qne¹,nqne¹ renq²⁴,V;PROG;PL;3,4,2
+1679,ykwen²,ntykwen¹⁴ renq⁰,V;HAB;PL;3,4,2
+1680,nkqi¹,kqin⁴,V;PROSP;SG;1,4,2
+1681,sna³,sna³,V;PFV;SG;3,4,2
+1682,xkwan¹⁴,xkwan¹⁴ renq⁰,V;PFV;PL;3,4,2
+1683,ntsa²⁴,ntsa²⁴ renq³²,V;HAB;PL;3,4,2
+1684,kwan¹,ntkwan²⁴an³²,V;HAB;PL;1+INCL,4,2
+1685,jinyiq²,jinyiq² renq¹,V;PFV;PL;3,4,2
+1686,sqya¹,nxqya⁴²,V;HAB;SG;2,4,2
+1687,xqwa¹⁰,nxqwa¹ wan⁰,V;HAB;PL;2,4,2
+1688,nkonq⁴²,konq¹on¹,V;PROSP;PL;1+INCL,4,2
+1689,nten³,sten²⁰,V;PROSP;SG;2,4,2
+1690,ntyinq³,ntyinq¹⁴,V;HAB;SG;3,4,2
+1691,kwa³,kwa³,V;PFV;SG;3,4,2
+1692,ne⁴²,nne¹⁴,V;HAB;PL;1+INCL,4,2
+1693,ntaq³,ntaq³,V;PFV;SG;3,4,2
+1694,ntsaq⁴²,ksanq⁴,V;PROSP;SG;1,4,2
+1695,ntykwan²,ntykwan²,V;PFV;SG;3,4,2
+1696,slu¹⁴,nslu¹ wan⁰,V;PROG;PL;2,4,2
+1697,slu¹⁴,slu¹⁴ renq⁰,V;PFV;PL;3,4,2
+1698,kwa³,kwa¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1699,ntsiq³,ntsenq²en¹,V;PFV;PL;1+INCL,4,2
+1700,qnyi¹,qnin⁴,V;PFV;SG;1,4,2
+1701,xqan¹,xqan¹ wan²⁴,V;PFV;PL;2,4,2
+1702,sta¹,sta²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1703,ykwenq¹,tykwenq⁴,V;PROSP;SG;1,4,2
+1704,yno¹,yno⁴²,V;PROG;SG;2,4,2
+1705,qya⁴²,ntqyan³²,V;PROG;SG;1,4,2
+1706,yku⁴,ntyku³² wan⁴,V;PROG;PL;2,4,2
+1707,ntkonq³,skonq¹⁴,V;PROSP;PL;1+INCL,4,2
+1708,lya¹⁴,jlya²⁰,V;PROSP;SG;2,4,2
+1709,ya⁴²,ya³²,V;PFV;SG;2,4,2
+1710,lqa³,nt/lyqa¹⁴,V;HAB;SG;3,4,2
+1711,xlyu⁴²,nxlyu³²,V;PROG;SG;2,4,2
+1712,ngyla³,ngyla¹,V;HAB;SG;2,4,2
+1713,nkin²,ntykin⁴⁰,V;PROG;SG;1,4,2
+1714,snyaq¹,snyaq²⁰,V;PROSP;SG;3,4,2
+1715,ntykwa⁴,tykwan⁴,V;PROSP;SG;1,4,2
+1716,qa²⁴,ntqan²⁴,V;HAB;PL;1+INCL,4,2
+1717,ntykwan¹⁴,ntykwan⁴⁰,V;PROG;SG;1,4,2
+1718,nduq⁴²,ndonq³²,V;PROG;SG;1,4,2
+1719,ja¹,ntja²⁰ renq²⁴,V;HAB;PL;3,4,2
+1720,nton⁴²,kton⁴⁰,V;PROSP;SG;1,4,2
+1721,ntsu⁴²,ntsu⁴² renq⁴,V;PFV;PL;3,4,2
+1722,sna³,sna¹,V;PFV;SG;2,4,2
+1723,ytsaq³,ntsaq³,V;PROG;SG;3,4,2
+1724,nchuq⁴,nchonq¹an¹,V;PROG;PL;1+INCL,4,2
+1725,slu¹⁴,slu¹⁴ renq⁰,V;PROSP;PL;3,4,2
+1726,yla³,yla¹,V;PFV;SG;2,4,2
+1727,ngyla³,nchla³ renq²⁴,V;HAB;PL;3,4,2
+1728,ntykonq⁴²,ntykonq⁴²,V;PFV;SG;3,4,2
+1729,sqi²,sqi² wan¹,V;PFV;PL;2,4,2
+1730,lqa³,qa²⁰,V;PROSP;SG;2,4,2
+1731,lqa³,ntqa³ renq²⁴,V;PROG;PL;3,4,2
+1732,swenq³,nswenq²⁰,V;HAB;SG;2,4,2
+1733,sqwe¹⁴,nsqwe¹,V;PROG;SG;2,4,2
+1734,ndon⁴²,ndon⁴² wan⁴,V;PFV;PL;2,4,2
+1735,skwan⁴,nxkwan²⁰ wan²⁴,V;HAB;PL;2,4,2
+1736,ndlyu⁴²,ndlyu⁴² wa⁴²,V;PFV;PL;1+EXCL,4,2
+1737,yjoq⁴,ntyjoq⁴ wan⁴,V;HAB;PL;2,4,2
+1738,ntykaq¹,ntykanq⁴,V;HAB;SG;1,4,2
+1739,yku⁴,ykon²⁴on³²,V;PFV;PL;1+INCL,4,2
+1740,ntqan¹,ntqan¹ wan²⁴,V;PROG;PL;2,4,2
+1741,jinyiq²,jinyiq¹,V;PFV;SG;2,4,2
+1742,yqwe²,ntyqwe¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1743,ntaq³,ntaq¹⁴ renq⁰,V;HAB;PL;3,4,2
+1744,sne³,nsne³,V;PROG;SG;3,4,2
+1745,slya²⁴,nslyan¹⁴,V;PROG;PL;1+INCL,4,2
+1746,sqwe²⁴,sqwen¹⁴,V;PROSP;PL;1+INCL,4,2
+1747,ndyi⁴,ndyi⁴²,V;PFV;SG;2,4,2
+1748,xne¹⁰,nxne²⁰,V;PROG;SG;2,4,2
+1749,ntson¹⁴,ntson⁴⁰,V;PROG;SG;1,4,2
+1750,ngwa²,nga⁴²,V;PROG;SG;2,4,2
+1751,qya³,ntyqya³ wan²⁴,V;PROG;PL;2,4,2
+1752,ynaq¹,nnaq²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1753,qya³,qya³,V;PFV;SG;3,4,2
+1754,nyi¹⁴,nyi¹⁴ wan⁰,V;PFV;PL;2,4,2
+1755,xlyu⁴²,xlyu⁴² wa⁴²,V;PFV;PL;1+EXCL,4,2
+1756,ntsa²⁴,ntsan¹⁴,V;PFV;PL;1+INCL,4,2
+1757,sqyu¹,nsqyon²⁰on³²,V;HAB;PL;1+INCL,4,2
+1758,nya¹⁴,knya²⁰,V;PROSP;SG;2,4,2
+1759,nkwi¹,tykwi²⁰,V;PROSP;SG;3,4,2
+1760,nton³,nton³²,V;PROG;SG;1,4,2
+1761,sen⁴²,sen⁴²,V;PFV;SG;3,4,2
+1762,ncha¹,nchan³²,V;PROG;SG;1,4,2
+1763,yqo²,ntyqo¹⁴,V;HAB;SG;3,4,2
+1764,nton³,ntyon¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1765,ngyla³,ngyla³,V;PROG;SG;3,4,2
+1766,ykwiq⁴,tykwiq⁴ wan⁴,V;PROSP;PL;2,4,2
+1767,kwan¹,ntkwan³² renq⁴,V;PROG;PL;3,4,2
+1768,naq¹,nnanq⁴,V;HAB;SG;1,4,2
+1769,nge⁴²,kin²⁴,V;PROSP;SG;1,4,2
+1770,jen²,jen² wa⁴²,V;PFV;PL;1+EXCL,4,2
+1771,styi¹,nstyi¹ renq²⁴,V;PROG;PL;3,4,2
+1772,xoq²,xonq⁴⁰,V;PROSP;SG;1,4,2
+1773,yo²,ndyo² renq¹,V;PROG;PL;3,4,2
+1774,nten³,sten¹⁴,V;PROSP;SG;3,4,2
+1775,qne¹,nqne²⁰ renq²⁴,V;HAB;PL;3,4,2
+1776,ntyqo¹,ntyqon¹on¹,V;PROG;PL;1+INCL,4,2
+1777,nxi²,kxin¹,V;PROSP;SG;2,4,2
+1778,ne⁴²,kne¹⁴,V;PROSP;PL;1+INCL,4,2
+1779,qan⁴,qan⁴ wa⁴²,V;PFV;PL;1+EXCL,4,2
+1780,ntqen¹,tyqin²⁰ wan²⁴,V;PROSP;PL;2,4,2
+1781,yja¹,tyja²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1782,ndywiq³,ndywiq¹,V;PFV;SG;2,4,2
+1783,nti¹,nti⁴²,V;PFV;SG;2,4,2
+1784,ywi⁴²,ywi⁴² wan⁴,V;PFV;PL;2,4,2
+1785,xtya²⁰,nxtya⁴²,V;PROG;SG;2,4,2
+1786,nkya⁴²,ngya⁴²,V;PROG;SG;2,4,2
+1787,jlya⁴²,jlya⁴² wan³²,V;PFV;PL;2,4,2
+1788,nxi²,nxin²en¹,V;HAB;PL;1+INCL,4,2
+1789,xtyiq¹⁰,nxtyiq¹⁴,V;HAB;SG;3,4,2
+1790,ykwanq¹,ykwanq²⁰ wan²⁴,V;PROSP;PL;2,4,2
+1791,nkqwa¹,nkqwan³²,V;PROG;SG;1,4,2
+1792,nsuq³,nsonq²on¹,V;PFV;PL;1+INCL,4,2
+1793,nya¹⁴,nnyan⁴⁰,V;PROG;SG;1,4,2
+1794,nton⁴²,kton¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1795,xne¹⁰,xne²⁰,V;PROSP;SG;2,4,2
+1796,kwan¹,kwan⁴²,V;PFV;SG;2,4,2
+1797,yjoq⁴,kjoq⁴²,V;PROSP;SG;2,4,2
+1798,sqwe²⁴,sqwe³²,V;PFV;SG;2,4,2
+1799,ndiyan³²,jyan⁴,V;PROG;SG;3,4,2
+1800,nkeq³,keq¹⁴ wan¹,V;PROSP;PL;2,4,2
+1801,naq¹,nnaq¹ wan²⁴,V;PROG;PL;2,4,2
+1802,ntykwan²,tykwan²an¹,V;PROSP;PL;1+INCL,4,2
+1803,kwi¹,tywen²⁰en³²,V;PROSP;PL;1+INCL,4,2
+1804,ylu³,ndlon³,V;PROG;SG;1,4,2
+1805,yqu²,ntyqu² wa⁴²,V;HAB;PL;1+EXCL,4,2
+1806,nkqi¹,ntqi²⁰ wan²⁴,V;HAB;PL;2,4,2
+1807,ji¹,ji¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+1808,sne¹⁴,nsnen⁴⁰,V;HAB;SG;1,4,2
+1809,lya¹⁴,nlyan¹⁰,V;PROG;PL;1+INCL,4,2
+1810,ntykwan²,ntykwan¹,V;PROG;SG;2,4,2
+1811,yku⁴,ntyku⁴²,V;PROG;SG;2,4,2
+1812,ntyja²,tyja² wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1813,jwi³,ntyjin⁴⁰,V;HAB;SG;1,4,2
+1814,qen⁴²,ntqe⁴²,V;HAB;SG;2,4,2
+1815,xne¹⁰,nxne¹⁴,V;HAB;PL;1+INCL,4,2
+1816,nchuq⁴,nchuq⁴ renq⁴,V;HAB;PL;3,4,2
+1817,son³,son³ wan²⁴,V;PFV;PL;2,4,2
+1818,skwaq¹,nchkwaq²⁰,V;HAB;SG;3,4,2
+1819,ntyka²,tyka¹,V;PROSP;SG;2,4,2
+1820,nxin⁴²,nxin³²,V;PROG;SG;1,4,2
+1821,ntykanq³,ntykanq³ wan¹⁴,V;PROG;PL;2,4,2
+1822,sqwa¹⁴,nsqwa¹⁴,V;HAB;SG;3,4,2
+1823,ndlyu¹,ndlyu¹ renq²⁴,V;PFV;PL;3,4,2
+1824,yqo²,ntyqo² wan¹,V;PROG;PL;2,4,2
+1825,yta⁴,ytan⁴,V;PFV;SG;1,4,2
+1826,xqan¹,xqan⁴,V;PFV;SG;1,4,2
+1827,sqwa¹⁴,sqwa¹⁴ wan⁰,V;PROSP;PL;2,4,2
+1828,ntsu⁴²,ntsu⁴² wan⁴,V;PFV;PL;2,4,2
+1829,skwen¹,skwen¹ wan²⁴,V;PFV;PL;2,4,2
+1830,nlyu¹,nlyu²⁰,V;HAB;SG;3,4,2
+1831,slaq¹,slanq⁴,V;PFV;SG;1,4,2
+1832,sta¹,stan²⁰an³²,V;PROSP;PL;1+INCL,4,2
+1833,lqa³,ntqa³,V;PROG;SG;3,4,2
+1834,ylaq⁴,ylaq⁴ renq⁴,V;PFV;PL;3,4,2
+1835,skwan²,skwan²,V;PFV;SG;3,4,2
+1836,xta¹,nstan² wa⁴²,V;PROG;PL;1+EXCL,4,2
+1837,ywi⁴²,kjwi⁴²,V;PROSP;SG;2,4,2
+1838,swi²⁰,nswen⁴,V;HAB;SG;1,4,2
+1839,sqwa¹⁴,sqwa¹⁴ renq⁰,V;PROSP;PL;3,4,2
+1840,snyaq¹,snyaq¹renq²⁴,V;PFV;PL;3,4,2
+1841,skwan⁴,nxkwan²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1842,jinyiq²,ynyinq¹⁴,V;PROSP;PL;1+INCL,4,2
+1843,nlyu¹,nlyon²⁰,V;PFV;SG;1,4,2
+1844,ngyla³,kilan³,V;PROSP;SG;1,4,2
+1845,sti⁴,nstyin⁴ renq⁴,V;HAB;PL;3,4,2
+1846,ykwen²,ykwen²en¹,V;PFV;PL;1+INCL,4,2
+1847,lqa³,lqan⁴⁰,V;PFV;SG;1,4,2
+1848,sqan¹,ntsqan²⁰an³²,V;HAB;PL;1+INCL,4,2
+1849,xta¹,nxstan¹⁴,V;HAB;SG;3,4,2
+1850,naq¹,nnaq⁴²,V;PROG;SG;2,4,2
+1851,yqwe²,kqwen¹⁴,V;PROSP;PL;1+INCL,4,2
+1852,xti²⁰,nxti⁴²,V;HAB;SG;2,4,2
+1853,nxin⁴²,nxin⁴,V;HAB;SG;1,4,2
+1854,xkwen¹⁴,xkwen¹⁴,V;PROSP;SG;3,4,2
+1855,ntsa²⁴,ntsa²⁴,V;PFV;SG;3,4,2
+1856,qen⁴²,qe²⁴,V;PROSP;SG;3,4,2
+1857,xka²⁴,xka²⁴ wan³²,V;PROSP;PL;2,4,2
+1858,ntsu⁴²,ntsu³²,V;PROG;SG;2,4,2
+1859,ytiq⁴,ntyiq⁴,V;HAB;SG;3,4,2
+1860,yqan⁴²,ntyqan³²,V;PROG;SG;2,4,2
+1861,son³,son⁴⁰,V;PFV;SG;2,4,2
+1862,lo²⁴,nlo¹,V;PROG;SG;3,4,2
+1863,qya³,qyan⁴⁰,V;PFV;SG;1,4,2
+1864,ntaq³,ktaq¹⁴ wan⁰,V;PROSP;PL;2,4,2
+1865,lu¹,nlon¹on¹,V;PROG;PL;1+INCL,4,2
+1866,xkuq²,nxkonq²⁰,V;HAB;SG;1,4,2
+1867,ngwa²,ka²⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1868,nlyu¹,nlyu¹ wan²⁴,V;PROG;PL;2,4,2
+1869,yjwiq²,kjwiq²⁰,V;PROSP;SG;2,4,2
+1870,ntykwen³,ntykwen⁴⁰,V;PFV;SG;1,4,2
+1871,ngwa²,kan²⁴,V;PROSP;PL;1+INCL,4,2
+1872,sqi²,xqi¹⁴⁰ renq¹,V;PROSP;PL;3,4,2
+1873,ntqen¹,tyqin⁴²,V;PROSP;SG;2,4,2
+1874,sqan¹,sqan²⁰,V;PROSP;SG;3,4,2
+1875,xlyu⁴²,xlyu²⁴ renq⁴,V;PROSP;PL;3,4,2
+1876,ntsa²⁴,ntsa⁴²,V;HAB;SG;2,4,2
+1877,xka²⁴,nxkan¹⁰,V;PROG;PL;1+INCL,4,2
+1878,yqo²,ntyqon¹⁴,V;HAB;PL;1+INCL,4,2
+1879,nglu³,klu¹⁴ renq⁰,V;PROSP;PL;3,4,2
+1880,ngyla³,xla³ renq²⁴,V;PFV;PL;3,4,2
+1881,sqyu¹,sqyon⁴,V;PFV;SG;1,4,2
+1882,lo²⁴,lo²⁴,V;PFV;SG;3,4,2
+1883,sqwe¹⁴,sqwe¹⁴⁰ wa⁴²,V;PFV;PL;1+EXCL,4,2
+1884,styi¹,nstyin¹in¹,V;PROG;PL;1+INCL,4,2
+1885,ntqo¹,ntqo⁴²,V;PFV;SG;2,4,2
+1886,nkqwa¹,nkqwa¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+1887,sqwe¹⁴,sqwen¹⁴,V;PFV;PL;1+INCL,4,2
+1888,ntaq³,ntaq¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1889,ntiqi¹,ntiqi²⁰ renq²⁴,V;HAB;PL;3,4,2
+1890,sti⁴,styin⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1891,saq²,nsaq¹⁴ renq⁰,V;HAB;PL;3,4,2
+1892,naq¹⁴,nnyaq¹⁴ renq⁰,V;HAB;PL;3,4,2
+1893,ntykaq¹,ntykanq⁴,V;PFV;SG;1,4,2
+1894,ngyla³,xla³ wan²⁴,V;PFV;PL;2,4,2
+1895,ylaq⁴,nlyanq²⁴an³²,V;HAB;PL;1+INCL,4,2
+1896,ylu³,ylon²on¹,V;PFV;PL;1+INCL,4,2
+1897,nyi¹⁴,nnyin⁴⁰,V;HAB;SG;1,4,2
+1898,nkeq³,ntykeq¹,V;PROG;SG;2,4,2
+1899,lya¹⁴,nlyan⁴⁰,V;HAB;SG;1,4,2
+1900,ne¹⁴,nni¹ renq⁰,V;PROG;PL;3,4,2
+1901,qen⁴,ntyqin⁴²,V;HAB;SG;2,4,2
+1902,sqna¹,nsqna⁴²,V;PROG;SG;2,4,2
+1903,nkya⁴²,ngya²⁴,V;PROG;SG;3,4,2
+1904,ntyqya¹,ntyqya¹,V;PROG;SG;3,4,2
+1905,jwi³,jwi³ wan²⁴,V;PFV;PL;2,4,2
+1906,lu¹,lu¹,V;PFV;SG;3,4,2
+1907,ne⁴²,nnen¹⁴,V;HAB;SG;1,4,2
+1908,xqwa¹⁰,xqwan¹⁰,V;PROSP;PL;1+INCL,4,2
+1909,nxi²,nxin⁴⁰,V;HAB;SG;1,4,2
+1910,sqan¹,sqan¹,V;PFV;SG;3,4,2
+1911,qne¹,qne¹ renq²⁴,V;PFV;PL;3,4,2
+1912,nchin¹,nchin⁴²,V;HAB;SG;2,4,2
+1913,ntsiq³,ntsiq¹⁴,V;HAB;SG;3,4,2
+1914,ya⁴²,tsa²⁴,V;PROSP;SG;3,4,2
+1915,ntsu⁴²,ntsu³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+1916,ndya³,tyan³,V;PROSP;SG;1,4,2
+1917,ntyjyuq¹,ntyjyuq¹ wan²⁴,V;PFV;PL;2,4,2
+1918,qne⁴²,nqne³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+1919,xqan¹,ntxqan²⁰an³²,V;HAB;PL;1+INCL,4,2
+1920,qne¹,nqnen⁴,V;HAB;SG;1,4,2
+1921,sne¹⁴,sne¹⁴⁰ wa⁴²,V;PFV;PL;1+EXCL,4,2
+1922,ngya⁴²,ngya³²,V;PFV;SG;2,4,2
+1923,nden⁴²,nden⁴²,V;PFV;SG;3,4,2
+1924,ntsiq³,ntsiq³ wan²⁴,V;PFV;PL;2,4,2
+1925,xqwa¹⁰,nxqwa¹ wan⁰,V;PROG;PL;2,4,2
+1926,xka²⁴,nxka³²,V;PROG;SG;2,4,2
+1927,ngon²,ndgon¹,V;PROG;SG;2,4,2
+1928,yno¹,kno¹ wan²⁴,V;PROSP;PL;2,4,2
+1929,ntkonq³,ntkonq³ wan²⁴,V;PROG;PL;2,4,2
+1930,xtya²⁰,xtya²⁰,V;PROSP;SG;3,4,2
+1931,xta¹,xta¹,V;PFV;SG;3,4,2
+1932,sen¹,nsen²⁰ wan²⁴,V;HAB;PL;2,4,2
+1933,yqwi⁴,tyqwi⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1934,ntykaq¹,ntykanq¹ renq²⁴,V;PFV;PL;3,4,2
+1935,sqwe²⁴,nsqwe³²,V;PROG;SG;2,4,2
+1936,sqwe¹⁴,sqwe¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1937,ntykwan²,ntykwan²,V;PROG;SG;3,4,2
+1938,nkqwa¹,nkqwa¹ wan²⁴,V;PROG;PL;2,4,2
+1939,ndlyu¹,ndlyu²⁰ renq²⁴,V;PROG;PL;3,4,2
+1940,la¹,klan⁴,V;PROSP;SG;1,4,2
+1941,lu¹,klon²⁰on³²,V;PROSP;PL;1+INCL,4,2
+1942,yno¹,nno⁴²,V;HAB;SG;2,4,2
+1943,nti¹,nti¹ wan²⁴,V;PFV;PL;2,4,2
+1944,ndlyu⁴²,tlyu⁴² wan⁴,V;PROSP;PL;2,4,2
+1945,nkqi¹,kqi²⁰ renq²⁴,V;PROSP;PL;3,4,2
+1946,ndlyu⁴²,tlyu⁴²,V;PROSP;SG;2,4,2
+1947,ytiq⁴,ntyiq⁴ renq⁴,V;HAB;PL;3,4,2
+1948,styi¹,styin⁴,V;PFV;SG;1,4,2
+1949,ji¹,ji²⁰,V;PROSP;SG;3,4,2
+1950,xin²,kxin²⁰,V;PROSP;SG;2,4,2
+1951,lo²⁴,lo⁴²,V;PFV;SG;2,4,2
+1952,yla³,kla¹⁴,V;PROSP;SG;3,4,2
+1953,ntyinq³,ntyinq² renq¹,V;PROG;PL;3,4,2
+1954,yqan⁴²,yqan²⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1955,kwi¹,ndwi²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+1956,yla³,ndla³ wan²⁴,V;PROG;PL;2,4,2
+1957,sen¹,sen⁴,V;PFV;SG;1,4,2
+1958,nsuq³,nsonq³,V;PFV;SG;1,4,2
+1959,nton³,ntyon⁴⁰,V;HAB;SG;1,4,2
+1960,lu¹,nlon³²,V;PROG;SG;1,4,2
+1961,ntsen⁴²,ntsen¹en¹,V;PROG;PL;1+INCL,4,2
+1962,jlya⁴²,ntjlya³² wan³²,V;PROG;PL;2,4,2
+1963,jen²,ntjen¹,V;PROG;SG;2,4,2
+1964,xki¹,xkin⁴,V;PROSP;SG;1,4,2
+1965,xkwen¹⁴,xkwen¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+1966,ylaq⁴,nlyaq⁴²,V;HAB;SG;2,4,2
+1967,naq¹⁴,nyaq¹⁴ wan⁰,V;PROSP;PL;2,4,2
+1968,nkwi¹,nkwi¹ wan²⁴,V;PFV;PL;2,4,2
+1969,sqi²,xqi²⁰,V;PROSP;SG;2,4,2
+1970,yno¹,ntqe⁴ wan⁴,V;PROG;PL;2,4,2
+1971,jlya⁴²,jlya⁴²,V;PROSP;SG;2,4,2
+1972,ne⁴²,kn¹⁴ qne⁰ renq³²,V;PROSP;PL;3,4,2
+1973,yku⁴,ku⁴²,V;PROSP;SG;2,4,2
+1974,jen²,tyjin⁴⁰,V;PROSP;SG;1,4,2
+1975,ntkonq³,skonq¹⁴ wan⁰,V;PROSP;PL;2,4,2
+1976,xne¹⁰,nxne²,V;PROG;SG;3,4,2
+1977,skonq³,skonq¹⁴,V;PROSP;PL;1+INCL,4,2
+1978,kwi¹,ndwi¹ renq²⁴,V;PROG;PL;3,4,2
+1979,nkonq⁴²,ntkonq³²,V;PROG;SG;2,4,2
+1980,ykwen²,kwen⁴⁰,V;PROSP;SG;1,4,2
+1981,ndywan²,ndywan²an¹,V;PROG;PL;1+INCL,4,2
+1982,nna¹,nna²⁰,V;HAB;SG;3,4,2
+1983,ston⁴²,ston²⁴,V;PROSP;SG;3,4,2
+1984,ynaq¹,ynaq¹ wan²⁴,V;PFV;PL;2,4,2
+1985,sqi²,nchsqi¹⁴⁰ renq¹,V;HAB;PL;3,4,2
+1986,lu¹,nlon²⁰on³²,V;HAB;PL;1+INCL,4,2
+1987,xtyiq¹⁰,xtyiq²⁰,V;PROSP;SG;2,4,2
+1988,qu¹⁴,ntqu¹⁰ wa⁴²,V;PROG;PL;1+EXCL,4,2
+1989,naq¹,nnanq³²,V;PROG;SG;1,4,2
+1990,qne¹,nqnen³²,V;PROG;SG;1,4,2
+1991,nge⁴²,ndye⁴²,V;HAB;SG;2,4,2
+1992,ytiq⁴,ntyinq²⁰,V;HAB;SG;1,4,2
+1993,xin²,xin² renq¹,V;PFV;PL;3,4,2
+1994,kwan¹,ntkwan¹an¹,V;PROG;PL;1+INCL,4,2
+1995,nkjwi⁴²,nkjwi⁴² wan⁴,V;PFV;PL;2,4,2
+1996,qu¹⁴,ntqu¹⁰,V;PROG;SG;3,4,2
+1997,ndyi⁴,ndyin³²,V;PROG;SG;1,4,2
+1998,yja¹,tyja²⁰,V;PROSP;SG;3,4,2
+1999,ntykwen³,ntykwen¹⁴ renq⁰,V;HAB;PL;3,4,2
+2000,nden⁴²,nden⁴² wa⁴²,V;PFV;PL;1+EXCL,4,2
+2001,ylu³,ndlyu²⁰,V;HAB;SG;2,4,2
+2002,xkwan¹⁴,xkwan¹⁴,V;PROSP;SG;3,4,2
+2003,ntiqi¹,ntiqi¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+2004,yqu²,ntyqon²on¹,V;HAB;PL;1+INCL,4,2
+2005,ywi⁴²,ntjwen⁴,V;HAB;SG;1,4,2
+2006,ntyqya¹,ntyqya⁴²,V;PROG;SG;2,4,2
+2007,ston⁴²,ston⁴² wa⁴²,V;PFV;PL;1+EXCL,4,2
+2008,jinyiq²,ynyiq¹⁴,V;PROSP;SG;3,4,2
+2009,nduq⁴²,nduq⁴² renq⁴,V;PFV;PL;3,4,2
+2010,skonq³,skonq²on¹,V;PFV;PL;1+INCL,4,2
+2011,ntson¹⁴,ntson¹⁰,V;PROG;SG;3,4,2
+2012,nton³,nton³² renq²⁴,V;PROG;PL;3,4,2
+2013,slu¹⁴,nslon¹⁴,V;HAB;PL;1+INCL,4,2
+2014,nkqwa¹,ntyqwa²⁰,V;HAB;SG;3,4,2
+2015,qu¹⁴,qu¹⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2016,nkqwa¹,tyqwa²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2017,xne¹⁰,nxne¹⁴,V;HAB;SG;3,4,2
+2018,kwa¹⁴,ntkwa¹⁰,V;PROG;SG;3,4,2
+2019,snyaq¹,nsnyaq¹an¹,V;PROG;PL;1+INCL,4,2
+2020,nkwa³,nkwa³,V;PFV;SG;3,4,2
+2021,nten³,nten³ wan²⁴,V;PFV;PL;2,4,2
+2022,yqwi⁴,sqwi⁴ wan⁴,V;PROG;PL;1+EXCL,4,2
+2023,xku²⁰,xkon²⁰,V;PFV;SG;1,4,2
+2024,xne¹⁰,xne¹⁴ wan⁰,V;PROSP;PL;2,4,2
+2025,slu¹⁴,nslu²⁰,V;HAB;SG;2,4,2
+2026,kwi¹,tykwi²⁰,V;PROSP;SG;3,4,2
+2027,ntyjanq²,tyjanq⁴⁰,V;PROSP;SG;1,4,2
+2028,sta¹,sta¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2029,nchin¹,nchin⁴,V;PFV;SG;1,4,2
+2030,ngyla³,ngyla³,V;HAB;SG;3,4,2
+2031,ntykaq¹,ntykanq¹an¹,V;PROG;PL;1+INCL,4,2
+2032,lqa³,nt/lyqa¹⁴ renq⁰,V;HAB;PL;3,4,2
+2033,xta¹,nstan¹⁴,V;HAB;PL;1+INCL,4,2
+2034,xka²⁴,nxka¹⁰ wa⁴²,V;PROG;PL;1+EXCL,4,2
+2035,ykwiq⁴,tykwiq⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2036,skanq³,skanq¹⁴ wan⁰,V;PROSP;PL;2,4,2
+2037,nxi²,kxin² renq¹,V;PROSP;PL;3,4,2
+2038,ykwenq¹,ntykwenq²⁰wan²⁴,V;HAB;PL;2,4,2
+2039,yqan⁴²,yqan²⁴,V;PFV;SG;1,4,2
+2040,ntykwa⁴,tykwa⁴ renq⁴,V;PROSP;PL;3,4,2
+2041,sna³,xnan⁴⁰,V;PROSP;SG;1,4,2
+2042,qne⁴²,qne⁴²,V;PFV;SG;3,4,2
+2043,xka²⁴,xka²⁴ renq³²,V;PROSP;PL;3,4,2
+2044,ylu³,ylu³ wan²⁴,V;PFV;PL;2,4,2
+2045,ntykonq⁴²,ntykonq¹⁴,V;HAB;PL;1+INCL,4,2
+2046,qen⁴,tyqin⁴ wan⁴,V;PROSP;PL;2,4,2
+2047,yta⁴,ytan²⁴an³²,V;PFV;PL;1+INCL,4,2
+2048,nglu³,nglon⁴⁰,V;PFV;SG;1,4,2
+2049,xkwen¹⁴,nxkwen¹⁴,V;HAB;SG;3,4,2
+2050,nkwa³,kwan⁴⁰,V;PROSP;SG;1,4,2
+2051,naq¹,nnaq²⁰an³²,V;HAB;PL;1+INCL,4,2
+2052,slya²⁴,xlyan²⁴,V;PROSP;SG;1,4,2
+2053,sqi²,ntsqen²en¹,V;PROG;PL;1+INCL,4,2
+2054,nlyu¹,nlyu²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2055,xlyu⁴²,nxlyon³²,V;PROG;SG;1,4,2
+2056,sqya¹,nxqyan⁴,V;HAB;SG;1,4,2
+2057,swi²⁰,swi²⁰ renq²⁴,V;PFV;PL;3,4,2
+2058,yku⁴,ku⁴,V;PROSP;SG;3,4,2
+2059,ntykwen³,ntykwen⁴⁰,V;PROG;SG;1,4,2
+2060,ya⁴²,ya⁴² wa⁴²,V;PFV;PL;1+EXCL,4,2
+2061,sqya¹,nsqya¹ renq²⁴,V;PROG;PL;3,4,2
+2062,nsuq³,nsonq³,V;PROG;SG;1,4,2
+2063,sla¹,nsla⁴²,V;PROG;SG;2,4,2
+2064,nna¹,nnan³²,V;PROG;SG;1,4,2
+2065,yo²,ndyo¹,V;PROG;SG;2,4,2
+2066,sqwi¹⁴,sqwen⁴⁰,V;PROSP;SG;1,4,2
+2067,yqo²,ntyqo² wa⁴²,V;PROG;PL;1+EXCL,4,2
+2068,qya⁴²,ntqya² wa⁴²,V;PROG;PL;1+EXCL,4,2
+2069,skonq³,skonq²⁰,V;PROSP;SG;2,4,2
+2070,slya²⁴,slya²⁴,V;PFV;SG;3,4,2
+2071,slu¹⁴,nslu¹⁰ wa⁴²,V;PROG;PL;1+EXCL,4,2
+2072,yjoq⁴,ntyjonq¹on¹,V;PROG;PL;1+INCL,4,2
+2073,ntyqo¹,ntyqon¹on¹,V;PFV;PL;1+INCL,4,2
+2074,ya⁴²,kya²⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2075,jlya⁴²,jlya²⁴ wan³²,V;PROSP;PL;2,4,2
+2076,naq¹⁴,nnyaq²⁰,V;HAB;SG;2,4,2
+2077,qen⁴,tyqin⁴²,V;PROSP;SG;2,4,2
+2078,xtyiq¹⁰,xtyiq²⁰,V;PFV;SG;2,4,2
+2079,ngon²,skwan² wan¹,V;PFV;PL;2,4,2
+2080,ykwaq⁴,ntykwaq³²,V;PROG;SG;3,4,2
+2081,nduq⁴²,nduq³²,V;PROG;SG;2,4,2
+2082,xku²⁰,xku²⁰,V;PROSP;SG;3,4,2
+2083,ntyka²,ntykan²an¹,V;PFV;PL;1+INCL,4,2
+2084,ntykanq³,ntykanq¹⁴ wan⁰,V;HAB;PL;2,4,2
+2085,sqwe¹⁴,sqwe¹⁴ wan⁰,V;PROSP;PL;2,4,2
+2086,ytiq⁴,ntenq¹en¹,V;PROG;PL;1+INCL,4,2
+2087,lya¹⁴,nlya¹ wan⁰,V;PROG;PL;2,4,2
+2088,ston⁴²,ston¹⁴,V;PROSP;PL;1+INCL,4,2
+2089,slaq¹,slaq¹,V;PFV;SG;3,4,2
+2090,nyi¹⁴,nnyi¹,V;PROG;SG;2,4,2
+2091,skwen¹,skwen¹en¹,V;PFV;PL;1+INCL,4,2
+2092,ntqan¹,ntqan²⁰ renq²⁴,V;HAB;PL;3,4,2
+2093,nda³,ndan³²,V;PROG;SG;1,4,2
+2094,ntykwa⁴,ntykwan³²,V;PROG;SG;1,4,2
+2095,ntyi¹,ktyi²⁰ wan²⁴,V;PROSP;PL;2,4,2
+2096,yku⁴,ntyku⁴ renq⁴,V;HAB;PL;3,4,2
+2097,ntyi¹,ntyi³² wan²⁴,V;PROG;PL;2,4,2
+2098,xkwan¹⁴,xkwan¹⁴ wan⁰,V;PFV;PL;2,4,2
+2099,qen⁴,qen⁴ wan⁴,V;PFV;PL;2,4,2
+2100,ykwenq¹,tykwenq²⁰ renq²⁴,V;PROSP;PL;3,4,2
+2101,ntsa²⁴,ntsa¹ wan³²,V;PROG;PL;2,4,2
+2102,xin⁴²,nxin⁴²,V;HAB;SG;2,4,2
+2103,sqwe²⁴,sqwe²⁴,V;PROSP;SG;3,4,2
+2104,skwan⁴,nskwan³² wan⁴,V;PROG;PL;2,4,2
+2105,ntsiq³,ntsiq³ renq²⁴,V;PROG;PL;3,4,2
+2106,sqyu¹,sqyon¹on¹,V;PFV;PL;1+INCL,4,2
+2107,xta¹,nstan¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2108,ncha¹,ncha¹ renq²⁴,V;PFV;PL;3,4,2
+2109,jwi³,ja²⁰,V;PROSP;SG;2,4,2
+2110,skonq³,ntkonq²⁰,V;HAB;SG;2,4,2
+2111,ncha¹,nchan¹an¹,V;PROG;PL;1+INCL,4,2
+2112,nge⁴²,ke²⁴ wan³²,V;PROSP;PL;2,4,2
+2113,xlyu⁴²,nxlyu²⁴ wan⁴,V;HAB;PL;2,4,2
+2114,nyi¹⁴,nnyin⁴⁰,V;PROG;SG;1,4,2
+2115,nkwi¹,ntkwi¹ wan²⁴,V;PROG;PL;2,4,2
+2116,nkeq³,nkeq³ wan²⁴,V;PFV;PL;2,4,2
+2117,ykwanq¹,ykwanq¹,V;PFV;SG;3,4,2
+2118,ncha¹,kcha²⁰ wan²⁴,V;PROSP;PL;2,4,2
+2119,sne³,nsnen⁴⁰,V;HAB;SG;1,4,2
+2120,xta¹,xtan⁴⁰,V;PFV;SG;1,4,2
+2121,lkwi¹,lkwen⁴,V;PFV;SG;1,4,2
+2122,skanq³,skanq³ wan²⁴,V;PFV;PL;2,4,2
+2123,lqa³,ntqan¹,V;PROG;SG;1,4,2
+2124,nkwa³,ntkwa³ wan²⁴,V;PROG;PL;2,4,2
+2125,ntykwa⁴,tykwa⁴²,V;PROSP;SG;2,4,2
+2126,ytsaq³,ktsaq²⁰,V;PROSP;SG;2,4,2
+2127,ngyla³,nxla³ wan²⁴,V;PROG;PL;2,4,2
+2128,ntqen¹,ntqen¹ wan²⁴,V;PFV;PL;2,4,2
+2129,jlya⁴²,jlya⁴² renq³²,V;PFV;PL;3,4,2
+2130,xta¹,xtan⁴²,V;PFV;SG;2,4,2
+2131,sla¹,nsla¹ wan²⁴,V;PROG;PL;2,4,2
+2132,kwan¹,kwan⁴,V;PROSP;SG;1,4,2
+2133,yjaq³,ntyjaq²⁰,V;HAB;SG;2,4,2
+2134,xin⁴²,xin⁴² wan⁴,V;PFV;PL;2,4,2
+2135,sne³,nsne²en¹,V;PROG;PL;1+INCL,4,2
+2136,yno¹,yno⁴²,V;PFV;SG;2,4,2
+2137,yta⁴,ktan²⁴an³²,V;PROSP;PL;1+INCL,4,2
+2138,yla³,klan¹⁴,V;PROSP;PL;1+INCL,4,2
+2139,naq¹,nnaq¹an¹,V;PROG;PL;1+INCL,4,2
+2140,skwan⁴,xkwan⁴²,V;PROSP;SG;2,4,2
+2141,xkwen¹⁴,xkwen¹⁴,V;PFV;PL;1+INCL,4,2
+2142,skwaq¹,skwaq²⁰ wan²⁴,V;PROSP;PL;2,4,2
+2143,nton⁴²,nton¹,V;PROG;SG;1,4,2
+2144,ndya³,ndyan³,V;PFV;SG;1,4,2
+2145,ndywan²,tywan² wan¹,V;PROSP;PL;2,4,2
+2146,sqan¹,sqan⁴,V;PFV;SG;1,4,2
+2147,ntyja²,ntyjan⁴⁰,V;PFV;SG;1,4,2
+2148,qen⁴,qen⁴ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2149,naq¹⁴,nnaq²an¹,V;PROG;PL;1+INCL,4,2
+2150,nton³,ntyon¹⁴ renq⁰,V;HAB;PL;3,4,2
+2151,slu¹⁴,slon⁴⁰,V;PFV;SG;1,4,2
+2152,xkwan¹⁴,xkwan²⁰,V;PROSP;SG;2,4,2
+2153,yqo²,kqo²⁰,V;PROSP;SG;2,4,2
+2154,ncha¹,ncha²⁰ wan²⁴,V;HAB;PL;2,4,2
+2155,ndywan²,ndywan¹,V;PFV;SG;2,4,2
+2156,saq²,saq¹⁴,V;PROSP;SG;3,4,2
+2157,ntykwen³,tykwen¹⁴ wan⁰,V;PROSP;PL;2,4,2
+2158,qa²⁴,ntqa²⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2159,naq¹⁴,nnaq² renq¹,V;PROG;PL;3,4,2
+2160,swi²⁰,swi²⁰,V;PFV;SG;3,4,2
+2161,sne³,nsnen⁴⁰,V;PROG;SG;1,4,2
+2162,xne¹⁰,nxnen⁴⁰,V;HAB;SG;1,4,2
+2163,nxi²,nxin²,V;PROG;SG;3,4,2
+2164,jwi³,jwen²en¹,V;PFV;PL;1+INCL,4,2
+2165,ykwenq¹,tykwenq²⁰,V;PROSP;SG;3,4,2
+2166,saq²,nsaq² wa⁴²,V;PROG;PL;1+EXCL,4,2
+2167,ynaq¹,ynaq¹ renq²⁴,V;PFV;PL;3,4,2
+2168,ne⁴²,ne⁴² qne³² wa⁴²,V;PFV;PL;1+EXCL,4,2
+2169,ntyka²,ntykan²an¹,V;PROG;PL;1+INCL,4,2
+2170,swenq³,nswenq¹⁴ renq⁰,V;HAB;PL;3,4,2
+2171,stan¹⁴,stan²⁰,V;PROSP;SG;2,4,2
+2172,xka²⁴,nxka¹ wan³²,V;PROG;PL;2,4,2
+2173,ytsen⁴²,ne⁴²en⁴²,V;PFV;PL;1+INCL,4,2
+2174,swi²⁰,swen²⁰en³²,V;PFV;PL;1+INCL,4,2
+2175,yqo²,yqo² renq¹,V;PFV;PL;3,4,2
+2176,slya²⁴,xlya²⁴ renq³²,V;PROSP;PL;3,4,2
+2177,ntyka²,tyka²,V;PROSP;SG;3,4,2
+2178,ndywan²,ndywan¹,V;PROG;SG;2,4,2
+2179,xin⁴²,nxin³² renq⁴,V;PROG;PL;3,4,2
+2180,sqya¹,nxqya²⁰ wan²⁴,V;HAB;PL;2,4,2
+2181,nten³,sten¹⁴ wan⁰,V;PROSP;PL;2,4,2
+2182,sqwa¹⁴,sqwa²⁰,V;PFV;SG;2,4,2
+2183,skwan⁴,nskwan³²,V;PROG;SG;3,4,2
+2184,ntyinq³,ntyinq²⁰,V;HAB;SG;2,4,2
+2185,ntykaq¹,ntykaq²⁰ wan²⁴,V;HAB;PL;2,4,2
+2186,skwen¹,nskwen¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+2187,sna³,nxna¹⁴,V;HAB;SG;3,4,2
+2188,yno¹,ynon²⁰,V;PFV;SG;1,4,2
+2189,ntyinq³,ntyinq³,V;PROG;SG;3,4,2
+2190,nti¹,nten⁴,V;PFV;SG;1,4,2
+2191,qnyi¹,nqni¹,V;PROG;SG;3,4,2
+2192,qne¹,kqnen⁴,V;PROSP;SG;1,4,2
+2193,kwa¹⁴,ntkwa¹ renq⁰,V;PROG;PL;3,4,2
+2194,sne³,nsne²⁰,V;HAB;SG;2,4,2
+2195,nge⁴²,ngin⁴²,V;PFV;SG;1,4,2
+2196,stan¹⁴,stan¹⁴ wan⁰,V;PFV;PL;2,4,2
+2197,xla³,nchlan³,V;HAB;SG;1,4,2
+2198,yja¹,ntyja²⁰,V;HAB;SG;3,4,2
+2199,qya³,qyan²an¹,V;PFV;PL;1+INCL,4,2
+2200,yja¹,ntyja²⁰ renq²⁴,V;HAB;PL;3,4,2
+2201,qya³,ntyqya¹,V;PROG;SG;2,4,2
+2202,sqwe¹⁴,sqwe¹⁴,V;PROSP;SG;3,4,2
+2203,xqwa¹⁰,xqwa¹⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2204,sqwa¹⁴,nsqwa²⁰,V;HAB;SG;2,4,2
+2205,yna³,na¹⁴ renq²⁴,V;HAB;PL;3,4,2
+2206,xtyiq¹⁰,nxtyiq¹⁴ renq⁰,V;HAB;PL;3,4,2
+2207,nkqwa¹,ntyqwa²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2208,ngyla³,nxla³ renq²⁴,V;PROG;PL;3,4,2
+2209,nyi¹⁴,knyi¹⁴ renq⁰,V;PROSP;PL;3,4,2
+2210,qnyi¹,qnyi¹ renq²⁴,V;PFV;PL;3,4,2
+2211,yna⁴²,nan¹⁴,V;HAB;PL;1+INCL,4,2
+2212,ndlyu⁴²,tlyon⁴²,V;PROSP;SG;1,4,2
+2213,ndlyu¹,tlyon²⁰on³²,V;PROSP;PL;1+INCL,4,2
+2214,nkqi¹,ntyqi⁴²,V;HAB;SG;2,4,2
+2215,ynaq¹,nnaq¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+2216,yo²,yo²,V;PFV;SG;3,4,2
+2217,sne³,sne³ renq²⁴,V;PFV;PL;3,4,2
+2218,sla¹,nsla¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+2219,nge⁴²,nge⁴²,V;PFV;SG;3,4,2
+2220,ndyu²,ndyu²,V;PROG;SG;3,4,2
+2221,xoq²,xonq⁴⁰,V;PFV;SG;1,4,2
+2222,son³,nson¹,V;PROG;SG;3,4,2
+2223,sqwa¹⁴,sqwa¹⁴⁰ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2224,ylu³,ylu³,V;PFV;SG;3,4,2
+2225,ngya⁴²,nkyqan²⁴,V;HAB;SG;1,4,2
+2226,swi²⁰,nswi²⁰ wan²⁴,V;HAB;PL;2,4,2
+2227,naq¹,nanq⁴,V;PFV;SG;1,4,2
+2228,ntyjyuq¹,ntyjyonq³²,V;PROG;SG;1,4,2
+2229,xku²⁰,xku²⁰,V;PFV;SG;3,4,2
+2230,slya²⁴,nxlya²⁴,V;HAB;SG;3,4,2
+2231,ngon²,skwan²an¹,V;PFV;PL;1+INCL,4,2
+2232,jwi³,ntyji¹⁴,V;HAB;SG;3,4,2
+2233,sqan¹,sqan¹ renq²⁴,V;PFV;PL;3,4,2
+2234,xtyiq¹⁰,nxtenq¹⁴,V;HAB;PL;1+INCL,4,2
+2235,ntyka²,ntyka²,V;HAB;SG;3,4,2
+2236,ntson¹⁴,ktson²⁰,V;PROSP;SG;2,4,2
+2237,son³,son⁴,V;PFV;SG;1,4,2
+2238,xkwan¹⁴,nxkwan¹⁴,V;HAB;PL;1+INCL,4,2
+2239,qne¹,kqne²⁰ renq²⁴,V;PROSP;PL;3,4,2
+2240,qya³,qya¹⁴ renq⁰,V;PROSP;PL;3,4,2
+2241,ykuq²,ntykuq² wan¹,V;PROG;PL;2,4,2
+2242,ne¹⁴,ni¹⁴,V;PFV;PL;1+INCL,4,2
+2243,jen²,tyjin¹⁴,V;PROSP;PL;1+INCL,4,2
+2244,nkeq³,ntykeq¹⁴,V;HAB;SG;3,4,2
+2245,xoq²,nxoq²,V;PROG;SG;3,4,2
+2246,xka²⁴,nxka²⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2247,naq¹⁴,nyaq¹⁴ renq⁰,V;PROSP;PL;3,4,2
+2248,ntsen⁴²,ktsen²⁴ wan³²,V;PROSP;PL;2,4,2
+2249,nkwa³,kwan²en¹,V;PROSP;PL;1+INCL,4,2
+2250,yqu²,ntqu²,V;PROG;SG;3,4,2
+2251,nxi²,nxin²in¹,V;PROG;PL;1+INCL,4,2
+2252,ja¹,ja¹ renq²⁴,V;PFV;PL;3,4,2
+2253,ndlyu¹,ndlyu⁴²,V;PROG;SG;2,4,2
+2254,ntkonq³,ntkonq⁴⁰,V;PFV;SG;1,4,2
+2255,sne³,sne³ wan²⁴,V;PFV;PL;2,4,2
+2256,sqwa¹⁴,sqwa¹⁴ wan⁰,V;PFV;PL;2,4,2
+2257,qa²⁴,ntqa²⁴ wan³²,V;HAB;PL;2,4,2
+2258,nlyu¹,nlyon²⁰,V;PROG;SG;1,4,2
+2259,nkwi¹,ntkwen¹en¹,V;PROG;PL;1+INCL,4,2
+2260,la¹,nla³² wan⁴,V;HAB;PL;2,4,2
+2261,ntykaq¹,ntykaq⁴²,V;PROG;SG;2,4,2
+2262,sqya¹,nsqya⁴²,V;PROG;SG;2,4,2
+2263,yno¹,yno¹,V;PROG;SG;3,4,2
+2264,ntyjyuq¹,ntyjyonq⁴,V;PFV;SG;1,4,2
+2265,ndlyu⁴²,ndlyu⁴² renq³²,V;HAB;PL;3,4,2
+2266,nkjwi⁴²,ntyjin²⁴in³²,V;HAB;PL;1+INCL,4,2
+2267,lo²⁴,nlo²⁴ renq³²,V;PROG;PL;3,4,2
+2268,skwa³,skwan⁴⁰,V;PFV;SG;1,4,2
+2269,kwa³,ntkwa³ wa⁴²,V;PROG;PL;1+EXCL,4,2
+2270,qne¹,nqne¹en¹,V;PROG;PL;1+INCL,4,2
+2271,ylaq⁴,nlyaq⁴ wan⁴,V;HAB;PL;2,4,2
+2272,ntykanq³,ntykanq³,V;PROG;SG;3,4,2
+2273,ntaq³,ntaq³ wan²⁴,V;PFV;PL;2,4,2
+2274,ntyqya¹,tyqya²⁰ wan²⁴,V;PROSP;PL;2,4,2
+2275,ntyjyuq¹,ntyjyuq⁴²,V;PROG;SG;2,4,2
+2276,sqan¹,sqan¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2277,ntyjyuq¹,ntyjyuq⁴²,V;PFV;SG;2,4,2
+2278,lya¹⁴,nlya¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2279,lya¹⁴,jlya¹⁴ wan⁰,V;PROSP;PL;2,4,2
+2280,lqa³,nt/lyxqan⁴⁰,V;HAB;SG;1,4,2
+2281,ntykaq¹,ntykaq¹ wan²⁴,V;PFV;PL;2,4,2
+2282,ya⁴²,nkyan²⁴,V;HAB;PL;1+INCL,4,2
+2283,sqna¹,nsqna²⁰,V;HAB;SG;3,4,2
+2284,nya¹⁴,nyan⁴⁰,V;PFV;SG;1,4,2
+2285,ndyu²,ntyon²on¹,V;PROSP;PL;1+INCL,4,2
+2286,ntyjyuq¹,ntyjyuq¹,V;PROG;SG;3,4,2
+2287,kwi¹,kwi¹ wan²⁴,V;PFV;PL;2,4,2
+2288,ne⁴²,nne¹⁴ qne⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2289,ntson¹⁴,ntson¹⁴ wan⁰,V;PFV;PL;2,4,2
+2290,nchaq⁴²,kchaq⁴²,V;PROSP;SG;2,4,2
+2291,swenq³,swenq³ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2292,ywi⁴²,kwi²⁴ renq³²,V;PROSP;PL;3,4,2
+2293,qen⁴,ntyqin⁴ renq⁴,V;HAB;PL;3,4,2
+2294,qya⁴²,qya⁴² renq⁴,V;PFV;PL;3,4,2
+2295,ykwaq⁴,tykwaq⁴,V;PROSP;SG;3,4,2
+2296,ntaq³,ntaq¹⁴,V;HAB;SG;3,4,2
+2297,ncha¹,nchan⁴,V;PFV;SG;1,4,2
+2298,ntsu⁴²,nchu²⁴ renq³²,V;HAB;PL;3,4,2
+2299,nduq⁴²,ntyonq²⁴,V;PROSP;SG;1,4,2
+2300,ji¹,ji⁴²,V;PROSP;SG;2,4,2
+2301,slu¹⁴,nslu¹⁴ wan⁰,V;HAB;PL;2,4,2
+2302,ntson¹⁴,ntson¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2303,saq²,tykwan¹⁴ wan⁰,V;PROSP;PL;2,4,2
+2304,ntsa²⁴,ntsan³²,V;PROG;SG;1,4,2
+2305,sta¹,sta¹ renq²⁴,V;PFV;PL;3,4,2
+2306,ntykwa⁴,ntykwa³² wan⁴,V;PROG;PL;2,4,2
+2307,nkqwa¹,nkqwan¹an¹,V;PFV;PL;1+INCL,4,2
+2308,ntson¹⁴,ktson¹⁴,V;PROSP;PL;1+INCL,4,2
+2309,nkonq⁴²,konq²⁴ wan³²,V;PROSP;PL;2,4,2
+2310,xta¹,nxstan³²,V;PROG;SG;1,4,2
+2311,skanq³,ntskanq⁴⁰,V;HAB;SG;1,4,2
+2312,jwi³,jwen³,V;PFV;SG;1,4,2
+2313,xku²⁰,nxku⁴²,V;PROG;SG;2,4,2
+2314,swenq³,nswenq³ wan²⁴,V;PROG;PL;2,4,2
+2315,naq¹⁴,nnaq¹,V;PROG;SG;2,4,2
+2316,xne¹⁰,nxne¹⁴ renq⁰,V;HAB;PL;3,4,2
+2317,ndlyu¹,tlyu²⁰,V;PROSP;SG;3,4,2
+2318,ntykwan²,ntykwan⁴⁰,V;PFV;SG;1,4,2
+2319,ntykonq⁴²,ntykonq¹⁴ renq⁰,V;HAB;PL;3,4,2
+2320,qa²⁴,ntqa³²,V;PROG;SG;2,4,2
+2321,ykwen²,ykwen² wa⁴²,V;PFV;PL;1+EXCL,4,2
+2322,yjoq⁴,ntyjonq²⁰,V;HAB;SG;1,4,2
+2323,ne¹⁴,ne²⁰,V;PFV;SG;2,4,2
+2324,yqwi⁴,ntqwi⁴ wan⁴,V;HAB;PL;2,4,2
+2325,nna¹,nna⁴²,V;HAB;SG;2,4,2
+2326,qya³,qya¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2327,qa²⁴,qa²⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2328,nxi²,nxin² wa⁴²,V;HAB;PL;1+EXCL,4,2
+2329,qne⁴²,qne⁴² wa⁴²,V;PFV;PL;1+EXCL,4,2
+2330,qu¹⁴,qu¹⁴⁰ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2331,nchin¹,nchin⁴²,V;PROG;SG;2,4,2
+2332,jlya⁴²,jlyan¹⁴,V;PFV;PL;1+INCL,4,2
+2333,qen⁴²,qen²⁴,V;PROSP;SG;1,4,2
+2334,ntyja²,ntyja² wa⁴²,V;PROG;PL;1+EXCL,4,2
+2335,yo²,ko¹⁴ renq⁰,V;PROSP;PL;3,4,2
+2336,jen²,tyjin¹⁴ wan⁰,V;PROSP;PL;2,4,2
+2337,slya²⁴,nslya³²,V;PROG;SG;2,4,2
+2338,ntiqi¹,ntqen¹en¹,V;PFV;PL;1+INCL,4,2
+2339,sen⁴²,ksen⁴²,V;PROSP;SG;2,4,2
+2340,nkjwi⁴²,ntyji⁴²,V;HAB;SG;2,4,2
+2341,kwa³,nkwa¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2342,xki¹,nsxkiE,V;PROG;SG;3,4,2
+2343,ntyqya¹,ntyqya¹ wan²⁴,V;PROG;PL;2,4,2
+2344,nduq⁴²,ndyonq¹⁴,V;HAB;PL;1+INCL,4,2
+2345,lya¹⁴,lya³²,V;PFV;SG;2,4,2
+2346,ndywiq³,ndywiq²⁰,V;HAB;SG;2,4,2
+2347,xka²⁴,xka²⁴ wan³²,V;PFV;PL;2,4,2
+2348,ntsa²⁴,ntsan¹an¹,V;PROG;PL;1+INCL,4,2
+2349,sqwe¹⁴,nsqwe¹ renq⁰,V;PROG;PL;3,4,2
+2350,ntsa²⁴,ntsa⁴²,V;PFV;SG;2,4,2
+2351,ndywan²,tywan⁴⁰,V;PROSP;SG;1,4,2
+2352,nyi¹⁴,nnyi²⁰,V;HAB;SG;2,4,2
+2353,nden⁴²,nden⁴,V;PFV;SG;1,4,2
+2354,ntykaq¹,tykaq⁴²,V;PROSP;SG;2,4,2
+2355,naq¹⁴,nyaq¹⁴,V;PROSP;SG;3,4,2
+2356,xin⁴²,xin³²,V;PFV;SG;2,4,2
+2357,ntyjyuq¹,ntyjyuq¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2358,ndiyan³²,ndiyan³²,V;PFV;SG;2,4,2
+2359,yna⁴²,knan²⁴,V;PROSP;SG;1,4,2
+2360,yqu²,yqu²,V;PFV;SG;3,4,2
+2361,nduq⁴²,nduq³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+2362,ykwen²,ntykwen¹,V;PROG;SG;2,4,2
+2363,yna⁴²,na²⁴ wan³²,V;HAB;PL;2,4,2
+2364,ndlyu⁴²,ndlyu⁴² renq⁴,V;PFV;PL;3,4,2
+2365,kwan¹,kwan⁴ renq⁴,V;PFV;PL;3,4,2
+2366,slaq¹,slanq¹an¹,V;PFV;PL;1+INCL,4,2
+2367,ngwa²,ndyga⁴²,V;HAB;SG;2,4,2
+2368,sen⁴²,ksen²⁴,V;PROSP;SG;3,4,2
+2369,nxi²,kxin² wan¹,V;PROSP;PL;2,4,2
+2370,jinyiq²,jinyiq²,V;PFV;SG;3,4,2
+2371,ntyi¹,ntyi¹,V;PFV;SG;3,4,2
+2372,nton³,nton² renq⁴,V;PFV;PL;3,4,2
+2373,sqan¹,sqan⁴²,V;PROSP;SG;2,4,2
+2374,yjoq⁴,ntyjoq³² wan⁴,V;PROG;PL;2,4,2
+2375,ntykwen³,tykwen¹⁴ renq⁰,V;PROSP;PL;3,4,2
+2376,ykwiq⁴,ntykwiq⁴ renq⁴,V;HAB;PL;3,4,2
+2377,nduq⁴²,ntyuq²⁴ wan³²,V;PROSP;PL;2,4,2
+2378,ntaq³,ntaq¹,V;PFV;SG;2,4,2
+2379,ndyu²,ndyon²on¹,V;HAB;PL;1+INCL,4,2
+2380,jinyiq²,jinyiq² wa⁴²,V;PFV;PL;1+EXCL,4,2
+2381,yna⁴²,knan¹⁴,V;PROSP;PL;1+INCL,4,2
+2382,nkqi¹,kqi⁴²,V;PROSP;SG;2,4,2
+2383,ykwaq⁴,tykwaq⁴²,V;PROSP;SG;2,4,2
+2384,styi¹,nstyi²⁰ wan²⁴,V;HAB;PL;2,4,2
+2385,sqi²,nchsqin¹⁴,V;HAB;PL;1+INCL,4,2
+2386,ntykonq⁴²,ntykonq¹on¹,V;PROG;PL;1+INCL,4,2
+2387,nsuq³,ksuq¹⁴ wan⁰,V;PROSP;PL;2,4,2
+2388,snyaq¹,nsnyaq²⁰,V;HAB;SG;3,4,2
+2389,sqya¹,nxqya²⁰an³²,V;HAB;PL;1+INCL,4,2
+2390,qen⁴²,qen²⁴,V;PFV;SG;1,4,2
+2391,yjoq⁴,yjonq²⁴on³²,V;PFV;PL;1+INCL,4,2
+2392,ntykaq¹,ntykaq²⁰,V;HAB;SG;3,4,2
+2393,sen⁴²,nsen¹,V;PROG;SG;1,4,2
+2394,stan¹⁴,stan¹⁴⁰ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2395,xin⁴²,xin⁴²,V;PFV;SG;3,4,2
+2396,nti¹,kten²⁰en³²,V;PROSP;PL;1+INCL,4,2
+2397,nden⁴²,nden¹⁴,V;HAB;PL;1+INCL,4,2
+2398,nton⁴²,nton³²,V;PFV;SG;2,4,2
+2399,nton³,kton⁴⁰,V;PROSP;SG;1,4,2
+2400,ntyqo¹,tyqon²⁰,V;PROSP;SG;1,4,2
+2401,nchaq⁴²,nchanq¹⁴,V;HAB;PL;1+INCL,4,2
+2402,jen²,ntjen²en¹,V;PROG;PL;1+INCL,4,2
+2403,yo²,ko¹⁴,V;PROSP;SG;3,4,2
+2404,ytsen⁴²,ktsen⁴⁰,V;PROSP;SG;2,4,2
+2405,yna³,na¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2406,nya¹⁴,nnya¹⁰,V;PROG;SG;3,4,2
+2407,ytiq⁴,ntyiq⁴²,V;HAB;SG;2,4,2
+2408,naq¹,knaq⁴²,V;PROSP;SG;2,4,2
+2409,xqan¹,xqan¹ renq²⁴,V;PFV;PL;3,4,2
+2410,nkin²,ntykin² wa⁴²,V;HAB;PL;1+EXCL,4,2
+2411,xqan¹,ntxqan²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2412,nkonq⁴²,konq⁴² wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2413,ntsa²⁴,ktsan²⁴,V;PROSP;SG;1,4,2
+2414,xqwa¹⁰,nxqwa²⁰,V;PROG;SG;2,4,2
+2415,ntyja²,ntyjan²an¹,V;PFV;PL;1+INCL,4,2
+2416,yla³,ndla¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2417,ja¹,ja²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2418,xtyiq¹⁰,nxtenq⁴⁰,V;PROG;SG;1,4,2
+2419,nden⁴²,nden²⁴,V;HAB;SG;3,4,2
+2420,yna³,na²an¹,V;PROG;PL;1+INCL,4,2
+2421,qa²⁴,ntqan¹,V;PROG;SG;1,4,2
+2422,sna³,sna³ renq²⁴,V;PFV;PL;3,4,2
+2423,sqya¹,xqya⁴²,V;PROSP;SG;2,4,2
+2424,naq¹⁴,nyanq⁴⁰,V;PROSP;SG;1,4,2
+2425,yna⁴²,na³²,V;PROG;SG;3,4,2
+2426,nten³,nten³,V;PROG;SG;3,4,2
+2427,ntkonq³,ntkonq³ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2428,skwaq¹,skwaq⁴²,V;PROSP;SG;2,4,2
+2429,qnyi¹,kqnin⁴,V;PROSP;SG;1,4,2
+2430,kwi¹,ndywen²⁰,V;HAB;SG;1,4,2
+2431,slaq¹,slanq⁴,V;PROSP;SG;1,4,2
+2432,sla¹,sla¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2433,xqwa¹⁰,xqwa¹⁰,V;PFV;SG;3,4,2
+2434,ntqo¹,ntqon²⁰,V;PROG;SG;1,4,2
+2435,nkqwa⁴²,kqwan²⁴,V;PROSP;SG;1,4,2
+2436,ntykaq¹,ntykanq²⁰an³²,V;HAB;PL;1+INCL,4,2
+2437,ndlyu⁴²,ndlyu³² renq⁴,V;PROG;PL;3,4,2
+2438,sqi²,ntsqen⁴⁰,V;PROG;SG;1,4,2
+2439,xku²⁰,nxkon¹,V;PROG;SG;1,4,2
+2440,ja¹,ntja²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2441,yla³,ndla¹,V;PROG;SG;2,4,2
+2442,slya²⁴,nxlya²⁴ renq³²,V;HAB;PL;3,4,2
+2443,sla¹,nsla²⁰ renq²⁴,V;HAB;PL;3,4,2
+2444,ntsa²⁴,ntsan³²,V;PROG;SG;2,4,2
+2445,ntyi¹,ntyin¹in¹,V;PFV;PL;1+INCL,4,2
+2446,nkqi¹,ntqin¹in¹,V;PROG;PL;1+INCL,4,2
+2447,sen¹,sen⁴² renq⁴,V;PFV;PL;3,4,2
+2448,ntykwan²,ntykwan² renq¹,V;PFV;PL;3,4,2
+2449,yjoq⁴,ntyjoq⁴,V;HAB;SG;3,4,2
+2450,sqwe¹⁴,nsqwen¹⁰,V;PROG;PL;1+INCL,4,2
+2451,nkwi¹,nkwi¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2452,lu¹,lu⁴²,V;PFV;SG;2,4,2
+2453,nkeq³,nkeq³,V;PFV;SG;3,4,2
+2454,skonq³,skonq¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2455,nkonq⁴²,ntkonq³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+2456,sta¹,sta⁴²,V;PROSP;SG;2,4,2
+2457,yna³,na¹⁴,V;HAB;PL;1+INCL,4,2
+2458,nti¹,nti²⁰,V;HAB;SG;3,4,2
+2459,son³,nxon²⁰on³²,V;HAB;PL;1+INCL,4,2
+2460,naq¹,knanq⁴,V;PROSP;SG;1,4,2
+2461,yqo²,ntyqo¹⁴ wan⁰,V;HAB;PL;2,4,2
+2462,nkqwa¹,tyqwa²⁰,V;PROSP;SG;3,4,2
+2463,ntykwan¹⁴,ntykwan⁴⁰,V;HAB;SG;1,4,2
+2464,ntqo¹,ntqon²⁰,V;PFV;SG;1,4,2
+2465,nxin⁴²,nxin⁴²,V;PFV;SG;3,4,2
+2466,qa²⁴,ntqa¹ wan³²,V;PROG;PL;2,4,2
+2467,skonq³,skonq³,V;PFV;SG;3,4,2
+2468,yqwe²,yqwe¹,V;PFV;SG;2,4,2
+2469,skwan⁴,xkwan²⁰ renq²⁴,V;PROSP;PL;3,4,2
+2470,ntyinq³,ntyinq² wa⁴²,V;PROG;PL;1+EXCL,4,2
+2471,ykwenq¹,tykwenq²⁰wan²⁴,V;PROSP;PL;2,4,2
+2472,ntyka²,tyka² wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2473,nton⁴²,ntyon¹⁴ wan⁰,V;HAB;PL;2,4,2
+2474,ne¹⁴,nni¹⁴,V;PROSP;PL;1+INCL,4,2
+2475,xqwa¹⁰,nxqwa¹ renq⁰,V;PROG;PL;3,4,2
+2476,qen⁴,tyqin²⁴in³²,V;PROSP;PL;1+INCL,4,2
+2477,ntqo¹,tyqo²⁰,V;PROSP;SG;3,4,2
+2478,yqu²,yqu² wa⁴²,V;PFV;PL;1+EXCL,4,2
+2479,ytsen⁴²,nn¹⁴ qne⁰ renq³²,V;HAB;PL;3,4,2
+2480,skwan⁴,xkwan²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2481,sen¹,sen¹ renq²⁴,V;PROG;PL;3,4,2
+2482,swi²⁰,nswi²⁰ renq²⁴,V;HAB;PL;3,4,2
+2483,nlyu¹,nlyu¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+2484,ytiq⁴,ytiq⁴ wan⁴,V;PFV;PL;2,4,2
+2485,xkuq²,nxkonq¹,V;PROG;SG;1,4,2
+2486,ntsu⁴²,ntsu³² wan⁴,V;PROG;PL;2,4,2
+2487,xin⁴²,nxin⁴²an⁴²,V;HAB;PL;1+INCL,4,2
+2488,qne⁴²,qnen¹⁴,V;PROSP;PL;1+INCL,4,2
+2489,xki¹,nsxki²⁰,V;HAB;SG;3,4,2
+2490,ylu³,ndlu³ wan²⁴,V;PROG;PL;2,4,2
+2491,nchuq⁴,kchuq⁴ renq⁴,V;PROSP;PL;3,4,2
+2492,ndlyu¹,ndlyu⁴²,V;HAB;SG;2,4,2
+2493,ntkonq³,skonq¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2494,ykwanq¹,ntykwanq¹ renq²⁴,V;PROG;PL;3,4,2
+2495,ntykaq¹,ntykanq¹an¹,V;PFV;PL;1+INCL,4,2
+2496,skwan²,xkwan²,V;PROSP;SG;3,4,2
+2497,ynaq¹,knaq²⁰ wan²⁴,V;PROSP;PL;2,4,2
+2498,yja¹,ntja¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2499,ngon²,ngon⁴⁰,V;PFV;SG;1,4,2
+2500,nkeq³,ntykeq²⁰,V;HAB;SG;2,4,2
+2501,ngyla³,xlan²an¹,V;PFV;PL;1+INCL,4,2
+2502,skwa³,nschkwan¹⁴,V;HAB;PL;1+INCL,4,2
+2503,ytiq⁴,ktenq²⁰,V;PROSP;SG;1,4,2
+2504,kwa³,nkwa¹⁴ wan⁰,V;HAB;PL;2,4,2
+2505,nton³,kton¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2506,sqyu¹,sqyu²⁰ renq²⁴,V;PROSP;PL;3,4,2
+2507,la¹,nlan⁴,V;HAB;SG;1,4,2
+2508,skwa³,skwa³ renq²⁴,V;PFV;PL;3,4,2
+2509,ntqen¹,tyqin²⁰ renq²⁴,V;PROSP;PL;3,4,2
+2510,son³,nson¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+2511,nkqi¹,ntyqi⁴²,V;PROG;SG;2,4,2
+2512,ndywiq³,tywenq⁴⁰,V;PROSP;SG;1,4,2
+2513,sne¹⁴,nsne¹⁴,V;HAB;PL;1+INCL,4,2
+2514,ntykanq³,ntykanq²⁰,V;HAB;SG;2,4,2
+2515,ntqan¹,ntqan⁴²,V;HAB;SG;2,4,2
+2516,ntyja²,ntyja² wan¹,V;PFV;PL;2,4,2
+2517,nyi¹⁴,nnyi²,V;PROG;SG;3,4,2
+2518,xtya²⁰,xtyan²⁰,V;PFV;SG;1,4,2
+2519,ntykwan¹⁴,ntykwan²⁰,V;PFV;SG;2,4,2
+2520,ji¹,ntji¹ renq²⁴,V;PROG;PL;3,4,2
+2521,kwi¹,ndwen²⁰en³²,V;HAB;PL;1+INCL,4,2
+2522,ntyka²,ntykan²an¹,V;HAB;PL;1+INCL,4,2
+2523,ntsiq³,ktsiq¹⁴ wan²⁴,V;PROSP;PL;2,4,2
+2524,ntqan¹,ntqan¹ renq²⁴,V;PFV;PL;3,4,2
+2525,ykwiq⁴,ntykwiq⁴,V;HAB;SG;3,4,2
+2526,nchaq⁴²,nchaq³² renq⁴,V;PROG;PL;3,4,2
+2527,skanq³,ntskanq¹,V;PROG;SG;2,4,2
+2528,kwa³,kwan¹⁴,V;PROSP;PL;1+INCL,4,2
+2529,xne¹⁰,nxne²⁰,V;HAB;SG;2,4,2
+2530,qu¹⁴,ntqu²⁰,V;HAB;SG;2,4,2
+2531,ntsa²⁴,ntsa²⁴ wan³²,V;HAB;PL;2,4,2
+2532,yta⁴,nta³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+2533,ylaq⁴,nlaq⁴ wa⁴²,V;PROG;PL;1+EXCL,4,2
+2534,sti⁴,styin²⁰,V;PROSP;SG;1,4,2
+2535,ytsaq³,ntsaq¹⁴ renq²⁴,V;HAB;PL;3,4,2
+2536,ntsaq⁴²,ksaq⁴,V;PROSP;SG;3,4,2
+2537,lkwi¹,tkwen⁴,V;PROSP;SG;1,4,2
+2538,ytiq⁴,ntyiq⁴ wan⁴,V;HAB;PL;2,4,2
+2539,yta⁴,kta⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2540,skonq³,skonq¹⁴,V;PROSP;SG;3,4,2
+2541,jen²,ntyjin¹⁴ renq⁰,V;HAB;PL;3,4,2
+2542,sne¹⁴,nsne¹ wan⁰,V;PROG;PL;2,4,2
+2543,kwa³,ntkwa¹⁴,V;HAB;SG;3,4,2
+2544,lya¹⁴,jlya¹⁴,V;PROSP;SG;3,4,2
+2545,la¹,nla⁴²,V;PROG;SG;2,4,2
+2546,yo²,ndyo¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2547,ntqen¹,ntyqin²⁰,V;HAB;SG;3,4,2
+2548,ndlyu⁴²,ndlyu⁴² wa⁴²,V;HAB;PL;1+EXCL,4,2
+2549,xkwen¹⁴,nxkwen¹⁴ renq⁰,V;HAB;PL;3,4,2
+2550,ja¹,ja²⁰ wan²⁴,V;PROSP;PL;2,4,2
+2551,xka²⁴,xka²⁴,V;PROSP;SG;3,4,2
+2552,lqa³,qa¹⁴ renq⁰,V;PROSP;PL;3,4,2
+2553,ytiq⁴,ktiq⁴ renq⁴,V;PROSP;PL;3,4,2
+2554,qan⁴,ntqan⁴²,V;PROG;SG;2,4,2
+2555,ji¹,ntjen³²,V;PROG;SG;1,4,2
+2556,la¹,yla¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2557,nyi¹⁴,nyi¹⁴,V;HAB;PL;1+INCL,4,2
+2558,ja¹,ntjan²⁰an³²,V;HAB;PL;1+INCL,4,2
+2559,nkjwi⁴²,ntyji⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2560,qan⁴,ntyqan⁴,V;HAB;SG;3,4,2
+2561,sqwa¹⁴,nsqwa¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2562,nkjwi⁴²,kja⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2563,ntsu⁴²,nchu²⁴ wan³²,V;HAB;PL;2,4,2
+2564,yno¹,kno¹on¹,V;PROSP;PL;1+INCL,4,2
+2565,xqan¹,xqan¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2566,yo²,yo² renq¹,V;PFV;PL;3,4,2
+2567,nsuq³,ksuq¹⁴,V;PROSP;SG;3,4,2
+2568,qan⁴,ntyqan⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2569,ncha¹,ncha¹ renq²⁴,V;PROG;PL;3,4,2
+2570,qya³,qyan¹⁴,V;PROSP;PL;1+INCL,4,2
+2571,ntykonq⁴²,tykonq⁴²,V;PROSP;SG;2,4,2
+2572,sqi²,nchsqi¹⁴⁰ wan¹,V;HAB;PL;2,4,2
+2573,nge⁴²,ngen⁴² wa⁴²,V;PFV;PL;1+EXCL,4,2
+2574,nkqwa¹,nkqwa³²,V;PFV;SG;2,4,2
+2575,yno¹,kno⁴²,V;PROSP;SG;2,4,2
+2576,yjaq³,ntyjaq¹⁴,V;PROSP;SG;3,4,2
+2577,ya⁴²,sqan²⁴,V;PROSP;SG;1,4,2
+2578,yta⁴,kta⁴ renq⁴,V;PROSP;PL;3,4,2
+2579,sqan¹,ntsqan⁴,V;HAB;SG;1,4,2
+2580,ngwa²,ndyga²⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2581,qne⁴²,qne²⁴ wan³²,V;PROSP;PL;2,4,2
+2582,sqi²,nchsqi¹⁴,V;HAB;SG;3,4,2
+2583,qu¹⁴,qu²⁰,V;PFV;SG;2,4,2
+2584,yjaq³,ntyjaq¹⁴ renq⁰,V;HAB;PL;3,4,2
+2585,qnyi¹,nqnyi²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2586,kwi¹,ndwi¹,V;PROG;SG;3,4,2
+2587,nden⁴²,ten¹⁴,V;PROSP;PL;1+INCL,4,2
+2588,ne⁴²,ne³²,V;PFV;SG;2,4,2
+2589,swenq³,nswenq¹⁴,V;HAB;SG;3,4,2
+2590,sen¹,sen²⁰ renq²⁴,V;PROSP;PL;3,4,2
+2591,ytsen⁴²,nn³² qne³² renq⁴,V;PROG;PL;3,4,2
+2592,nchuq⁴,nchuq⁴ wan⁴,V;PFV;PL;2,4,2
+2593,sne³,nsne³ renq²⁴,V;PROG;PL;3,4,2
+2594,jwi³,jwi³ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2595,qan⁴,qan⁴ renq⁴,V;PFV;PL;3,4,2
+2596,qya⁴²,qyan⁴²an⁴²,V;PFV;PL;1+INCL,4,2
+2597,ntyka²,tykan²,V;PROSP;SG;1,4,2
+2598,ylaq⁴,klanq²⁴an³²,V;PROSP;PL;1+INCL,4,2
+2599,nkeq³,ntkeq² wa⁴²,V;PROG;PL;1+EXCL,4,2
+2600,yqu²,yqon²on¹,V;PFV;PL;1+INCL,4,2
+2601,lu¹,klu²⁰,V;PROSP;SG;3,4,2
+2602,ykuq²,ykuq² wan¹,V;PFV;PL;2,4,2
+2603,nduq⁴²,ndyuq⁴²,V;HAB;SG;2,4,2
+2604,qya⁴²,ntqya³² wan⁴,V;PROG;PL;2,4,2
+2605,nglu³,klon⁴⁰,V;PROSP;SG;1,4,2
+2606,ngon²,xkwan² wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2607,skwan⁴,skwan⁴²,V;PFV;SG;2,4,2
+2608,yqu²,kqu² wan¹,V;PROSP;PL;2,4,2
+2609,nkjwi⁴²,nkjwi⁴² wa⁴²,V;PFV;PL;1+EXCL,4,2
+2610,ntykanq³,ntykanq¹,V;PFV;SG;2,4,2
+2611,yta⁴,nta³² wan⁴,V;PROG;PL;2,4,2
+2612,sta¹,nstan⁴,V;HAB;SG;1,4,2
+2613,sqi²,nchsqi²⁰,V;HAB;SG;2,4,2
+2614,yqwi⁴,yqwen²⁰,V;PFV;SG;1,4,2
+2615,ykwenq¹,ntykwenq⁴²,V;PROG;SG;2,4,2
+2616,yta⁴,nta³² renq⁴,V;PROG;PL;3,4,2
+2617,ntsiq³,ntsenq⁴⁰,V;HAB;SG;1,4,2
+2618,lo²⁴,lon¹⁴,V;PFV;PL;1+INCL,4,2
+2619,yja¹,ntyja⁴²,V;PROG;SG;2,4,2
+2620,lo²⁴,nlo²⁴ renq³²,V;HAB;PL;3,4,2
+2621,sqwe¹⁴,nsqwen⁴⁰,V;PROG;SG;1,4,2
+2622,ytsaq³,ntsaq¹⁴,V;HAB;SG;3,4,2
+2623,jen²,ntjen² wa⁴²,V;PROG;PL;1+EXCL,4,2
+2624,nduq⁴²,ndonq¹on¹,V;PROG;PL;1+INCL,4,2
+2625,nden⁴²,nden⁴²en⁴²,V;PFV;PL;1+INCL,4,2
+2626,ntkonq³,skonq¹⁴ renq⁰,V;PROSP;PL;3,4,2
+2627,xyaq²,xyanq²an¹,V;PFV;PL;1+INCL,4,2
+2628,qan⁴,ntyqan²⁴an³²,V;HAB;PL;1+INCL,4,2
+2629,son³,nson¹on³²,V;PROG;PL;1+INCL,4,2
+2630,ntyjyuq¹,kyjyuq²⁰ wan²⁴,V;PROSP;PL;2,4,2
+2631,ntyqya¹,tyqya⁴²,V;PROSP;SG;2,4,2
+2632,ston⁴²,nston³²,V;PROG;SG;2,4,2
+2633,ntson¹⁴,ntson¹⁴ renq⁰,V;PFV;PL;3,4,2
+2634,sne¹⁴,nsne¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2635,yja¹,tyja²⁰ wan²⁴,V;PROSP;PL;2,4,2
+2636,qya⁴²,qya³²,V;PFV;SG;2,4,2
+2637,ntykaq¹,ntykaq¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+2638,sqya¹,xqya²⁰,V;PROSP;SG;3,4,2
+2639,kwa¹⁴,ntykwa¹⁴ wan⁰,V;HAB;PL;2,4,2
+2640,ndlyu¹,tlyon²⁰,V;PROSP;SG;1,4,2
+2641,nxin⁴²,nxin³²,V;PROG;SG;2,4,2
+2642,ne⁴²,kne¹⁴ qne⁰ wan³²,V;PROSP;PL;2,4,2
+2643,nten³,nten¹,V;PROG;SG;2,4,2
+2644,ntyi¹,ntyi²⁰ wan²⁴,V;HAB;PL;2,4,2
+2645,ntyqya¹,ntyqyan³²,V;PROG;SG;1,4,2
+2646,xka²⁴,nxka²⁴ renq³²,V;HAB;PL;3,4,2
+2647,qan⁴,qan²⁴an³²,V;PFV;PL;1+INCL,4,2
+2648,jwi³,jwi³ renq²⁴,V;PFV;PL;3,4,2
+2649,nge⁴²,ngen⁴²en⁴²,V;PFV;PL;1+INCL,4,2
+2650,slya²⁴,nxlya²⁴ wan³²,V;HAB;PL;2,4,2
+2651,lo²⁴,klo⁴²,V;PROSP;SG;2,4,2
+2652,la¹,ylan¹an¹,V;PFV;PL;1+INCL,4,2
+2653,qya³,qya¹,V;PFV;SG;2,4,2
+2654,ndlyu⁴²,ndlyon³²,V;PROG;SG;1,4,2
+2655,swenq³,swenq³,V;PFV;SG;3,4,2
+2656,nkqwa⁴²,nkqwan³²,V;PROG;SG;1,4,2
+2657,ntsa²⁴,ntsan¹⁴,V;PFV;SG;1,4,2
+2658,ntykanq³,tykanq¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2659,ntsiq³,ntsiq²⁰,V;HAB;SG;2,4,2
+2660,sti⁴,nson²⁰,V;PROG;SG;1,4,2
+2661,ntson¹⁴,ktson⁴⁰,V;PROSP;SG;1,4,2
+2662,nglu³,nglu³ wa²⁴,V;PFV;PL;2,4,2
+2663,sna³,xna¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2664,skanq³,skanq⁴⁰,V;PROSP;SG;1,4,2
+2665,qnyi¹,nqnyi²⁰ wan²⁴,V;HAB;PL;2,4,2
+2666,sna³,nxnan¹⁴,V;HAB;PL;1+INCL,4,2
+2667,xka²⁴,nxkan¹,V;PROG;SG;1,4,2
+2668,ndywan²,ndywan² wan¹,V;HAB;PL;2,4,2
+2669,nxi²,nxin² wan¹,V;PROG;PL;2,4,2
+2670,nglu³,klu¹⁴ wa⁰,V;PROSP;PL;2,4,2
+2671,skanq³,ntskanq²an¹,V;PROG;PL;1+INCL,4,2
+2672,yjaq³,ntyjaq¹⁴⁰ wa²,V;PROSP;PL;1+EXCL,4,2
+2673,sna³,nxna²⁰,V;HAB;SG;2,4,2
+2674,ngya⁴²,nkyqan²⁴,V;PROG;SG;1,4,2
+2675,jwi³,jan⁴⁰,V;PROSP;SG;1,4,2
+2676,qya³,qya¹⁴ wan⁰,V;PROSP;PL;2,4,2
+2677,sqya¹,sqyan⁴,V;PFV;SG;1,4,2
+2678,styi¹,nstyi¹ wan²⁴,V;PROG;PL;2,4,2
+2679,ntyi¹,ntyi¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2680,ya⁴²,nkya²⁴,V;PROG;SG;3,4,2
+2681,ne⁴²,nnen¹,V;PROG;SG;1,4,2
+2682,ntaq³,ktaq¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2683,nchuq⁴,nchonq¹,V;PROG;SG;1,4,2
+2684,ngon²,xkwan² wan¹,V;PROSP;PL;2,4,2
+2685,yta⁴,ntan⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2686,nkeq³,ntkinq¹⁴,V;HAB;PL;1+INCL,4,2
+2687,jen²,tyjin¹⁴,V;PROSP;SG;3,4,2
+2688,ykuq²,ntykuq² wa⁴²,V;PROG;PL;1+EXCL,4,2
+2689,ndya³,tyan¹,V;PROSP;SG;2,4,2
+2690,nkonq⁴²,ntkonq³²,V;PROG;SG;1,4,2
+2691,sqwe¹⁴,nsqwe¹⁴,V;HAB;SG;3,4,2
+2692,ynaq¹,ynaq⁴²,V;PFV;SG;2,4,2
+2693,qen⁴²,qe⁴²,V;PROSP;SG;2,4,2
+2694,yqwi⁴,tyqwen²⁴en³²,V;PROSP;PL;1+INCL,4,2
+2695,kwa³,ntkwa²⁰,V;HAB;SG;2,4,2
+2696,xyaq²,nxyanq⁴⁰,V;PROG;SG;1,4,2
+2697,ntyja²,tyja² wan¹,V;PROSP;PL;2,4,2
+2698,ntykaq¹,tykanq²⁰an³²,V;PROSP;PL;1+INCL,4,2
+2699,qen⁴,ntqen⁴,V;PROG;SG;3,4,2
+2700,qnyi¹,qnyi²⁰ renq²⁴,V;PROSP;PL;3,4,2
+2701,xin²,xin²,V;PFV;SG;3,4,2
+2702,kwan¹,ntkwan³² wan⁴,V;PROG;PL;2,4,2
+2703,nkya⁴²,nkyqan¹,V;PFV;SG;1,4,2
+2704,nya¹⁴,nya¹⁴,V;PFV;PL;1+INCL,4,2
+2705,xtya²⁰,nxtyan²⁰,V;HAB;SG;1,4,2
+2706,ntyqo¹,tyqo²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2707,ntyqya¹,ntyqya²⁰ renq²⁴,V;PROG;PL;3,4,2
+2708,slya²⁴,nxlyan¹⁴,V;HAB;PL;1+INCL,4,2
+2709,kwa¹⁴,ntykwa²⁰,V;HAB;SG;2,4,2
+2710,ytiq⁴,ytiq⁴,V;PFV;SG;3,4,2
+2711,qen⁴,ntyqin²⁴in³²,V;HAB;PL;1+INCL,4,2
+2712,sqan¹,sqan⁴,V;PROSP;SG;1,4,2
+2713,slaq¹,slaq¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2714,skwan²,nxkwan²,V;HAB;SG;3,4,2
+2715,ywi⁴²,ntjwi²⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2716,ya⁴²,ya⁴²,V;PFV;SG;3,4,2
+2717,jen²,ntjen² wan¹,V;PROG;PL;2,4,2
+2718,ntsu⁴²,ntson⁴²,V;HAB;SG;1,4,2
+2719,nchuq⁴,kchonq²⁴an³²,V;PROSP;PL;1+INCL,4,2
+2720,ndywan²,ndywan⁴⁰,V;PFV;SG;1,4,2
+2721,sta¹,nsta²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2722,yta⁴,ktan⁴,V;PROSP;SG;1,4,2
+2723,yqwi⁴,tyqwi⁴,V;PROSP;SG;3,4,2
+2724,qen⁴,qen²⁴en³²,V;PFV;PL;1+INCL,4,2
+2725,ytsaq³,ntsanq²an¹,V;PROG;PL;1+INCL,4,2
+2726,xyaq²,nxyaq² wa⁴²,V;HAB;PL;1+EXCL,4,2
+2727,nkin²,ntykin²en¹,V;HAB;PL;1+INCL,4,2
+2728,nkqwa¹,ntyqwan⁴,V;HAB;SG;1,4,2
+2729,swenq³,nswenq⁴⁰,V;HAB;SG;1,4,2
+2730,qan⁴,qan⁴²,V;PFV;SG;2,4,2
+2731,xka²⁴,xkan²⁴,V;PFV;SG;1,4,2
+2732,ncha¹,nchan²⁰an³²,V;HAB;PL;1+INCL,4,2
+2733,nxi²,nxin¹,V;PROG;SG;2,4,2
+2734,yna⁴²,kna²⁴,V;PROSP;SG;3,4,2
+2735,ngwa²,ndyga²⁴,V;HAB;SG;3,4,2
+2736,ngwa²,ngwan²an¹,V;PFV;PL;1+INCL,4,2
+2737,snyaq¹,nsnyanq³²,V;PROG;SG;1,4,2
+2738,qnyi¹,qnyi¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2739,ntykwan²,ntykwan² wan¹,V;HAB;PL;2,4,2
+2740,ytsaq³,ytsaq¹,V;PFV;SG;2,4,2
+2741,xkwan¹⁴,nxkwan¹⁴ renq⁰,V;HAB;PL;3,4,2
+2742,nya¹⁴,nnya¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2743,yo²,ndyo²,V;PROG;SG;3,4,2
+2744,ngyla³,xla³ renq²⁴,V;PROSP;PL;3,4,2
+2745,skwen¹,skwen¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2746,sna³,nxna¹⁴ wan⁰,V;HAB;PL;2,4,2
+2747,naq¹⁴,nyaq¹⁴,V;PROSP;PL;1+INCL,4,2
+2748,nya¹⁴,nya¹⁰ wa⁴²,V;PROG;PL;1+EXCL,4,2
+2749,styi¹,styi²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2750,ykwanq¹,ykwanq¹ wan²⁴,V;PFV;PL;2,4,2
+2751,nkwa³,nkwan²en¹,V;PFV;PL;1+INCL,4,2
+2752,skwan⁴,nxkwan²⁰ renq²⁴,V;HAB;PL;3,4,2
+2753,skwaq¹,skwaq²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2754,ynaq¹,knaq²⁰an³²,V;PROSP;PL;1+INCL,4,2
+2755,xlyu⁴²,xlyon⁴²on⁴²,V;PFV;PL;1+INCL,4,2
+2756,ne¹⁴,nni²⁰,V;HAB;SG;2,4,2
+2757,ntykwa⁴,ntykwa³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+2758,nden⁴²,nden²⁴ wan³²,V;HAB;PL;2,4,2
+2759,ndywiq³,ndywiq¹⁴,V;HAB;SG;3,4,2
+2760,nkeq³,ntykeq²,V;PROG;SG;3,4,2
+2761,nton³,nton³,V;PFV;SG;3,4,2
+2762,ne⁴²,nne³²,V;PROG;SG;2,4,2
+2763,sqwa¹⁴,ntsqwa¹ renq⁰,V;PROG;PL;3,4,2
+2764,xoq²,nxoq¹,V;HAB;SG;2,4,2
+2765,skwen¹,nskwen¹ wan²⁴,V;PROG;PL;2,4,2
+2766,yqu²,ntqu¹,V;PROG;SG;2,4,2
+2767,ne¹⁴,ne¹⁴,V;PFV;SG;3,4,2
+2768,xne¹⁰,xne²⁰,V;PFV;SG;2,4,2
+2769,slya²⁴,nslya¹⁴⁰ wa⁴²,V;PROG;PL;1+EXCL,4,2
+2770,ylaq⁴,klanq²⁰,V;PROSP;SG;1,4,2
+2771,ntsa²⁴,ntsa²⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2772,ntyi¹,ktyi²⁰ renq²⁴,V;PROSP;PL;3,4,2
+2773,nton³,nton²on¹,V;PROG;PL;1+INCL,4,2
+2774,ykwiq⁴,ykwiq⁴ renq⁴,V;PFV;PL;3,4,2
+2775,yjaq³,yjaq³ wa²,V;PFV;PL;1+EXCL,4,2
+2776,jwi³,jwi²,V;PFV;SG;2,4,2
+2777,ndiyan³²,ndiyan²⁰,V;PFV;SG;1,4,2
+2778,ntyjyuq¹,ntyjyonq²⁰on³²,V;HAB;PL;1+INCL,4,2
+2779,nduq⁴²,nduq⁴²,V;PFV;SG;3,4,2
+2780,yqo²,ntyqo¹,V;PROG;SG;2,4,2
+2781,lya¹⁴,nlya¹ renq⁰,V;PROG;PL;3,4,2
+2782,kwan¹,ntkwan⁴²,V;PROG;SG;2,4,2
+2783,yqu²,ntyqu²⁰,V;HAB;SG;2,4,2
+2784,ntyi¹,ntyi⁴²,V;PFV;SG;2,4,2
+2785,ndon⁴²,ndon⁴² wa⁴²,V;PROG;PL;1+EXCL,4,2
+2786,yqwi⁴,tyqwi⁴²,V;PROSP;SG;2,4,2
+2787,ntkonq³,ntkonq³ wa⁴²,V;PROG;PL;1+EXCL,4,2
+2788,lu¹,nlu¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+2789,xin²,kxin¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2790,ntyqya¹,ntyqyan⁴,V;HAB;SG;1,4,2
+2791,ntaq³,ntanq⁴⁰,V;PFV;SG;1,4,2
+2792,ntykwan¹⁴,ntykwan⁴⁰,V;PFV;SG;1,4,2
+2793,sne³,sne¹⁴,V;PROSP;SG;3,4,2
+2794,ngon²,nxkwan²an¹,V;HAB;PL;1+INCL,4,2
+2795,ntqan¹,ntqan¹,V;PFV;SG;3,4,2
+2796,snyaq¹,nsnyaq¹,V;PROG;SG;3,4,2
+2797,sne³,nsne¹⁴,V;HAB;SG;3,4,2
+2798,la¹,kla⁴,V;PROSP;SG;3,4,2
+2799,ntyja²,ntyjan²an¹,V;PROG;PL;1+INCL,4,2
+2800,nxi²,nxin² renq¹,V;PROG;PL;3,4,2
+2801,qya⁴²,kqya²⁴ wan³²,V;PROSP;PL;2,4,2
+2802,jen²,jen²,V;PFV;SG;3,4,2
+2803,ntqo¹,ntqo¹ wan²⁴,V;PFV;PL;2,4,2
+2804,skwa³,xkwan¹⁴,V;PROSP;PL;1+INCL,4,2
+2805,nkqwa¹,nkqwa¹ wan²⁴,V;PFV;PL;2,4,2
+2806,styi¹,nstyi¹,V;PROG;SG;3,4,2
+2807,ntqo¹,ntqo¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+2808,ji¹,ji²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2809,sqi²,sqi² wa⁴²,V;PFV;PL;1+EXCL,4,2
+2810,nkjwi⁴²,ntyji⁴ renq⁴,V;HAB;PL;3,4,2
+2811,kwi¹,tywi²⁰ wan²⁴,V;PROSP;PL;2,4,2
+2812,skwen¹,nskwen¹en¹,V;PROG;PL;1+INCL,4,2
+2813,ngya⁴²,ngya⁴² wa⁴²,V;PFV;PL;1+EXCL,4,2
+2814,ntsa²⁴,ntsan⁴²,V;HAB;SG;1,4,2
+2815,yqan⁴²,ntyqan²⁴,V;HAB;SG;3,4,2
+2816,ntsa²⁴,ktsa²⁴ wan³²,V;PROSP;PL;2,4,2
+2817,ntyqo¹,ntyqo¹ renq²⁴,V;PFV;PL;3,4,2
+2818,sqya¹,nsqya¹an¹,V;PROG;PL;1+INCL,4,2
+2819,nchin¹,nchin¹,V;PROG;SG;3,4,2
+2820,xta¹,nstan² wan¹,V;PROG;PL;2,4,2
+2821,xne¹⁰,xnen⁴⁰,V;PROSP;SG;1,4,2
+2822,ntyi¹,ntyi²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2823,nkonq⁴²,ntkonq³² renq⁴,V;PROG;PL;3,4,2
+2824,nkwi¹,ykwi²⁰ renq²⁴,V;PROSP;PL;3,4,2
+2825,ynaq¹,knaq²⁰,V;PROSP;SG;3,4,2
+2826,qu¹⁴,qon⁴⁰,V;PROSP;SG;1,4,2
+2827,ntykanq³,ntykanq⁴⁰,V;PROG;SG;1,4,2
+2828,qu¹⁴,ntqu¹⁴,V;HAB;SG;3,4,2
+2829,skwan⁴,nskwan³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+2830,ngya⁴²,kyqan²⁴,V;PROSP;SG;1,4,2
+2831,xti²⁰,xti⁴²,V;PFV;SG;2,4,2
+2832,qen⁴,ntyqin⁴ wan⁴,V;HAB;PL;2,4,2
+2833,ykuq²,ntykuq¹⁴ renq⁰,V;HAB;PL;3,4,2
+2834,ntyinq³,ntyinq¹⁴,V;HAB;PL;1+INCL,4,2
+2835,qne¹,kqne²⁰,V;PROSP;SG;3,4,2
+2836,sla¹,nsla⁴²,V;HAB;SG;2,4,2
+2837,nton⁴²,nton⁴² wan⁴,V;PFV;PL;2,4,2
+2838,saq²,nsaq¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2839,xkwan¹⁴,xkwan¹⁴,V;PROSP;PL;1+INCL,4,2
+2840,ntsen⁴²,ntsen⁴² wan⁴,V;PFV;PL;2,4,2
+2841,nkjwi⁴²,kjan²⁴in³²,V;PROSP;PL;1+INCL,4,2
+2842,nkwa³,kwa³ renq²⁴,V;PROSP;PL;3,4,2
+2843,nton⁴²,ntyon²⁰,V;HAB;SG;2,4,2
+2844,nyi¹⁴,nyi¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2845,nduq⁴²,nduq³²,V;PFV;SG;2,4,2
+2846,ykwaq⁴,ntykwanq⁴,V;HAB;SG;1,4,2
+2847,nchuq⁴,nchuq³²,V;PROG;SG;3,4,2
+2848,ngya⁴²,kya²⁴ wan³²,V;PROSP;PL;2,4,2
+2849,nkeq³,nkenq⁴⁰,V;PFV;SG;1,4,2
+2850,nduq⁴²,nduq⁴² wa⁴²,V;PFV;PL;1+EXCL,4,2
+2851,qne⁴²,qnen²⁰,V;PROSP;SG;1,4,2
+2852,qa²⁴,qa⁴²,V;PROSP;SG;2,4,2
+2853,styi¹,styin¹in¹,V;PFV;PL;1+INCL,4,2
+2854,ja¹,ja¹,V;PFV;SG;3,4,2
+2855,ykwenq¹,ykwenq⁴,V;PFV;SG;1,4,2
+2856,xta¹,nstan² renq¹,V;PROG;PL;3,4,2
+2857,jinyiq²,ynyiq² wan¹,V;PROG;PL;2,4,2
+2858,yjoq⁴,ntyjoq⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2859,qnyi¹,qnyi¹,V;PFV;SG;3,4,2
+2860,ytiq⁴,ntiq³² wan⁴,V;PROG;PL;2,4,2
+2861,ntykwan¹⁴,ntykwan¹⁴,V;HAB;SG;3,4,2
+2862,ntqen¹,ntqen¹ wan²⁴,V;PROG;PL;2,4,2
+2863,sta¹,nstan³²,V;PROG;SG;1,4,2
+2864,xin⁴²,xin⁴,V;PROSP;SG;1,4,2
+2865,snyaq¹,nsnyaq¹renq²⁴,V;PROG;PL;3,4,2
+2866,sen¹,sen²⁰ wan²⁴,V;PROSP;PL;2,4,2
+2867,ntykwan²,tykwan² wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2868,ndon⁴²,ndyon²⁴ renq³²,V;HAB;PL;3,4,2
+2869,yqwe²,ntyqwe¹⁴ renq⁰,V;HAB;PL;3,4,2
+2870,ykwenq¹,ntykwenq²⁰en³²,V;HAB;PL;1+INCL,4,2
+2871,xne¹⁰,xne¹⁴,V;PROSP;PL;1+INCL,4,2
+2872,nkjwi⁴²,kja⁴,V;PROSP;SG;3,4,2
+2873,ntqo¹,ntyqo⁴²,V;HAB;SG;2,4,2
+2874,yjaq³,ntjaq¹⁴⁰ wa²,V;PROG;PL;1+EXCL,4,2
+2875,sqya¹,xqyan⁴,V;PROSP;SG;1,4,2
+2876,ndyu²,ndyon²on¹,V;PFV;PL;1+INCL,4,2
+2877,ntykanq³,ntykanq³ renq¹,V;PROG;PL;3,4,2
+2878,yku⁴,ntyku⁴,V;HAB;SG;3,4,2
+2879,ntykaq¹,tykaq²⁰,V;PROSP;SG;3,4,2
+2880,nduq⁴²,ntyonq¹⁴,V;PROSP;PL;1+INCL,4,2
+2881,xkwan¹⁴,xkwan⁴⁰,V;PROSP;SG;1,4,2
+2882,saq²,nsaq¹,V;PROG;SG;2,4,2
+2883,styi¹,styi¹ wan²⁴,V;PFV;PL;2,4,2
+2884,xin⁴²,xin⁴² wa³²,V;PFV;PL;1+EXCL,4,2
+2885,sla¹,sla²⁰,V;PROSP;SG;3,4,2
+2886,ngyla³,nchla³ wan²⁴,V;HAB;PL;2,4,2
+2887,ywi⁴²,kwi²⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2888,ntyjyuq¹,ntyjyuq¹ renq²⁴,V;PFV;PL;3,4,2
+2889,ntyjyuq¹,ntyjyuq³² wan²⁴,V;PROG;PL;2,4,2
+2890,son³,son³ renq²⁴,V;PFV;PL;3,4,2
+2891,sqwe¹⁴,nsqwe¹⁴ renq⁰,V;HAB;PL;3,4,2
+2892,nden⁴²,nden³²,V;PROG;SG;1,4,2
+2893,sta¹,stan¹an¹,V;PFV;PL;1+INCL,4,2
+2894,sqwi¹⁴,nsqwi²⁰,V;HAB;SG;2,4,2
+2895,kwi¹,ndwen¹en¹,V;PROG;PL;1+INCL,4,2
+2896,saq²,nsaq² wan¹,V;PROG;PL;2,4,2
+2897,kwi¹,kwi¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2898,xyaq²,xyaq¹,V;PROSP;SG;2,4,2
+2899,ylu³,klon⁴⁰,V;PROSP;SG;1,4,2
+2900,jlya⁴²,jlya²⁴ renq³²,V;PROSP;PL;3,4,2
+2901,yjwiq²,yjwiq¹,V;PFV;SG;2,4,2
+2902,saq²,saq²⁰,V;PROSP;SG;2,4,2
+2903,sti⁴,su⁴² renq⁴,V;PROG;PL;3,4,2
+2904,ntsen⁴²,ntsen⁴,V;HAB;SG;1,4,2
+2905,skwaq¹,nskwaq¹ renq²⁴,V;PROG;PL;3,4,2
+2906,yjoq⁴,yjonq¹,V;PFV;SG;1,4,2
+2907,ji¹,ji⁴²,V;PFV;SG;2,4,2
+2908,nchuq⁴,nchuq⁴ renq⁴,V;PFV;PL;3,4,2
+2909,jinyiq²,ynyinq²in¹,V;PROG;PL;1+INCL,4,2
+2910,qne⁴²,qne²⁴ renq³²,V;PROSP;PL;3,4,2
+2911,nkqwa¹,tyqwa²⁰ wan²⁴,V;PROSP;PL;2,4,2
+2912,ntykonq⁴²,ntykonq¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2913,ntsen⁴²,ntsen⁴² wa⁴²,V;PFV;PL;1+EXCL,4,2
+2914,ntyqo¹,ntyqo¹,V;PFV;SG;3,4,2
+2915,sna³,nsna¹,V;PROG;SG;2,4,2
+2916,ntkonq³,ntkonq²on¹,V;PROG;PL;1+INCL,4,2
+2917,nsuq³,ksonq¹⁴,V;PROSP;PL;1+INCL,4,2
+2918,sqya¹,nxqya²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+2919,ntsen⁴²,ntsen²⁴ wan³²,V;HAB;PL;2,4,2
+2920,sqwa¹⁴,nsqwan⁴⁰,V;HAB;SG;1,4,2
+2921,ykwen²,ykwen² renq¹,V;PFV;PL;3,4,2
+2922,snyaq¹,nsnyaq⁴²,V;PROG;SG;2,4,2
+2923,nkya⁴²,ngya²⁴,V;HAB;SG;3,4,2
+2924,ntqen¹,tyqin²⁰,V;PROSP;SG;3,4,2
+2925,lqa³,lqa³ renq²⁴,V;PFV;PL;3,4,2
+2926,yqwe²,kqwe¹⁴ wan⁰,V;PROSP;PL;2,4,2
+2927,skwa³,nskwa³ wan²⁴,V;PROG;PL;2,4,2
+2928,yqu²,kqon²on¹,V;PROSP;PL;1+INCL,4,2
+2929,ja¹,ntja²⁰,V;HAB;SG;3,4,2
+2930,nchuq⁴,nchonq²⁴an³²,V;PFV;PL;1+INCL,4,2
+2931,ndiyan³²,ndiyan²⁴,V;HAB;SG;3,4,2
+2932,swenq³,swenq¹⁴ renq⁰,V;PROSP;PL;3,4,2
+2933,ytiq⁴,ktenq²⁴en³²,V;PROSP;PL;1+INCL,4,2
+2934,xtyiq¹⁰,xtyiq¹⁴,V;PROSP;SG;3,4,2
+2935,lqa³,lqa³²,V;PFV;SG;2,4,2
+2936,yta⁴,yta⁴ renq⁴,V;PFV;PL;3,4,2
+2937,ntyinq³,ntyinq¹,V;PROG;SG;2,4,2
+2938,nkonq⁴²,ntkonq²⁴,V;HAB;SG;1,4,2
+2939,ndyu²,ndyon²on¹,V;PROG;PL;1+INCL,4,2
+2940,ntyqo¹,ntyqo¹ wan²⁴,V;PROG;PL;2,4,2
+2941,nsuq³,ksonq⁴⁰,V;PROSP;SG;1,4,2
+2942,ji¹,ntyji²⁰,V;HAB;SG;3,4,2
+2943,swenq³,nswenq⁴⁰,V;PROG;SG;1,4,2
+2944,yja¹,yja¹,V;PFV;SG;3,4,2
+2945,sta¹,sta¹ wan²⁴,V;PFV;PL;2,4,2
+2946,nton³,nton³² wan⁴,V;PROG;PL;2,4,2
+2947,xta¹,nstan²an¹,V;PROG;PL;1+INCL,4,2
+2948,styi¹,styi²⁰ wan²⁴,V;PROSP;PL;2,4,2
+2949,sla¹,sla⁴²,V;PROSP;SG;2,4,2
+2950,xkwen¹⁴,nxkwen⁴⁰,V;PROG;SG;1,4,2
+2951,nden⁴²,nden³²,V;PROG;SG;3,4,2
+2952,sqwe²⁴,sqwen¹⁴,V;PFV;PL;1+INCL,4,2
+2953,ja¹,jan⁴,V;PROSP;SG;1,4,2
+2954,nkqi¹,ntyqin³²,V;PROG;SG;1,4,2
+2955,ntykonq⁴²,ntykonq³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+2956,xtyiq¹⁰,nxtenq¹⁰,V;PROG;PL;1+INCL,4,2
+2957,yqwe²,ntqwen²en¹,V;PROG;PL;1+INCL,4,2
+2958,xkwan¹⁴,xkwan²⁰,V;PFV;SG;2,4,2
+2959,ynaq¹,nnaq¹,V;PROG;SG;3,4,2
+2960,nsuq³,nsuq³ renq²⁴,V;PFV;PL;3,4,2
+2961,yna³,kna¹⁴,V;PROSP;PL;1+INCL,4,2
+2962,ne⁴²,kne¹⁴ qne⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+2963,lu¹,lon⁴,V;PFV;SG;1,4,2
+2964,ykwanq¹,ntykwanq⁴²,V;HAB;SG;2,4,2
+2965,nkonq⁴²,konq²⁴ renq³²,V;PROSP;PL;3,4,2
+2966,ykwen²,ntykwen¹⁴,V;HAB;SG;3,4,2
+2967,sqna¹,sqnan⁴,V;PROSP;SG;1,4,2
+2968,xtya²⁰,nxtya⁴²,V;HAB;SG;2,4,2
+2969,ntyjyuq¹,kyjyuq⁴²,V;PROSP;SG;2,4,2
+2970,kwan¹,ntkwan³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+2971,qu¹⁴,ntqu²⁰,V;PROG;SG;2,4,2
+2972,sqan¹,nsqan⁴²,V;PROG;SG;2,4,2
+2973,sta¹,nsta²⁰ renq²⁴,V;HAB;PL;3,4,2
+2974,ntqen¹,ntqen³²,V;PROG;SG;1,4,2
+2975,kwi¹,kwen¹en¹,V;PFV;PL;1+INCL,4,2
+2976,ntsu⁴²,ntsu⁴²,V;PFV;SG;3,4,2
+2977,ntykwa⁴,ntykwa⁴ renq⁴,V;PFV;PL;3,4,2
+2978,styi¹,styin²⁰in³²,V;PROSP;PL;1+INCL,4,2
+2979,yjaq³,ntjanq¹⁴,V;PROG;PL;1+INCL,4,2
+2980,skwen¹,nskwen¹ renq²⁴,V;PROG;PL;3,4,2
+2981,xta¹,xtan¹⁴,V;PROSP;SG;3,4,2
+2982,sti⁴,nsu³²,V;PROG;SG;2,4,2
+2983,naq¹,nnaq⁴²,V;HAB;SG;2,4,2
+2984,yjwiq²,ntjwiq¹,V;PROG;SG;2,4,2
+2985,jen²,ntyjin²⁰,V;HAB;SG;2,4,2
+2986,xlyu⁴²,nxlyu³² renq⁴,V;PROG;PL;3,4,2
+2987,ykuq²,kuq¹⁴ wan⁰,V;PROSP;PL;2,4,2
+2988,yla³,kla¹⁴ wan⁰,V;PROSP;PL;2,4,2
+2989,qu¹⁴,ntqon⁴⁰,V;HAB;SG;1,4,2
+2990,ntyja²,ntyja² renq¹,V;PFV;PL;3,4,2
+2991,ntyqo¹,ntyqo²⁰,V;HAB;SG;3,4,2
+2992,ya⁴²,nkya²⁴ renq³²,V;PROG;PL;3,4,2
+2993,sqan¹,nsqan¹an¹,V;PROG;PL;1+INCL,4,2
+2994,naq¹,nnaq²⁰ wan²⁴,V;HAB;PL;2,4,2
+2995,nkqwa⁴²,kqwa⁴²,V;PROSP;SG;2,4,2
+2996,ntqan¹,ntqan¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+2997,yjoq⁴,yjoq⁴,V;PFV;SG;3,4,2
+2998,nton³,kton¹⁴ renq⁰,V;PROSP;PL;3,4,2
+2999,ntqen¹,ntyqin²⁰ wan²⁴,V;HAB;PL;2,4,2
+3000,ykuq²,ntykonq¹,V;PROG;SG;1,4,2
+3001,ndywan²,ndywan²an¹,V;PFV;PL;1+INCL,4,2
+3002,nkqwa¹,nkqwa¹ renq²⁴,V;PROG;PL;3,4,2
+3003,yta⁴,ntan⁴,V;HAB;SG;3,4,2
+3004,xin²,nxin¹ renq⁴,V;PROG;PL;3,4,2
+3005,lu¹,nlu²⁰ renq²⁴,V;HAB;PL;3,4,2
+3006,nkin²,nkin² wan¹,V;PROG;PL;2,4,2
+3007,sqi²,xqi¹⁴,V;PROSP;SG;3,4,2
+3008,ntsen⁴²,ktsen¹⁴,V;PROSP;PL;1+INCL,4,2
+3009,ntkonq³,ntkonq²on¹,V;PFV;PL;1+INCL,4,2
+3010,xkwan¹⁴,nxkwan¹⁰ wa⁴²,V;PROG;PL;1+EXCL,4,2
+3011,ntsu⁴²,ktsu⁴ renq³²,V;PROSP;PL;3,4,2
+3012,sqan¹,ntsqan²⁰ wan²⁴,V;HAB;PL;2,4,2
+3013,ytiq⁴,ktiq⁴ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+3014,ngon²,skwan² renq¹,V;PFV;PL;3,4,2
+3015,ykwen²,kwen¹⁴ renq⁰,V;PROSP;PL;3,4,2
+3016,ntkonq³,ntkonq³ renq²⁴,V;PFV;PL;3,4,2
+3017,sla¹,slan²⁰an³²,V;PROSP;PL;1+INCL,4,2
+3018,sna³,snan⁴⁰,V;PFV;SG;1,4,2
+3019,yo²,ndyon²⁰,V;HAB;SG;1,4,2
+3020,nkqwa⁴²,nkqwa³²,V;PROG;SG;2,4,2
+3021,ndiyan³²,jyan⁴²,V;PROG;SG;2,4,2
+3022,yqu²,ntyqon⁴⁰,V;HAB;SG;1,4,2
+3023,ntsaq⁴²,ntsaq³²,V;PROG;SG;2,4,2
+3024,ntykwa⁴,tykwa⁴ wan⁴,V;PROSP;PL;2,4,2
+3025,kwa³,kwa²⁰,V;PROSP;SG;2,4,2
+3026,nton⁴²,nton³² wan⁴,V;PROG;PL;2,4,2
+3027,ndyu²,ndyon⁴⁰,V;PROG;SG;1,4,2
+3028,ykuq²,kuq¹⁴ renq⁰,V;PROSP;PL;3,4,2
+3029,xoq²,nxonq⁴⁰,V;HAB;SG;1,4,2
+3030,saq²,saq² renq¹,V;PFV;PL;3,4,2
+3031,lu¹,nlu²⁰ wan²⁴,V;HAB;PL;2,4,2
+3032,ja¹,ja²⁰,V;PROSP;SG;3,4,2
+3033,ytsaq³,ytsanq²an¹,V;PFV;PL;1+INCL,4,2
+3034,lya¹⁴,nlya¹⁴ renq³²,V;HAB;PL;3,4,2
+3035,sqwa¹⁴,ntsqwa²⁰,V;PROG;SG;2,4,2
+3036,nya¹⁴,knya¹⁰,V;PROSP;PL;1+INCL,4,2
+3037,skwaq¹,skwaq²⁰,V;PROSP;SG;3,4,2
+3038,xti²⁰,nxti⁴²,V;PROG;SG;2,4,2
+3039,kwi¹,ndwen²⁰,V;PROG;SG;1,4,2
+3040,yla³,ndla²⁰,V;HAB;SG;2,4,2
+3041,nti¹,kten⁴,V;PROSP;SG;1,4,2
+3042,ne¹⁴,ni¹⁴ wan⁰,V;PFV;PL;2,4,2
+3043,la¹,nla¹an¹,V;PROG;PL;1+INCL,4,2
+3044,yjwiq²,kjwiq¹⁴,V;PROSP;SG;3,4,2
+3045,sen¹,sen²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+3046,ne⁴²,nne¹⁴,V;HAB;SG;3,4,2
+3047,yja¹,ntyja¹ renq²⁴,V;PROG;PL;3,4,2
+3048,lya¹⁴,nlyan⁴⁰,V;PROG;SG;1,4,2
+3049,nchaq⁴²,kchaq²⁴,V;PROSP;SG;3,4,2
+3050,sen¹,sen⁴² wan⁴,V;PFV;PL;2,4,2
+3051,xlyu⁴²,xlyu⁴²,V;PFV;SG;3,4,2
+3052,ntyja²,ntyjan⁴⁰,V;HAB;SG;1,4,2
+3053,kwan¹,kwan⁴ wan⁴,V;PFV;PL;2,4,2
+3054,yqwe²,yqwen²en¹,V;PFV;PL;1+INCL,4,2
+3055,ytiq⁴,ytiq⁴²,V;PFV;SG;2,4,2
+3056,ndlyu¹,ndlyu²⁰ renq²⁴,V;HAB;PL;3,4,2
+3057,nge⁴²,nge³²,V;PFV;SG;2,4,2
+3058,saq²,saq²,V;PFV;SG;3,4,2
+3059,sqwe²⁴,nsqwe¹,V;PROG;SG;3,4,2
+3060,ntykwa⁴,ntykwa⁴²,V;HAB;SG;2,4,2
+3061,sne¹⁴,nsne¹⁰,V;PROG;PL;1+INCL,4,2
+3062,ntykonq⁴²,tykonq¹⁴,V;PROSP;PL;1+INCL,4,2
+3063,ncha¹,ncha¹ wan²⁴,V;PFV;PL;2,4,2
+3064,slya²⁴,nslya³²,V;PROG;SG;3,4,2
+3065,yqan⁴²,ntyqan⁴²,V;HAB;SG;2,4,2
+3066,yku⁴,kon²⁴on³²,V;PROSP;PL;1+INCL,4,2
+3067,yku⁴,ntykon¹,V;PROG;SG;1,4,2
+3068,yjoq⁴,yjoq⁴ renq⁴,V;PFV;PL;3,4,2
+3069,skwen¹,skwen²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+3070,ntyqya¹,ntyqyan¹an¹,V;PFV;PL;1+INCL,4,2
+3071,yqan⁴²,ntyqan¹⁴,V;HAB;PL;1+INCL,4,2
+3072,yjaq³,yjanq¹,V;PFV;SG;1,4,2
+3073,yja¹,tyja⁴²,V;PROSP;SG;2,4,2
+3074,ne¹⁴,nni²⁰,V;PROSP;SG;2,4,2
+3075,nglu³,nglu¹,V;PROG;SG;2,4,2
+3076,ji¹,ji¹,V;PFV;SG;3,4,2
+3077,ykuq²,ntykonq²⁰,V;HAB;SG;1,4,2
+3078,nna¹,nnan⁴,V;HAB;SG;1,4,2
+3079,ntykwan²,tykwan⁴⁰,V;PROSP;SG;1,4,2
+3080,sqyu¹,nsqyu²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+3081,nkin²,nkin² renq¹,V;PROG;PL;3,4,2
+3082,sti⁴,nstyin⁴²,V;HAB;SG;2,4,2
+3083,qne⁴²,nqne³²,V;PROG;SG;3,4,2
+3084,jlya⁴²,ntjlyan¹an¹,V;PROG;PL;1+INCL,4,2
+3085,yna³,yna³ wa⁴²,V;PFV;PL;1+EXCL,4,2
+3086,ytiq⁴,ntenq¹,V;PROG;SG;1,4,2
+3087,son³,xon⁴,V;PROSP;SG;1,4,2
+3088,skanq³,ntskanq³,V;PROG;SG;3,4,2
+3089,sqwi¹⁴,sqwi²⁰,V;PFV;SG;2,4,2
+3090,sqna¹,sqna²⁰ renq²⁴,V;PROSP;PL;3,4,2
+3091,ntyjyuq¹,ntyjyuq²⁰ wan²⁴,V;HAB;PL;2,4,2
+3092,ntsiq³,ntsinq⁴⁰,V;PFV;SG;1,4,2
+3093,sqwe²⁴,nsqwe²⁴ renq³²,V;PROG;PL;3,4,2
+3094,qya⁴²,kqya⁴²,V;PROSP;SG;2,4,2
+3095,ytiq⁴,ytenq²⁴en³²,V;PFV;PL;1+INCL,4,2
+3096,ya⁴²,nkya²⁴ renq³²,V;HAB;PL;3,4,2
+3097,nglu³,nglu³,V;PFV;SG;3,4,2
+3098,lo²⁴,nlo³²,V;PROG;SG;2,4,2
+3099,xqan¹,xqan²⁰an³²,V;PROSP;PL;1+INCL,4,2
+3100,xki¹,nsxki⁴²,V;PROG;SG;2,4,2
+3101,yqo²,ntyqon²⁰,V;HAB;SG;1,4,2
+3102,sne³,sne³ wa⁴²,V;PFV;PL;1+EXCL,4,2
+3103,ykwenq¹,ykwenq¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+3104,ntyjanq²,tyjanq²⁰,V;PROSP;SG;2,4,2
+3105,nkin²,ntykin⁴⁰,V;HAB;SG;1,4,2
+3106,ntyqo¹,tyqo²⁰ renq²⁴,V;PROSP;PL;3,4,2
+3107,yjaq³,ntyjanq¹⁴,V;HAB;PL;1+INCL,4,2
+3108,nten³,nten³ renq²⁴,V;PFV;PL;3,4,2
+3109,nxi²,nxin² wa⁴²,V;PROG;PL;1+EXCL,4,2
+3110,ndlyu¹,tlyu²⁰ wan²⁴,V;PROSP;PL;2,4,2
+3111,xti²⁰,nxten³²,V;PROG;SG;1,4,2
+3112,ya⁴²,kyan²⁴,V;PROSP;PL;1+INCL,4,2
+3113,xqan¹,xqan²⁰ renq²⁴,V;PROSP;PL;3,4,2
+3114,ndyi⁴,ndyin⁴,V;HAB;SG;1,4,2
+3115,nxi²,xin¹,V;PFV;SG;2,4,2
+3116,styi¹,styi⁴²,V;PFV;SG;2,4,2
+3117,qa²⁴,qan²⁴,V;PFV;SG;1,4,2
+3118,sqyu¹,nsqyu¹,V;PROG;SG;3,4,2
+3119,yta⁴,ntan¹an,V;PROG;PL;1+INCL,4,2
+3120,yjoq⁴,yjoq⁴²,V;PFV;SG;2,4,2
+3121,yta⁴,nta⁴²,V;PROG;SG;2,4,2
+3122,ndywan²,ndywan² renq¹,V;PROG;PL;3,4,2
+3123,xqwa¹⁰,nxqwa¹⁰,V;HAB;SG;3,4,2
+3124,ngon²,nskwan² renq¹,V;PROG;PL;3,4,2
+3125,lo²⁴,nlo²⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+3126,nden⁴²,nden²⁴ renq³²,V;HAB;PL;3,4,2
+3127,ntaq³,ntaq¹,V;PROG;SG;2,4,2
+3128,slaq¹,slanq²⁰an³²,V;PROSP;PL;1+INCL,4,2
+3129,lkwi¹,ntykwi⁴²,V;HAB;SG;2,4,2
+3130,ntykonq⁴²,ntykonq⁴²,V;HAB;SG;2,4,2
+3131,sqwe²⁴,sqwen¹⁴,V;PFV;SG;1,4,2
+3132,ntson¹⁴,ktson¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+3133,ndon⁴²,ndyon⁴²,V;HAB;SG;2,4,2
+3134,jlya⁴²,jlya⁴² wa⁴²,V;PFV;PL;1+EXCL,4,2
+3135,nti¹,nten⁴,V;HAB;SG;1,4,2
+3136,nkonq⁴²,ntkonq³²,V;PROG;SG;3,4,2
+3137,saq²,sanq⁴⁰,V;PFV;SG;1,4,2
+3138,jwi³,ja¹⁴ wan⁰,V;PROSP;PL;2,4,2
+3139,nsuq³,nsuq¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+3140,qne⁴²,qne⁴² renq⁴,V;PFV;PL;3,4,2
+3141,sqwe²⁴,nsqwen³²,V;PROG;PL;1+INCL,4,2
+3142,nya¹⁴,nnya¹⁴ wan⁰,V;HAB;PL;2,4,2
+3143,xne¹⁰,nxnen⁴⁰,V;PROG;SG;1,4,2
+3144,ynaq¹,nnaq¹ renq²⁴,V;PROG;PL;3,4,2
+3145,nkin²,skin² wa⁴²,V;PROSP;PL;1+EXCL,4,2
+3146,nya¹⁴,knya¹⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+3147,sqwa¹⁴,ntsqwa¹⁰ wa⁴²,V;PROG;PL;1+EXCL,4,2
+3148,snyaq¹,snyaq⁴²,V;PFV;SG;2,4,2
+3149,ykwanq¹,ykwanq⁴,V;PROSP;SG;1,4,2
+3150,snyaq¹,nsnyaq¹ wa⁴²,V;PROG;PL;1+EXCL,4,2
+3151,naq¹⁴,nnyaq¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+3152,ntyjyuq¹,ntyjyonq⁴,V;HAB;SG;1,4,2
+3153,sqwi¹⁴,nsqwen⁴⁰,V;PROG;SG;1,4,2
+3154,sqwi¹⁴,nsqwi¹,V;PROG;SG;2,4,2
+3155,ykwen²,ntykwen¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+3156,xka²⁴,xka²⁴,V;PFV;SG;3,4,2
+3157,xqan¹,xqan⁴²,V;PFV;SG;2,4,2
+3158,ya⁴²,yan⁴²an⁴²,V;PFV;PL;1+INCL,4,2
+3159,nkjwi⁴²,ntyji⁴,V;HAB;SG;3,4,2
+3160,ja¹,ntjan¹an¹,V;PROG;PL;1+INCL,4,2
+3161,ntsen⁴²,ntsen³²,V;PFV;SG;2,4,2
+3162,ntyinq³,ntyinq⁴⁰,V;PROG;SG;1,4,2
+3163,nsuq³,nsuq³,V;PROG;SG;3,4,2
+3164,ntiqi¹,tiqi²⁰,V;PROSP;SG;3,4,2
+3165,ylu³,ndylon⁴⁰,V;HAB;SG;1,4,2
+3166,ylu³,ndlylon¹⁴,V;HAB;PL;1+INCL,4,2
+3167,ntsu⁴²,nchon²⁴on³²,V;HAB;PL;1+INCL,4,2
+3168,xtyiq¹⁰,xtyiq¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+3169,ykwiq⁴,ykwiq⁴ wa⁴²,V;PFV;PL;1+EXCL,4,2
+3170,kwa¹⁴,ntykwa¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+3171,ntykwa⁴,ntykwan⁴,V;PFV;SG;1,4,2
+3172,naq¹⁴,naq¹⁴,V;PFV;SG;3,4,2
+3173,yo²,kon²⁰,V;PROSP;SG;1,4,2
+3174,nduq⁴²,nduq³² renq⁴,V;PROG;PL;3,4,2
+3175,nya¹⁴,nya¹ wan⁰,V;PROG;PL;2,4,2
+3176,ytsen⁴²,ntsen⁴⁰,V;HAB;SG;2,4,2
+3177,ndlyu⁴²,ndlyu⁴² wan³²,V;HAB;PL;2,4,2
+3178,ndyu²,ndyu² wan¹,V;PFV;PL;2,4,2
+3179,ngon²,nxkwan² wa⁴²,V;HAB;PL;1+EXCL,4,2
+3180,ntykwan¹⁴,ntykwa²⁰,V;HAB;SG;2,4,2
+3181,qu¹⁴,qu¹⁴,V;PROSP;SG;3,4,2
+3182,nlyu¹,nlyu¹,V;PROG;SG;3,4,2
+3183,nkin²,nkin² wan¹,V;PFV;PL;2,4,2
+3184,stan¹⁴,nstan¹⁴,V;HAB;PL;1+INCL,4,2
+3185,ntson¹⁴,ntson¹⁴,V;HAB;PL;1+INCL,4,2
+3186,sqwi¹⁴,sqwen⁴⁰,V;PFV;SG;1,4,2
+3187,ntykaq¹,tykaq²⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+3188,ntsa²⁴,ntsa²⁴ renq³²,V;PFV;PL;3,4,2
+3189,styi¹,styi²⁰ renq²⁴,V;PROSP;PL;3,4,2
+3190,qne¹,nqne⁴⁰,V;PROG;SG;2,4,2
+3191,ntsa²⁴,ntsan¹⁴,V;HAB;PL;1+INCL,4,2
+3192,slaq¹,nslaq²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+3193,ykwanq¹,ykwanq²⁰,V;PROSP;SG;3,4,2
+3194,sqwa¹⁴,sqwan⁴⁰,V;PROSP;SG;1,4,2
+3195,yno¹,ntqe⁴ wa⁴²,V;PROG;PL;1+EXCL,4,2
+3196,ntsen⁴²,ktsen⁴²,V;PROSP;SG;2,4,2
+3197,nna¹,nna⁴²,V;PFV;SG;2,4,2
+3198,nglu³,nglu¹⁴,V;HAB;SG;3,4,2
+3199,ntkonq³,ntkonq³,V;PFV;SG;3,4,2
+3200,xka²⁴,nxka¹ renq³²,V;PROG;PL;3,4,2
+3201,ytsaq³,ytsaq³ renq²⁴,V;PFV;PL;3,4,2
+3202,naq¹⁴,naq¹⁴ wan⁰,V;PFV;PL;2,4,2
+3203,yqu²,kqu¹⁴,V;PROSP;SG;3,4,2
+3204,ykwen²,ntykwen⁴⁰,V;PROG;SG;1,4,2
+3205,ntyjanq²,ntyjanq²⁰,V;HAB;SG;2,4,2
+3206,sqwe²⁴,sqwe⁴²,V;PROSP;SG;2,4,2
+3207,ntykwen³,tykwen²⁰,V;PROSP;SG;2,4,2
+3208,ntyka²,ntyka¹,V;PROG;SG;2,4,2
+3209,swenq³,nswenq³,V;PROG;SG;3,4,2
+3210,sqwa¹⁴,sqwa¹⁴ renq⁰,V;PFV;PL;3,4,2
+3211,slu¹⁴,slu¹⁴,V;PFV;SG;3,4,2
+3212,skwan²,xkwan¹,V;PROSP;SG;2,4,2
+3213,skwen¹,nskwen²⁰ renq²⁴,V;HAB;PL;3,4,2
+3214,son³,nxon²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+3215,sqi²,sqi²,V;PFV;SG;3,4,2
+3216,nya¹⁴,knyan⁴⁰,V;PROSP;SG;1,4,2
+3217,nton⁴²,kton¹⁴,V;PROSP;PL;1+INCL,4,2
+3218,nlyu¹,lyu¹ wan²⁴,V;PFV;PL;2,4,2
+3219,yjoq⁴,kjonq²⁰,V;PROSP;SG;1,4,2
+3220,ntyinq³,ktyinq²⁰,V;PROSP;SG;2,4,2
+3221,qnyi¹,qnyi²⁰ wan²⁴,V;PROSP;PL;2,4,2
+3222,qya³,ntyqyan⁴⁰,V;PROG;SG;1,4,2
+3223,stan¹⁴,stan¹⁴,V;PFV;SG;3,4,2
+3224,kwa³,kwan²an¹,V;PFV;PL;1+INCL,4,2
+3225,nyi¹⁴,nyi²⁰,V;PROSP;SG;2,4,2
+3226,slu¹⁴,nslu¹ renq⁰,V;PROG;PL;3,4,2
+3227,ntyi¹,ktyin²⁰in³²,V;PROSP;PL;1+INCL,4,2
+3228,lqa³,ntqa³ wan²⁴,V;PROG;PL;2,4,2
+3229,ntykonq⁴²,ntykonq⁴²on⁴²,V;PFV;PL;1+INCL,4,2
+3230,ne¹⁴,nni¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+3231,sne³,sne¹⁴,V;PROSP;PL;1+INCL,4,2
+3232,yjoq⁴,kjoq⁴ renq⁴,V;PROSP;PL;3,4,2
+3233,ytsaq³,ntsaq³ renq²⁴,V;PROG;PL;3,4,2
+3234,skanq³,ntskanq²⁰,V;HAB;SG;2,4,2
+3235,ntyinq³,ntyinq¹⁴⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+3236,skwan⁴,skwan⁴ wan⁴,V;PFV;PL;2,4,2
+3237,xkuq²,nxkuq¹⁴,V;HAB;SG;3,4,2
+3238,ngwa²,ngan¹⁴,V;PROG;PL;1+INCL,4,2
+3239,lqa³,nt/lyqa²⁰,V;HAB;SG;2,4,2
+3240,nlyu¹,nlyon¹on¹,V;PROG;PL;1+INCL,4,2
+3241,lu¹,nlu⁴²,V;PROG;SG;2,4,2
+3242,yqu²,ntyqu² renq¹,V;HAB;PL;3,4,2
+3243,sen¹,nsen²⁰en³²,V;HAB;PL;1+INCL,4,2
+3244,nchaq⁴²,nchanq⁴,V;PFV;SG;1,4,2
+3245,skwaq¹,nskwaq²⁰ renq²⁴,V;HAB;PL;3,4,2
+3246,nkqwa¹,nkqwa¹ wa⁴²,V;PFV;PL;1+EXCL,4,2
+3247,skwaq¹,skwaq²⁰ renq²⁴,V;PROSP;PL;3,4,2
+3248,yjoq⁴,yjoq⁴ wan⁴,V;PFV;PL;2,4,2
+3249,yku⁴,ntyku⁴ wan⁴,V;HAB;PL;2,4,2
+3250,ytsen⁴²,kne¹⁴ qne⁰ wan³²,V;PROSP;PL;2,4,2
+3251,nden⁴²,nden³² renq⁴,V;PROG;PL;3,4,2
+3252,kwa³,ntkwa³,V;PROG;SG;3,4,2
+3253,skwaq¹,skwaq²⁰an³²,V;PROSP;PL;1+INCL,4,2
+3254,yku⁴,ntyku³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+3255,ntyinq³,ntyinq⁴⁰,V;HAB;SG;1,4,2
+3256,ywi⁴²,ntjwi³² renq⁴,V;PROG;PL;3,4,2
+3257,jlyo³²,njlyo³²,V;HAB;SG;2,4,2
+3258,nkwi¹,ntykwi²⁰,V;HAB;SG;3,4,2
+3259,jlyo³²,jlyo³²,V;PFV;SG;3,4,2
+3260,ji¹,ntji¹,V;PROG;SG;3,4,2
+3261,slu¹⁴,slu¹⁴ wan⁰,V;PROSP;PL;2,4,2
+3262,ntykaq¹,ntykaq²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+3263,ndyi⁴,tyi⁴,V;PROSP;SG;3,4,2
+3264,ntyja²,tyja² renq¹,V;PROSP;PL;3,4,2
+3265,xlyu⁴²,nxlyu²⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+3266,skwa³,xkwa¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+3267,xlyu⁴²,nxlyu³² wa⁴²,V;PROG;PL;1+EXCL,4,2
+3268,nlyu¹,nlyon³²,V;HAB;SG;1,4,2
+3269,qya³,ntyqya³,V;PROG;SG;3,4,2
+3270,ykuq²,ntykuq¹,V;PROG;SG;2,4,2
+3271,qu¹⁴,ntqu¹⁴ renq⁰,V;HAB;PL;3,4,2
+3272,sqna¹,sqna¹,V;PFV;SG;3,4,2
+3273,swi²⁰,nswen²⁰en³²,V;HAB;PL;1+INCL,4,2
+3274,sti⁴,sti⁴,V;PFV;SG;3,4,2
+3275,ylaq⁴,nlyaq⁴ wa⁴²,V;HAB;PL;1+EXCL,4,2
+3276,yqwe²,yqwe² renq¹,V;PFV;PL;3,4,2
+3277,ncha¹,nchan⁴,V;HAB;SG;1,4,2
+3278,xki¹,xki²⁰,V;PROSP;SG;3,4,2
+3279,xkwan¹⁴,nxkwan¹,V;PROG;SG;2,4,2
+3280,nten³,sten¹⁴,V;PROSP;PL;1+INCL,4,2
+3281,yna⁴²,na³² wan⁴,V;PROG;PL;2,4,2
+3282,xka²⁴,nxkan²⁴,V;HAB;SG;1,4,2
+3283,xkwan¹⁴,nxkwan¹ wan⁰,V;PROG;PL;2,4,2
+3284,ntqo¹,ntqo¹,V;PROG;SG;3,4,2
+3285,ntqen¹,tyqin³²,V;PROSP;SG;1,4,2
+3286,nti¹,nti²⁰ wa⁴²,V;HAB;PL;1+EXCL,4,2
+3287,lya¹⁴,jlyan⁴⁰,V;PROSP;SG;1,4,2
+3288,xki¹,xki¹,V;PFV;SG;3,4,2
+3289,qa²⁴,qa²⁴ renq³²,V;PFV;PL;3,4,2
+3290,styi¹,styi¹,V;PFV;SG;3,4,2
+3291,sqwe¹⁴,sqwe²⁰,V;PFV;SG;2,4,2
+3292,yta⁴,kta⁴ wan⁴,V;PROSP;PL;2,4,2
+3293,sen⁴²,nsen³²,V;PROG;SG;3,4,2
+3294,xne¹⁰,xne¹⁴⁰ wa⁴²,V;PROSP;PL;1+EXCL,4,2
+3295,qan⁴,qan⁴ wan⁴,V;PFV;PL;2,4,2
+3296,ntykanq³,ntykanq²⁰,V;PROG;SG;2,4,2
+3297,yna⁴²,nan¹an¹,V;PROG;PL;1+INCL,4,2
+3298,stan¹⁴,stan¹⁴,V;PROSP;SG;3,4,2
+3299,xqan¹,xqan¹an¹,V;PFV;PL;1+INCL,4,2
+3300,nkeq³,keq²⁰,V;PROSP;SG;2,4,2

@@ -1,0 +1,1903 @@
+,lemma,form,tags,family,language
+0,frååge,hääwe frååged,V;PRF;IND;PL;3;PST,1,5
+1,ferliise,hääwe ferlääsen,V;PRF;IND;PL;3;PST,1,5
+2,bååge,bök,V;PFV;IND;SG;1;PST,1,5
+3,breege,bräk,V;PFV;IND;SG;1;PST,1,5
+4,greewe,hääst grääwen,V;PRF;IND;SG;2;PST,1,5
+5,jiiw,hee jewen,V;PRF;IND;SG;3;PST,1,5
+6,mötj,tu mötjen,V;NFIN,1,5
+7,lees,leest,V;IND;SG;3;PRS,1,5
+8,koone,kööst,V;PFV;IND;SG;2;PST,1,5
+9,bliwe,blaawen,V;IMP;SG,1,5
+10,skriiw,skrafst,V;IND;SG;2;PRS,1,5
+11,wan,hed wonen,V;PRF;IND;SG;3;PST+RMT,1,5
+12,weese,bän wään,V;PRF;IND;SG;1;PST,1,5
+13,weese,win weese,V;IND;PL;1;FUT;LGSPEC2,1,5
+14,bine,bine,V;IND;PL;3;PRS,1,5
+15,heewe,hääst heet,V;PRF;IND;SG;2;PST,1,5
+16,baag,baag,V;IND;PL;3;PRS,1,5
+17,maage,wal maage,V;IND;SG;3;FUT;LGSPEC2,1,5
+18,bliiw,bliiw,V;IND;PL;2;PRS,1,5
+19,breege,wårde breege,V;IND;PL;1;FUT;LGSPEC1,1,5
+20,greew,gruf,V;PFV;IND;SG;3;PST,1,5
+21,frååge,frååget,V;IND;SG;3;PRS,1,5
+22,jeewe,jäifen,V;PFV;IND;PL;3;PST,1,5
+23,jeewe,jeewe,V;IND;PL;2;PRS,1,5
+24,bliwe,san blaawen,V;PRF;IND;PL;1;PST,1,5
+25,bååge,bååged,V;PFV;IND;SG;3;PST,1,5
+26,kaame,as kiimen,V;PRF;IND;SG;3;PST,1,5
+27,dreeg,dreeg,V;IND;PL;2;PRS,1,5
+28,lees,skääl lees,V;IND;SG;2;FUT;LGSPEC1,1,5
+29,bine,häin bünen,V;PRF;IND;PL;1;PST+RMT,1,5
+30,kem,kaam,V;PFV;IND;PL;3;PST,1,5
+31,jiiw,jiiw,V;IND;PL;3;PRS,1,5
+32,heewe,häin hädj,V;PRF;IND;PL;3;PST+RMT,1,5
+33,wan,skal wan,V;IND;SG;3;FUT;LGSPEC1,1,5
+34,jooge,jooge,V;IND;PL;2;PRS,1,5
+35,pluuge,pluugi'm,V;IMP;PL,1,5
+36,maage,maaget,V;PFV;IND;SG;1;PST,1,5
+37,bine,bün,V;PFV;IND;SG;1;PST,1,5
+38,gripe,hääwe gram,V;PRF;IND;DU;2;PST,1,5
+39,wan,skel wan,V;IND;DU;1;FUT;LGSPEC1,1,5
+40,kaame,wjarst kiimen,V;PRF;IND;SG;2;PST+RMT,1,5
+41,frååge,häist frååged,V;PRF;IND;SG;2;PST+RMT,1,5
+42,lees,hee leesen,V;PRF;IND;SG;3;PST,1,5
+43,bååge,bååge,V;IND;DU;1;PRS,1,5
+44,breeg,hee breegen,V;PRF;IND;SG;3;PST,1,5
+45,breege,wårde breege,V;IND;DU;1;FUT;LGSPEC1,1,5
+46,faal,wiar feelen,V;PRF;IND;DU;1;PST+RMT,1,5
+47,pluuge,skel pluuge,V;IND;PL;2;FUT;LGSPEC1,1,5
+48,dreege,häi dräägen,V;PRF;IND;SG;1;PST+RMT,1,5
+49,bliiw,wiar blewen,V;PRF;IND;PL;3;PST+RMT,1,5
+50,röp,wel röp,V;IND;DU;2;FUT;LGSPEC2,1,5
+51,kem,wiar kimen,V;PRF;IND;PL;1;PST+RMT,1,5
+52,drank,skel drank,V;IND;DU;1;FUT;LGSPEC1,1,5
+53,fraage,wal fraage,V;IND;SG;3;FUT;LGSPEC2,1,5
+54,mååge,heet mååged,V;PRF;IND;SG;3;PST,1,5
+55,heelpe,hääwe hülpen,V;PRF;IND;PL;2;PST,1,5
+56,haa,hed,V;PFV;IND;PL;3;PST,1,5
+57,jooge,hääwe läägen,V;PRF;IND;PL;3;PST,1,5
+58,breege,hääwe bräägen,V;PRF;IND;PL;1;PST,1,5
+59,ferjeese,hääw ferjin,V;PRF;IND;SG;1;PST,1,5
+60,bring,broocht,V;PFV;IND;PL;3;PST,1,5
+61,breege,breege,V;NFIN,1,5
+62,fine,häin fünen,V;PRF;IND;DU;1;PST+RMT,1,5
+63,nem,naamst,V;PFV;IND;SG;2;PST,1,5
+64,teenk,hedst toocht,V;PRF;IND;SG;2;PST+RMT,1,5
+65,lees,lees,V;IND;DU;2;PRS,1,5
+66,drank,skel drank,V;IND;PL;3;FUT;LGSPEC1,1,5
+67,stridj,wal stridj,V;IND;SG;1;FUT;LGSPEC2,1,5
+68,jooge,hääst läägen,V;PRF;IND;SG;2;PST,1,5
+69,ferliise,ferliise,V;IND;DU;1;PRS,1,5
+70,wees,san weesen,V;PRF;IND;DU;2;PST,1,5
+71,stridj,streed,V;PFV;IND;PL;2;PST,1,5
+72,beskriiw,beskraft,V;IND;SG;3;PRS,1,5
+73,jiiw,jeew,V;PFV;IND;PL;2;PST,1,5
+74,heelpe,hääw hülpen,V;PRF;IND;SG;1;PST,1,5
+75,du,hed den,V;PRF;IND;DU;1;PST+RMT,1,5
+76,skriiw,haa skrewen,V;PRF;IND;PL;1;PST,1,5
+77,beskriiw,wal beskriiw,V;IND;SG;3;FUT;LGSPEC2,1,5
+78,kaame,kömen,V;PFV;IND;PL;3;PST,1,5
+79,faal,foolst,V;PFV;IND;SG;2;PST,1,5
+80,wel,skel wel,V;IND;DU;2;FUT;LGSPEC1,1,5
+81,beskriiw,wel beskriiw,V;IND;PL;3;FUT;LGSPEC2,1,5
+82,bine,bine,V;IND;PL;2;PRS,1,5
+83,nem,heest nimen,V;PRF;IND;SG;2;PST,1,5
+84,frååge,frååged,V;PFV;IND;SG;1;PST,1,5
+85,fu,fing,V;PFV;IND;PL;2;PST,1,5
+86,gripe,grapst,V;IND;SG;2;PRS,1,5
+87,heewe,heest,V;PFV;IND;SG;2;PST,1,5
+88,bååge,häi båågen,V;PRF;IND;SG;1;PST+RMT,1,5
+89,fraage,fraaget,V.PTCP;PST,1,5
+90,heelpe,heelpe,V;IND;DU;1;PRS,1,5
+91,wan,woon,V;PFV;IND;PL;1;PST,1,5
+92,bring,broocht,V;PFV;IND;DU;2;PST,1,5
+93,heewe,hääwe,V;IND;DU;2;PRS,1,5
+94,fine,häin fünen,V;PRF;IND;PL;1;PST+RMT,1,5
+95,teenk,wal teenk,V;IND;SG;3;FUT;LGSPEC2,1,5
+96,faal,tu faalen,V;NFIN,1,5
+97,du,hed den,V;PRF;IND;DU;2;PST+RMT,1,5
+98,weese,wees,V;IMP,1,5
+99,nem,tu nemen,V;NFIN,1,5
+100,mötj,mönje,V;IND;DU;2;PRS,1,5
+101,faal,fool,V;PFV;IND;PL;2;PST,1,5
+102,heewe,hääwe hädj,V;PRF;IND;DU;2;PST,1,5
+103,heewe,hääw heet,V;PRF;IND;PL;2;PST,1,5
+104,düünj,hääwe dänj,V;PRF;IND;DU;1;PST,1,5
+105,mååge,mååge,V;IND;PL;3;PRS,1,5
+106,bliwe,wårde bliwe,V;IND;DU;1;FUT;LGSPEC1,1,5
+107,bliwe,bliifst,V;PFV;IND;SG;2;PST,1,5
+108,heewe,wääl heewe,V;IND;SG;2;FUT;LGSPEC2,1,5
+109,stridj,skal stridj,V;IND;SG;1;FUT;LGSPEC1,1,5
+110,bring,haa broocht,V;PRF;IND;DU;2;PST,1,5
+111,düünj,häin dänj,V;PRF;IND;PL;3;PST+RMT,1,5
+112,mååge,hääst mååged,V;PRF;IND;SG;2;PST,1,5
+113,röp,rööp,V;PFV;IND;DU;1;PST,1,5
+114,wan,wan'em,V;IMP;PL,1,5
+115,drainke,wårde drainke,V;IND;PL;2;FUT;LGSPEC1,1,5
+116,bring,hee broocht,V;PRF;IND;SG;3;PST,1,5
+117,frååge,wårde frååge,V;IND;DU;1;FUT;LGSPEC1,1,5
+118,drank,dronken,V.PTCP;PST,1,5
+119,bliiw,wel bliiw,V;IND;DU;1;FUT;LGSPEC2,1,5
+120,bring,wal bring,V;IND;SG;1;FUT;LGSPEC2,1,5
+121,greew,hed greewen,V;PRF;IND;DU;1;PST+RMT,1,5
+122,drainke,hääwe drunken,V;PRF;IND;PL;2;PST,1,5
+123,beskriiw,hed beskrewen,V;PRF;IND;PL;1;PST+RMT,1,5
+124,weese,wäät weese,V;IND;SG;2;FUT;LGSPEC2,1,5
+125,bine,wårde bine,V;IND;DU;2;FUT;LGSPEC1,1,5
+126,jiiw,skal jiiw,V;IND;SG;1;FUT;LGSPEC1,1,5
+127,lees,hed leesen,V;PRF;IND;SG;3;PST+RMT,1,5
+128,bine,wårde bine,V;IND;DU;1;FUT;LGSPEC1,1,5
+129,heelpe,hülpen,V;PFV;IND;PL;2;PST,1,5
+130,düünj,düünj,V;IND;PL;2;PRS,1,5
+131,haa,skal haa,V;IND;SG;3;FUT;LGSPEC1,1,5
+132,fraage,fraage,V;IND;DU;2;PRS,1,5
+133,nem,namst,V;IND;SG;2;PRS,1,5
+134,mååge,tu måågen,V;NFIN,1,5
+135,breege,breege,V;IND;PL;3;PRS,1,5
+136,dreege,dröich,V;PFV;IND;SG;3;PST,1,5
+137,dreeg,hed draanjen,V;PRF;IND;SG;3;PST+RMT,1,5
+138,pluuge,skel pluuge,V;IND;PL;3;FUT;LGSPEC1,1,5
+139,bliwe,bliwe,V;IND;DU;1;PRS,1,5
+140,jiiw,skel jiiw,V;IND;DU;1;FUT;LGSPEC1,1,5
+141,jeewe,jäif,V;PFV;IND;SG;3;PST,1,5
+142,greewe,tu greewen,V;NFIN,1,5
+143,mötj,mönje,V;IND;PL;2;PRS,1,5
+144,lees,lus,V;PFV;IND;PL;1;PST,1,5
+145,ferjeese,ferjees,V;IND;SG;1;PRS,1,5
+146,lees,skel lees,V;IND;DU;1;FUT;LGSPEC1,1,5
+147,jiiw,jeew,V;PFV;IND;SG;1;PST,1,5
+148,bliiw,bleew,V;PFV;IND;PL;2;PST,1,5
+149,dreege,dröichen,V;PFV;IND;DU;2;PST,1,5
+150,pluuge,haa pluuget,V;PRF;IND;DU;2;PST,1,5
+151,heelpe,hülpst,V;PFV;IND;SG;2;PST,1,5
+152,wees,wiarst weesen,V;PRF;IND;SG;2;PST+RMT,1,5
+153,jooge,wårde jooge,V;IND;DU;2;FUT;LGSPEC1,1,5
+154,dreege,dreege,V;IND;PL;1;PRS,1,5
+155,bliiw,bleefst,V;PFV;IND;SG;2;PST,1,5
+156,düünj,wårt düünj,V;IND;SG;3;FUT;LGSPEC1,1,5
+157,kaame,kömen,V;PFV;IND;PL;1;PST,1,5
+158,gunge,wus gängen,V;PRF;IND;SG;1;PST+RMT,1,5
+159,fu,feit,V;IND;SG;3;PRS,1,5
+160,haa,hee,V;IND;SG;3;PRS,1,5
+161,bine,heet bünen,V;PRF;IND;SG;3;PST,1,5
+162,greew,skel greew,V;IND;DU;1;FUT;LGSPEC1,1,5
+163,heewe,häist,V;PFV;IND;SG;2;PST,1,5
+164,bring,bring,V;IND;PL;1;PRS,1,5
+165,fraage,skal fraage,V;IND;SG;3;FUT;LGSPEC1,1,5
+166,pluuge,haa pluuget,V;PRF;IND;PL;2;PST,1,5
+167,beskriiw,skel beskriiw,V;IND;PL;3;FUT;LGSPEC1,1,5
+168,faal,faal,V;IND;PL;1;PRS,1,5
+169,haa,hed,V;PFV;IND;SG;1;PST,1,5
+170,mötj,hääwe muurst,V;PRF;IND;DU;2;PST,1,5
+171,booge,booge,V;IND;PL;1;PRS,1,5
+172,bine,wårde bine,V;IND;PL;3;FUT;LGSPEC1,1,5
+173,drainke,drunken,V;IMP;SG,1,5
+174,teenk,haa toocht,V;PRF;IND;PL;3;PST,1,5
+175,heewe,schal heewe,V;IND;SG;1;FUT;LGSPEC1,1,5
+176,pluuge,pluug,V;IND;DU;1;PRS,1,5
+177,bine,bin,V;IMP;PL,1,5
+178,breege,bräägen,V;IMP;SG,1,5
+179,bliiw,wel bliiw,V;IND;PL;3;FUT;LGSPEC2,1,5
+180,weese,waos wään,V;PRF;IND;SG;3;PST+RMT,1,5
+181,breeg,breeg,V;IND;PL;2;PRS,1,5
+182,heewe,häi hädj,V;PRF;IND;SG;3;PST+RMT,1,5
+183,dreege,wårde dreege,V;IND;PL;2;FUT;LGSPEC1,1,5
+184,booge,hääw booged,V;PRF;IND;SG;1;PST,1,5
+185,gunge,än gung,V.PTCP;PST,1,5
+186,dreege,häin dräägen,V;PRF;IND;PL;1;PST+RMT,1,5
+187,maage,skel maage,V;IND;DU;1;FUT;LGSPEC1,1,5
+188,jooge,wårde jooge,V;IND;PL;3;FUT;LGSPEC1,1,5
+189,mötj,mönje,V;IND;PL;3;PRS,1,5
+190,stridj,haa streden,V;PRF;IND;PL;1;PST,1,5
+191,wel,wul,V;PFV;IND;SG;3;PST,1,5
+192,bliwe,bliwe,V;IND;PL;1;PRS,1,5
+193,dreege,häist dräägen,V;PRF;IND;SG;2;PST+RMT,1,5
+194,dreege,häi dräägen,V;PRF;IND;SG;3;PST+RMT,1,5
+195,stridj,skel stridj,V;IND;PL;3;FUT;LGSPEC1,1,5
+196,frååge,frååge,V;IND;PL;1;PRS,1,5
+197,spreege,spreeg,V;IMP;PL,1,5
+198,heelpe,häi hülpen,V;PRF;IND;SG;3;PST+RMT,1,5
+199,fraage,fraaget,V;PFV;IND;PL;3;PST,1,5
+200,haa,haa,V;IND;DU;1;PRS,1,5
+201,jiiw,hed jewen,V;PRF;IND;SG;1;PST+RMT,1,5
+202,beskriiw,beskreew,V;PFV;IND;DU;1;PST,1,5
+203,teenk,wel teenk,V;IND;DU;2;FUT;LGSPEC2,1,5
+204,jooge,häin läägen,V;PRF;IND;PL;1;PST+RMT,1,5
+205,booge,booge,V;IND;DU;2;PRS,1,5
+206,frååge,fråågeden,V;PFV;IND;PL;1;PST,1,5
+207,dreege,hääst dräägen,V;PRF;IND;SG;2;PST,1,5
+208,wel,heest wulen,V;PRF;IND;SG;2;PST,1,5
+209,koone,koon,V;IND;SG;3;PRS,1,5
+210,röp,her rööpen,V;PFV;IND;DU;2;PST,1,5
+211,faal,faal,V;IND;DU;1;PRS,1,5
+212,booge,boogeden,V;PFV;IND;DU;1;PST,1,5
+213,düünj,wårde düünj,V;IND;DU;1;FUT;LGSPEC1,1,5
+214,drainke,häin drunken,V;PRF;IND;PL;3;PST+RMT,1,5
+215,röp,skel röp,V;IND;DU;2;FUT;LGSPEC1,1,5
+216,bring,hed broocht,V;PRF;IND;PL;2;PST+RMT,1,5
+217,kaame,kaam,V;IMP;PL,1,5
+218,wees,beest weesen,V;PRF;IND;SG;2;PST,1,5
+219,pluuge,skel pluuge,V;IND;DU;2;FUT;LGSPEC1,1,5
+220,maage,wääl maage,V;IND;SG;2;FUT;LGSPEC2,1,5
+221,heewe,hääw,V;IMP,1,5
+222,ferliise,ferliise,V;NFIN,1,5
+223,lees,tu leesen,V;NFIN,1,5
+224,bring,skal bring,V;IND;SG;3;FUT;LGSPEC1,1,5
+225,bring,broocht,V.PTCP;PST,1,5
+226,bååge,häist båågen,V;PRF;IND;SG;2;PST+RMT,1,5
+227,skriiw,haa skrewen,V;PRF;IND;PL;3;PST,1,5
+228,nem,nem'em,V;IMP;PL,1,5
+229,greewe,gröifen,V;PFV;IND;PL;2;PST,1,5
+230,ferliise,ferlüst,V;IND;SG;3;PRS,1,5
+231,wan,wal wan,V;IND;SG;1;FUT;LGSPEC2,1,5
+232,teenk,toocht,V;PFV;IND;PL;1;PST,1,5
+233,dreeg,skel dreeg,V;IND;DU;2;FUT;LGSPEC1,1,5
+234,teenk,wal teenk,V;IND;SG;1;FUT;LGSPEC2,1,5
+235,fu,fu,V;IMP;SG,1,5
+236,ferliise,ferliise,V;IND;SG;1;PRS,1,5
+237,mötj,muursten,V;PFV;IND;PL;2;PST,1,5
+238,heewe,heen,V;PFV;IND;PL;2;PST,1,5
+239,frååge,frååge,V;IND;PL;3;PRS,1,5
+240,jiiw,juf,V;PFV;IND;PL;3;PST,1,5
+241,greewe,häin grääwen,V;PRF;IND;PL;1;PST+RMT,1,5
+242,dreeg,druch,V;PFV;IND;SG;3;PST,1,5
+243,mååge,wårde mååge,V;IND;PL;3;FUT;LGSPEC1,1,5
+244,dreege,dräägen,V;IMP;SG,1,5
+245,greew,greew'em,V;IMP;PL,1,5
+246,teenk,wel teenk,V;IND;PL;1;FUT;LGSPEC2,1,5
+247,heewe,wal heewe,V;IND;SG;1;FUT;LGSPEC2,1,5
+248,pluuge,wel pluuge,V;IND;PL;2;FUT;LGSPEC2,1,5
+249,kem,wiar kimen,V;PRF;IND;PL;2;PST+RMT,1,5
+250,röp,skel röp,V;IND;PL;2;FUT;LGSPEC1,1,5
+251,spreege,wårde spreege,V;IND;PL;2;FUT;LGSPEC1,1,5
+252,pluuge,hed pluuget,V;PRF;IND;PL;3;PST+RMT,1,5
+253,baag,skel baag,V;IND;DU;1;FUT;LGSPEC1,1,5
+254,stridj,hed streden,V;PRF;IND;PL;3;PST+RMT,1,5
+255,fine,wårt fine,V;IND;SG;3;FUT;LGSPEC1,1,5
+256,breege,hääwe bräägen,V;PRF;IND;PL;2;PST,1,5
+257,du,skel du,V;IND;PL;3;FUT;LGSPEC1,1,5
+258,drainke,drunken,V;PFV;IND;PL;2;PST,1,5
+259,mötj,muurst,V;PFV;IND;SG;1;PST,1,5
+260,spreege,spreecht,V;IND;SG;3;PRS,1,5
+261,drainke,drunk,V;PFV;IND;SG;1;PST,1,5
+262,bliwe,san blaawen,V;PRF;IND;PL;3;PST,1,5
+263,spreege,wårt spreege,V;IND;SG;3;FUT;LGSPEC1,1,5
+264,gunge,gäng,V;PFV;IND;SG;1;PST,1,5
+265,fu,heest fingen,V;PRF;IND;SG;2;PST,1,5
+266,dreege,heet dräägen,V;PRF;IND;SG;3;PST,1,5
+267,jiiw,juf,V;PFV;IND;DU;2;PST,1,5
+268,baag,beechst,V;IND;SG;2;PRS,1,5
+269,gripe,tu gripen,V;NFIN,1,5
+270,dreeg,haa draanjen,V;PRF;IND;PL;1;PST,1,5
+271,wan,wan,V;IND;DU;1;PRS,1,5
+272,ferliise,ferlääsen,V;IMP;SG,1,5
+273,fraage,fraaget,V;PFV;IND;DU;1;PST,1,5
+274,fine,fine,V;IND;PL;1;PRS,1,5
+275,mötj,mötj,V;IND;SG;3;PRS,1,5
+276,fu,hed fingen,V;PRF;IND;DU;1;PST+RMT,1,5
+277,stridj,wel stridj,V;IND;PL;2;FUT;LGSPEC2,1,5
+278,jiiw,heest jewen,V;PRF;IND;SG;2;PST,1,5
+279,bring,haa broocht,V;PRF;IND;SG;1;PST,1,5
+280,röp,sket röp,V;IND;SG;2;FUT;LGSPEC1,1,5
+281,mååge,häi mååged,V;PRF;IND;SG;3;PST+RMT,1,5
+282,gripe,häin gram,V;PRF;IND;PL;2;PST+RMT,1,5
+283,greewe,häin grääwen,V;PRF;IND;DU;2;PST+RMT,1,5
+284,faal,fool,V;PFV;IND;SG;3;PST,1,5
+285,drank,hed dronken,V;PRF;IND;SG;3;PST+RMT,1,5
+286,gripe,bååge,V;IND;DU;2;PRS,1,5
+287,jeewe,häin jääwen,V;PRF;IND;PL;1;PST+RMT,1,5
+288,skriiw,skel skriiw,V;IND;PL;2;FUT;LGSPEC1,1,5
+289,booge,booget,V;IND;SG;3;PRS,1,5
+290,breeg,hed breegen,V;PRF;IND;DU;1;PST+RMT,1,5
+291,fraage,hee fraaget,V;PRF;IND;SG;3;PST,1,5
+292,fu,fu,V;IND;SG;1;PRS,1,5
+293,kem,kimen,V.PTCP;PST,1,5
+294,stridj,hed streden,V;PRF;IND;PL;1;PST+RMT,1,5
+295,weese,wjarn wään,V;PRF;IND;DU;2;PST+RMT,1,5
+296,breege,bräken,V;PFV;IND;PL;1;PST,1,5
+297,bine,hääwe bünen,V;PRF;IND;DU;2;PST,1,5
+298,du,wal du,V;IND;SG;3;FUT;LGSPEC2,1,5
+299,röp,rööp,V;PFV;IND;DU;3;PST,1,5
+300,frååge,häin frååged,V;PRF;IND;DU;1;PST+RMT,1,5
+301,faal,fool,V;PFV;IND;PL;3;PST,1,5
+302,skriiw,skraft,V;IND;SG;3;PRS,1,5
+303,faal,san feelen,V;PRF;IND;PL;1;PST,1,5
+304,mååge,måågeden,V;PFV;IND;PL;3;PST,1,5
+305,jooge,luuchen,V;PFV;IND;DU;2;PST,1,5
+306,pluuge,pluuget,V.PTCP;PST,1,5
+307,kem,skel kem,V;IND;DU;2;FUT;LGSPEC1,1,5
+308,dreeg,skal dreeg,V;IND;SG;1;FUT;LGSPEC1,1,5
+309,weese,san,V;IND;DU;2;PRS,1,5
+310,fu,wel fu,V;IND;DU;1;FUT;LGSPEC2,1,5
+311,kem,wel kem,V;IND;PL;3;FUT;LGSPEC2,1,5
+312,heelpe,wårde heelpe,V;IND;PL;2;FUT;LGSPEC1,1,5
+313,bring,bring,V;IMP;SG,1,5
+314,maage,haa maaget,V;PRF;IND;PL;2;PST,1,5
+315,faal,skel faal,V;IND;PL;3;FUT;LGSPEC1,1,5
+316,greew,skel greew,V;IND;PL;1;FUT;LGSPEC1,1,5
+317,kem,wel kem,V;IND;PL;2;FUT;LGSPEC2,1,5
+318,baag,buch,V;PFV;IND;DU;2;PST,1,5
+319,baag,skel baag,V;IND;PL;3;FUT;LGSPEC1,1,5
+320,fine,hääst fünen,V;PRF;IND;SG;2;PST,1,5
+321,pluuge,wel pluuge,V;IND;DU;1;FUT;LGSPEC2,1,5
+322,wan,skel wan,V;IND;PL;1;FUT;LGSPEC1,1,5
+323,nem,skel nem,V;IND;DU;2;FUT;LGSPEC1,1,5
+324,maage,hedst maaget,V;PRF;IND;SG;2;PST+RMT,1,5
+325,fine,fün,V;PFV;IND;SG;3;PST,1,5
+326,bine,wårde bine,V;IND;PL;2;FUT;LGSPEC1,1,5
+327,bring,skel bring,V;IND;PL;1;FUT;LGSPEC1,1,5
+328,spreege,spreege,V;IND;PL;2;PRS,1,5
+329,wel,skääl wel,V;IND;SG;2;FUT;LGSPEC1,1,5
+330,skriiw,wal skriiw,V;IND;SG;1;FUT;LGSPEC2,1,5
+331,heelpe,hääwe hülpen,V;PRF;IND;DU;1;PST,1,5
+332,kaame,wus kiimen,V;PRF;IND;SG;3;PST+RMT,1,5
+333,heewe,win heewe,V;IND;PL;2;FUT;LGSPEC2,1,5
+334,baag,hed beegen,V;PRF;IND;PL;1;PST+RMT,1,5
+335,bliwe,wjarn blaawen,V;PRF;IND;DU;1;PST+RMT,1,5
+336,beskriiw,wal beskriiw,V;IND;SG;1;FUT;LGSPEC2,1,5
+337,wees,wal wees,V;IND;SG;3;FUT;LGSPEC2,1,5
+338,nem,haa nimen,V;PRF;IND;PL;3;PST,1,5
+339,baag,haa beegen,V;PRF;IND;DU;2;PST,1,5
+340,weese,schin weese,V;IND;PL;3;FUT;LGSPEC1,1,5
+341,lees,skal lees,V;IND;SG;3;FUT;LGSPEC1,1,5
+342,teenk,skel teenk,V;IND;PL;1;FUT;LGSPEC1,1,5
+343,düünj,deet,V;IND;SG;3;PRS,1,5
+344,greewe,greewe,V;IND;PL;3;PRS,1,5
+345,wel,wel wel,V;IND;PL;1;FUT;LGSPEC2,1,5
+346,weese,win weese,V;IND;PL;2;FUT;LGSPEC2,1,5
+347,pluuge,pluuget,V;PFV;IND;SG;3;PST,1,5
+348,röp,heest rööpen,V;IND;SG;2;PRS,1,5
+349,du,du,V;IND;SG;1;PRS,1,5
+350,dreeg,draanjen,V.PTCP;PST,1,5
+351,wel,skel wel,V;IND;PL;2;FUT;LGSPEC1,1,5
+352,wees,wiar weesen,V;PRF;IND;PL;3;PST+RMT,1,5
+353,röp,wel röp,V;IND;PL;1;FUT;LGSPEC2,1,5
+354,wan,wan,V;IND;PL;2;PRS,1,5
+355,bliiw,bleew,V;PFV;IND;DU;2;PST,1,5
+356,pluuge,pluuget,V;PFV;IND;PL;3;PST,1,5
+357,spreege,tu spreegen,V;NFIN,1,5
+358,skriiw,wel skriiw,V;IND;DU;2;FUT;LGSPEC2,1,5
+359,röp,heer rööpen,V;IND;SG;3;PRS,1,5
+360,breege,bräkst,V;PFV;IND;SG;2;PST,1,5
+361,breege,wårde breege,V;IND;PL;3;FUT;LGSPEC1,1,5
+362,röp,wel röp,V;IND;PL;2;FUT;LGSPEC2,1,5
+363,bring,haa broocht,V;PRF;IND;PL;2;PST,1,5
+364,kem,wiarst kimen,V;PRF;IND;SG;2;PST+RMT,1,5
+365,weese,sän wään,V;PRF;IND;PL;3;PST,1,5
+366,ferjeese,ferjeest,V;IND;SG;2;PRS,1,5
+367,gripe,grip,V;IMP;PL,1,5
+368,jiiw,skal jiiw,V;IND;SG;3;FUT;LGSPEC1,1,5
+369,jiiw,hed jewen,V;PRF;IND;PL;1;PST+RMT,1,5
+370,beskriiw,beskreew,V;PFV;IND;PL;2;PST,1,5
+371,drank,haa dronken,V;PRF;IND;PL;1;PST,1,5
+372,weese,bast wään,V;PRF;IND;SG;2;PST,1,5
+373,jooge,hääwe läägen,V;PRF;IND;PL;2;PST,1,5
+374,bine,bünst,V;PFV;IND;SG;2;PST,1,5
+375,stridj,streed,V;PFV;IND;SG;1;PST,1,5
+376,greewe,greewe,V;IND;PL;1;PRS,1,5
+377,mååge,mååged,V;IMP;SG,1,5
+378,bliiw,wiar blewen,V;PRF;IND;SG;1;PST+RMT,1,5
+379,ferjeese,häin ferjin,V;PRF;IND;DU;1;PST+RMT,1,5
+380,kaame,wårde kaame,V;IND;PL;2;FUT;LGSPEC1,1,5
+381,jiiw,wel jiiw,V;IND;PL;2;FUT;LGSPEC2,1,5
+382,ferliise,hääwe ferlääsen,V;PRF;IND;PL;2;PST,1,5
+383,heewe,wal heewe,V;IND;SG;3;FUT;LGSPEC2,1,5
+384,skriiw,skriiw,V;IMP;SG,1,5
+385,jooge,luuchen,V;PFV;IND;PL;2;PST,1,5
+386,bliwe,blaft,V;IND;SG;3;PRS,1,5
+387,weese,wårt weese,V;IND;SG;3;FUT,1,5
+388,drank,droonkst,V;PFV;IND;SG;2;PST,1,5
+389,weese,wus,V;PFV;IND;SG;3;PST,1,5
+390,dreege,dröichen,V;PFV;IND;DU;1;PST,1,5
+391,gripe,wårde gripe,V;IND;PL;2;FUT;LGSPEC1,1,5
+392,mååge,wårt mååge,V;IND;SG;3;FUT;LGSPEC1,1,5
+393,frååge,häi frååged,V;PRF;IND;SG;3;PST+RMT,1,5
+394,fu,hee fingen,V;PRF;IND;SG;3;PST,1,5
+395,faal,wiar feelen,V;PRF;IND;PL;1;PST+RMT,1,5
+396,kaame,wus kiimen,V;PRF;IND;SG;1;PST+RMT,1,5
+397,bååge,häin båågen,V;PRF;IND;PL;3;PST+RMT,1,5
+398,ferjeese,hääwe ferjin,V;PRF;IND;PL;1;PST,1,5
+399,haa,haa,V;IND;SG;1;PRS,1,5
+400,spreege,heet spräägen,V;PRF;IND;SG;3;PST,1,5
+401,bååge,böken,V;PFV;IND;PL;3;PST,1,5
+402,lees,haa leesen,V;PRF;IND;PL;3;PST,1,5
+403,spreege,hääwe spräägen,V;PRF;IND;DU;2;PST,1,5
+404,jooge,wårde jooge,V;IND;PL;1;FUT;LGSPEC1,1,5
+405,mååge,häist mååged,V;PRF;IND;SG;2;PST+RMT,1,5
+406,skriiw,hed skrewen,V;PRF;IND;PL;2;PST+RMT,1,5
+407,weese,san wään,V;PRF;IND;PL;3;PST,1,5
+408,gripe,wårde gripe,V;IND;PL;3;FUT;LGSPEC1,1,5
+409,düünj,wårst düünj,V;IND;SG;2;FUT;LGSPEC1,1,5
+410,nem,skel nem,V;IND;DU;1;FUT;LGSPEC1,1,5
+411,röp,röp,V;IND;DU;2;PRS,1,5
+412,breeg,haa breegen,V;PRF;IND;DU;2;PST,1,5
+413,faal,skel faal,V;IND;PL;1;FUT;LGSPEC1,1,5
+414,lees,hed leesen,V;PRF;IND;DU;1;PST+RMT,1,5
+415,mååge,hääwe mååged,V;PRF;IND;DU;1;PST,1,5
+416,maage,maage,V;IND;PL;1;PRS,1,5
+417,lees,lees'em,V;IMP;PL,1,5
+418,greew,hed greewen,V;PRF;IND;PL;3;PST+RMT,1,5
+419,jeewe,wårde jeewe,V;IND;PL;3;FUT;LGSPEC1,1,5
+420,fraage,fraage,V;IND;PL;2;PRS,1,5
+421,faal,wiar feelen,V;PRF;IND;PL;3;PST+RMT,1,5
+422,frååge,fråågeden,V;PFV;IND;DU;1;PST,1,5
+423,greew,greefst,V;IND;SG;2;PRS,1,5
+424,baag,haa beegen,V;PRF;IND;DU;1;PST,1,5
+425,fu,fing,V;PFV;IND;SG;3;PST,1,5
+426,baag,buch,V;PFV;IND;PL;2;PST,1,5
+427,kaame,kömst,V;PFV;IND;SG;2;PST,1,5
+428,heewe,hee heet,V;PRF;IND;SG;3;PST+RMT,1,5
+429,stridj,wääl stridj,V;IND;SG;2;FUT;LGSPEC2,1,5
+430,kaame,wårt kaame,V;IND;SG;3;FUT;LGSPEC1,1,5
+431,spreege,spreege,V;IND;PL;1;PRS,1,5
+432,heewe,heen heet,V;PRF;IND;PL;2;PST+RMT,1,5
+433,breege,hääwe bräägen,V;PRF;IND;DU;2;PST,1,5
+434,pluuge,skal pluuge,V;IND;SG;3;FUT;LGSPEC1,1,5
+435,pluuge,hed pluuget,V;PRF;IND;SG;3;PST+RMT,1,5
+436,dreege,dröichen,V;PFV;IND;PL;2;PST,1,5
+437,weese,weese,V;NFIN,1,5
+438,du,haa den,V;PRF;IND;PL;1;PST,1,5
+439,baag,baag,V;IND;PL;1;PRS,1,5
+440,breeg,bruch,V;PFV;IND;SG;3;PST,1,5
+441,booge,booged,V;IMP;SG,1,5
+442,fine,fine,V;NFIN,1,5
+443,fine,fünen,V;IMP;SG,1,5
+444,fraage,tu fraagin,V;NFIN,1,5
+445,faal,faal,V;NFIN,1,5
+446,drank,drank,V;IND;PL;1;PRS,1,5
+447,breege,breege,V;IND;PL;1;PRS,1,5
+448,koone,köön,V;PFV;IND;DU;1;PST,1,5
+449,bring,hed broocht,V;PRF;IND;DU;1;PST+RMT,1,5
+450,jeewe,hääw jääwen,V;PRF;IND;SG;1;PST,1,5
+451,skriiw,haa skrewen,V;PRF;IND;DU;2;PST,1,5
+452,weese,is,V;IND;SG;3;PRS,1,5
+453,gunge,gängen,V;PFV;IND;PL;1;PST,1,5
+454,bine,än bin,V.PTCP;PST,1,5
+455,weese,weerst wään,V;PRF;IND;SG;2;PST+RMT,1,5
+456,wan,woon,V;PFV;IND;PL;2;PST,1,5
+457,bliiw,bliiw'em,V;IMP;PL,1,5
+458,gunge,gängen,V;PFV;IND;DU;2;PST,1,5
+459,heewe,hääwe hädj,V;PRF;IND;PL;3;PST,1,5
+460,haa,wal haa,V;IND;SG;1;FUT;LGSPEC2,1,5
+461,koone,häi kööt,V;PRF;IND;SG;3;PST+RMT,1,5
+462,bliiw,skääl bliiw,V;IND;SG;2;FUT;LGSPEC1,1,5
+463,heelpe,heelp,V;IND;SG;1;PRS,1,5
+464,düünj,däin,V;PFV;IND;PL;3;PST,1,5
+465,fu,fing,V;PFV;IND;PL;1;PST,1,5
+466,bliwe,tu bliween,V;NFIN,1,5
+467,jooge,häin läägen,V;PRF;IND;PL;3;PST+RMT,1,5
+468,greew,greeft,V;IND;SG;3;PRS,1,5
+469,du,wel du,V;IND;PL;3;FUT;LGSPEC2,1,5
+470,booge,än boog,V.PTCP;PST,1,5
+471,ferjeese,hääwe ferjin,V;PRF;IND;DU;2;PST,1,5
+472,breeg,wal breeg,V;IND;SG;1;FUT;LGSPEC2,1,5
+473,baag,buch,V;PFV;IND;PL;1;PST,1,5
+474,dreege,hääwe dräägen,V;PRF;IND;DU;1;PST,1,5
+475,gunge,gängen,V;PFV;IND;PL;3;PST,1,5
+476,beskriiw,wel beskriiw,V;IND;DU;1;FUT;LGSPEC2,1,5
+477,koone,koone,V;IND;DU;1;PRS,1,5
+478,spreege,häin spräägen,V;PRF;IND;PL;3;PST+RMT,1,5
+479,stridj,haa streden,V;PRF;IND;PL;3;PST,1,5
+480,drainke,heet drunken,V;PRF;IND;SG;3;PST,1,5
+481,nem,namt,V;IND;SG;3;PRS,1,5
+482,drainke,drainke,V;IND;PL;3;PRS,1,5
+483,düünj,häi dänj,V;PRF;IND;SG;3;PST+RMT,1,5
+484,heewe,hääwe,V;IND;PL;3;PRS,1,5
+485,jeewe,wårst jeewe,V;IND;SG;2;FUT;LGSPEC1,1,5
+486,ferjeese,ferjees,V;IMP;PL,1,5
+487,dreege,wårde dreege,V;IND;PL;3;FUT;LGSPEC1,1,5
+488,weese,sän,V;IND;PL;2;PRS,1,5
+489,mötj,muurst,V;PFV;IND;SG;3;PST,1,5
+490,frååge,hääw frååged,V;PRF;IND;SG;1;PST,1,5
+491,greewe,heet grääwen,V;PRF;IND;SG;3;PST,1,5
+492,lees,wel lees,V;IND;DU;1;FUT;LGSPEC2,1,5
+493,drank,hed dronken,V;PRF;IND;PL;3;PST+RMT,1,5
+494,haa,haa hed,V;PRF;IND;PL;1;PST,1,5
+495,baag,hed beegen,V;PRF;IND;DU;2;PST+RMT,1,5
+496,weese,san wään,V;PRF;IND;PL;2;PST,1,5
+497,teenk,teenk,V;IND;PL;3;PRS,1,5
+498,greew,grufst,V;PFV;IND;SG;2;PST,1,5
+499,röp,haa rööpen,V;IND;PL;3;PRS,1,5
+500,bååge,häin båågen,V;PRF;IND;DU;1;PST+RMT,1,5
+501,fu,skel fu,V;IND;PL;3;FUT;LGSPEC1,1,5
+502,heelpe,wårt heelpe,V;IND;SG;3;FUT;LGSPEC1,1,5
+503,ferjeese,wårde forjeese,V;IND;PL;3;FUT;LGSPEC1,1,5
+504,ferjeese,ferjeese,V;IND;DU;2;PRS,1,5
+505,jiiw,jeew,V;PFV;IND;SG;3;PST,1,5
+506,maage,maaget,V;PFV;IND;PL;3;PST,1,5
+507,baag,wal baag,V;IND;SG;3;FUT;LGSPEC2,1,5
+508,düünj,däin,V;PFV;IND;PL;1;PST,1,5
+509,lees,skel lees,V;IND;PL;3;FUT;LGSPEC1,1,5
+510,frååge,frååg,V;IMP;PL,1,5
+511,greew,greew,V;NFIN,1,5
+512,weese,wjarn,V;PFV;IND;PL;3;PST,1,5
+513,fu,fee,V;IND;SG;3;PRS,1,5
+514,wees,skääl wees,V;IND;SG;2;FUT;LGSPEC1,1,5
+515,gripe,griipst,V;PFV;IND;SG;2;PST,1,5
+516,wel,haa wulen,V;PRF;IND;DU;2;PST,1,5
+517,wees,beest,V;IND;SG;2;PRS,1,5
+518,bliiw,blewen,V.PTCP;PST,1,5
+519,fraage,fraage,V;IND;PL;3;PRS,1,5
+520,mååge,häin mååged,V;PRF;IND;PL;2;PST+RMT,1,5
+521,greew,gruf,V;PFV;IND;PL;3;PST,1,5
+522,heewe,win heewe,V;IND;PL;3;FUT;LGSPEC2,1,5
+523,lees,skel lees,V;IND;DU;2;FUT;LGSPEC1,1,5
+524,ferliise,ferlüüsen,V;PFV;IND;PL;2;PST,1,5
+525,beskriiw,haa beskrewen,V;PRF;IND;DU;2;PST,1,5
+526,lees,wal lees,V;IND;SG;3;FUT;LGSPEC2,1,5
+527,pluuge,pluuget,V;PFV;IND;PL;1;PST,1,5
+528,bring,broocht,V;PFV;IND;SG;3;PST,1,5
+529,wan,wal wan,V;IND;SG;3;FUT;LGSPEC2,1,5
+530,stridj,strat,V;IND;SG;3;PRS,1,5
+531,jooge,wårt jooge,V;IND;SG;3;FUT;LGSPEC1,1,5
+532,baag,hed beegen,V;PRF;IND;PL;3;PST+RMT,1,5
+533,röp,wel röp,V;IND;PL;3;FUT;LGSPEC2,1,5
+534,bliiw,bleew,V;PFV;IND;PL;1;PST,1,5
+535,wel,haa wulen,V;PRF;IND;SG;1;PST,1,5
+536,fine,fin,V;IMP;PL,1,5
+537,drainke,drainkt,V;IND;SG;3;PRS,1,5
+538,nem,nem,V;NFIN,1,5
+539,greewe,gröifen,V;PFV;IND;DU;1;PST,1,5
+540,booge,wård booge,V;IND;SG;1;FUT;LGSPEC1,1,5
+541,röp,her rööpen,V;PFV;IND;SG;3;PST,1,5
+542,bring,skel bring,V;IND;DU;1;FUT;LGSPEC1,1,5
+543,düünj,däist,V;PFV;IND;SG;2;PST,1,5
+544,kem,komt,V;IND;SG;3;PRS,1,5
+545,heewe,häi,V;PFV;IND;SG;1;PST,1,5
+546,heewe,heet heet,V;PRF;IND;SG;3;PST,1,5
+547,weese,wårde weese,V;IND;PL;1;FUT,1,5
+548,weese,as wään,V;PRF;IND;SG;3;PST,1,5
+549,greew,greew,V;IND;PL;3;PRS,1,5
+550,heelpe,heelpt,V;IND;SG;3;PRS,1,5
+551,jooge,häist läägen,V;PRF;IND;SG;2;PST+RMT,1,5
+552,ferjeese,ferjätjen,V;PFV;IND;PL;3;PST,1,5
+553,jiiw,haa jewen,V;PRF;IND;DU;1;PST,1,5
+554,jiiw,hed jewen,V;PRF;IND;PL;3;PST+RMT,1,5
+555,beskriiw,beskreew,V;PFV;IND;SG;1;PST,1,5
+556,heewe,häi,V;PFV;IND;SG;3;PST,1,5
+557,bliiw,bleew,V;PFV;IND;SG;3;PST,1,5
+558,fine,fine,V;IND;PL;3;PRS,1,5
+559,röp,reepst,V;IND;SG;2;PRS,1,5
+560,lees,wel lees,V;IND;PL;3;FUT;LGSPEC2,1,5
+561,koone,koone,V;IND;DU;2;PRS,1,5
+562,beskriiw,wääl beskriiw,V;IND;SG;2;FUT;LGSPEC2,1,5
+563,heewe,häin hädj,V;PRF;IND;DU;2;PST+RMT,1,5
+564,breeg,skal breeg,V;IND;SG;1;FUT;LGSPEC1,1,5
+565,beskriiw,hed beskrewen,V;PRF;IND;PL;3;PST+RMT,1,5
+566,jiiw,hed jewen,V;PRF;IND;DU;2;PST+RMT,1,5
+567,spreege,häin spräägen,V;PRF;IND;PL;2;PST+RMT,1,5
+568,dreege,dreege,V;IND;PL;2;PRS,1,5
+569,gunge,gäng,V;PFV;IND;SG;3;PST,1,5
+570,faal,wal faal,V;IND;SG;1;FUT;LGSPEC2,1,5
+571,drank,hed dronken,V;PRF;IND;SG;1;PST+RMT,1,5
+572,teenk,skel teenk,V;IND;DU;1;FUT;LGSPEC1,1,5
+573,heewe,hääwe hädj,V;PRF;IND;DU;1;PST,1,5
+574,ferliise,häin ferlääsen,V;PRF;IND;PL;2;PST+RMT,1,5
+575,baag,hed beegen,V;PRF;IND;SG;1;PST+RMT,1,5
+576,lees,hed leesen,V;PRF;IND;PL;2;PST+RMT,1,5
+577,ferjeese,ferjätjst,V;PFV;IND;SG;2;PST,1,5
+578,greew,hed greewen,V;PRF;IND;SG;3;PST+RMT,1,5
+579,fine,wårde fine,V;IND;PL;1;FUT;LGSPEC1,1,5
+580,koone,wårst koone,V;IND;SG;2;FUT;LGSPEC1,1,5
+581,bliiw,wal bliiw,V;IND;SG;1;FUT;LGSPEC2,1,5
+582,nem,hed nimen,V;PRF;IND;DU;2;PST+RMT,1,5
+583,faal,fool,V;PFV;IND;DU;1;PST,1,5
+584,wees,skal wees,V;IND;SG;3;FUT;LGSPEC1,1,5
+585,bliiw,bliiw,V;IND;DU;1;PRS,1,5
+586,gunge,wus gängen,V;PRF;IND;SG;3;PST+RMT,1,5
+587,bååge,hääwe båågen,V;PRF;IND;DU;2;PST,1,5
+588,heelpe,heelpe,V;IND;PL;3;PRS,1,5
+589,faal,as feelen,V;PRF;IND;SG;3;PST,1,5
+590,weese,wårde weese,V;IND;DU;1;FUT,1,5
+591,breege,häi bräägen,V;PRF;IND;SG;1;PST+RMT,1,5
+592,bååge,bååge,V;IND;PL;2;PRS,1,5
+593,beskriiw,skääl beskriiw,V;IND;SG;2;FUT;LGSPEC1,1,5
+594,jiiw,wel jiiw,V;IND;DU;1;FUT;LGSPEC2,1,5
+595,drainke,drainke,V;IND;DU;2;PRS,1,5
+596,fine,fünen,V;PFV;IND;DU;1;PST,1,5
+597,kaame,tu kaamen,V;NFIN,1,5
+598,heelpe,wårde heelpe,V;IND;DU;1;FUT;LGSPEC1,1,5
+599,koone,kööt,V;IMP;SG,1,5
+600,bine,wårde bine,V;IND;PL;1;FUT;LGSPEC1,1,5
+601,lees,lees,V;IND;PL;3;PRS,1,5
+602,frååge,hääwe frååged,V;PRF;IND;DU;2;PST,1,5
+603,mötj,mötj,V;NFIN,1,5
+604,koone,hääst kööt,V;PRF;IND;SG;2;PST,1,5
+605,kem,san kimen,V;PRF;IND;PL;3;PST,1,5
+606,jiiw,haa jewen,V;PRF;IND;DU;2;PST,1,5
+607,beskriiw,beskriiw,V;IND;PL;1;PRS,1,5
+608,bååge,böken,V;PFV;IND;DU;2;PST,1,5
+609,breege,hääwe bräägen,V;PRF;IND;DU;1;PST,1,5
+610,heelpe,häin hülpen,V;PRF;IND;PL;2;PST+RMT,1,5
+611,bliiw,san blewen,V;PRF;IND;SG;1;PST,1,5
+612,baag,hee beegen,V;PRF;IND;SG;3;PST,1,5
+613,fine,fin,V;IND;SG;1;PRS,1,5
+614,ferliise,häin ferlääsen,V;PRF;IND;DU;1;PST+RMT,1,5
+615,breege,än breeg,V.PTCP;PST,1,5
+616,kaame,wårde kaame,V;IND;DU;1;FUT;LGSPEC1,1,5
+617,heewe,wårt heewe,V;IND;SG;3;FUT,1,5
+618,nem,skal nem,V;IND;SG;3;FUT;LGSPEC1,1,5
+619,weese,wård weese,V;IND;SG;1;FUT,1,5
+620,koone,koone,V;NFIN,1,5
+621,ferliise,hääwe ferlääsen,V;PRF;IND;PL;1;PST,1,5
+622,fraage,hed fraaget,V;PRF;IND;PL;1;PST+RMT,1,5
+623,röp,röp,V;IND;DU;3;PRS,1,5
+624,drank,skääl drank,V;IND;SG;2;FUT;LGSPEC1,1,5
+625,drainke,drainke,V;IND;PL;1;PRS,1,5
+626,nem,wel nem,V;IND;PL;1;FUT;LGSPEC2,1,5
+627,heelpe,wårde heelpe,V;IND;DU;2;FUT;LGSPEC1,1,5
+628,maage,hed maaget,V;PRF;IND;PL;1;PST+RMT,1,5
+629,dreege,dröichen,V;PFV;IND;PL;1;PST,1,5
+630,heewe,schal heewe,V;IND;SG;3;FUT;LGSPEC1,1,5
+631,haa,haa hed,V;PRF;IND;PL;3;PST,1,5
+632,heewe,häin,V;PFV;IND;DU;2;PST,1,5
+633,röp,rööp,V;PFV;IND;PL;3;PST,1,5
+634,frååge,wårde frååge,V;IND;PL;2;FUT;LGSPEC1,1,5
+635,fraage,skääl fraage,V;IND;SG;2;FUT;LGSPEC1,1,5
+636,mååge,hääw mååged,V;PRF;IND;SG;1;PST,1,5
+637,gripe,bååge,V;IND;PL;1;PRS,1,5
+638,du,haa den,V;PRF;IND;PL;3;PST,1,5
+639,mötj,häi muurst,V;PRF;IND;SG;3;PST+RMT,1,5
+640,beskriiw,skel beskriiw,V;IND;PL;2;FUT;LGSPEC1,1,5
+641,teenk,hed toocht,V;PRF;IND;SG;3;PST+RMT,1,5
+642,pluuge,wel pluuge,V;IND;DU;2;FUT;LGSPEC2,1,5
+643,gripe,hääwe gram,V;PRF;IND;DU;1;PST,1,5
+644,wel,hed wulen,V;PRF;IND;DU;1;PST+RMT,1,5
+645,jooge,joog,V;IND;SG;1;PRS,1,5
+646,ferjeese,ferjeet,V;IND;SG;3;PRS,1,5
+647,maage,maagest,V;IND;SG;2;PRS,1,5
+648,gripe,wårde gripe,V;IND;DU;1;FUT;LGSPEC1,1,5
+649,bine,hääwe bünen,V;PRF;IND;DU;1;PST,1,5
+650,heewe,heew,V;IMP,1,5
+651,heelpe,heelpst,V;IND;SG;2;PRS,1,5
+652,greew,gruf,V;PFV;IND;DU;1;PST,1,5
+653,wees,as weesen,V;PRF;IND;SG;3;PST,1,5
+654,dreege,wårde dreege,V;IND;DU;1;FUT;LGSPEC1,1,5
+655,du,hed den,V;PRF;IND;SG;3;PST+RMT,1,5
+656,spreege,wårde spreege,V;IND;PL;1;FUT;LGSPEC1,1,5
+657,mötj,häin muurst,V;PRF;IND;DU;2;PST+RMT,1,5
+658,greewe,wårde greewe,V;IND;PL;2;FUT;LGSPEC1,1,5
+659,faal,faal'em,V;IMP;PL,1,5
+660,nem,naam,V;PFV;IND;SG;3;PST,1,5
+661,jeewe,jeew,V;IMP;PL,1,5
+662,kem,kem,V;IND;PL;3;PRS,1,5
+663,lees,lees,V;IND;PL;2;PRS,1,5
+664,faal,san feelen,V;PRF;IND;DU;2;PST,1,5
+665,wel,wal wel,V;IND;SG;1;FUT;LGSPEC2,1,5
+666,booge,wårde booge,V;IND;DU;1;FUT;LGSPEC1,1,5
+667,haa,wel haa,V;IND;PL;1;FUT;LGSPEC2,1,5
+668,maage,maage,V;IND;SG;1;PRS,1,5
+669,fraage,skel fraage,V;IND;PL;3;FUT;LGSPEC1,1,5
+670,du,du,V;IMP;SG,1,5
+671,baag,hed beegen,V;PRF;IND;SG;3;PST+RMT,1,5
+672,gripe,hääst gram,V;PRF;IND;SG;2;PST,1,5
+673,kaame,köm,V;PFV;IND;SG;1;PST,1,5
+674,maage,maage,V;IND;DU;1;PRS,1,5
+675,drainke,wårt drainke,V;IND;SG;3;FUT;LGSPEC1,1,5
+676,fraage,fraagest,V;IND;SG;2;PRS,1,5
+677,booge,heet booged,V;PRF;IND;SG;3;PST,1,5
+678,greew,gruf,V;PFV;IND;PL;1;PST,1,5
+679,heelpe,heelp,V;IMP;PL,1,5
+680,du,du,V;IND;DU;2;PRS,1,5
+681,skriiw,wel skriiw,V;IND;PL;3;FUT;LGSPEC2,1,5
+682,booge,hääwe booged,V;PRF;IND;PL;2;PST,1,5
+683,spreege,spräk,V;PFV;IND;SG;3;PST,1,5
+684,jiiw,jiiw,V;IND;PL;1;PRS,1,5
+685,maage,skel maage,V;IND;PL;1;FUT;LGSPEC1,1,5
+686,pluuge,haa pluuget,V;PRF;IND;PL;3;PST,1,5
+687,bring,wääl bring,V;IND;SG;2;FUT;LGSPEC2,1,5
+688,kem,as kimen,V;PRF;IND;SG;3;PST,1,5
+689,fu,skal fu,V;IND;SG;3;FUT;LGSPEC1,1,5
+690,bååge,wårt bååge,V;IND;SG;3;FUT;LGSPEC1,1,5
+691,düünj,häi dänj,V;PRF;IND;SG;1;PST+RMT,1,5
+692,booge,hääwe booged,V;PRF;IND;DU;2;PST,1,5
+693,lees,lees,V;IND;SG;1;PRS,1,5
+694,wees,wiar,V;PFV;IND;SG;1;PST,1,5
+695,greew,gruf,V;PFV;IND;DU;2;PST,1,5
+696,heelpe,wårde heelpe,V;IND;PL;1;FUT;LGSPEC1,1,5
+697,drainke,wård drainke,V;IND;SG;1;FUT;LGSPEC1,1,5
+698,stridj,skel stridj,V;IND;PL;2;FUT;LGSPEC1,1,5
+699,mååge,måågeden,V;PFV;IND;DU;2;PST,1,5
+700,jeewe,jäif,V;PFV;IND;SG;1;PST,1,5
+701,bååge,wårde bååge,V;IND;PL;1;FUT;LGSPEC1,1,5
+702,greewe,gröif,V;PFV;IND;SG;1;PST,1,5
+703,frååge,fråågeden,V;PFV;IND;DU;2;PST,1,5
+704,mötj,än mötj,V.PTCP;PST,1,5
+705,bring,broocht,V;PFV;IND;SG;1;PST,1,5
+706,dreeg,skääl dreeg,V;IND;SG;2;FUT;LGSPEC1,1,5
+707,skriiw,hed skrewen,V;PRF;IND;SG;3;PST+RMT,1,5
+708,gripe,wårt gripe,V;IND;SG;3;FUT;LGSPEC1,1,5
+709,breege,wårst breege,V;IND;SG;2;FUT;LGSPEC1,1,5
+710,frååge,än frååg,V.PTCP;PST,1,5
+711,beskriiw,hed beskrewen,V;PRF;IND;DU;2;PST+RMT,1,5
+712,heewe,schääl heewe,V;IND;SG;2;FUT;LGSPEC1,1,5
+713,bring,broocht,V;PFV;IND;DU;1;PST,1,5
+714,wees,wiar weesen,V;PRF;IND;PL;1;PST+RMT,1,5
+715,weese,wus,V;PFV;IND;SG;1;PST,1,5
+716,breege,häi bräägen,V;PRF;IND;SG;3;PST+RMT,1,5
+717,breege,häin bräägen,V;PRF;IND;PL;2;PST+RMT,1,5
+718,du,wel du,V;IND;PL;1;FUT;LGSPEC2,1,5
+719,breeg,hed breegen,V;PRF;IND;DU;2;PST+RMT,1,5
+720,haa,skääl haa,V;IND;SG;2;FUT;LGSPEC1,1,5
+721,fine,fün,V;PFV;IND;SG;1;PST,1,5
+722,heewe,hääst,V;IND;SG;2;PRS,1,5
+723,skriiw,skriiw,V;IND;SG;1;PRS,1,5
+724,frååge,frååg,V;IND;SG;1;PRS,1,5
+725,röp,reept,V;IND;SG;3;PRS,1,5
+726,heewe,hääwe,V;IND;DU;1;PRS,1,5
+727,wees,san,V;IND;SG;1;PRS,1,5
+728,kaame,kaame,V;NFIN,1,5
+729,gunge,wårt gunge,V;IND;SG;3;FUT;LGSPEC1,1,5
+730,stridj,wel stridj,V;IND;PL;3;FUT;LGSPEC2,1,5
+731,bliiw,wel bliiw,V;IND;DU;2;FUT;LGSPEC2,1,5
+732,dreeg,heest draanjen,V;PRF;IND;SG;2;PST,1,5
+733,weese,schäät weese,V;IND;SG;2;FUT;LGSPEC1,1,5
+734,kem,skel kem,V;IND;DU;1;FUT;LGSPEC1,1,5
+735,gripe,heet gram,V;PRF;IND;SG;3;PST,1,5
+736,stridj,streed,V;PFV;IND;SG;3;PST,1,5
+737,stridj,skel stridj,V;IND;DU;1;FUT;LGSPEC1,1,5
+738,baag,baag,V;IND;DU;1;PRS,1,5
+739,bååge,båågeden,V;PFV;IND;PL;2;PST,1,5
+740,bine,bine,V;NFIN,1,5
+741,haa,skal haa,V;IND;SG;1;FUT;LGSPEC1,1,5
+742,maage,skal maage,V;IND;SG;3;FUT;LGSPEC1,1,5
+743,breeg,bruch,V;PFV;IND;DU;1;PST,1,5
+744,breege,wårde breege,V;IND;PL;2;FUT;LGSPEC1,1,5
+745,breege,hääw bräägen,V;PRF;IND;SG;1;PST,1,5
+746,weese,schääl weese,V;IND;SG;2;FUT;LGSPEC1,1,5
+747,fu,wal fu,V;IND;SG;1;FUT;LGSPEC2,1,5
+748,beskriiw,hed beskrewen,V;PRF;IND;SG;3;PST+RMT,1,5
+749,maage,wel maage,V;IND;DU;1;FUT;LGSPEC2,1,5
+750,pluuge,skel pluuge,V;IND;PL;1;FUT;LGSPEC1,1,5
+751,mååge,hääwe mååged,V;PRF;IND;PL;1;PST,1,5
+752,greewe,wårde greewe,V;IND;DU;1;FUT;LGSPEC1,1,5
+753,koone,hääwe kööt,V;PRF;IND;DU;2;PST,1,5
+754,baag,hedst beegen,V;PRF;IND;SG;2;PST+RMT,1,5
+755,du,ded,V;PFV;IND;PL;1;PST,1,5
+756,weese,schin weese,V;IND;PL;2;FUT;LGSPEC1,1,5
+757,greew,haa greewen,V;PRF;IND;PL;1;PST,1,5
+758,teenk,hee toocht,V;PRF;IND;SG;3;PST,1,5
+759,fine,häin fünen,V;PRF;IND;PL;2;PST+RMT,1,5
+760,bliiw,bliiw,V;IMP;SG,1,5
+761,gripe,häist gram,V;PRF;IND;SG;2;PST+RMT,1,5
+762,röp,her rööpen,V;PFV;IND;DU;3;PST,1,5
+763,pluuge,pluuget,V;PFV;IND;PL;2;PST,1,5
+764,greew,greew,V;IND;DU;1;PRS,1,5
+765,bring,skal bring,V;IND;SG;1;FUT;LGSPEC1,1,5
+766,maage,wel maage,V;IND;DU;2;FUT;LGSPEC2,1,5
+767,booge,wårde booge,V;IND;PL;2;FUT;LGSPEC1,1,5
+768,stridj,hee streden,V;PRF;IND;SG;3;PST,1,5
+769,bliiw,bliiw,V;NFIN,1,5
+770,dreege,än dreeg,V.PTCP;PST,1,5
+771,weese,än wees,V;NFIN,1,5
+772,du,ded,V;PFV;IND;SG;1;PST,1,5
+773,bine,hääst bünen,V;PRF;IND;SG;2;PST,1,5
+774,kaame,wårde kaame,V;IND;PL;1;FUT;LGSPEC1,1,5
+775,dreeg,hed draanjen,V;PRF;IND;DU;2;PST+RMT,1,5
+776,du,skel du,V;IND;DU;2;FUT;LGSPEC1,1,5
+777,mötj,wårde mötj,V;IND;PL;1;FUT;LGSPEC1,1,5
+778,lees,wel lees,V;IND;DU;2;FUT;LGSPEC2,1,5
+779,fraage,fraage,V;IND;PL;1;PRS,1,5
+780,gunge,gunge,V;IND;PL;3;PRS,1,5
+781,greew,wääl greew,V;IND;SG;2;FUT;LGSPEC2,1,5
+782,maage,haa maaget,V;PRF;IND;DU;2;PST,1,5
+783,jeewe,jäifst,V;PFV;IND;SG;2;PST,1,5
+784,maage,maage,V;NFIN,1,5
+785,weese,schal weese,V;IND;SG;3;FUT;LGSPEC1,1,5
+786,breeg,skel breeg,V;IND;DU;2;FUT;LGSPEC1,1,5
+787,skriiw,skriiw,V;IND;PL;2;PRS,1,5
+788,teenk,toocht,V.PTCP;PST,1,5
+789,skriiw,skreew,V;PFV;IND;SG;3;PST,1,5
+790,jiiw,wel jiiw,V;IND;DU;2;FUT;LGSPEC2,1,5
+791,bliwe,wårde bliwe,V;IND;PL;3;FUT;LGSPEC1,1,5
+792,fraage,wel fraage,V;IND;DU;1;FUT;LGSPEC2,1,5
+793,heelpe,häin hülpen,V;PRF;IND;PL;3;PST+RMT,1,5
+794,maage,hed maaget,V;PRF;IND;DU;2;PST+RMT,1,5
+795,booge,booge,V;IND;DU;1;PRS,1,5
+796,wees,wiar weesen,V;PRF;IND;SG;1;PST+RMT,1,5
+797,weese,san wään,V;PRF;IND;DU;2;PST,1,5
+798,breege,tu breegen,V;NFIN,1,5
+799,mötj,heet muurst,V;PRF;IND;SG;3;PST,1,5
+800,jiiw,hedst jewen,V;PRF;IND;SG;2;PST+RMT,1,5
+801,mååge,häin mååged,V;PRF;IND;PL;3;PST+RMT,1,5
+802,baag,wääl baag,V;IND;SG;2;FUT;LGSPEC2,1,5
+803,jooge,jooge,V;IND;PL;1;PRS,1,5
+804,lees,hedst leesen,V;PRF;IND;SG;2;PST+RMT,1,5
+805,drank,droonk,V;PFV;IND;SG;3;PST,1,5
+806,stridj,stridj,V;IND;DU;1;PRS,1,5
+807,wees,wääl wees,V;IND;SG;2;FUT;LGSPEC2,1,5
+808,maage,hed maaget,V;PRF;IND;SG;3;PST+RMT,1,5
+809,skriiw,skreew,V;PFV;IND;DU;2;PST,1,5
+810,drainke,wårde drainke,V;IND;PL;1;FUT;LGSPEC1,1,5
+811,mötj,wårt mötj,V;IND;SG;3;FUT;LGSPEC1,1,5
+812,gripe,hääwe gram,V;PRF;IND;PL;2;PST,1,5
+813,drank,droonk,V;PFV;IND;DU;1;PST,1,5
+814,nem,nem,V;IND;PL;3;PRS,1,5
+815,greew,haa greewen,V;PRF;IND;DU;2;PST,1,5
+816,weese,wal weese,V;IND;SG;3;FUT;LGSPEC2,1,5
+817,koone,hääwe kööt,V;PRF;IND;PL;1;PST,1,5
+818,teenk,hed toocht,V;PRF;IND;PL;2;PST+RMT,1,5
+819,breeg,haa breegen,V;PRF;IND;PL;3;PST,1,5
+820,fraage,fraage,V;IND;SG;1;PRS,1,5
+821,wel,haa wulen,V;PRF;IND;PL;3;PST,1,5
+822,koone,wård koone,V;IND;SG;1;FUT;LGSPEC1,1,5
+823,ferliise,häin ferlääsen,V;PRF;IND;DU;2;PST+RMT,1,5
+824,bliwe,bliwe,V;NFIN,1,5
+825,dreeg,wal dreeg,V;IND;SG;1;FUT;LGSPEC2,1,5
+826,düünj,häin dänj,V;PRF;IND;DU;2;PST+RMT,1,5
+827,ferliise,ferliis,V;IMP;PL,1,5
+828,mååge,wårde mååge,V;IND;DU;1;FUT;LGSPEC1,1,5
+829,fu,hed fingen,V;PRF;IND;PL;3;PST+RMT,1,5
+830,fu,skal fu,V;IND;SG;1;FUT;LGSPEC1,1,5
+831,fraage,fraaget,V;IND;SG;3;PRS,1,5
+832,heewe,wård heewe,V;IND;SG;1;FUT,1,5
+833,kem,skääl kem,V;IND;SG;2;FUT;LGSPEC1,1,5
+834,düünj,wårde düünj,V;IND;PL;3;FUT;LGSPEC1,1,5
+835,nem,nem,V;IND;PL;2;PRS,1,5
+836,teenk,hed toocht,V;PRF;IND;SG;1;PST+RMT,1,5
+837,stridj,streed,V;PFV;IND;DU;1;PST,1,5
+838,weese,schal weese,V;IND;SG;1;FUT;LGSPEC1,1,5
+839,baag,buch,V;PFV;IND;SG;3;PST,1,5
+840,nem,haa nimen,V;PRF;IND;PL;1;PST,1,5
+841,kem,wiar kimen,V;PRF;IND;DU;2;PST+RMT,1,5
+842,booge,boogeden,V;PFV;IND;PL;1;PST,1,5
+843,ferliise,tu ferliisen,V;NFIN,1,5
+844,wan,hed wonen,V;PRF;IND;PL;3;PST+RMT,1,5
+845,breege,bräk,V;PFV;IND;SG;3;PST,1,5
+846,bring,bring,V;IND;PL;3;PRS,1,5
+847,bliwe,wjarn blaawen,V;PRF;IND;PL;3;PST+RMT,1,5
+848,drank,wal drank,V;IND;SG;3;FUT;LGSPEC2,1,5
+849,greewe,wårst greewe,V;IND;SG;2;FUT;LGSPEC1,1,5
+850,skriiw,heest skrewen,V;PRF;IND;SG;2;PST,1,5
+851,nem,hed nimen,V;PRF;IND;SG;1;PST+RMT,1,5
+852,dreeg,wal dreeg,V;IND;SG;3;FUT;LGSPEC2,1,5
+853,breege,häin bräägen,V;PRF;IND;DU;2;PST+RMT,1,5
+854,greew,tu greewen,V;NFIN,1,5
+855,koone,köön,V;PFV;IND;PL;1;PST,1,5
+856,drank,droonk,V;PFV;IND;PL;3;PST,1,5
+857,dreeg,haa draanjen,V;PRF;IND;DU;2;PST,1,5
+858,bliiw,wiar blewen,V;PRF;IND;PL;2;PST+RMT,1,5
+859,heewe,hääwe,V;IND;PL;1;PRS,1,5
+860,gunge,as gängen,V;PRF;IND;SG;3;PST,1,5
+861,koone,köön,V;PFV;IND;DU;2;PST,1,5
+862,wees,wiar,V;PFV;IND;PL;3;PST,1,5
+863,weese,bän,V;IND;SG;1;PRS,1,5
+864,wel,hed wulen,V;PRF;IND;SG;3;PST+RMT,1,5
+865,lees,lus,V;PFV;IND;DU;2;PST,1,5
+866,breege,häin bräägen,V;PRF;IND;PL;3;PST+RMT,1,5
+867,greew,wel greew,V;IND;DU;1;FUT;LGSPEC2,1,5
+868,nem,naam,V;PFV;IND;PL;3;PST,1,5
+869,wees,as,V;IND;SG;3;PRS,1,5
+870,düünj,häist dänj,V;PRF;IND;SG;2;PST+RMT,1,5
+871,greewe,häi grääwen,V;PRF;IND;SG;3;PST+RMT,1,5
+872,koone,koone,V;IND;PL;2;PRS,1,5
+873,dreeg,dreeg,V;NFIN,1,5
+874,breege,wårt breege,V;IND;SG;3;FUT;LGSPEC1,1,5
+875,ferjeese,ferjätjen,V;PFV;IND;DU;2;PST,1,5
+876,bliiw,skel bliiw,V;IND;PL;3;FUT;LGSPEC1,1,5
+877,greewe,häin grääwen,V;PRF;IND;PL;3;PST+RMT,1,5
+878,fraage,hedst fraaget,V;PRF;IND;SG;2;PST+RMT,1,5
+879,bååge,wård bååge,V;IND;SG;1;FUT;LGSPEC1,1,5
+880,booge,wårde booge,V;IND;PL;3;FUT;LGSPEC1,1,5
+881,kem,skel kem,V;IND;PL;1;FUT;LGSPEC1,1,5
+882,ferjeese,wårde forjeese,V;IND;DU;1;FUT;LGSPEC1,1,5
+883,heelpe,hülp,V;PFV;IND;SG;1;PST,1,5
+884,greew,skel greew,V;IND;PL;3;FUT;LGSPEC1,1,5
+885,skriiw,hed skrewen,V;PRF;IND;DU;1;PST+RMT,1,5
+886,koone,häin kööt,V;PRF;IND;DU;2;PST+RMT,1,5
+887,fraage,fraaget,V;PFV;IND;PL;2;PST,1,5
+888,jiiw,haa jewen,V;PRF;IND;SG;1;PST,1,5
+889,dreege,häin dräägen,V;PRF;IND;DU;2;PST+RMT,1,5
+890,faal,san feelen,V;PRF;IND;PL;2;PST,1,5
+891,gripe,griipen,V;PFV;IND;PL;1;PST,1,5
+892,teenk,hed toocht,V;PRF;IND;DU;1;PST+RMT,1,5
+893,booge,boog,V;IND;SG;1;PRS,1,5
+894,kaame,kamt,V;IND;SG;3;PRS,1,5
+895,kem,wal kem,V;IND;SG;3;FUT;LGSPEC2,1,5
+896,weese,is wään,V;PRF;IND;SG;3;PST,1,5
+897,breeg,bruch,V;PFV;IND;PL;1;PST,1,5
+898,baag,skel baag,V;IND;PL;2;FUT;LGSPEC1,1,5
+899,fraage,fraagi'm,V;IMP;PL,1,5
+900,haa,haa,V;IND;PL;1;PRS,1,5
+901,ferjeese,häin ferjin,V;PRF;IND;PL;3;PST+RMT,1,5
+902,frååge,fråågeden,V;PFV;IND;PL;3;PST,1,5
+903,stridj,stridj,V;IMP;SG,1,5
+904,haa,hed,V;PFV;IND;PL;1;PST,1,5
+905,weese,wårde weese,V;IND;PL;3;FUT,1,5
+906,wel,hed wulen,V;PRF;IND;PL;1;PST+RMT,1,5
+907,wel,wul,V;PFV;IND;PL;1;PST,1,5
+908,weese,wjarn wään,V;PRF;IND;DU;1;PST+RMT,1,5
+909,ferjeese,wårde forjeese,V;IND;DU;2;FUT;LGSPEC1,1,5
+910,dreege,wårde dreege,V;IND;PL;1;FUT;LGSPEC1,1,5
+911,bine,wård bine,V;IND;SG;1;FUT;LGSPEC1,1,5
+912,bliiw,san blewen,V;PRF;IND;PL;2;PST,1,5
+913,du,ded,V;PFV;IND;SG;3;PST,1,5
+914,bååge,hääwe båågen,V;PRF;IND;PL;2;PST,1,5
+915,bring,bring'em,V;IMP;PL,1,5
+916,koone,häin kööt,V;PRF;IND;DU;1;PST+RMT,1,5
+917,greew,hed greewen,V;PRF;IND;DU;2;PST+RMT,1,5
+918,haa,skel haa,V;IND;DU;1;FUT;LGSPEC1,1,5
+919,beskriiw,beskrewen,V.PTCP;PST,1,5
+920,röp,röp,V;IND;PL;1;PRS,1,5
+921,dreeg,druch,V;PFV;IND;PL;1;PST,1,5
+922,heewe,häi hädj,V;PRF;IND;SG;1;PST+RMT,1,5
+923,spreege,än spreeg,V.PTCP;PST,1,5
+924,spreege,wårst spreege,V;IND;SG;2;FUT;LGSPEC1,1,5
+925,weese,win weese,V;IND;PL;3;FUT;LGSPEC2,1,5
+926,ferliise,ferlüüsen,V;PFV;IND;DU;2;PST,1,5
+927,spreege,hääst spräägen,V;PRF;IND;SG;2;PST,1,5
+928,jeewe,jäifen,V;PFV;IND;DU;1;PST,1,5
+929,bååge,bååg,V;IND;SG;1;PRS,1,5
+930,greewe,gröifst,V;PFV;IND;SG;2;PST,1,5
+931,fraage,fraaget,V;PFV;IND;SG;1;PST,1,5
+932,jooge,läägen,V;IMP;SG,1,5
+933,röp,haa rööpen,V;IND;DU;2;PRS,1,5
+934,heewe,häin,V;PFV;IND;DU;1;PST,1,5
+935,jiiw,jiiw,V;IND;SG;1;PRS,1,5
+936,bine,häist bünen,V;PRF;IND;SG;2;PST+RMT,1,5
+937,beskriiw,beskriiw,V;NFIN,1,5
+938,ferjeese,ferjätjen,V;PFV;IND;DU;1;PST,1,5
+939,bring,skel bring,V;IND;PL;3;FUT;LGSPEC1,1,5
+940,jooge,häin läägen,V;PRF;IND;DU;2;PST+RMT,1,5
+941,bliwe,san blaawen,V;PRF;IND;DU;2;PST,1,5
+942,booge,wårt booge,V;IND;SG;3;FUT;LGSPEC1,1,5
+943,beskriiw,beskriiw,V;IND;PL;3;PRS,1,5
+944,teenk,toocht,V;PFV;IND;SG;1;PST,1,5
+945,du,du,V;NFIN,1,5
+946,drainke,draink,V;IND;SG;1;PRS,1,5
+947,wel,wul,V;PFV;IND;PL;2;PST,1,5
+948,faal,skal faal,V;IND;SG;3;FUT;LGSPEC1,1,5
+949,weese,waos,V;PFV;IND;SG;3;PST,1,5
+950,lees,wääl lees,V;IND;SG;2;FUT;LGSPEC2,1,5
+951,teenk,wel teenk,V;IND;PL;3;FUT;LGSPEC2,1,5
+952,breege,breeg,V;IND;SG;1;PRS,1,5
+953,bine,häi bünen,V;PRF;IND;SG;1;PST+RMT,1,5
+954,greew,wal greew,V;IND;SG;3;FUT;LGSPEC2,1,5
+955,fu,fu,V;NFIN,1,5
+956,stridj,skel stridj,V;IND;PL;1;FUT;LGSPEC1,1,5
+957,ferjeese,forjeese,V;NFIN,1,5
+958,spreege,spreege,V;NFIN,1,5
+959,gunge,wjarn gängen,V;PRF;IND;DU;1;PST+RMT,1,5
+960,maage,hee maaget,V;PRF;IND;SG;3;PST,1,5
+961,breeg,bruchst,V;PFV;IND;SG;2;PST,1,5
+962,wan,tu wanen,V;NFIN,1,5
+963,stridj,heest streden,V;PRF;IND;SG;2;PST,1,5
+964,frååge,häin frååged,V;PRF;IND;PL;3;PST+RMT,1,5
+965,bliwe,bliwe,V;IND;DU;2;PRS,1,5
+966,kaame,wårde kaame,V;IND;PL;3;FUT;LGSPEC1,1,5
+967,du,tu duen,V;NFIN,1,5
+968,lees,haa leesen,V;PRF;IND;PL;2;PST,1,5
+969,fine,hääwe fünen,V;PRF;IND;PL;1;PST,1,5
+970,maage,skel maage,V;IND;PL;2;FUT;LGSPEC1,1,5
+971,drank,hee dronken,V;PRF;IND;SG;3;PST,1,5
+972,stridj,stridj,V;IND;DU;2;PRS,1,5
+973,bring,bring,V;IND;PL;2;PRS,1,5
+974,bliiw,wiar blewen,V;PRF;IND;DU;2;PST+RMT,1,5
+975,fraage,heest fraaget,V;PRF;IND;SG;2;PST,1,5
+976,dreege,dreechst,V;IND;SG;2;PRS,1,5
+977,booge,hääwe booged,V;PRF;IND;PL;1;PST,1,5
+978,beskriiw,hedst beskrewen,V;PRF;IND;SG;2;PST+RMT,1,5
+979,koone,wårde koone,V;IND;DU;1;FUT;LGSPEC1,1,5
+980,jiiw,jiiw'em,V;IMP;PL,1,5
+981,pluuge,wel pluuge,V;IND;PL;3;FUT;LGSPEC2,1,5
+982,nem,hed nimen,V;PRF;IND;PL;1;PST+RMT,1,5
+983,dreeg,druch,V;PFV;IND;DU;2;PST,1,5
+984,skriiw,skääl skriiw,V;IND;SG;2;FUT;LGSPEC1,1,5
+985,heelpe,heelpe,V;IND;PL;1;PRS,1,5
+986,nem,haa nimen,V;PRF;IND;DU;2;PST,1,5
+987,beskriiw,haa beskrewen,V;PRF;IND;SG;1;PST,1,5
+988,kem,wiar kimen,V;PRF;IND;PL;3;PST+RMT,1,5
+989,fraage,fraage,V;IMP;SG,1,5
+990,weese,san wään,V;PRF;IND;PL;1;PST,1,5
+991,röp,tö röpen,V;NFIN,1,5
+992,wel,wal,V;IND;SG;3;PRS,1,5
+993,fraage,fraage,V;IND;DU;1;PRS,1,5
+994,bine,bün,V;PFV;IND;SG;3;PST,1,5
+995,stridj,stratst,V;IND;SG;2;PRS,1,5
+996,greew,greew,V;IMP;SG,1,5
+997,lees,lees,V;IMP;SG,1,5
+998,pluuge,pluug,V;IND;PL;1;PRS,1,5
+999,düünj,düünj,V;IND;PL;3;PRS,1,5
+1000,pluuge,heest pluuget,V;PRF;IND;SG;2;PST,1,5
+1001,drainke,häi drunken,V;PRF;IND;SG;3;PST+RMT,1,5
+1002,faal,fool,V;PFV;IND;SG;1;PST,1,5
+1003,gripe,häin gram,V;PRF;IND;PL;3;PST+RMT,1,5
+1004,bine,bine,V;IND;DU;1;PRS,1,5
+1005,greew,haa greewen,V;PRF;IND;PL;2;PST,1,5
+1006,gripe,griip,V;PFV;IND;SG;1;PST,1,5
+1007,teenk,skel teenk,V;IND;PL;3;FUT;LGSPEC1,1,5
+1008,haa,wel haa,V;IND;PL;3;FUT;LGSPEC2,1,5
+1009,frååge,häin frååged,V;PRF;IND;PL;1;PST+RMT,1,5
+1010,koone,wårde koone,V;IND;DU;2;FUT;LGSPEC1,1,5
+1011,bliwe,wjarst blaawen,V;PRF;IND;SG;2;PST+RMT,1,5
+1012,düünj,hääwe dänj,V;PRF;IND;PL;3;PST,1,5
+1013,gunge,gunge,V;IND;PL;2;PRS,1,5
+1014,jeewe,wårde jeewe,V;IND;DU;1;FUT;LGSPEC1,1,5
+1015,jiiw,haa jewen,V;PRF;IND;PL;2;PST,1,5
+1016,drainke,hääwe drunken,V;PRF;IND;DU;2;PST,1,5
+1017,frååge,frååged,V;IMP;SG,1,5
+1018,booge,häin booged,V;PRF;IND;PL;1;PST+RMT,1,5
+1019,düünj,wårde düünj,V;IND;PL;2;FUT;LGSPEC1,1,5
+1020,spreege,wårde spreege,V;IND;DU;1;FUT;LGSPEC1,1,5
+1021,ferliise,ferliise,V;IND;PL;2;PRS,1,5
+1022,ferliise,wårst ferliise,V;IND;SG;2;FUT;LGSPEC1,1,5
+1023,lees,skal lees,V;IND;SG;1;FUT;LGSPEC1,1,5
+1024,bring,tu bringen,V;NFIN,1,5
+1025,heewe,hee heet,V;PRF;IND;SG;1;PST+RMT,1,5
+1026,du,du,V;IND;PL;1;PRS,1,5
+1027,faal,skal faal,V;IND;SG;1;FUT;LGSPEC1,1,5
+1028,weese,sän wään,V;PRF;IND;PL;1;PST,1,5
+1029,drainke,drainkst,V;IND;SG;2;PRS,1,5
+1030,bliwe,wårde bliwe,V;IND;PL;2;FUT;LGSPEC1,1,5
+1031,wel,wel,V;IND;PL;2;PRS,1,5
+1032,bliiw,as blewen,V;PRF;IND;SG;3;PST,1,5
+1033,teenk,toocht,V;PFV;IND;DU;1;PST,1,5
+1034,lees,hed leesen,V;PRF;IND;PL;3;PST+RMT,1,5
+1035,fine,wårde fine,V;IND;DU;2;FUT;LGSPEC1,1,5
+1036,skriiw,skel skriiw,V;IND;PL;1;FUT;LGSPEC1,1,5
+1037,fraage,haa fraaget,V;PRF;IND;PL;3;PST,1,5
+1038,heewe,hääw heet,V;PRF;IND;PL;1;PST,1,5
+1039,skriiw,hee skrewen,V;PRF;IND;SG;3;PST,1,5
+1040,gunge,san gängen,V;PRF;IND;DU;2;PST,1,5
+1041,greewe,greefst,V;IND;SG;2;PRS,1,5
+1042,wees,wiar weesen,V;PRF;IND;DU;1;PST+RMT,1,5
+1043,heelpe,hääwe hülpen,V;PRF;IND;PL;3;PST,1,5
+1044,dreege,dreege,V;NFIN,1,5
+1045,fine,häin fünen,V;PRF;IND;DU;2;PST+RMT,1,5
+1046,drank,hed dronken,V;PRF;IND;PL;2;PST+RMT,1,5
+1047,haa,heest hed,V;PRF;IND;SG;2;PST,1,5
+1048,gripe,än grip,V.PTCP;PST,1,5
+1049,spreege,hääwe spräägen,V;PRF;IND;DU;1;PST,1,5
+1050,drank,heest dronken,V;PRF;IND;SG;2;PST,1,5
+1051,faal,skel faal,V;IND;PL;2;FUT;LGSPEC1,1,5
+1052,heelpe,häin hülpen,V;PRF;IND;PL;1;PST+RMT,1,5
+1053,wees,wees'em,V;IMP;PL,1,5
+1054,haa,hed,V.PTCP;PST,1,5
+1055,baag,haa beegen,V;PRF;IND;PL;2;PST,1,5
+1056,düünj,däin,V;PFV;IND;DU;2;PST,1,5
+1057,stridj,hed streden,V;PRF;IND;SG;3;PST+RMT,1,5
+1058,greew,wal greew,V;IND;SG;1;FUT;LGSPEC2,1,5
+1059,mååge,häin mååged,V;PRF;IND;DU;2;PST+RMT,1,5
+1060,heewe,wårde heewe,V;IND;PL;2;FUT,1,5
+1061,wel,haa wulen,V;PRF;IND;DU;1;PST,1,5
+1062,booge,booged,V;PFV;IND;SG;3;PST,1,5
+1063,kaame,bast kiimen,V;PRF;IND;SG;2;PST,1,5
+1064,beskriiw,haa beskrewen,V;PRF;IND;PL;3;PST,1,5
+1065,heewe,hee,V;PFV;IND;SG;3;PST,1,5
+1066,mötj,häin muurst,V;PRF;IND;DU;1;PST+RMT,1,5
+1067,faal,wel faal,V;IND;PL;1;FUT;LGSPEC2,1,5
+1068,ferliise,heet ferlääsen,V;PRF;IND;SG;3;PST,1,5
+1069,fine,hääwe fünen,V;PRF;IND;PL;2;PST,1,5
+1070,bliwe,wårt bliwe,V;IND;SG;3;FUT;LGSPEC1,1,5
+1071,jeewe,hääwe jääwen,V;PRF;IND;DU;1;PST,1,5
+1072,jiiw,jewen,V.PTCP;PST,1,5
+1073,ferjeese,wårt forjeese,V;IND;SG;3;FUT;LGSPEC1,1,5
+1074,booge,booge,V;IND;PL;3;PRS,1,5
+1075,skriiw,wääl skriiw,V;IND;SG;2;FUT;LGSPEC2,1,5
+1076,düünj,än dou,V.PTCP;PST,1,5
+1077,röp,wel röp,V;IND;SG;1;FUT;LGSPEC2,1,5
+1078,kem,kem,V;NFIN,1,5
+1079,weese,bäst,V;IND;SG;2;PRS,1,5
+1080,heelpe,hülpen,V;IMP;SG,1,5
+1081,mötj,wårde mötj,V;IND;DU;2;FUT;LGSPEC1,1,5
+1082,lees,lus,V;PFV;IND;PL;3;PST,1,5
+1083,fraage,haa fraaget,V;PRF;IND;DU;2;PST,1,5
+1084,du,skel du,V;IND;DU;1;FUT;LGSPEC1,1,5
+1085,fine,hääwe fünen,V;PRF;IND;DU;2;PST,1,5
+1086,bliwe,wjarn blaawen,V;PRF;IND;PL;1;PST+RMT,1,5
+1087,skriiw,skal skriiw,V;IND;SG;3;FUT;LGSPEC1,1,5
+1088,faal,fool,V;PFV;IND;DU;2;PST,1,5
+1089,ferliise,ferliise,V;IND;DU;2;PRS,1,5
+1090,spreege,spreege,V;IND;DU;1;PRS,1,5
+1091,kem,kem,V;IND;PL;1;PRS,1,5
+1092,jiiw,skel jiiw,V;IND;PL;1;FUT;LGSPEC1,1,5
+1093,breeg,breeg'em,V;IMP;PL,1,5
+1094,dreeg,skel dreeg,V;IND;PL;2;FUT;LGSPEC1,1,5
+1095,kaame,kaame,V;IND;PL;1;PRS,1,5
+1096,breege,bräken,V;PFV;IND;PL;2;PST,1,5
+1097,lees,lus,V;PFV;IND;PL;2;PST,1,5
+1098,greew,haa greewen,V;PRF;IND;SG;1;PST,1,5
+1099,wan,woon,V;PFV;IND;SG;3;PST,1,5
+1100,drainke,drunk,V;PFV;IND;SG;3;PST,1,5
+1101,wees,san,V;IND;DU;1;PRS,1,5
+1102,wan,hedst wonen,V;PRF;IND;SG;2;PST+RMT,1,5
+1103,baag,skel baag,V;IND;PL;1;FUT;LGSPEC1,1,5
+1104,röp,skel röp,V;IND;DU;1;FUT;LGSPEC1,1,5
+1105,maage,haa maaget,V;PRF;IND;DU;1;PST,1,5
+1106,kem,san kimen,V;PRF;IND;DU;1;PST,1,5
+1107,düünj,däi,V;PFV;IND;SG;3;PST,1,5
+1108,stridj,hed streden,V;PRF;IND;PL;2;PST+RMT,1,5
+1109,bååge,hääwe båågen,V;PRF;IND;PL;3;PST,1,5
+1110,heewe,häist hädj,V;PRF;IND;SG;2;PST+RMT,1,5
+1111,ferliise,wårde ferliise,V;IND;DU;2;FUT;LGSPEC1,1,5
+1112,frååge,frååged,V;PFV;IND;SG;3;PST,1,5
+1113,bring,bring,V;IND;DU;2;PRS,1,5
+1114,du,dee,V;IND;SG;3;PRS,1,5
+1115,weese,as,V;IND;SG;3;PRS,1,5
+1116,nem,haa nimen,V;PRF;IND;DU;1;PST,1,5
+1117,greew,greew,V;IND;DU;2;PRS,1,5
+1118,düünj,heet dänj,V;PRF;IND;SG;3;PST,1,5
+1119,drainke,häin drunken,V;PRF;IND;DU;1;PST+RMT,1,5
+1120,maage,hed maaget,V;PRF;IND;DU;1;PST+RMT,1,5
+1121,booge,hääwe booged,V;PRF;IND;PL;3;PST,1,5
+1122,spreege,häi spräägen,V;PRF;IND;SG;3;PST+RMT,1,5
+1123,spreege,wårde spreege,V;IND;DU;2;FUT;LGSPEC1,1,5
+1124,gunge,san gängen,V;PRF;IND;PL;2;PST,1,5
+1125,heewe,heen heet,V;PRF;IND;PL;1;PST+RMT,1,5
+1126,pluuge,hee pluuget,V;PRF;IND;SG;3;PST,1,5
+1127,nem,nem,V;IND;SG;1;PRS,1,5
+1128,fu,wel fu,V;IND;PL;3;FUT;LGSPEC2,1,5
+1129,pluuge,wel pluuge,V;IND;PL;1;FUT;LGSPEC2,1,5
+1130,nem,wel nem,V;IND;DU;2;FUT;LGSPEC2,1,5
+1131,bliwe,bliifen,V;PFV;IND;DU;1;PST,1,5
+1132,röp,skel röp,V;IND;SG;1;FUT;LGSPEC1,1,5
+1133,ferjeese,ferjätj,V;PFV;IND;SG;3;PST,1,5
+1134,mååge,måågeden,V;PFV;IND;PL;2;PST,1,5
+1135,gunge,san gängen,V;PRF;IND;DU;1;PST,1,5
+1136,gripe,griipen,V;PFV;IND;PL;3;PST,1,5
+1137,lees,lus,V;PFV;IND;DU;1;PST,1,5
+1138,nem,wal nem,V;IND;SG;3;FUT;LGSPEC2,1,5
+1139,baag,baag,V;IND;PL;2;PRS,1,5
+1140,weese,weerst,V;PFV;IND;SG;2;PST,1,5
+1141,mötj,häin muurst,V;PRF;IND;PL;3;PST+RMT,1,5
+1142,booge,tu boogen,V;NFIN,1,5
+1143,röp,rööp,V;PFV;IND;SG;3;PST,1,5
+1144,jiiw,jeew,V;PFV;IND;PL;1;PST,1,5
+1145,booge,boogeden,V;PFV;IND;DU;2;PST,1,5
+1146,jooge,joog,V;IMP;PL,1,5
+1147,fine,fant,V;IND;SG;3;PRS,1,5
+1148,heelpe,hülp,V;PFV;IND;SG;3;PST,1,5
+1149,wan,haa wonen,V;PRF;IND;PL;3;PST,1,5
+1150,baag,skal baag,V;IND;SG;3;FUT;LGSPEC1,1,5
+1151,du,diad,V;PFV;IND;SG;1;PST,1,5
+1152,teenk,haa toocht,V;PRF;IND;SG;1;PST,1,5
+1153,greew,haa greewen,V;PRF;IND;DU;1;PST,1,5
+1154,fine,fine,V;IND;DU;2;PRS,1,5
+1155,bååge,bökst,V;PFV;IND;SG;2;PST,1,5
+1156,bååge,häin båågen,V;PRF;IND;DU;2;PST+RMT,1,5
+1157,frååge,hääwe frååged,V;PRF;IND;PL;1;PST,1,5
+1158,greew,wel greew,V;IND;DU;2;FUT;LGSPEC2,1,5
+1159,gripe,bååge,V;IND;PL;3;PRS,1,5
+1160,faal,skääl faal,V;IND;SG;2;FUT;LGSPEC1,1,5
+1161,kaame,kömen,V;PFV;IND;DU;2;PST,1,5
+1162,wan,haa wonen,V;PRF;IND;DU;1;PST,1,5
+1163,fraage,skel fraage,V;IND;PL;1;FUT;LGSPEC1,1,5
+1164,greew,skel greew,V;IND;PL;2;FUT;LGSPEC1,1,5
+1165,drank,drank,V;NFIN,1,5
+1166,kem,san kimen,V;PRF;IND;SG;1;PST,1,5
+1167,nem,haa nimen,V;PRF;IND;SG;1;PST,1,5
+1168,ferjeese,ferjätjen,V;PFV;IND;PL;2;PST,1,5
+1169,heewe,hääw heet,V;PRF;IND;PL;3;PST,1,5
+1170,gunge,gängen,V;PFV;IND;DU;1;PST,1,5
+1171,haa,haa,V;NFIN,1,5
+1172,weese,weern,V;PFV;IND;PL;2;PST,1,5
+1173,greew,wel greew,V;IND;PL;3;FUT;LGSPEC2,1,5
+1174,drank,skal drank,V;IND;SG;3;FUT;LGSPEC1,1,5
+1175,koone,häi kööt,V;PRF;IND;SG;1;PST+RMT,1,5
+1176,drank,drank,V;IND;DU;2;PRS,1,5
+1177,bliiw,beest blewen,V;PRF;IND;SG;2;PST,1,5
+1178,kaame,wård kaame,V;IND;SG;1;FUT;LGSPEC1,1,5
+1179,faal,skel faal,V;IND;DU;1;FUT;LGSPEC1,1,5
+1180,kaame,kamst,V;IND;SG;2;PRS,1,5
+1181,bine,häin bünen,V;PRF;IND;PL;3;PST+RMT,1,5
+1182,gripe,wårde gripe,V;IND;PL;1;FUT;LGSPEC1,1,5
+1183,greew,skal greew,V;IND;SG;3;FUT;LGSPEC1,1,5
+1184,weese,waos,V;PFV;IND;SG;1;PST,1,5
+1185,kem,wääl kem,V;IND;SG;2;FUT;LGSPEC2,1,5
+1186,röp,haa rööpen,V;IND;PL;1;PRS,1,5
+1187,fine,wårst fine,V;IND;SG;2;FUT;LGSPEC1,1,5
+1188,wan,hee wonen,V;PRF;IND;SG;3;PST,1,5
+1189,skriiw,wel skriiw,V;IND;PL;2;FUT;LGSPEC2,1,5
+1190,bliwe,bliw,V;IMP;PL,1,5
+1191,dreeg,hed draanjen,V;PRF;IND;SG;1;PST+RMT,1,5
+1192,röp,rööp,V;PFV;IND;DU;2;PST,1,5
+1193,drank,drankt,V;IND;SG;3;PRS,1,5
+1194,bliiw,wiar blewen,V;PRF;IND;SG;3;PST+RMT,1,5
+1195,heewe,hääwe hädj,V;PRF;IND;PL;2;PST,1,5
+1196,gripe,häin gram,V;PRF;IND;DU;1;PST+RMT,1,5
+1197,bliwe,bliwe,V;IND;PL;3;PRS,1,5
+1198,bring,skel bring,V;IND;PL;2;FUT;LGSPEC1,1,5
+1199,ferliise,häi ferlääsen,V;PRF;IND;SG;1;PST+RMT,1,5
+1200,dreeg,wel dreeg,V;IND;DU;1;FUT;LGSPEC2,1,5
+1201,faal,wiar feelen,V;PRF;IND;SG;3;PST+RMT,1,5
+1202,wees,tu weesen,V;NFIN,1,5
+1203,maage,skal maage,V;IND;SG;1;FUT;LGSPEC1,1,5
+1204,koone,koone,V;IND;PL;1;PRS,1,5
+1205,dreege,dreecht,V;IND;SG;3;PRS,1,5
+1206,wan,wel wan,V;IND;DU;1;FUT;LGSPEC2,1,5
+1207,mååge,mååge,V;IND;PL;1;PRS,1,5
+1208,greewe,grääwen,V;IMP;SG,1,5
+1209,fraage,fraaget,V;PFV;IND;PL;1;PST,1,5
+1210,bliwe,bliifen,V;PFV;IND;PL;3;PST,1,5
+1211,drainke,wårde drainke,V;IND;DU;2;FUT;LGSPEC1,1,5
+1212,gripe,wårst gripe,V;IND;SG;2;FUT;LGSPEC1,1,5
+1213,dreeg,hedst draanjen,V;PRF;IND;SG;2;PST+RMT,1,5
+1214,greewe,greeft,V;IND;SG;3;PRS,1,5
+1215,jiiw,wel jiiw,V;IND;PL;1;FUT;LGSPEC2,1,5
+1216,heelpe,hülpen,V;PFV;IND;PL;1;PST,1,5
+1217,jiiw,hed jewen,V;PRF;IND;SG;3;PST+RMT,1,5
+1218,heewe,hee,V;PFV;IND;SG;1;PST,1,5
+1219,wan,hed wonen,V;PRF;IND;PL;1;PST+RMT,1,5
+1220,mååge,wård mååge,V;IND;SG;1;FUT;LGSPEC1,1,5
+1221,frååge,wårde frååge,V;IND;DU;2;FUT;LGSPEC1,1,5
+1222,nem,hed nimen,V;PRF;IND;PL;2;PST+RMT,1,5
+1223,dreege,wårt dreege,V;IND;SG;3;FUT;LGSPEC1,1,5
+1224,drank,drank,V;IND;PL;3;PRS,1,5
+1225,teenk,toocht,V;PFV;IND;SG;3;PST,1,5
+1226,skriiw,hed skrewen,V;PRF;IND;PL;3;PST+RMT,1,5
+1227,skriiw,skreew,V;PFV;IND;PL;1;PST,1,5
+1228,drank,hed dronken,V;PRF;IND;PL;1;PST+RMT,1,5
+1229,faal,skel faal,V;IND;DU;2;FUT;LGSPEC1,1,5
+1230,jeewe,wårde jeewe,V;IND;DU;2;FUT;LGSPEC1,1,5
+1231,drainke,drunkst,V;PFV;IND;SG;2;PST,1,5
+1232,heewe,wäät heewe,V;IND;SG;2;FUT;LGSPEC2,1,5
+1233,bliiw,wiarst blewen,V;PRF;IND;SG;2;PST+RMT,1,5
+1234,jiiw,jeewst,V;PFV;IND;SG;2;PST,1,5
+1235,maage,maage,V;IND;DU;2;PRS,1,5
+1236,fu,wal fu,V;IND;SG;3;FUT;LGSPEC2,1,5
+1237,kaame,kömen,V;PFV;IND;DU;1;PST,1,5
+1238,mååge,wårde mååge,V;IND;PL;1;FUT;LGSPEC1,1,5
+1239,wan,wan,V;IND;DU;2;PRS,1,5
+1240,jeewe,jeefst,V;IND;SG;2;PRS,1,5
+1241,greew,haa greewen,V;PRF;IND;PL;3;PST,1,5
+1242,teenk,skel teenk,V;IND;PL;2;FUT;LGSPEC1,1,5
+1243,breeg,haa breegen,V;PRF;IND;PL;2;PST,1,5
+1244,du,wel du,V;IND;DU;2;FUT;LGSPEC2,1,5
+1245,greewe,greewe,V;IND;DU;2;PRS,1,5
+1246,röp,rööp,V;PFV;IND;PL;2;PST,1,5
+1247,maage,maaget,V;PFV;IND;DU;1;PST,1,5
+1248,baag,baag,V;IND;SG;1;PRS,1,5
+1249,bine,bine,V;IND;DU;2;PRS,1,5
+1250,skriiw,skriiw'em,V;IMP;PL,1,5
+1251,baag,baag'em,V;IMP;PL,1,5
+1252,dreege,hääwe dräägen,V;PRF;IND;PL;2;PST,1,5
+1253,teenk,skal teenk,V;IND;SG;3;FUT;LGSPEC1,1,5
+1254,teenk,haa toocht,V;PRF;IND;PL;1;PST,1,5
+1255,haa,wääl haa,V;IND;SG;2;FUT;LGSPEC2,1,5
+1256,ferliise,häin ferlääsen,V;PRF;IND;PL;3;PST+RMT,1,5
+1257,faal,feelen,V.PTCP;PST,1,5
+1258,düünj,dänj,V;IMP;SG,1,5
+1259,du,ded,V;PFV;IND;PL;2;PST,1,5
+1260,beskriiw,haa beskrewen,V;PRF;IND;PL;1;PST,1,5
+1261,ferjeese,ferjeese,V;IND;PL;1;PRS,1,5
+1262,pluuge,pluugest,V;IND;SG;2;PRS,1,5
+1263,mötj,möist,V;IND;SG;2;PRS,1,5
+1264,dreeg,druch,V;PFV;IND;SG;1;PST,1,5
+1265,gunge,gängst,V;PFV;IND;SG;2;PST,1,5
+1266,maage,haa maaget,V;PRF;IND;SG;1;PST,1,5
+1267,breeg,wal breeg,V;IND;SG;3;FUT;LGSPEC2,1,5
+1268,breege,bräken,V;PFV;IND;DU;2;PST,1,5
+1269,du,haa den,V;PRF;IND;DU;1;PST,1,5
+1270,jooge,luuch,V;PFV;IND;SG;1;PST,1,5
+1271,gripe,grapt,V;IND;SG;3;PRS,1,5
+1272,drainke,drainke,V;IND;DU;1;PRS,1,5
+1273,bine,bine,V;IND;PL;1;PRS,1,5
+1274,wel,wul,V;PFV;IND;DU;1;PST,1,5
+1275,fu,fu,V;IND;PL;1;PRS,1,5
+1276,teenk,haa toocht,V;PRF;IND;PL;2;PST,1,5
+1277,düünj,dou,V;IMP;PL,1,5
+1278,mötj,wårde mötj,V;IND;PL;2;FUT;LGSPEC1,1,5
+1279,frååge,hääst frååged,V;PRF;IND;SG;2;PST,1,5
+1280,dreeg,haa draanjen,V;PRF;IND;DU;1;PST,1,5
+1281,dreeg,haa draanjen,V;PRF;IND;PL;2;PST,1,5
+1282,röp,her rööpen,V;PFV;IND;PL;3;PST,1,5
+1283,bring,hed broocht,V;PRF;IND;SG;3;PST+RMT,1,5
+1284,du,ded,V;PFV;IND;DU;1;PST,1,5
+1285,jooge,häi läägen,V;PRF;IND;SG;3;PST+RMT,1,5
+1286,breeg,hedst breegen,V;PRF;IND;SG;2;PST+RMT,1,5
+1287,nem,naam,V;PFV;IND;DU;2;PST,1,5
+1288,kaame,ban kiimen,V;PRF;IND;SG;1;PST,1,5
+1289,nem,nem,V;IMP;SG,1,5
+1290,greewe,häist grääwen,V;PRF;IND;SG;2;PST+RMT,1,5
+1291,heewe,heen heet,V;PRF;IND;PL;3;PST+RMT,1,5
+1292,jeewe,jeeft,V;IND;SG;3;PRS,1,5
+1293,haa,skel haa,V;IND;PL;3;FUT;LGSPEC1,1,5
+1294,kaame,kaame,V;IND;DU;1;PRS,1,5
+1295,breege,häist bräägen,V;PRF;IND;SG;2;PST+RMT,1,5
+1296,bååge,bök,V;PFV;IND;SG;3;PST,1,5
+1297,kaame,wjarn kiimen,V;PRF;IND;PL;2;PST+RMT,1,5
+1298,lees,wal lees,V;IND;SG;1;FUT;LGSPEC2,1,5
+1299,fu,hed fingen,V;PRF;IND;DU;2;PST+RMT,1,5
+1300,wan,skääl wan,V;IND;SG;2;FUT;LGSPEC1,1,5
+1301,wel,hee wulen,V;PRF;IND;SG;3;PST,1,5
+1302,stridj,skel stridj,V;IND;DU;2;FUT;LGSPEC1,1,5
+1303,jooge,jucht,V;IND;SG;3;PRS,1,5
+1304,heewe,win heewe,V;IND;PL;1;FUT;LGSPEC2,1,5
+1305,bååge,häin båågen,V;PRF;IND;PL;2;PST+RMT,1,5
+1306,breeg,breeg,V;IMP;SG,1,5
+1307,skriiw,skriiw,V;IND;DU;2;PRS,1,5
+1308,baag,buch,V;PFV;IND;SG;1;PST,1,5
+1309,stridj,hedst streden,V;PRF;IND;SG;2;PST+RMT,1,5
+1310,fu,skel fu,V;IND;PL;2;FUT;LGSPEC1,1,5
+1311,wees,wiar,V;PFV;IND;DU;1;PST,1,5
+1312,kem,wiar kimen,V;PRF;IND;DU;1;PST+RMT,1,5
+1313,kem,kem'em,V;IMP;PL,1,5
+1314,heewe,wårde heewe,V;IND;DU;1;FUT,1,5
+1315,fraage,hed fraaget,V;PRF;IND;DU;2;PST+RMT,1,5
+1316,bring,hed broocht,V;PRF;IND;PL;1;PST+RMT,1,5
+1317,bliiw,skel bliiw,V;IND;DU;2;FUT;LGSPEC1,1,5
+1318,frååge,hääwe frååged,V;PRF;IND;PL;2;PST,1,5
+1319,haa,wal haa,V;IND;SG;3;FUT;LGSPEC2,1,5
+1320,wan,skel wan,V;IND;PL;3;FUT;LGSPEC1,1,5
+1321,maage,maaget,V;PFV;IND;SG;3;PST,1,5
+1322,fu,haa fingen,V;PRF;IND;DU;2;PST,1,5
+1323,weese,weern,V;PFV;IND;PL;1;PST,1,5
+1324,weese,bast,V;IND;SG;2;PRS,1,5
+1325,wees,wel wees,V;IND;PL;1;FUT;LGSPEC2,1,5
+1326,lees,heest leesen,V;PRF;IND;SG;2;PST,1,5
+1327,frååge,frååge,V;IND;DU;2;PRS,1,5
+1328,drank,droonk,V;PFV;IND;DU;2;PST,1,5
+1329,bliiw,wel bliiw,V;IND;PL;2;FUT;LGSPEC2,1,5
+1330,greew,skääl greew,V;IND;SG;2;FUT;LGSPEC1,1,5
+1331,stridj,haa streden,V;PRF;IND;PL;2;PST,1,5
+1332,haa,hed hed,V;PRF;IND;PL;2;PST+RMT,1,5
+1333,wan,woon,V;PFV;IND;SG;1;PST,1,5
+1334,dreege,häin dräägen,V;PRF;IND;DU;1;PST+RMT,1,5
+1335,jooge,luuchst,V;PFV;IND;SG;2;PST,1,5
+1336,wel,wul,V;PFV;IND;SG;1;PST,1,5
+1337,düünj,hääwe dänj,V;PRF;IND;DU;2;PST,1,5
+1338,röp,wel röp,V;IND;DU;3;FUT;LGSPEC2,1,5
+1339,bååge,båågeden,V;PFV;IND;DU;1;PST,1,5
+1340,gripe,griipen,V;PFV;IND;PL;2;PST,1,5
+1341,ferjeese,wård forjeese,V;IND;SG;1;FUT;LGSPEC1,1,5
+1342,pluuge,hed pluuget,V;PRF;IND;DU;1;PST+RMT,1,5
+1343,teenk,teenkt,V;IND;SG;3;PRS,1,5
+1344,faal,san feelen,V;PRF;IND;SG;1;PST,1,5
+1345,wan,wan,V;NFIN,1,5
+1346,dreeg,hed draanjen,V;PRF;IND;DU;1;PST+RMT,1,5
+1347,mötj,wårst mötj,V;IND;SG;2;FUT;LGSPEC1,1,5
+1348,ferliise,ferlüüsen,V;PFV;IND;PL;3;PST,1,5
+1349,pluuge,hedst pluuget,V;PRF;IND;SG;2;PST+RMT,1,5
+1350,nem,hed nimen,V;PRF;IND;SG;3;PST+RMT,1,5
+1351,breege,wård breege,V;IND;SG;1;FUT;LGSPEC1,1,5
+1352,bring,hed broocht,V;PRF;IND;SG;1;PST+RMT,1,5
+1353,fu,fu,V;IND;PL;3;PRS,1,5
+1354,skriiw,wal skriiw,V;IND;SG;3;FUT;LGSPEC2,1,5
+1355,pluuge,hed pluuget,V;PRF;IND;PL;1;PST+RMT,1,5
+1356,mååge,wårde mååge,V;IND;DU;2;FUT;LGSPEC1,1,5
+1357,teenk,teenkst,V;IND;SG;2;PRS,1,5
+1358,jiiw,jiiw,V;IND;DU;1;PRS,1,5
+1359,jiiw,jiiw,V;IND;PL;2;PRS,1,5
+1360,greew,greewen,V.PTCP;PST,1,5
+1361,bine,häin bünen,V;PRF;IND;DU;1;PST+RMT,1,5
+1362,weese,schin weese,V;IND;PL;1;FUT;LGSPEC1,1,5
+1363,wan,wan,V;IMP;SG,1,5
+1364,baag,buchst,V;PFV;IND;SG;2;PST,1,5
+1365,bliiw,skel bliiw,V;IND;PL;1;FUT;LGSPEC1,1,5
+1366,bliiw,blaft,V;IND;SG;3;PRS,1,5
+1367,kaame,wårde kaame,V;IND;DU;2;FUT;LGSPEC1,1,5
+1368,jooge,tu joogen,V;NFIN,1,5
+1369,düünj,däin,V;PFV;IND;PL;2;PST,1,5
+1370,dreeg,tu dreegen,V;NFIN,1,5
+1371,jeewe,wårde jeewe,V;IND;PL;1;FUT;LGSPEC1,1,5
+1372,spreege,spräkst,V;PFV;IND;SG;2;PST,1,5
+1373,teenk,skel teenk,V;IND;DU;2;FUT;LGSPEC1,1,5
+1374,bliiw,wal bliiw,V;IND;SG;3;FUT;LGSPEC2,1,5
+1375,ferliise,hääwe ferlääsen,V;PRF;IND;DU;1;PST,1,5
+1376,jeewe,häi jääwen,V;PRF;IND;SG;3;PST+RMT,1,5
+1377,drank,hed dronken,V;PRF;IND;DU;2;PST+RMT,1,5
+1378,wees,skel wees,V;IND;DU;1;FUT;LGSPEC1,1,5
+1379,haa,hed hed,V;PRF;IND;DU;1;PST+RMT,1,5
+1380,wan,haa wonen,V;PRF;IND;PL;1;PST,1,5
+1381,baag,skal baag,V;IND;SG;1;FUT;LGSPEC1,1,5
+1382,greewe,wård greewe,V;IND;SG;1;FUT;LGSPEC1,1,5
+1383,dreeg,druch,V;PFV;IND;PL;2;PST,1,5
+1384,beskriiw,skel beskriiw,V;IND;PL;1;FUT;LGSPEC1,1,5
+1385,bine,bant,V;IND;SG;3;PRS,1,5
+1386,heelpe,häin hülpen,V;PRF;IND;DU;1;PST+RMT,1,5
+1387,bliwe,wjarn blaawen,V;PRF;IND;DU;2;PST+RMT,1,5
+1388,röp,röp,V;IND;DU;1;PRS,1,5
+1389,mötj,wårde mötj,V;IND;PL;3;FUT;LGSPEC1,1,5
+1390,breeg,hed breegen,V;PRF;IND;SG;3;PST+RMT,1,5
+1391,kem,kem,V;IND;DU;1;PRS,1,5
+1392,teenk,skääl teenk,V;IND;SG;2;FUT;LGSPEC1,1,5
+1393,gunge,wårde gunge,V;IND;PL;1;FUT;LGSPEC1,1,5
+1394,bine,wårt bine,V;IND;SG;3;FUT;LGSPEC1,1,5
+1395,dreeg,skal dreeg,V;IND;SG;3;FUT;LGSPEC1,1,5
+1396,gripe,gripe,V;NFIN,1,5
+1397,baag,baag,V;IMP;SG,1,5
+1398,breeg,haa breegen,V;PRF;IND;SG;1;PST,1,5
+1399,weese,wal weese,V;IND;SG;1;FUT;LGSPEC2,1,5
+1400,bliwe,bast blaawen,V;PRF;IND;SG;2;PST,1,5
+1401,fu,fing,V;PFV;IND;SG;1;PST,1,5
+1402,greewe,wårde greewe,V;IND;PL;3;FUT;LGSPEC1,1,5
+1403,bååge,böken,V;PFV;IND;PL;2;PST,1,5
+1404,weese,sän wään,V;PRF;IND;PL;2;PST,1,5
+1405,weese,wjarn wään,V;PRF;IND;PL;3;PST+RMT,1,5
+1406,bliiw,blafst,V;IND;SG;2;PRS,1,5
+1407,koone,koone,V;IND;PL;3;PRS,1,5
+1408,faal,wiar feelen,V;PRF;IND;DU;2;PST+RMT,1,5
+1409,gripe,bååge,V;IND;DU;1;PRS,1,5
+1410,jeewe,heet jääwen,V;PRF;IND;SG;3;PST,1,5
+1411,heewe,wårde heewe,V;IND;PL;1;FUT,1,5
+1412,greew,hee greewen,V;PRF;IND;SG;3;PST,1,5
+1413,wees,wel wees,V;IND;DU;2;FUT;LGSPEC2,1,5
+1414,mötj,muursten,V;PFV;IND;DU;2;PST,1,5
+1415,beskriiw,hee beskrewen,V;PRF;IND;SG;3;PST,1,5
+1416,skriiw,skreew,V;PFV;IND;DU;1;PST,1,5
+1417,booge,boogedst,V;PFV;IND;SG;2;PST,1,5
+1418,dreege,häin dräägen,V;PRF;IND;PL;3;PST+RMT,1,5
+1419,breeg,breeg,V;IND;DU;1;PRS,1,5
+1420,drank,drank'em,V;IMP;PL,1,5
+1421,jiiw,hed jewen,V;PRF;IND;DU;1;PST+RMT,1,5
+1422,wan,haa wonen,V;PRF;IND;DU;2;PST,1,5
+1423,wan,skel wan,V;IND;DU;2;FUT;LGSPEC1,1,5
+1424,röp,röp,V;IND;PL;3;PRS,1,5
+1425,bring,bring,V;IND;SG;1;PRS,1,5
+1426,du,hed den,V;PRF;IND;SG;1;PST+RMT,1,5
+1427,bine,hääwe bünen,V;PRF;IND;PL;2;PST,1,5
+1428,bine,hääwe bünen,V;PRF;IND;PL;1;PST,1,5
+1429,booge,häin booged,V;PRF;IND;PL;3;PST+RMT,1,5
+1430,kem,kaam,V;PFV;IND;DU;2;PST,1,5
+1431,pluuge,skääl pluuge,V;IND;SG;2;FUT;LGSPEC1,1,5
+1432,maage,maaget,V;IND;SG;3;PRS,1,5
+1433,booge,booge,V;NFIN,1,5
+1434,pluuge,haa pluuget,V;PRF;IND;DU;1;PST,1,5
+1435,ferliise,ferlüst,V;IND;SG;2;PRS,1,5
+1436,frååge,fråågest,V;IND;SG;2;PRS,1,5
+1437,gunge,wjarn gängen,V;PRF;IND;DU;2;PST+RMT,1,5
+1438,greew,hed greewen,V;PRF;IND;PL;1;PST+RMT,1,5
+1439,ferjeese,ferjeese,V;IND;DU;1;PRS,1,5
+1440,dreege,hääwe dräägen,V;PRF;IND;PL;3;PST,1,5
+1441,baag,beecht,V;IND;SG;3;PRS,1,5
+1442,ferliise,hääwe ferlääsen,V;PRF;IND;DU;2;PST,1,5
+1443,breeg,hed breegen,V;PRF;IND;PL;1;PST+RMT,1,5
+1444,beskriiw,skal beskriiw,V;IND;SG;3;FUT;LGSPEC1,1,5
+1445,jiiw,jaft,V;IND;SG;3;PRS,1,5
+1446,düünj,däin,V;PFV;IND;DU;1;PST,1,5
+1447,beskriiw,beskreewst,V;PFV;IND;SG;2;PST,1,5
+1448,jiiw,jeew,V;PFV;IND;DU;2;PST,1,5
+1449,lees,skel lees,V;IND;PL;1;FUT;LGSPEC1,1,5
+1450,skriiw,hedst skrewen,V;PRF;IND;SG;2;PST+RMT,1,5
+1451,frååge,frååge,V;IND;PL;2;PRS,1,5
+1452,haa,hed hed,V;PRF;IND;DU;2;PST+RMT,1,5
+1453,wees,wel wees,V;IND;PL;2;FUT;LGSPEC2,1,5
+1454,weese,wjarn,V;PFV;IND;DU;1;PST,1,5
+1455,nem,hee nimen,V;PRF;IND;SG;3;PST,1,5
+1456,weese,wus wään,V;PRF;IND;SG;1;PST+RMT,1,5
+1457,drainke,drunken,V;PFV;IND;DU;1;PST,1,5
+1458,stridj,wel stridj,V;IND;PL;1;FUT;LGSPEC2,1,5
+1459,bååge,bååged,V;PFV;IND;SG;1;PST,1,5
+1460,jiiw,juf,V;PFV;IND;SG;3;PST,1,5
+1461,maage,wal maage,V;IND;SG;1;FUT;LGSPEC2,1,5
+1462,spreege,hääw spräägen,V;PRF;IND;SG;1;PST,1,5
+1463,drainke,draink,V;IMP;PL,1,5
+1464,drank,drank,V;IND;SG;1;PRS,1,5
+1465,breege,heet bräägen,V;PRF;IND;SG;3;PST,1,5
+1466,kem,kaam,V;PFV;IND;PL;2;PST,1,5
+1467,kaame,kaame,V;IND;PL;2;PRS,1,5
+1468,teenk,teenk,V;NFIN,1,5
+1469,koone,heet kööt,V;PRF;IND;SG;3;PST,1,5
+1470,drank,wel drank,V;IND;PL;3;FUT;LGSPEC2,1,5
+1471,fine,heet fünen,V;PRF;IND;SG;3;PST,1,5
+1472,dreege,hääwe dräägen,V;PRF;IND;DU;2;PST,1,5
+1473,faal,wal faal,V;IND;SG;3;FUT;LGSPEC2,1,5
+1474,fu,haa fingen,V;PRF;IND;PL;2;PST,1,5
+1475,wees,skel wees,V;IND;PL;2;FUT;LGSPEC1,1,5
+1476,fraage,haa fraaget,V;PRF;IND;PL;1;PST,1,5
+1477,du,du'em,V;IMP;PL,1,5
+1478,mötj,hääw muurst,V;PRF;IND;SG;1;PST,1,5
+1479,wees,weesen,V.PTCP;PST,1,5
+1480,bååge,båågeden,V;PFV;IND;PL;3;PST,1,5
+1481,heewe,heewe,V;NFIN,1,5
+1482,jeewe,wårt jeewe,V;IND;SG;3;FUT;LGSPEC1,1,5
+1483,booge,häi booged,V;PRF;IND;SG;3;PST+RMT,1,5
+1484,dreeg,dreeg,V;IND;DU;2;PRS,1,5
+1485,pluuge,pluuget,V;IND;SG;3;PRS,1,5
+1486,jeewe,jäifen,V;PFV;IND;PL;2;PST,1,5
+1487,du,diad,V;PFV;IND;SG;3;PST,1,5
+1488,röp,röp,V;IND;SG;1;PRS,1,5
+1489,teenk,hed toocht,V;PRF;IND;DU;2;PST+RMT,1,5
+1490,breeg,breeg,V;IND;PL;1;PRS,1,5
+1491,kaame,san kiimen,V;PRF;IND;PL;3;PST,1,5
+1492,wees,skel wees,V;IND;PL;1;FUT;LGSPEC1,1,5
+1493,kem,wal kem,V;IND;SG;1;FUT;LGSPEC2,1,5
+1494,booge,booge,V;IND;PL;2;PRS,1,5
+1495,kaame,köm,V;PFV;IND;SG;3;PST,1,5
+1496,greewe,hääwe grääwen,V;PRF;IND;DU;1;PST,1,5
+1497,pluuge,pluuge,V;IMP;SG,1,5
+1498,bliwe,wårde bliwe,V;IND;PL;1;FUT;LGSPEC1,1,5
+1499,düünj,düünj,V;NFIN,1,5
+1500,jooge,wårde jooge,V;IND;PL;2;FUT;LGSPEC1,1,5
+1501,haa,hee hed,V;PRF;IND;SG;3;PST,1,5
+1502,baag,haa beegen,V;PRF;IND;PL;1;PST,1,5
+1503,heelpe,tu heelpen,V;NFIN,1,5
+1504,fine,tu finen,V;NFIN,1,5
+1505,weese,wjarn,V;PFV;IND;PL;1;PST,1,5
+1506,mötj,hääst muurst,V;PRF;IND;SG;2;PST,1,5
+1507,nem,wel nem,V;IND;PL;2;FUT;LGSPEC2,1,5
+1508,fraage,wääl fraage,V;IND;SG;2;FUT;LGSPEC2,1,5
+1509,gripe,häi gram,V;PRF;IND;SG;3;PST+RMT,1,5
+1510,mötj,häin muurst,V;PRF;IND;PL;1;PST+RMT,1,5
+1511,koone,häin kööt,V;PRF;IND;PL;1;PST+RMT,1,5
+1512,du,hed den,V;PRF;IND;PL;2;PST+RMT,1,5
+1513,gripe,gram,V;IMP;SG,1,5
+1514,maage,maaget,V;PFV;IND;PL;1;PST,1,5
+1515,mötj,muursten,V;PFV;IND;PL;3;PST,1,5
+1516,wan,wel wan,V;IND;DU;2;FUT;LGSPEC2,1,5
+1517,wel,wal,V;IND;SG;1;PRS,1,5
+1518,baag,baag,V;IND;DU;2;PRS,1,5
+1519,faal,san feelen,V;PRF;IND;DU;1;PST,1,5
+1520,dreege,dröichst,V;PFV;IND;SG;2;PST,1,5
+1521,maage,maage,V;IND;PL;3;PRS,1,5
+1522,faal,wel faal,V;IND;PL;3;FUT;LGSPEC2,1,5
+1523,mååge,mååge,V;NFIN,1,5
+1524,fu,tu fuen,V;NFIN,1,5
+1525,wan,wel wan,V;IND;PL;2;FUT;LGSPEC2,1,5
+1526,bååge,hääwe båågen,V;PRF;IND;DU;1;PST,1,5
+1527,skriiw,wel skriiw,V;IND;DU;1;FUT;LGSPEC2,1,5
+1528,gripe,griip,V;PFV;IND;SG;3;PST,1,5
+1529,ferliise,ferlüüs,V;PFV;IND;SG;3;PST,1,5
+1530,fine,häist fünen,V;PRF;IND;SG;2;PST+RMT,1,5
+1531,maage,wel maage,V;IND;PL;2;FUT;LGSPEC2,1,5
+1532,du,hed den,V;PRF;IND;PL;1;PST+RMT,1,5
+1533,wel,wel,V;IND;PL;3;PRS,1,5
+1534,wel,wääl wel,V;IND;SG;2;FUT;LGSPEC2,1,5
+1535,wees,san,V;IND;PL;1;PRS,1,5
+1536,gripe,griipen,V;PFV;IND;DU;1;PST,1,5
+1537,faal,wiarst feelen,V;PRF;IND;SG;2;PST+RMT,1,5
+1538,wees,wiar weesen,V;PRF;IND;SG;3;PST+RMT,1,5
+1539,drank,wääl drank,V;IND;SG;2;FUT;LGSPEC2,1,5
+1540,kem,san kimen,V;PRF;IND;DU;2;PST,1,5
+1541,wan,haa wonen,V;PRF;IND;PL;2;PST,1,5
+1542,ferliise,hääw ferlääsen,V;PRF;IND;SG;1;PST,1,5
+1543,breeg,heest breegen,V;PRF;IND;SG;2;PST,1,5
+1544,bliwe,wus blaawen,V;PRF;IND;SG;3;PST+RMT,1,5
+1545,drank,wel drank,V;IND;PL;2;FUT;LGSPEC2,1,5
+1546,koone,köö,V;PFV;IND;SG;3;PST,1,5
+1547,ferjeese,än forjees,V.PTCP;PST,1,5
+1548,fu,haa fingen,V;PRF;IND;DU;1;PST,1,5
+1549,breeg,wääl breeg,V;IND;SG;2;FUT;LGSPEC2,1,5
+1550,bring,wel bring,V;IND;PL;2;FUT;LGSPEC2,1,5
+1551,gunge,gungt,V;IND;SG;3;PRS,1,5
+1552,bååge,bååget,V;IND;SG;3;PRS,1,5
+1553,maage,maage,V;IMP;SG,1,5
+1554,pluuge,pluug,V;IND;DU;2;PRS,1,5
+1555,bring,broocht,V;PFV;IND;PL;1;PST,1,5
+1556,röp,skel röp,V;IND;SG;3;FUT;LGSPEC1,1,5
+1557,kaame,wårst kaame,V;IND;SG;2;FUT;LGSPEC1,1,5
+1558,maage,wel maage,V;IND;PL;1;FUT;LGSPEC2,1,5
+1559,fu,skel fu,V;IND;PL;1;FUT;LGSPEC1,1,5
+1560,breeg,haa breegen,V;PRF;IND;DU;1;PST,1,5
+1561,spreege,hääwe spräägen,V;PRF;IND;PL;3;PST,1,5
+1562,bliiw,bliiw,V;IND;PL;1;PRS,1,5
+1563,mötj,mönje,V;IND;PL;1;PRS,1,5
+1564,booge,häin booged,V;PRF;IND;DU;2;PST+RMT,1,5
+1565,jeewe,hääwe jääwen,V;PRF;IND;PL;3;PST,1,5
+1566,bliiw,skel bliiw,V;IND;DU;1;FUT;LGSPEC1,1,5
+1567,bine,hääwe bünen,V;PRF;IND;PL;3;PST,1,5
+1568,greewe,greewe,V;NFIN,1,5
+1569,jiiw,skel jiiw,V;IND;DU;2;FUT;LGSPEC1,1,5
+1570,wel,wel wel,V;IND;PL;2;FUT;LGSPEC2,1,5
+1571,nem,skel nem,V;IND;PL;2;FUT;LGSPEC1,1,5
+1572,wees,wiar,V;PFV;IND;PL;1;PST,1,5
+1573,fraage,hed fraaget,V;PRF;IND;SG;1;PST+RMT,1,5
+1574,gunge,gängen,V;PFV;IND;PL;2;PST,1,5
+1575,skriiw,skreew,V;PFV;IND;SG;1;PST,1,5
+1576,greew,gruf,V;PFV;IND;SG;1;PST,1,5
+1577,kem,kaam,V;PFV;IND;PL;1;PST,1,5
+1578,fu,feist,V;IND;SG;2;PRS,1,5
+1579,koone,wårt koone,V;IND;SG;3;FUT;LGSPEC1,1,5
+1580,gripe,hääwe gram,V;PRF;IND;PL;1;PST,1,5
+1581,heewe,hääw,V;IND;SG;1;PRS,1,5
+1582,heelpe,häi hülpen,V;PRF;IND;SG;1;PST+RMT,1,5
+1583,bååge,heet båågen,V;PRF;IND;SG;3;PST,1,5
+1584,kem,kem,V;IMP;SG,1,5
+1585,wel,wal wel,V;IND;SG;3;FUT;LGSPEC2,1,5
+1586,lees,leesen,V.PTCP;PST,1,5
+1587,bliwe,bliif,V;PFV;IND;SG;1;PST,1,5
+1588,du,hed den,V;PRF;IND;PL;3;PST+RMT,1,5
+1589,jiiw,jiiw,V;IMP;SG,1,5
+1590,bliiw,wiar blewen,V;PRF;IND;DU;1;PST+RMT,1,5
+1591,bring,wel bring,V;IND;PL;1;FUT;LGSPEC2,1,5
+1592,mååge,mååged,V;PFV;IND;SG;3;PST,1,5
+1593,dreeg,dreeg,V;IND;SG;1;PRS,1,5
+1594,breege,häin bräägen,V;PRF;IND;PL;1;PST+RMT,1,5
+1595,heewe,häin hädj,V;PRF;IND;DU;1;PST+RMT,1,5
+1596,pluuge,haa pluuget,V;PRF;IND;SG;1;PST,1,5
+1597,heewe,heet hädj,V;PRF;IND;SG;3;PST,1,5
+1598,koone,hääwe kööt,V;PRF;IND;PL;3;PST,1,5
+1599,jeewe,häin jääwen,V;PRF;IND;DU;1;PST+RMT,1,5
+1600,ferjeese,ferjin,V;IMP;SG,1,5
+1601,du,hedst den,V;PRF;IND;SG;2;PST+RMT,1,5
+1602,teenk,toochst,V;PFV;IND;SG;2;PST,1,5
+1603,greewe,gröifen,V;PFV;IND;PL;3;PST,1,5
+1604,beskriiw,beskrafst,V;IND;SG;2;PRS,1,5
+1605,bliiw,san blewen,V;PRF;IND;PL;1;PST,1,5
+1606,skriiw,tu skriiwen,V;NFIN,1,5
+1607,mååge,måågeden,V;PFV;IND;PL;1;PST,1,5
+1608,du,diad,V;PFV;IND;PL;3;PST,1,5
+1609,weese,wus wään,V;PRF;IND;SG;3;PST+RMT,1,5
+1610,fu,haa fingen,V;PRF;IND;PL;1;PST,1,5
+1611,mååge,hääwe mååged,V;PRF;IND;DU;2;PST,1,5
+1612,dreeg,drait,V;IND;SG;3;PRS,1,5
+1613,beskriiw,beskriiw,V;IND;DU;1;PRS,1,5
+1614,stridj,wal stridj,V;IND;SG;3;FUT;LGSPEC2,1,5
+1615,spreege,spräk,V;PFV;IND;SG;1;PST,1,5
+1616,fraage,hed fraaget,V;PRF;IND;SG;3;PST+RMT,1,5
+1617,nem,nem,V;IND;PL;1;PRS,1,5
+1618,jooge,wård jooge,V;IND;SG;1;FUT;LGSPEC1,1,5
+1619,weese,san,V;IND;PL;1;PRS,1,5
+1620,dreeg,dreeg,V;IND;PL;1;PRS,1,5
+1621,teenk,toocht,V;PFV;IND;PL;2;PST,1,5
+1622,wan,want,V;IND;SG;3;PRS,1,5
+1623,weese,wjarn,V;PFV;IND;DU;2;PST,1,5
+1624,weese,san,V;IND;PL;2;PRS,1,5
+1625,röp,wel röp,V;IND;SG;3;FUT;LGSPEC2,1,5
+1626,ferliise,häist ferlääsen,V;PRF;IND;SG;2;PST+RMT,1,5
+1627,wees,san,V;IND;DU;2;PRS,1,5
+1628,greewe,hääwe grääwen,V;PRF;IND;PL;3;PST,1,5
+1629,ferjeese,ferjeese,V;IND;PL;3;PRS,1,5
+1630,bliwe,bliif,V;PFV;IND;SG;3;PST,1,5
+1631,drank,drankst,V;IND;SG;2;PRS,1,5
+1632,greew,hed greewen,V;PRF;IND;SG;1;PST+RMT,1,5
+1633,haa,hed,V;PFV;IND;PL;2;PST,1,5
+1634,ferjeese,ferjätjen,V;PFV;IND;PL;1;PST,1,5
+1635,wees,wel wees,V;IND;PL;3;FUT;LGSPEC2,1,5
+1636,röp,wel röp,V;IND;DU;1;FUT;LGSPEC2,1,5
+1637,stridj,skal stridj,V;IND;SG;3;FUT;LGSPEC1,1,5
+1638,jeewe,jeewe,V;IND;DU;1;PRS,1,5
+1639,teenk,wel teenk,V;IND;PL;2;FUT;LGSPEC2,1,5
+1640,bring,hed broocht,V;PRF;IND;PL;3;PST+RMT,1,5
+1641,gunge,wjarn gängen,V;PRF;IND;PL;1;PST+RMT,1,5
+1642,skriiw,hed skrewen,V;PRF;IND;PL;1;PST+RMT,1,5
+1643,beskriiw,hed beskrewen,V;PRF;IND;PL;2;PST+RMT,1,5
+1644,fraage,fraaget,V;PFV;IND;DU;2;PST,1,5
+1645,beskriiw,haa beskrewen,V;PRF;IND;DU;1;PST,1,5
+1646,haa,hed hed,V;PRF;IND;PL;3;PST+RMT,1,5
+1647,heewe,heet,V;IND;SG;3;PRS,1,5
+1648,weese,waos wään,V;PRF;IND;SG;1;PST+RMT,1,5
+1649,booge,wårst booge,V;IND;SG;2;FUT;LGSPEC1,1,5
+1650,frååge,häin frååged,V;PRF;IND;PL;2;PST+RMT,1,5
+1651,fraage,haa fraaget,V;PRF;IND;SG;1;PST,1,5
+1652,heelpe,wård heelpe,V;IND;SG;1;FUT;LGSPEC1,1,5
+1653,ferliise,wårt ferliise,V;IND;SG;3;FUT;LGSPEC1,1,5
+1654,mötj,muurst,V;PFV;IND;SG;2;PST,1,5
+1655,fraage,skel fraage,V;IND;DU;1;FUT;LGSPEC1,1,5
+1656,fine,fünen,V;PFV;IND;DU;2;PST,1,5
+1657,greewe,gröifen,V;PFV;IND;DU;2;PST,1,5
+1658,fine,hääwe fünen,V;PRF;IND;DU;1;PST,1,5
+1659,bine,tu binen,V;NFIN,1,5
+1660,dreeg,druch,V;PFV;IND;PL;3;PST,1,5
+1661,koone,köön,V;PFV;IND;PL;2;PST,1,5
+1662,bliwe,bliifen,V;PFV;IND;PL;2;PST,1,5
+1663,pluuge,skel pluuge,V;IND;DU;1;FUT;LGSPEC1,1,5
+1664,skriiw,skel skriiw,V;IND;DU;2;FUT;LGSPEC1,1,5
+1665,skriiw,skel skriiw,V;IND;DU;1;FUT;LGSPEC1,1,5
+1666,spreege,häin spräägen,V;PRF;IND;PL;1;PST+RMT,1,5
+1667,mötj,häist muurst,V;PRF;IND;SG;2;PST+RMT,1,5
+1668,heewe,hädj,V.PTCP;PST,1,5
+1669,wel,skal wel,V;IND;SG;1;FUT;LGSPEC1,1,5
+1670,weese,san,V;IND;PL;3;PRS,1,5
+1671,beskriiw,skal beskriiw,V;IND;SG;1;FUT;LGSPEC1,1,5
+1672,wel,wel,V;IND;DU;1;PRS,1,5
+1673,spreege,spreege,V;IND;DU;2;PRS,1,5
+1674,kem,kem,V;IND;DU;2;PRS,1,5
+1675,fraage,hed fraaget,V;PRF;IND;DU;1;PST+RMT,1,5
+1676,stridj,wel stridj,V;IND;DU;1;FUT;LGSPEC2,1,5
+1677,mååge,än mååg,V.PTCP;PST,1,5
+1678,drainke,hääwe drunken,V;PRF;IND;PL;1;PST,1,5
+1679,baag,wel baag,V;IND;PL;1;FUT;LGSPEC2,1,5
+1680,bliwe,as blaawen,V;PRF;IND;SG;3;PST,1,5
+1681,stridj,streed,V;PFV;IND;PL;3;PST,1,5
+1682,weese,san wään,V;PRF;IND;DU;1;PST,1,5
+1683,wel,hedst wulen,V;PRF;IND;SG;2;PST+RMT,1,5
+1684,faal,fäält,V;IND;SG;3;PRS,1,5
+1685,wees,wiarst,V;PFV;IND;SG;2;PST,1,5
+1686,bååge,bååge,V;IND;PL;3;PRS,1,5
+1687,nem,wel nem,V;IND;DU;1;FUT;LGSPEC2,1,5
+1688,wan,skel wan,V;IND;PL;2;FUT;LGSPEC1,1,5
+1689,weese,sän,V;IND;PL;3;PRS,1,5
+1690,düünj,dou,V;IND;SG;1;PRS,1,5
+1691,gunge,wjarn gängen,V;PRF;IND;PL;3;PST+RMT,1,5
+1692,wan,woon,V;PFV;IND;DU;1;PST,1,5
+1693,heelpe,hülpen,V;PFV;IND;DU;2;PST,1,5
+1694,haa,skel haa,V;IND;PL;1;FUT;LGSPEC1,1,5
+1695,bliwe,san blaawen,V;PRF;IND;PL;2;PST,1,5
+1696,pluuge,wal pluuge,V;IND;SG;3;FUT;LGSPEC2,1,5
+1697,kem,skal kem,V;IND;SG;3;FUT;LGSPEC1,1,5
+1698,dreege,häin dräägen,V;PRF;IND;PL;2;PST+RMT,1,5
+1699,jooge,hääwe läägen,V;PRF;IND;DU;1;PST,1,5
+1700,jeewe,hääst jääwen,V;PRF;IND;SG;2;PST,1,5
+1701,kaame,kaame,V;IND;DU;2;PRS,1,5
+1702,heewe,hääw hädj,V;PRF;IND;SG;1;PST,1,5
+1703,faal,beest feelen,V;PRF;IND;SG;2;PST,1,5
+1704,breeg,wel breeg,V;IND;DU;2;FUT;LGSPEC2,1,5
+1705,skriiw,haa skrewen,V;PRF;IND;DU;1;PST,1,5
+1706,booge,boogest,V;IND;SG;2;PRS,1,5
+1707,dreeg,druch,V;PFV;IND;DU;1;PST,1,5
+1708,jiiw,jufst,V;PFV;IND;SG;2;PST,1,5
+1709,dreege,dreege,V;IND;PL;3;PRS,1,5
+1710,faal,faal,V;IND;SG;1;PRS,1,5
+1711,wel,wel,V;NFIN,1,5
+1712,heewe,häin,V;PFV;IND;PL;2;PST,1,5
+1713,dreege,wårde dreege,V;IND;DU;2;FUT;LGSPEC1,1,5
+1714,ferjeese,heet ferjin,V;PRF;IND;SG;3;PST,1,5
+1715,du,du,V;IND;DU;1;PRS,1,5
+1716,baag,wel baag,V;IND;DU;2;FUT;LGSPEC2,1,5
+1717,breeg,skel breeg,V;IND;PL;3;FUT;LGSPEC1,1,5
+1718,skriiw,skriiw,V;NFIN,1,5
+1719,haa,tu haaen,V;NFIN,1,5
+1720,kem,san kimen,V;PRF;IND;PL;1;PST,1,5
+1721,lees,wel lees,V;IND;PL;1;FUT;LGSPEC2,1,5
+1722,dreeg,haa draanjen,V;PRF;IND;SG;1;PST,1,5
+1723,breeg,bruch,V;PFV;IND;SG;1;PST,1,5
+1724,gunge,bast gängen,V;PRF;IND;SG;2;PST,1,5
+1725,jiiw,skel jiiw,V;IND;PL;2;FUT;LGSPEC1,1,5
+1726,heelpe,häin hülpen,V;PRF;IND;DU;2;PST+RMT,1,5
+1727,greewe,häin grääwen,V;PRF;IND;DU;1;PST+RMT,1,5
+1728,beskriiw,beskriiw,V;IMP;SG,1,5
+1729,gripe,wårde gripe,V;IND;DU;2;FUT;LGSPEC1,1,5
+1730,pluuge,hed pluuget,V;PRF;IND;DU;2;PST+RMT,1,5
+1731,frååge,wårt frååge,V;IND;SG;3;FUT;LGSPEC1,1,5
+1732,jooge,jooge,V;IND;PL;3;PRS,1,5
+1733,wel,hed wulen,V;PRF;IND;SG;1;PST+RMT,1,5
+1734,baag,skel baag,V;IND;DU;2;FUT;LGSPEC1,1,5
+1735,gripe,bååge,V;IND;PL;2;PRS,1,5
+1736,maage,hed maaget,V;PRF;IND;SG;1;PST+RMT,1,5
+1737,bring,haa broocht,V;PRF;IND;PL;3;PST,1,5
+1738,heelpe,wårde heelpe,V;IND;PL;3;FUT;LGSPEC1,1,5
+1739,fraage,fraaget,V;PFV;IND;SG;3;PST,1,5
+1740,faal,wiar feelen,V;PRF;IND;SG;1;PST+RMT,1,5
+1741,greewe,gröif,V;PFV;IND;SG;3;PST,1,5
+1742,jiiw,wal jiiw,V;IND;SG;1;FUT;LGSPEC2,1,5
+1743,fine,häi fünen,V;PRF;IND;SG;3;PST+RMT,1,5
+1744,dreeg,hee draanjen,V;PRF;IND;SG;3;PST,1,5
+1745,drank,wel drank,V;IND;DU;1;FUT;LGSPEC2,1,5
+1746,dreege,hääwe dräägen,V;PRF;IND;PL;1;PST,1,5
+1747,bine,bünen,V;IMP;SG,1,5
+1748,kaame,kiimen,V;IMP;SG,1,5
+1749,drank,drank,V;IMP;SG,1,5
+1750,röp,röp,V;NFIN,1,5
+1751,weese,wårde weese,V;IND;DU;2;FUT,1,5
+1752,ferjeese,häi ferjin,V;PRF;IND;SG;3;PST+RMT,1,5
+1753,breege,breecht,V;IND;SG;3;PRS,1,5
+1754,wees,wiar,V;PFV;IND;SG;3;PST,1,5
+1755,drainke,drunken,V;PFV;IND;PL;1;PST,1,5
+1756,gunge,gung,V;IMP;PL,1,5
+1757,nem,nem,V;IND;DU;1;PRS,1,5
+1758,mååge,hääwe mååged,V;PRF;IND;PL;2;PST,1,5
+1759,drank,wel drank,V;IND;PL;1;FUT;LGSPEC2,1,5
+1760,wees,skal wees,V;IND;SG;1;FUT;LGSPEC1,1,5
+1761,nem,nem,V;IND;DU;2;PRS,1,5
+1762,beskriiw,beskreew,V;PFV;IND;DU;2;PST,1,5
+1763,haa,haa,V;IMP;SG,1,5
+1764,jiiw,juf,V;PFV;IND;PL;1;PST,1,5
+1765,jeewe,tu jeewen,V;NFIN,1,5
+1766,gripe,häin gram,V;PRF;IND;DU;2;PST+RMT,1,5
+1767,faal,faal,V;IND;PL;3;PRS,1,5
+1768,teenk,tu teenken,V;NFIN,1,5
+1769,beskriiw,beskreew,V;PFV;IND;SG;3;PST,1,5
+1770,bliiw,wääl bliiw,V;IND;SG;2;FUT;LGSPEC2,1,5
+1771,fu,feest,V;IND;SG;2;PRS,1,5
+1772,bring,brangt,V;IND;SG;3;PRS,1,5
+1773,bring,skel bring,V;IND;DU;2;FUT;LGSPEC1,1,5
+1774,heewe,än heew,V;NFIN,1,5
+1775,bååge,böken,V;PFV;IND;DU;1;PST,1,5
+1776,greewe,hääwe grääwen,V;PRF;IND;DU;2;PST,1,5
+1777,röp,röp,V;IND;PL;2;PRS,1,5
+1778,kem,skel kem,V;IND;PL;2;FUT;LGSPEC1,1,5
+1779,du,heest den,V;PRF;IND;SG;2;PST,1,5
+1780,skriiw,haa skrewen,V;PRF;IND;PL;2;PST,1,5
+1781,fraage,skal fraage,V;IND;SG;1;FUT;LGSPEC1,1,5
+1782,du,skel du,V;IND;PL;2;FUT;LGSPEC1,1,5
+1783,drank,drank,V;IND;DU;1;PRS,1,5
+1784,booge,häin booged,V;PRF;IND;DU;1;PST+RMT,1,5
+1785,faal,wääl faal,V;IND;SG;2;FUT;LGSPEC2,1,5
+1786,maage,hed maaget,V;PRF;IND;PL;2;PST+RMT,1,5
+1787,frååge,frååge,V;IND;DU;1;PRS,1,5
+1788,wan,wan,V;IND;PL;1;PRS,1,5
+1789,breeg,wel breeg,V;IND;PL;1;FUT;LGSPEC2,1,5
+1790,bliiw,wiar blewen,V;PRF;IND;PL;1;PST+RMT,1,5
+1791,jooge,luuch,V;PFV;IND;SG;3;PST,1,5
+1792,jeewe,häi jääwen,V;PRF;IND;SG;1;PST+RMT,1,5
+1793,bring,broochst,V;PFV;IND;SG;2;PST,1,5
+1794,bliiw,bleew,V;PFV;IND;PL;3;PST,1,5
+1795,jeewe,hääwe jääwen,V;PRF;IND;DU;2;PST,1,5
+1796,fraage,wel fraage,V;IND;PL;2;FUT;LGSPEC2,1,5
+1797,breege,breege,V;IND;DU;1;PRS,1,5
+1798,haa,hed,V;PFV;IND;DU;1;PST,1,5
+1799,wel,wul,V;PFV;IND;DU;2;PST,1,5
+1800,stridj,stridj'em,V;IMP;PL,1,5
+1801,wel,skel wel,V;IND;PL;3;FUT;LGSPEC1,1,5
+1802,fraage,wel fraage,V;IND;DU;2;FUT;LGSPEC2,1,5
+1803,baag,haa beegen,V;PRF;IND;SG;1;PST,1,5
+1804,kem,beest kimen,V;PRF;IND;SG;2;PST,1,5
+1805,bååge,hääw båågen,V;PRF;IND;SG;1;PST,1,5
+1806,baag,buch,V;PFV;IND;PL;3;PST,1,5
+1807,wel,skal wel,V;IND;SG;3;FUT;LGSPEC1,1,5
+1808,bliiw,skel bliiw,V;IND;PL;2;FUT;LGSPEC1,1,5
+1809,bine,häi bünen,V;PRF;IND;SG;3;PST+RMT,1,5
+1810,fu,skääl fu,V;IND;SG;2;FUT;LGSPEC1,1,5
+1811,wan,wel wan,V;IND;PL;1;FUT;LGSPEC2,1,5
+1812,fu,fu,V;IND;PL;2;PRS,1,5
+1813,wel,wul,V;PFV;IND;PL;3;PST,1,5
+1814,greew,hed greewen,V;PRF;IND;PL;2;PST+RMT,1,5
+1815,jiiw,wal jiiw,V;IND;SG;3;FUT;LGSPEC2,1,5
+1816,wees,san,V;IND;PL;2;PRS,1,5
+1817,lees,lus,V;PFV;IND;SG;3;PST,1,5
+1818,bååge,wårde bååge,V;IND;PL;3;FUT;LGSPEC1,1,5
+1819,weese,sän,V;IND;PL;1;PRS,1,5
+1820,ferliise,häi ferlääsen,V;PRF;IND;SG;3;PST+RMT,1,5
+1821,du,du,V;IND;PL;2;PRS,1,5
+1822,bine,bünen,V;PFV;IND;DU;2;PST,1,5
+1823,wel,wel wel,V;IND;DU;2;FUT;LGSPEC2,1,5
+1824,kem,kaam,V;PFV;IND;DU;1;PST,1,5
+1825,beskriiw,skel beskriiw,V;IND;DU;1;FUT;LGSPEC1,1,5
+1826,bååge,wårde bååge,V;IND;PL;2;FUT;LGSPEC1,1,5
+1827,dreeg,wel dreeg,V;IND;PL;1;FUT;LGSPEC2,1,5
+1828,bliiw,wel bliiw,V;IND;PL;1;FUT;LGSPEC2,1,5
+1829,haa,haa,V;IND;PL;3;PRS,1,5
+1830,breeg,skal breeg,V;IND;SG;3;FUT;LGSPEC1,1,5
+1831,fu,wel fu,V;IND;PL;1;FUT;LGSPEC2,1,5
+1832,maage,maage,V;IND;PL;2;PRS,1,5
+1833,jooge,hääwe läägen,V;PRF;IND;PL;1;PST,1,5
+1834,düünj,hääst dänj,V;PRF;IND;SG;2;PST,1,5
+1835,jiiw,jiiw,V;IND;DU;2;PRS,1,5
+1836,röp,rööpen,V.PTCP;PST,1,5
+1837,haa,hed hed,V;PRF;IND;SG;3;PST+RMT,1,5
+1838,düünj,häin dänj,V;PRF;IND;PL;1;PST+RMT,1,5
+1839,teenk,teenk,V;IND;SG;1;PRS,1,5
+1840,mååge,hääwe mååged,V;PRF;IND;PL;3;PST,1,5
+1841,heewe,schin heewe,V;IND;PL;1;FUT;LGSPEC1,1,5
+1842,bååge,häin båågen,V;PRF;IND;PL;1;PST+RMT,1,5
+1843,düünj,wård düünj,V;IND;SG;1;FUT;LGSPEC1,1,5
+1844,dreeg,skel dreeg,V;IND;PL;1;FUT;LGSPEC1,1,5
+1845,breeg,skel breeg,V;IND;PL;1;FUT;LGSPEC1,1,5
+1846,nem,nimen,V.PTCP;PST,1,5
+1847,jeewe,jäifen,V;PFV;IND;PL;1;PST,1,5
+1848,haa,haa,V;IND;PL;2;PRS,1,5
+1849,mååge,måågedst,V;PFV;IND;SG;2;PST,1,5
+1850,du,diad,V;PFV;IND;PL;2;PST,1,5
+1851,greew,gruf,V;PFV;IND;PL;2;PST,1,5
+1852,frååge,heet frååged,V;PRF;IND;SG;3;PST,1,5
+1853,stridj,stridj,V;IND;PL;2;PRS,1,5
+1854,gunge,gunge,V;IND;PL;1;PRS,1,5
+1855,beskriiw,wel beskriiw,V;IND;DU;2;FUT;LGSPEC2,1,5
+1856,fine,wårde fine,V;IND;PL;2;FUT;LGSPEC1,1,5
+1857,mååge,häin mååged,V;PRF;IND;DU;1;PST+RMT,1,5
+1858,jooge,häin läägen,V;PRF;IND;PL;2;PST+RMT,1,5
+1859,bring,wal bring,V;IND;SG;3;FUT;LGSPEC2,1,5
+1860,fine,hääwe fünen,V;PRF;IND;PL;3;PST,1,5
+1861,beskriiw,wel beskriiw,V;IND;PL;1;FUT;LGSPEC2,1,5
+1862,jeewe,jeewe,V;NFIN,1,5
+1863,drainke,drunken,V;PFV;IND;PL;3;PST,1,5
+1864,wees,wel wees,V;IND;DU;1;FUT;LGSPEC2,1,5
+1865,düünj,häin dänj,V;PRF;IND;PL;2;PST+RMT,1,5
+1866,du,wääl du,V;IND;SG;2;FUT;LGSPEC2,1,5
+1867,wel,hed wulen,V;PRF;IND;DU;2;PST+RMT,1,5
+1868,breeg,breegen,V.PTCP;PST,1,5
+1869,kem,kaamst,V;PFV;IND;SG;2;PST,1,5
+1870,gunge,tu gungen,V;NFIN,1,5
+1871,fine,fine,V;IND;PL;2;PRS,1,5
+1872,booge,hääst booged,V;PRF;IND;SG;2;PST,1,5
+1873,jiiw,juf,V;PFV;IND;DU;1;PST,1,5
+1874,jooge,heet läägen,V;PRF;IND;SG;3;PST,1,5
+1875,ferliise,häin ferlääsen,V;PRF;IND;PL;1;PST+RMT,1,5
+1876,ferjeese,hääst ferjin,V;PRF;IND;SG;2;PST,1,5
+1877,drank,haa dronken,V;PRF;IND;DU;1;PST,1,5
+1878,bine,wårst bine,V;IND;SG;2;FUT;LGSPEC1,1,5
+1879,spreege,spräägen,V;IMP;SG,1,5
+1880,gunge,wårde gunge,V;IND;DU;1;FUT;LGSPEC1,1,5
+1881,bliiw,san blewen,V;PRF;IND;DU;1;PST,1,5
+1882,mötj,hääwe muurst,V;PRF;IND;PL;1;PST,1,5
+1883,jeewe,häin jääwen,V;PRF;IND;PL;2;PST+RMT,1,5
+1884,jiiw,juf,V;PFV;IND;SG;1;PST,1,5
+1885,wan,wan,V;IND;PL;3;PRS,1,5
+1886,haa,hed,V;PFV;IND;SG;3;PST,1,5
+1887,weese,wjarn wään,V;PRF;IND;PL;1;PST+RMT,1,5
+1888,nem,wääl nem,V;IND;SG;2;FUT;LGSPEC2,1,5
+1889,ferjeese,hääwe ferjin,V;PRF;IND;PL;2;PST,1,5
+1890,heelpe,hääst hülpen,V;PRF;IND;SG;2;PST,1,5
+1891,greewe,wårt greewe,V;IND;SG;3;FUT;LGSPEC1,1,5
+1892,bååge,häi båågen,V;PRF;IND;SG;3;PST+RMT,1,5
+1893,drainke,hääst drunken,V;PRF;IND;SG;2;PST,1,5
+1894,gunge,gunge,V;IND;DU;1;PRS,1,5
+1895,röp,skel röp,V;IND;PL;1;FUT;LGSPEC1,1,5
+1896,breege,bräken,V;PFV;IND;PL;3;PST,1,5
+1897,drainke,häi drunken,V;PRF;IND;SG;1;PST+RMT,1,5
+1898,bliwe,bliifen,V;PFV;IND;DU;2;PST,1,5
+1899,heelpe,heet hülpen,V;PRF;IND;SG;3;PST,1,5
+1900,heewe,häin,V;PFV;IND;PL;3;PST,1,5
+1901,skriiw,haa skrewen,V;PRF;IND;SG;1;PST,1,5

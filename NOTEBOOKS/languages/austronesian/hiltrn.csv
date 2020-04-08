@@ -1,0 +1,860 @@
+,lemma,form,tags,family,language
+0,istar,istar,V;NFIN,2,2
+1,dalagan,nagdalagan,V;PROG;PST,2,2
+2,tudlo,magatudlo,V;FUT,2,2
+3,tudlo,nagatudlo,V;PRS,2,2
+4,desisyon,nagadesisyon pa,V;PRF+PROG;PRS,2,2
+5,tapos,ginatapos pa,V;PRF+PROG;PRS,2,2
+6,higda,naghigda na,V;PRF;PST,2,2
+7,baligya,nagbaligya,V;PROG;PST,2,2
+8,tuon,magatuon,V;PROG;FUT,2,2
+9,tabo/katabo,matabo na,V;PRF;FUT,2,2
+10,agda,ginaagda na,V;PRF;PRS,2,2
+11,paathag,paathag,V;NFIN,2,2
+12,yuhom,nagayuhom,V;PROG;PRS,2,2
+13,hular,naghular,V;PST,2,2
+14,higugma/higugmaon,ginhigugma,V;PST,2,2
+15,byahe,magabyahe,V;FUT,2,2
+16,pamangkot,nagapamangkot pa,V;PRF+PROG;PRS,2,2
+17,pili,nagpili pa,V;PRF+PROG;PST,2,2
+18,dalagan,magadalagan,V;PROG;FUT,2,2
+19,basa,magabasa pa,V;PRF+PROG;FUT,2,2
+20,hambal,magahambal pa,V;PRF+PROG;FUT,2,2
+21,gamit,magagamit na,V;PRF;FUT,2,2
+22,lupad,naglupad,V;PROG;PST,2,2
+23,away,nag-away na,V;PRF;PST,2,2
+24,pili,nagapili,V;PROG;PRS,2,2
+25,daw,daw,V;NFIN,2,2
+26,bakal,nagbakal,V;PST,2,2
+27,dalagan,magadalagan na,V;PRF;FUT,2,2
+28,kanta,kanta,V;NFIN,2,2
+29,tawag,nagatawag,V;PROG;PRS,2,2
+30,baton,magabaton,V;PROG;FUT,2,2
+31,hular,nagahular,V;PROG;PRS,2,2
+32,maneho,maneho,V;NFIN,2,2
+33,tuon,magatuon,V;FUT,2,2
+34,tawag,tawag,V;NFIN,2,2
+35,desisyon,nagdesisyon pa,V;PRF+PROG;PST,2,2
+36,talupangdan/talupangod/talupangdon,natalupangdan na,V;PRF;PRS,2,2
+37,sugod,nagsugod pa,V;PRF+PROG;PST,2,2
+38,uyat/uyatan,ginauyatan,V;PRS,2,2
+39,istorya,magaistorya,V;FUT,2,2
+40,kanta,nagakanta,V;PRS,2,2
+41,byahe,magabyahe pa,V;PRF+PROG;FUT,2,2
+42,balik,nagabalik,V;PRS,2,2
+43,ginhawa,nagginhawa na,V;PRF;PST,2,2
+44,singgit,nagasinggit,V;PROG;PRS,2,2
+45,tawag,nagtawag pa,V;PRF+PROG;PST,2,2
+46,pamangkot,nagpamangkot pa,V;PRF+PROG;PST,2,2
+47,hibalo/hibaluan,ginhibalo pa,V;PRF+PROG;PST,2,2
+48,buksan,pagabuksan na,V;PRF;FUT,2,2
+49,dula,gindula,V;PROG;PST,2,2
+50,saot,nagsaot,V;PST,2,2
+51,tabo/katabo,natabo,V;PST,2,2
+52,kallimtan,ginakallimtan,V;PROG;PRS,2,2
+53,hunahuna,naghunahuna,V;PST,2,2
+54,inom,magainom,V;PROG;FUT,2,2
+55,mangin/nangin,nangin,V;PRF+PROG;PST,2,2
+56,baton,ginabaton,V;PRS,2,2
+57,kuha,nagakuha pa,V;PRF+PROG;PRS,2,2
+58,gustuhan,nagustuhan,V;PRS,2,2
+59,kallimtan,ginkallimtan pa,V;PRF+PROG;PST,2,2
+60,balik,balik,V;NFIN,2,2
+61,dugang,magadugang pa,V;PRF+PROG;FUT,2,2
+62,sabat,ginsabat na,V;PRF;PST,2,2
+63,tawag,nagatawag na,V;PRF;PRS,2,2
+64,sugata,nagasugata,V;PROG;PRS,2,2
+65,pakita,nagpakita pa,V;PRF+PROG;PST,2,2
+66,kanta,nagakanta pa,V;PRF+PROG;PRS,2,2
+67,tapos,ginatapos na,V;PRF;PRS,2,2
+68,halok/halukan,ginhalukan,V;PROG;PST,2,2
+69,uyat/uyatan,gin-uyatan pa,V;PRF+PROG;PST,2,2
+70,istar,magaistar na,V;PRF;FUT,2,2
+71,bulig/buligan,ginabuligan pa,V;PRF+PROG;PRS,2,2
+72,pungko,nagapungko pa,V;PRF+PROG;PRS,2,2
+73,dalagan,nagdalagan pa,V;PRF+PROG;PST,2,2
+74,saot,magasaot pa,V;PRF+PROG;FUT,2,2
+75,yuhom,nagyuhom pa,V;PRF+PROG;PST,2,2
+76,pamangkot,nagpamangkot,V;PROG;PST,2,2
+77,pakilala,nagapakilala na,V;PRF;PRS,2,2
+78,hangop/hangpan,mahangpan pa,V;PRF+PROG;FUT,2,2
+79,padala,nagpadala,V;PST,2,2
+80,sugod,magasugod,V;PROG;FUT,2,2
+81,obra,nagaobra na,V;PRF;PRS,2,2
+82,maneho,magamaneho,V;FUT,2,2
+83,byahe,nagabyahe na,V;PRF;PRS,2,2
+84,kallimtan,ginkallimtan,V;PROG;PST,2,2
+85,butang,magabutang,V;FUT,2,2
+86,kuha,magakuha,V;PROG;FUT,2,2
+87,kadlaw,nagakadlaw pa,V;PRF+PROG;PRS,2,2
+88,hunahuna,magahunahuna pa,V;PRF+PROG;FUT,2,2
+89,singgit,magasinggit na,V;PRF;FUT,2,2
+90,aku,nag-aku,V;PROG;PST,2,2
+91,tandog,nagtandog,V;PROG;PST,2,2
+92,basa,nagbasa na,V;PRF;PST,2,2
+93,kita,makita na,V;PRF;FUT,2,2
+94,paathag,nagapaathag,V;PRS,2,2
+95,kita,nakita,V;PROG;PST,2,2
+96,talupangdan/talupangod/talupangdon,matalupangdon,V;FUT,2,2
+97,uyat/uyatan,magauyat pa,V;PRF+PROG;FUT,2,2
+98,basa,nagabasa,V;PRS,2,2
+99,agda,magaagda,V;PROG;FUT,2,2
+100,kado,magakado pa,V;PRF+PROG;FUT,2,2
+101,tabo/katabo,natabo pa,V;PRF+PROG;PST,2,2
+102,dalagan,nagadalagan pa,V;PRF+PROG;PRS,2,2
+103,saot,magasaot,V;PROG;FUT,2,2
+104,balik,nagabalik,V;PROG;PRS,2,2
+105,hampang,magahampang na,V;PRF;FUT,2,2
+106,baton,ginabaton,V;PROG;PRS,2,2
+107,bati/batian/pamatian,ginpamantian,V;PROG;PRS,2,2
+108,sulit,ginasulit,V;PROG;PRS,2,2
+109,batyag,nagbatyag na,V;PRF;PST,2,2
+110,hular,hular,V;NFIN,2,2
+111,abot,magaabot na,V;PRF;FUT,2,2
+112,kaon,kaon,V;NFIN,2,2
+113,pamati,nagpamati,V;PROG;PST,2,2
+114,tindog,magatindog pa,V;PRF+PROG;FUT,2,2
+115,tan-aw,magatan-aw,V;FUT,2,2
+116,patay/tagumatayon,napatay,V;PST,2,2
+117,kabuhi,nagakabuhi,V;PROG;PRS,2,2
+118,batyag,batyag,V;NFIN,2,2
+119,kallimtan,ginakallimtan na,V;PRF;PRS,2,2
+120,hibi,nagahibi,V;PRS,2,2
+121,saot,magasaot,V;FUT,2,2
+122,pamati,nagapamati,V;PROG;PRS,2,2
+123,daog,nag-daog na,V;PRF;PST,2,2
+124,padala,nagapadala,V;PROG;PRS,2,2
+125,sira,magasira,V;FUT,2,2
+126,sulat,nagsulat pa,V;PRF+PROG;PST,2,2
+127,kaon,magakaon pa,V;PRF+PROG;FUT,2,2
+128,balik,nagbalik,V;PROG;PST,2,2
+129,kabuhi,nagkabuhi,V;PROG;PST,2,2
+130,lakat,magalakat pa,V;PRF+PROG;FUT,2,2
+131,balik,magabalik na,V;PRF;FUT,2,2
+132,aku,ginaaku na,V;PRF;PRS,2,2
+133,ginhawa,ginhawa,V;NFIN,2,2
+134,paathag,nagpaathag na,V;PRF;PST,2,2
+135,kabuhi,nagakabuhi,V;PRS,2,2
+136,gamit,naggamit pa,V;PRF+PROG;PST,2,2
+137,tuon,nagatuon,V;PROG;PRS,2,2
+138,daw,daw,V;PRF;PST,2,2
+139,pungko,magapungko,V;PROG;FUT,2,2
+140,bakal,magabakal,V;FUT,2,2
+141,bulig/buligan,ginabuligan,V;PROG;PRS,2,2
+142,kaon,nagkaon,V;PROG;PST,2,2
+143,pili,nagpili,V;PST,2,2
+144,hular,naghular na,V;PRF;PST,2,2
+145,hampang,naghampang,V;PST,2,2
+146,hibi,magahibi pa,V;PRF+PROG;FUT,2,2
+147,kita,makita pa,V;PRF+PROG;FUT,2,2
+148,away,magaaway,V;FUT,2,2
+149,sira,magasira,V;PROG;FUT,2,2
+150,pili,nagapili,V;PRS,2,2
+151,tandog,tandog,V;NFIN,2,2
+152,abot,magaabot,V;FUT,2,2
+153,tulog,nagtulog,V;PROG;PST,2,2
+154,lakat,nagalakat,V;PROG;PRS,2,2
+155,balik,nagbalik,V;PST,2,2
+156,dalagan,magadalagan pa,V;PRF+PROG;FUT,2,2
+157,hibalo/hibaluan,nahibaluan,V;PST,2,2
+158,byahe,nagbyahe,V;PST,2,2
+159,tudlo,nagatudlo,V;PROG;PRS,2,2
+160,sulit,ginsulit pa,V;PRF+PROG;PST,2,2
+161,kita,nakita na,V;PRF;PRS,2,2
+162,daog,nagadaog,V;PRS,2,2
+163,mangin/nangin,mangin,V;PRF;FUT,2,2
+164,hampang,naghampang,V;PROG;PST,2,2
+165,hangop/hangpan,nahangpan na,V;PRF;PST,2,2
+166,hampang,nagahampang na,V;PRF;PRS,2,2
+167,butang,nagabutang pa,V;PRF+PROG;PRS,2,2
+168,uyat/uyatan,ginauyatan pa,V;PRF+PROG;PRS,2,2
+169,nagon,nagnagon pa,V;PRF+PROG;PST,2,2
+170,kabuhi,nagkabuhi na,V;PRF;PST,2,2
+171,buka,ginbuka na,V;PRF;PST,2,2
+172,istar,nagistar pa,V;PRF+PROG;PST,2,2
+173,abot,nagaabot,V;PROG;PRS,2,2
+174,hibi,magahibi,V;FUT,2,2
+175,tandog,nagtandog na,V;PRF;PST,2,2
+176,dumdom,gindumdom,V;PST,2,2
+177,baligya,magabaligya,V;PROG;FUT,2,2
+178,tindog,nagtindog na,V;PRF;PST,2,2
+179,gua,naggua pa,V;PRF+PROG;PST,2,2
+180,pamangkot,magapamangkot,V;FUT,2,2
+181,dalagan,nagdalagan,V;PST,2,2
+182,siling,nagsiling,V;PST,2,2
+183,hatag,magahatag,V;FUT,2,2
+184,dula,nadula,V;PRS,2,2
+185,sulod,magasulod,V;FUT,2,2
+186,buka,ginabuka,V;PROG;PRS,2,2
+187,sabat,magasabat na,V;PRF;FUT,2,2
+188,buhin,nagabuhin na,V;PRF;PRS,2,2
+189,kaon,nagakaon pa,V;PRF+PROG;PRS,2,2
+190,kaon,nagakaon na,V;PRF;PRS,2,2
+191,uyat/uyatan,magauyat na,V;PRF;FUT,2,2
+192,gustuhan,magustuhan,V;FUT,2,2
+193,baligya,baligya,V;NFIN,2,2
+194,istar,magaistar pa,V;PRF+PROG;FUT,2,2
+195,paathag,magapaathag,V;PROG;FUT,2,2
+196,dumdom,gindumdom,V;PROG;PST,2,2
+197,lakat,magalakat,V;PROG;FUT,2,2
+198,kita,nakita,V;PRS,2,2
+199,kaon,magakaon,V;PROG;FUT,2,2
+200,tawag,nagatawag pa,V;PRF+PROG;PRS,2,2
+201,lupad,magalupad na,V;PRF;FUT,2,2
+202,padala,nagpadala pa,V;PRF+PROG;PST,2,2
+203,hatag,magahatag na,V;PRF;FUT,2,2
+204,agda,gin-agda,V;PST,2,2
+205,daog,nag-daog,V;PST,2,2
+206,kanta,nagkanta,V;PROG;PST,2,2
+207,kuha,kuha,V;NFIN,2,2
+208,tulog,nagtulog pa,V;PRF+PROG;PST,2,2
+209,daog,nag-daog pa,V;PRF+PROG;PST,2,2
+210,tandog,nagtandog,V;PST,2,2
+211,sugata,magasugata na,V;PRF;FUT,2,2
+212,hibi,magahibi na,V;PRF;FUT,2,2
+213,bati/batian/pamatian,ginpamatian pa,V;PRF+PROG;PRS,2,2
+214,buhin,nagabuhin,V;PRS,2,2
+215,tawag,magatawag na,V;PRF;FUT,2,2
+216,tuon,magatuon na,V;PRF;FUT,2,2
+217,tan-aw,nagatan-aw pa,V;PRF+PROG;PRS,2,2
+218,hambal,naghambal,V;PST,2,2
+219,batyag,nagabatyag,V;PRS,2,2
+220,kadlaw,nagkadlaw,V;PROG;PST,2,2
+221,bulig/buligan,magabulig,V;PROG;FUT,2,2
+222,maneho,nagamaneho na,V;PRF;PRS,2,2
+223,butang,magabutang na,V;PRF;FUT,2,2
+224,pakilala,magapakilala pa,V;PRF+PROG;FUT,2,2
+225,buhin,nagabuhin pa,V;PRF+PROG;PRS,2,2
+226,kuha,nagakuha,V;PROG;PRS,2,2
+227,patay,ginpatay,V;PST,2,2
+228,basa,magabasa,V;FUT,2,2
+229,higugma/higugmaon,pagahigugmaon,V;FUT,2,2
+230,pungko,nagapungko,V;PRS,2,2
+231,lupad,naglupad pa,V;PRF+PROG;PST,2,2
+232,balik,nagbalik pa,V;PRF+PROG;PST,2,2
+233,lakat,naglakat,V;PROG;PST,2,2
+234,lakat,naglakat pa,V;PRF+PROG;PST,2,2
+235,buksan,ginbuksan na,V;PRF;PST,2,2
+236,sugod,nagasugod pa,V;PRF+PROG;PRS,2,2
+237,siling,nagasiling na,V;PRF;PRS,2,2
+238,lupad,naglupad,V;PST,2,2
+239,hular,naghular pa,V;PRF+PROG;PST,2,2
+240,bakal,magabakal pa,V;PRF+PROG;FUT,2,2
+241,hatag,nagahatag na,V;PRF;PRS,2,2
+242,inom,magainom na,V;PRF;FUT,2,2
+243,mangin/nangin,mangin,V;FUT,2,2
+244,kado,nagkado pa,V;PRF+PROG;PST,2,2
+245,himo,naghimo pa,V;PRF+PROG;PST,2,2
+246,siling,magasiling pa,V;PRF+PROG;FUT,2,2
+247,sulat,nagsulat na,V;PRF;PST,2,2
+248,lakat,magalakat,V;FUT,2,2
+249,tudlo,tudlo,V;NFIN,2,2
+250,dugang,magadugang na,V;PRF;FUT,2,2
+251,tabo/katabo,nagakatabo na,V;PRF;PRS,2,2
+252,hunahuna,magahunahuna,V;FUT,2,2
+253,halok/halukan,magahalok,V;PROG;FUT,2,2
+254,buhin,nagbuhin,V;PROG;PST,2,2
+255,maneho,nagamaneho,V;PROG;PRS,2,2
+256,nagon,nagon,V;NFIN,2,2
+257,sulat,nagasulat,V;PRS,2,2
+258,tindog,nagatindog,V;PROG;PRS,2,2
+259,tulog,magatulog,V;FUT,2,2
+260,yuhom,magayuhom pa,V;PRF+PROG;FUT,2,2
+261,butang,nagbutang,V;PST,2,2
+262,kabuhi,magakabuhi pa,V;PRF+PROG;FUT,2,2
+263,kita,makita,V;FUT,2,2
+264,siling,nagasiling,V;PROG;PRS,2,2
+265,hatag,naghatag na,V;PRF;PST,2,2
+266,uyat/uyatan,gin-uyatan,V;PROG;PST,2,2
+267,nagon,nagnagon,V;PST,2,2
+268,tabo/katabo,natabo na,V;PRF;PST,2,2
+269,batyag,nagabatyag na,V;PRF;PRS,2,2
+270,away,nag-away,V;PST,2,2
+271,kado,nagkado,V;PST,2,2
+272,buksan,ginabuksan,V;PROG;PRS,2,2
+273,basa,nagbasa,V;PROG;PST,2,2
+274,lakat,magalakat na,V;PRF;FUT,2,2
+275,butang,nagabutang na,V;PRF;PRS,2,2
+276,gua,nagagua pa,V;PRF+PROG;PRS,2,2
+277,kabuhi,magakabuhi,V;PROG;FUT,2,2
+278,hampang,magahampang pa,V;PRF+PROG;FUT,2,2
+279,gamit,gamit,V;NFIN,2,2
+280,balik,magabalik pa,V;PRF+PROG;FUT,2,2
+281,daog,nagadaog pa,V;PRF+PROG;PRS,2,2
+282,tan-aw,nagatan-aw na,V;PRF;PRS,2,2
+283,hatag,hatag,V;NFIN,2,2
+284,tudlo,nagtudlo na,V;PRF;PST,2,2
+285,sira,magasira pa,V;PRF+PROG;FUT,2,2
+286,kabuhi,nagkabuhi pa,V;PRF+PROG;PST,2,2
+287,obra,obra,V;NFIN,2,2
+288,luto,magaluto pa,V;PRF+PROG;FUT,2,2
+289,gua,naggua,V;PST,2,2
+290,uyat/uyatan,magauyat,V;FUT,2,2
+291,away,nagaaway pa,V;PRF+PROG;PRS,2,2
+292,sabat,sabat,V;NFIN,2,2
+293,singgit,magasinggit pa,V;PRF+PROG;FUT,2,2
+294,kita/pangita,ginapangita pa,V;PRF+PROG;PRS,2,2
+295,kuha,nagkuha pa,V;PRF+PROG;PST,2,2
+296,himo,magahimo na,V;PRF;FUT,2,2
+297,tandog,magatandog,V;FUT,2,2
+298,pungko,pungko,V;NFIN,2,2
+299,uyat/uyatan,uyat,V;NFIN,2,2
+300,tapos,gintapos,V;PST,2,2
+301,patay/tagumatayon,napatay na,V;PRF;PRS,2,2
+302,gamit,nagagamit na,V;PRF;PRS,2,2
+303,paathag,nagapaathag pa,V;PRF+PROG;PRS,2,2
+304,tandog,nagtandog pa,V;PRF+PROG;PST,2,2
+305,tindog,tindog,V;NFIN,2,2
+306,pili,nagapili pa,V;PRF+PROG;PRS,2,2
+307,kuha,nagkuha,V;PROG;PST,2,2
+308,sugod,magasugod pa,V;PRF+PROG;FUT,2,2
+309,agda,ginaagda pa,V;PRF+PROG;PRS,2,2
+310,pakita,magapakita na,V;PRF;FUT,2,2
+311,bakal,nagabakal na,V;PRF;PRS,2,2
+312,halok/halukan,ginahalukan pa,V;PRF+PROG;PRS,2,2
+313,nagon,nagnagon,V;PROG;PST,2,2
+314,daog,magadaog,V;FUT,2,2
+315,sugata,magasugata,V;PROG;FUT,2,2
+316,kanta,magakanta na,V;PRF;FUT,2,2
+317,hampang,nagahampang,V;PRS,2,2
+318,siling,nagsiling pa,V;PRF+PROG;PST,2,2
+319,hampang,nagahampang,V;PROG;PRS,2,2
+320,sulit,ginasulit na,V;PRF;PRS,2,2
+321,pungko,nagpungko,V;PST,2,2
+322,saot,saot,V;NFIN,2,2
+323,pakita,magapakita,V;FUT,2,2
+324,agda,agda,V;NFIN,2,2
+325,tan-aw,nagtan-aw na,V;PRF;PST,2,2
+326,kinahanglan,nagkinahanglan na,V;PRF;PST,2,2
+327,pakita,magapakita,V;PROG;FUT,2,2
+328,hular,nagahular pa,V;PRF+PROG;PRS,2,2
+329,baton,ginabaton pa,V;PRF+PROG;PRS,2,2
+330,saot,nagsaot pa,V;PRF+PROG;PST,2,2
+331,gustuhan,magustuhan na,V;PRF;FUT,2,2
+332,gua,gua,V;NFIN,2,2
+333,pili,nagpili,V;PROG;PST,2,2
+334,kabuhi,nagkabuhi,V;PST,2,2
+335,sugod,nagsugod na,V;PRF;PST,2,2
+336,halok/halukan,ginhalukan pa,V;PRF+PROG;PST,2,2
+337,pakilala,nagpakilala,V;PST,2,2
+338,buka,ginabuka,V;PRS,2,2
+339,kaon,nagkaon pa,V;PRF+PROG;PST,2,2
+340,hibi,nagahibi,V;PROG;PRS,2,2
+341,baton,magabaton,V;FUT,2,2
+342,desisyon,nagdesisyon,V;PST,2,2
+343,yuhom,nagayuhom,V;PRS,2,2
+344,buhin,nagbuhin pa,V;PRF+PROG;PST,2,2
+345,hambal,magahambal,V;PROG;FUT,2,2
+346,kanta,nagkanta pa,V;PRF+PROG;PST,2,2
+347,gamit,naggamit,V;PROG;PST,2,2
+348,pamati,magapamati na,V;PRF;FUT,2,2
+349,tapos,gintapos,V;PROG;PST,2,2
+350,bakal,nagbakal na,V;PRF;PST,2,2
+351,tudlo,nagatudlo na,V;PRF;PRS,2,2
+352,hular,magahular pa,V;PRF+PROG;FUT,2,2
+353,obra,magaobra pa,V;PRF+PROG;FUT,2,2
+354,kanta,nagkanta na,V;PRF;PST,2,2
+355,buka,buka,V;NFIN,2,2
+356,luto,magaluto,V;PROG;FUT,2,2
+357,hatag,nagahatag,V;PROG;PRS,2,2
+358,himo,himo,V;NFIN,2,2
+359,sabat,ginasabat na,V;PRF;PRS,2,2
+360,abot,abot,V;NFIN,2,2
+361,patay/tagumatayon,mapatay pa,V;PRF+PROG;FUT,2,2
+362,kuha,magakuha,V;FUT,2,2
+363,hulog/kahulog,mahulog pa,V;PRF+PROG;FUT,2,2
+364,patay/tagumatayon,patay,V;NFIN,2,2
+365,paathag,magapaathag pa,V;PRF+PROG;FUT,2,2
+366,pakilala,nagapakilala pa,V;PRF+PROG;PRS,2,2
+367,butang,nagabutang,V;PROG;PRS,2,2
+368,hibalo/hibaluan,mahibaluan,V;FUT,2,2
+369,sira,ginasira,V;PROG;PRS,2,2
+370,gustuhan,magustuhan,V;PROG;FUT,2,2
+371,kadlaw,nagakadlaw,V;PROG;PRS,2,2
+372,kaon,nagkaon na,V;PRF;PST,2,2
+373,sugod,nagasugod na,V;PRF;PRS,2,2
+374,bati/batian/pamatian,nabatian na,V;PRF;PRS,2,2
+375,desisyon,magadesisyon,V;FUT,2,2
+376,hular,naghular,V;PROG;PST,2,2
+377,lupad,nagalupad na,V;PRF;PRS,2,2
+378,hambal,nagahambal pa,V;PRF+PROG;PRS,2,2
+379,sulat,nagasulat pa,V;PRF+PROG;PRS,2,2
+380,kado,nagakado,V;PROG;PRS,2,2
+381,patay,ginapatay,V;PROG;PRS,2,2
+382,patay/tagumatayon,nagatagumatayon,V;PROG;PRS,2,2
+383,away,nagaaway,V;PROG;PRS,2,2
+384,halok/halukan,ginahalukan,V;PROG;PRS,2,2
+385,luto,nagluto,V;PST,2,2
+386,kallimtan,kallimtan,V;NFIN,2,2
+387,kita/pangita,nakita,V;PRS,2,2
+388,pakita,nagpakita na,V;PRF;PST,2,2
+389,gustuhan,nagustuhan,V;PST,2,2
+390,sugata,magasugata,V;FUT,2,2
+391,hampang,naghampang na,V;PRF;PST,2,2
+392,bulig/buligan,magabulig na,V;PRF;FUT,2,2
+393,tabo/katabo,matabo,V;FUT,2,2
+394,kuha,nagakuha na,V;PRF;PRS,2,2
+395,dumdom,ginadumdom pa,V;PRF+PROG;PRS,2,2
+396,dumdom,ginadumdom,V;PRS,2,2
+397,sulod,nagasulod,V;PRS,2,2
+398,tuon,nagatuon na,V;PRF;PRS,2,2
+399,inom,nag-inom pa,V;PRF+PROG;PST,2,2
+400,sugod,nagsugod,V;PROG;PST,2,2
+401,balik,magabalik,V;FUT,2,2
+402,bakal,bakal,V;NFIN,2,2
+403,singgit,magasinggit,V;FUT,2,2
+404,tindog,magatindog,V;FUT,2,2
+405,dumdom,magadumdom,V;PROG;FUT,2,2
+406,hular,magahular,V;PROG;FUT,2,2
+407,pakilala,nagapakilala,V;PROG;PRS,2,2
+408,tawag,magatawag,V;FUT,2,2
+409,byahe,byahe,V;NFIN,2,2
+410,bati/batian/pamatian,ginpamantian,V;PROG;PST,2,2
+411,maneho,nagmaneho,V;PST,2,2
+412,kadlaw,nagakadlaw,V;PRS,2,2
+413,tindog,nagatindog,V;PRS,2,2
+414,singgit,nagasinggit,V;PRS,2,2
+415,tapos,gintapos pa,V;PRF+PROG;PST,2,2
+416,baligya,nagabaligya,V;PRS,2,2
+417,sugata,nagsugata na,V;PRF;PST,2,2
+418,hunahuna,nagahunahuna,V;PROG;PRS,2,2
+419,kuha,nagakuha,V;PRS,2,2
+420,daog,magadaog na,V;PRF;FUT,2,2
+421,sugod,magasugod,V;FUT,2,2
+422,ginhawa,nagaginhawa,V;PROG;PRS,2,2
+423,tan-aw,magatan-aw pa,V;PRF+PROG;FUT,2,2
+424,maka/naka,maka,V;PROG;FUT,2,2
+425,siling,nagsiling na,V;PRF;PST,2,2
+426,hulog/kahulog,mahulog,V;PROG;FUT,2,2
+427,hunahuna,naghunahuna,V;PROG;PST,2,2
+428,padala,nagapadala,V;PRS,2,2
+429,padala,nagpadala,V;PROG;PST,2,2
+430,pakita,nagpakita,V;PROG;PST,2,2
+431,baton,ginbaton,V;PROG;PST,2,2
+432,tuon,nagtuon pa,V;PRF+PROG;PST,2,2
+433,aku,magaaku,V;PROG;FUT,2,2
+434,tulog,nagatulog,V;PROG;PRS,2,2
+435,tandog,nagatandog na,V;PRF;PRS,2,2
+436,sulit,magasulit pa,V;PRF+PROG;FUT,2,2
+437,higugma/higugmaon,higugma,V;NFIN,2,2
+438,higda,magahigda na,V;PRF;FUT,2,2
+439,sira,ginsira pa,V;PRF+PROG;PST,2,2
+440,patay/tagumatayon,naptay na,V;PRF;PST,2,2
+441,batyag,nagbatyag,V;PST,2,2
+442,sira,ginsira na,V;PRF;PST,2,2
+443,mangin/nangin,mangin,V;PRS,2,2
+444,kita,kita,V;NFIN,2,2
+445,talupangdan/talupangod/talupangdon,gintalupangod pa,V;PRF+PROG;PST,2,2
+446,hambal,nagahambal,V;PROG;PRS,2,2
+447,paathag,nagpaathag,V;PST,2,2
+448,hulog/kahulog,nahulog,V;PST,2,2
+449,saot,nagasaot na,V;PRF;PRS,2,2
+450,istar,nagistar na,V;PRF;PST,2,2
+451,patay,magapatay,V;PROG;FUT,2,2
+452,hular,nagahular,V;PRS,2,2
+453,baligya,nagbaligya pa,V;PRF+PROG;PST,2,2
+454,sulit,ginsulit na,V;PRF;PST,2,2
+455,dula,nadula na,V;PRF;PST,2,2
+456,hambal,magahambal,V;FUT,2,2
+457,halok/halukan,halok,V;NFIN,2,2
+458,talupangdan/talupangod/talupangdon,natalupangdan na,V;PRF;PST,2,2
+459,kaon,nagakaon,V;PRS,2,2
+460,baton,magabaton pa,V;PRF+PROG;FUT,2,2
+461,nagon,naganagon na,V;PRF;PRS,2,2
+462,ginhawa,nagaginhawa,V;PRS,2,2
+463,sira,ginasira,V;PRS,2,2
+464,tabo/katabo,nagakatabo,V;PRS,2,2
+465,hibalo/hibaluan,nakahibalo,V;PRS,2,2
+466,kanta,nagakanta,V;PROG;PRS,2,2
+467,byahe,nagbyahe na,V;PRF;PST,2,2
+468,sira,ginsira,V;PROG;PST,2,2
+469,maka/naka,naka,V;PROG;PST,2,2
+470,agda,gin-agda na,V;PRF;PST,2,2
+471,balik,nagabalik pa,V;PRF+PROG;PRS,2,2
+472,lupad,nagalupad,V;PROG;PRS,2,2
+473,kallimtan,ginakallimtan pa,V;PRF+PROG;PRS,2,2
+474,higugma/higugmaon,ginahigugma,V;PROG;PRS,2,2
+475,tan-aw,magatan-aw,V;PROG;FUT,2,2
+476,pili,pili,V;NFIN,2,2
+477,kado,magakado,V;FUT,2,2
+478,kinahanglan,magakinahanglan na,V;PRF;FUT,2,2
+479,away,magaaway pa,V;PRF+PROG;FUT,2,2
+480,hatag,magahatag,V;PROG;FUT,2,2
+481,balik,magabalik,V;PROG;FUT,2,2
+482,obra,nagaobra,V;PROG;PRS,2,2
+483,patay,patay,V;NFIN,2,2
+484,kinahanglan,kinahanglan,V;NFIN,2,2
+485,desisyon,magadesisyon,V;PROG;FUT,2,2
+486,tudlo,nagtudlo,V;PST,2,2
+487,pamangkot,nagpamangkot,V;PST,2,2
+488,tan-aw,nagatan-aw,V;PRS,2,2
+489,balik,nagbalik na,V;PRF;PST,2,2
+490,sulit,ginasulit pa,V;PRF+PROG;PRS,2,2
+491,hibi,naghibi,V;PROG;PST,2,2
+492,kallimtan,pagakallimtan,V;PROG;FUT,2,2
+493,dalagan,nagadalagan,V;PRS,2,2
+494,gua,naggua,V;PROG;PST,2,2
+495,tapos,ginatapos,V;PRS,2,2
+496,pungko,nagpungko na,V;PRF;PST,2,2
+497,tabo/katabo,matabo pa,V;PRF+PROG;FUT,2,2
+498,away,nagaaway,V;PRS,2,2
+499,basa,basa,V;NFIN,2,2
+500,sulit,ginasulit,V;PRS,2,2
+501,kinahanglan,nagakinahanglan,V;PRS,2,2
+502,basa,magabasa na,V;PRF;FUT,2,2
+503,patay,ginpatay pa,V;PRF+PROG;PST,2,2
+504,aku,ginaaku pa,V;PRF+PROG;PRS,2,2
+505,istorya,magaistorya na,V;PRF;FUT,2,2
+506,pili,nagpili na,V;PRF;PST,2,2
+507,abot,nagaabot na,V;PRF;PRS,2,2
+508,bulig/buligan,ginabuligan,V;PRS,2,2
+509,paathag,magapaathag na,V;PRF;FUT,2,2
+510,tapos,tapos,V;NFIN,2,2
+511,pamati,nagapamati pa,V;PRF+PROG;PRS,2,2
+512,bati/batian/pamatian,bati,V;NFIN,2,2
+513,butang,nagbutang pa,V;PRF+PROG;PST,2,2
+514,bakal,nagbakal,V;PROG;PST,2,2
+515,hatag,nagahatag pa,V;PRF+PROG;PRS,2,2
+516,hunahuna,naghunahuna na,V;PRF;PST,2,2
+517,obra,nagaobra,V;PRS,2,2
+518,tulog,nagatulog na,V;PRF;PRS,2,2
+519,lakat,nagalakat na,V;PRF;PRS,2,2
+520,tan-aw,nagtan-aw,V;PST,2,2
+521,mangin/nangin,mangin,V;PRF+PROG;FUT,2,2
+522,sarang,nakasarang,V;PST,2,2
+523,paathag,nagapaathag na,V;PRF;PRS,2,2
+524,kadlaw,nagakadlaw na,V;PRF;PRS,2,2
+525,maneho,nagmaneho,V;PROG;PST,2,2
+526,hibalo/hibaluan,mahibaluan pa,V;PRF+PROG;FUT,2,2
+527,talupangdan/talupangod/talupangdon,natalupangdan,V;PRS,2,2
+528,ginhawa,nagaginhawa na,V;PRF;PRS,2,2
+529,mangin/nangin,mangin,V;PROG;PRS,2,2
+530,sulit,magasulit,V;FUT,2,2
+531,kita/pangita,nakita na,V;PRF;PRS,2,2
+532,agda,gin-agda,V;PROG;PST,2,2
+533,hibalo/hibaluan,hibalo,V;NFIN,2,2
+534,dula,madula pa,V;PRF+PROG;FUT,2,2
+535,baligya,magabaligya,V;FUT,2,2
+536,patay/tagumatayon,mapatay na,V;PRF;FUT,2,2
+537,sulat,nagasulat,V;PROG;PRS,2,2
+538,dumdom,gindumdom pa,V;PRF+PROG;PST,2,2
+539,hampang,hampang,V;NFIN,2,2
+540,hulog/kahulog,nagakahulog,V;PROG;PRS,2,2
+541,nagon,maganagon,V;FUT,2,2
+542,dula,madula na,V;PRF;FUT,2,2
+543,kita/pangita,magapangita,V;PROG;FUT,2,2
+544,tuon,nagatuon,V;PRS,2,2
+545,kadlaw,nagkadlaw,V;PST,2,2
+546,byahe,magabyahe na,V;PRF;FUT,2,2
+547,bulig/buligan,ginbuligan,V;PROG;PST,2,2
+548,himo,naghimo,V;PST,2,2
+549,tabo/katabo,nagakatabo,V;PROG;PRS,2,2
+550,dula,gindula pa,V;PRF+PROG;PST,2,2
+551,lupad,nagalupad pa,V;PRF+PROG;PRS,2,2
+552,tindog,nagtindog,V;PROG;PST,2,2
+553,nagon,maganagon na,V;PRF;FUT,2,2
+554,inom,nag-inom,V;PST,2,2
+555,kado,nagkado,V;PROG;PST,2,2
+556,butang,nagbutang na,V;PRF;PST,2,2
+557,dumdom,ginadumdom na,V;PRF;PRS,2,2
+558,gustuhan,nagustuhan,V;PROG;PST,2,2
+559,pakita,magapakita pa,V;PRF+PROG;FUT,2,2
+560,hibalo/hibaluan,mahibaluan,V;PROG;FUT,2,2
+561,maka/naka,maka,V;NFIN,2,2
+562,hulog/kahulog,nagakahulog pa,V;PRF+PROG;PRS,2,2
+563,sulat,magasulat na,V;PRF;FUT,2,2
+564,maneho,magamaneho pa,V;PRF+PROG;FUT,2,2
+565,hambal,naghambal,V;PROG;PST,2,2
+566,tawag,nagatawag,V;PRS,2,2
+567,dugang,nagdugang,V;PROG;PST,2,2
+568,gua,magagua na,V;PRF;FUT,2,2
+569,sabat,ginasabat,V;PROG;PRS,2,2
+570,nagon,maganagon,V;PROG;FUT,2,2
+571,padala,magapadala na,V;PRF;FUT,2,2
+572,butang,nagbutang,V;PROG;PST,2,2
+573,dula,madula,V;PROG;FUT,2,2
+574,talupangdan/talupangod/talupangdon,ginatalupangod,V;PROG;PRS,2,2
+575,desisyon,magadesisyon na,V;PRF;FUT,2,2
+576,gustuhan,nagustuhan,V;PROG;PRS,2,2
+577,kabuhi,magakabuhi,V;FUT,2,2
+578,sugata,nagsugata pa,V;PRF+PROG;PST,2,2
+579,higda,naghigda,V;PST,2,2
+580,buka,pagabuka,V;PROG;FUT,2,2
+581,tuon,tuon,V;NFIN,2,2
+582,nagon,maganagon pa,V;PRF+PROG;FUT,2,2
+583,kinahanglan,nagakinahanglan,V;PROG;PRS,2,2
+584,mangin/nangin,nangin,V;PRF;PST,2,2
+585,pili,magapili na,V;PRF;FUT,2,2
+586,dugang,nagadugang,V;PRS,2,2
+587,hulog/kahulog,nagakahulog,V;PROG;PST,2,2
+588,hibalo/hibaluan,ginahibalo,V;PROG;PRS,2,2
+589,siling,nagsiling,V;PROG;PST,2,2
+590,sugod,sugod,V;NFIN,2,2
+591,pakilala,pakilala,V;NFIN,2,2
+592,siling,nagasiling pa,V;PRF+PROG;PRS,2,2
+593,singgit,magasinggit,V;PROG;FUT,2,2
+594,desisyon,nagdesisyon na,V;PRF;PST,2,2
+595,hampang,magahampang,V;PROG;FUT,2,2
+596,sulat,nagsulat,V;PST,2,2
+597,gamit,magagamit pa,V;PRF+PROG;FUT,2,2
+598,desisyon,magadesisyon pa,V;PRF+PROG;FUT,2,2
+599,sarang,sarang,V;NFIN,2,2
+600,kado,nagakado,V;PRS,2,2
+601,bati/batian/pamatian,ginpamatian pa,V;PRF+PROG;PST,2,2
+602,gua,nagagua na,V;PRF;PRS,2,2
+603,dumdom,magadumdom,V;FUT,2,2
+604,dugang,nagadugang,V;PROG;PRS,2,2
+605,istorya,nagaistorya,V;PROG;PRS,2,2
+606,kita,nakita,V;PROG;PRS,2,2
+607,gamit,naggamit na,V;PRF;PST,2,2
+608,aku,nagaaku,V;PROG;PRS,2,2
+609,bulig/buligan,ginbuligan,V;PST,2,2
+610,pungko,magapungko,V;FUT,2,2
+611,hampang,nagahampang pa,V;PRF+PROG;PRS,2,2
+612,maneho,nagmaneho pa,V;PRF+PROG;PST,2,2
+613,obra,nagaobra pa,V;PRF+PROG;PRS,2,2
+614,pamangkot,pamangkot,V;NFIN,2,2
+615,hibalo/hibaluan,nahibaluan na,V;PRF;PST,2,2
+616,pakilala,magapakilala na,V;PRF;FUT,2,2
+617,bakal,nagbakal pa,V;PRF+PROG;PST,2,2
+618,pakilala,magapakilala,V;FUT,2,2
+619,baton,magabaton na,V;PRF;FUT,2,2
+620,hulog/kahulog,nakagahulog pa,V;PRF+PROG;PST,2,2
+621,buhin,magabuhin,V;PROG;FUT,2,2
+622,gusto/gustuhan,nagustuhan,V;PST,2,2
+623,pungko,nagapungko na,V;PRF;PRS,2,2
+624,patay/tagumatayon,nagatagumatayon pa,V;PRF+PROG;PRS,2,2
+625,hibi,nagahibi pa,V;PRF+PROG;PRS,2,2
+626,talupangdan/talupangod/talupangdon,matalupangdan na,V;PRF;FUT,2,2
+627,luto,nagluto pa,V;PRF+PROG;PST,2,2
+628,kita/pangita,kita,V;NFIN,2,2
+629,talupangdan/talupangod/talupangdon,natalupangdan,V;PST,2,2
+630,nagon,nagnagon na,V;PRF;PST,2,2
+631,tapos,magataps na,V;PRF;FUT,2,2
+632,istar,nagaistar,V;PRS,2,2
+633,kita/pangita,ginapangita,V;PROG;PRS,2,2
+634,higda,higda,V;NFIN,2,2
+635,yuhom,nagyuhom,V;PST,2,2
+636,tabo/katabo,tabo,V;NFIN,2,2
+637,basa,magabasa,V;PROG;FUT,2,2
+638,paathag,nagapaathag,V;PROG;PRS,2,2
+639,sarang,makasarang,V;PRS,2,2
+640,lupad,nagalupad,V;PRS,2,2
+641,na/naga,na,V;NFIN,2,2
+642,singgit,singgit,V;NFIN,2,2
+643,pakilala,magapakilala,V;PROG;FUT,2,2
+644,yuhom,magayuhom,V;FUT,2,2
+645,luto,magaluto na,V;PRF;FUT,2,2
+646,hibalo/hibaluan,ginhibalo,V;PROG;PST,2,2
+647,buksan,ginbuksan pa,V;PRF+PROG;PST,2,2
+648,pamati,nagpamati pa,V;PRF+PROG;PST,2,2
+649,tudlo,magatudlo na,V;PRF;FUT,2,2
+650,pakita,nagapakita,V;PRS,2,2
+651,tulog,nagtulog,V;PST,2,2
+652,hangop/hangpan,nahangpan,V;PRS,2,2
+653,hibi,nagahibi na,V;PRF;PRS,2,2
+654,baligya,nagabaligya,V;PROG;PRS,2,2
+655,abot,nag-abot,V;PST,2,2
+656,himo,nagahimo na,V;PRF;PRS,2,2
+657,dugang,nagdugang,V;PST,2,2
+658,pamati,pamati,V;NFIN,2,2
+659,agda,gin-agda pa,V;PRF+PROG;PST,2,2
+660,sira,magasira na,V;PRF;FUT,2,2
+661,kita,nakita pa,V;PRF+PROG;PRS,2,2
+662,sulod,nagasulod,V;PROG;PRS,2,2
+663,maneho,magamaneho na,V;PRF;FUT,2,2
+664,byahe,magabyahe,V;PROG;FUT,2,2
+665,halok/halukan,ginhalukan na,V;PRF;PST,2,2
+666,aku,nag-aku,V;PST,2,2
+667,buksan,pagabuksan,V;PROG;FUT,2,2
+668,hulog/kahulog,hulog,V;NFIN,2,2
+669,padala,nagpadala na,V;PRF;PST,2,2
+670,dumdom,magadumdom pa,V;PRF+PROG;FUT,2,2
+671,maneho,nagmaneho na,V;PRF;PST,2,2
+672,mangin/nangin,nangin,V;PROG;PST,2,2
+673,kita/pangita,magapangita pa,V;PRF+PROG;FUT,2,2
+674,sabat,ginsabat,V;PST,2,2
+675,buksan,ginabuksan,V;PRS,2,2
+676,hibalo/hibaluan,nahibaluan na,V;PRF;PRS,2,2
+677,tan-aw,nagtan-aw pa,V;PRF+PROG;PST,2,2
+678,buhin,nagbuhin,V;PST,2,2
+679,baton,ginbaton,V;PST,2,2
+680,sulat,nagsulat,V;PROG;PST,2,2
+681,higda,magahigda,V;FUT,2,2
+682,lupad,naglupad na,V;PRF;PST,2,2
+683,baligya,nagabaligya na,V;PRF;PRS,2,2
+684,higugma/higugmaon,ginhigugma na,V;PRF;PST,2,2
+685,kuha,nagkuha na,V;PRF;PST,2,2
+686,istorya,nagaistorya na,V;PRF;PRS,2,2
+687,higugma/higugmaon,ginahigugma,V;PRS,2,2
+688,sugata,nagasugata pa,V;PRF+PROG;PRS,2,2
+689,himo,nagahimo pa,V;PRF+PROG;PRS,2,2
+690,kado,kado,V;NFIN,2,2
+691,lupad,magalupad,V;PROG;FUT,2,2
+692,talupangdan/talupangod/talupangdon,talupangdan,V;NFIN,2,2
+693,buhin,nagabuhin,V;PROG;PRS,2,2
+694,desisyon,nagadesisyon,V;PRS,2,2
+695,yuhom,nagyuhom,V;PROG;PST,2,2
+696,bulig/buligan,magabulig pa,V;PRF+PROG;FUT,2,2
+697,hatag,naghatag,V;PROG;PST,2,2
+698,sulod,nagsulod,V;PST,2,2
+699,himo,nagahimo,V;PROG;PRS,2,2
+700,baton,ginbaton pa,V;PRF+PROG;PST,2,2
+701,talupangdan/talupangod/talupangdon,pagatalupangdon,V;PROG;FUT,2,2
+702,pamati,nagpamati,V;PST,2,2
+703,himo,magahimo pa,V;PRF+PROG;FUT,2,2
+704,kaon,magakaon na,V;PRF;FUT,2,2
+705,dula,madula,V;FUT,2,2
+706,dumdom,gindumdom na,V;PRF;PST,2,2
+707,gua,nagagua,V;PROG;PRS,2,2
+708,hambal,nagahambal na,V;PRF;PRS,2,2
+709,patay/tagumatayon,napatay,V;PRS,2,2
+710,gua,naggua na,V;PRF;PST,2,2
+711,maneho,nagamaneho,V;PRS,2,2
+712,istorya,magaistorya,V;PROG;FUT,2,2
+713,tan-aw,nagtan-aw,V;PROG;PST,2,2
+714,kita,nakita pa,V;PRF+PROG;PST,2,2
+715,kabuhi,nagakabuhi na,V;PRF;PRS,2,2
+716,tapos,magataps,V;PROG;FUT,2,2
+717,patay,ginapatay na,V;PRF;PRS,2,2
+718,patay/tagumatayon,nagtagumatayon pa,V;PRF+PROG;PST,2,2
+719,batyag,magabatyag,V;PROG;FUT,2,2
+720,pili,magapili,V;PROG;FUT,2,2
+721,buka,pagabuka na,V;PRF;FUT,2,2
+722,tan-aw,tan-aw,V;NFIN,2,2
+723,tawag,nagtawag na,V;PRF;PST,2,2
+724,sulod,magasulod,V;PROG;FUT,2,2
+725,dugang,nagadugang na,V;PRF;PRS,2,2
+726,kaon,nagakaon,V;PROG;PRS,2,2
+727,ginhawa,magaginhawa,V;PROG;FUT,2,2
+728,hangop/hangpan,ginahangop,V;PROG;PRS,2,2
+729,himo,naghimo,V;PROG;PST,2,2
+730,buka,pagabuka,V;FUT,2,2
+731,aku,gin-aku na,V;PRF;PST,2,2
+732,patay,ginpatay,V;PROG;PST,2,2
+733,kita/pangita,magapangita na,V;PRF;FUT,2,2
+734,yuhom,nagyuhom na,V;PRF;PST,2,2
+735,pili,magapili pa,V;PRF+PROG;FUT,2,2
+736,kanta,magakanta,V;PROG;FUT,2,2
+737,kadlaw,kadlaw,V;NFIN,2,2
+738,saot,nagasaot,V;PRS,2,2
+739,mangin/nangin,nangin,V;PRF;PRS,2,2
+740,padala,magapadala pa,V;PRF+PROG;FUT,2,2
+741,byahe,nagbyahe,V;PROG;PST,2,2
+742,bulig/buligan,bulig,V;NFIN,2,2
+743,pili,magapili,V;FUT,2,2
+744,higda,magahigda pa,V;PRF+PROG;FUT,2,2
+745,gamit,naggamit,V;PST,2,2
+746,patay,magapatay na,V;PRF;FUT,2,2
+747,tulog,magatulog pa,V;PRF+PROG;FUT,2,2
+748,kinahanglan,nagakinahanglan na,V;PRF;PRS,2,2
+749,pakilala,nagapakilala,V;PRS,2,2
+750,hatag,naghatag pa,V;PRF+PROG;PST,2,2
+751,aku,magaaku,V;FUT,2,2
+752,dugang,dugang,V;NFIN,2,2
+753,sugata,nagsugata,V;PROG;PST,2,2
+754,kado,nagkado na,V;PRF;PST,2,2
+755,dugang,nagadugang pa,V;PRF+PROG;PRS,2,2
+756,hangop/hangpan,mahangpan,V;FUT,2,2
+757,inom,nag-inom,V;PROG;PST,2,2
+758,agda,magaagda na,V;PRF;FUT,2,2
+759,istar,nagaistar pa,V;PRF+PROG;PRS,2,2
+760,sulat,nagasulat na,V;PRF;PRS,2,2
+761,patay/tagumatayon,mapatay,V;PROG;FUT,2,2
+762,sira,ginasira na,V;PRF;PRS,2,2
+763,agda,ginaagda,V;PRS,2,2
+764,siling,magasiling,V;PROG;FUT,2,2
+765,gamit,magagamit,V;FUT,2,2
+766,hibi,naghibi pa,V;PRF+PROG;PST,2,2
+767,talupangdan/talupangod/talupangdon,gintalupangod,V;PROG;PST,2,2
+768,pakita,pakita,V;NFIN,2,2
+769,tabo/katabo,natabo,V;PROG;PST,2,2
+770,hambal,naghambal na,V;PRF;PST,2,2
+771,uyat/uyatan,ginauyatan na,V;PRF;PRS,2,2
+772,talupangdan/talupangod/talupangdon,pagatalupangdon pa,V;PRF+PROG;FUT,2,2
+773,tindog,magatindog na,V;PRF;FUT,2,2
+774,abot,nagaabot,V;PRS,2,2
+775,higda,nagahigda,V;PROG;PRS,2,2
+776,padala,nagapadala na,V;PRF;PRS,2,2
+777,buhin,magabuhin pa,V;PRF+PROG;FUT,2,2
+778,obra,magaobra,V;FUT,2,2
+779,sugod,nagasugod,V;PROG;PRS,2,2
+780,dugang,nagdugang na,V;PRF;PST,2,2
+781,tawag,magatawag,V;PROG;FUT,2,2
+782,sabat,magasabat,V;PROG;FUT,2,2
+783,dugang,magadugang,V;PROG;FUT,2,2
+784,daog,nagadaog na,V;PRF;PRS,2,2
+785,abot,magaabot,V;PROG;FUT,2,2
+786,hampang,naghampang pa,V;PRF+PROG;PST,2,2
+787,buka,ginbuka,V;PST,2,2
+788,siling,siling,V;NFIN,2,2
+789,tabo/katabo,nagakatabo pa,V;PRF+PROG;PRS,2,2
+790,luto,nagaluto pa,V;PRF+PROG;PRS,2,2
+791,bulig/buligan,ginbuligan na,V;PRF;PST,2,2
+792,pakita,nagapakita na,V;PRF;PRS,2,2
+793,pungko,nagpungko,V;PROG;PST,2,2
+794,talupangdan/talupangod/talupangdon,ginatalupangod pa,V;PRF+PROG;PRS,2,2
+795,gustuhan,gustuhan,V;NFIN,2,2
+796,mangin/nangin,mangin,V;NFIN,2,2
+797,istar,nagaistar na,V;PRF;PRS,2,2
+798,bakal,nagabakal,V;PRS,2,2
+799,pamangkot,magapamangkot na,V;PRF;FUT,2,2
+800,sugod,nagasugod,V;PRS,2,2
+801,kinahanglan,nagkinahanglan,V;PST,2,2
+802,pakita,nagapakita,V;PROG;PRS,2,2
+803,mangin/nangin,nangin,V;PST,2,2
+804,luto,nagluto,V;PROG;PST,2,2
+805,pakita,nagpakita,V;PST,2,2
+806,hampang,magahampang,V;FUT,2,2
+807,luto,nagaluto na,V;PRF;PRS,2,2
+808,baton,ginbaton na,V;PRF;PST,2,2
+809,desisyon,nagadesisyon na,V;PRF;PRS,2,2
+810,hibi,magahibi,V;PROG;FUT,2,2
+811,lakat,nagalakat,V;PRS,2,2
+812,higda,nagahigda na,V;PRF;PRS,2,2
+813,hunahuna,nagahunahuna pa,V;PRF+PROG;PRS,2,2
+814,patay,ginpatay na,V;PRF;PST,2,2
+815,sabat,ginsabat,V;PROG;PST,2,2
+816,gamit,nagagamit pa,V;PRF+PROG;PRS,2,2
+817,saot,nagasaot pa,V;PRF+PROG;PRS,2,2
+818,basa,nagabasa pa,V;PRF+PROG;PRS,2,2
+819,sugata,nagsugata,V;PST,2,2
+820,sulit,magasulit na,V;PRF;FUT,2,2
+821,kadlaw,magakadlaw,V;FUT,2,2
+822,sugata,nagasugata na,V;PRF;PRS,2,2
+823,pungko,magapungko pa,V;PRF+PROG;FUT,2,2
+824,ginhawa,magaginhawa,V;FUT,2,2
+825,hunahuna,naghunahuna pa,V;PRF+PROG;PST,2,2
+826,pamangkot,nagpamangkot na,V;PRF;PST,2,2
+827,obra,nagobra na,V;PRF;PST,2,2
+828,baton,baton,V;NFIN,2,2
+829,hular,nagahular na,V;PRF;PRS,2,2
+830,patay/tagumatayon,mapatay,V;FUT,2,2
+831,paathag,nagpaathag pa,V;PRF+PROG;PST,2,2
+832,sulat,magasulat,V;FUT,2,2
+833,luto,luto,V;NFIN,2,2
+834,sulod,nagsulod na,V;PRF;PST,2,2
+835,patay,ginapatay pa,V;PRF+PROG;PRS,2,2
+836,daw,daw,V;PST,2,2
+837,buka,ginabuka na,V;PRF;PRS,2,2
+838,hangop/hangpan,mahangpan na,V;PRF;FUT,2,2
+839,abot,nag-abot pa,V;PRF+PROG;PST,2,2
+840,buksan,ginabuksan na,V;PRF;PRS,2,2
+841,kuha,magakuha na,V;PRF;FUT,2,2
+842,tapos,magataps pa,V;PRF+PROG;FUT,2,2
+843,daog,magadaog,V;PROG;FUT,2,2
+844,bati/batian/pamatian,nabatian na,V;PRF;PST,2,2
+845,singgit,nagsinggit na,V;PRF;PST,2,2
+846,lupad,magalupad pa,V;PRF+PROG;FUT,2,2
+847,hulog/kahulog,nagakahulog,V;PRS,2,2
+848,lupad,magalupad,V;FUT,2,2
+849,hambal,nagahambal,V;PRS,2,2
+850,siling,nagasiling,V;PRS,2,2
+851,agda,ginaagda,V;PROG;PRS,2,2
+852,bati/batian/pamatian,pagapamatian,V;PROG;FUT,2,2
+853,na/naga,na,V;PST,2,2
+854,pungko,nagapungko,V;PROG;PRS,2,2
+855,kadlaw,magakadlaw na,V;PRF;FUT,2,2
+856,ginhawa,nagaginhawa pa,V;PRF+PROG;PRS,2,2
+857,tuon,magatuon pa,V;PRF+PROG;FUT,2,2
+858,gamit,magagamit,V;PROG;FUT,2,2
