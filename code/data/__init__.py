@@ -71,10 +71,10 @@ class SigmorphonData_Factory(object):
         
         
         if families is None and languages is None:
+            families = set(self.known_language_collection.keys())
             languages = set(self.known_languages)
         
-        if languages is None:
-            languages = set()
+        languages = set() if languages is None else set(languages)
             
         if families is not None:
             for f in families:
@@ -104,14 +104,15 @@ class SigmorphonData_Factory(object):
         
         #TODO: Now it gets the alphabet for the languages specified (should also handle for families specified, and possibly master if desired).
         #alphabet_inout = self.known_language_collection.get_master_alphabet()
-        alphabet_inout = self.known_language_collection.get_alphabet_for_languages(languages)
-
+        alphabet_inout = self.known_language_collection.get_alphabet_for_subset(families, languages)
+        
         ds = dataset.pandas_to_dataset(
                     pandas_dataframes,
                     tag_converter="bit_vector",
                     alphabet_converter_in=alphabet_inout,
                     alphabet_converter_out=alphabet_inout
         )
+        #TODO: Should get a subset language collection only containing the languges and families in the dataset.
         ds.language_collection = self.known_language_collection
         
         dl = dataloader.UnimorphDataLoader(ds,**dataloader_kwargs)

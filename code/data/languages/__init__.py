@@ -33,6 +33,7 @@ class LanguageFamily:
         self.id = language_family_id
         self.name = name
         self.languages = OrderedDict()
+        self._id_to_name = OrderedDict() #dictionary instead of list to support stable removal
         self._master_alphabet = None
 
     def __len__(self):
@@ -46,7 +47,8 @@ class LanguageFamily:
     
     def add_language(self, language):
         """Protected method. Only to be used by LanguageCollection class."""
-        self.languages[language.name] = self.languages[language.id] = language
+        self.languages[language.name] = language
+        self._id_to_name[language.id] = language.name
         language.family_id = self.id
         self._master_alphabet = None
     
@@ -60,6 +62,10 @@ class LanguageFamily:
             alphabets = [language.alphabet for _,language in self.languages.items()]
             self._master_alphabet = get_master_alphabet(alphabets, reindex=True)
         return self._master_alphabet
+    
+    @property
+    def alphabet(self):
+        return self.get_master_alphabet()
 
 
 class LanguageCollection:
@@ -97,7 +103,9 @@ class LanguageCollection:
     def __init__(self):
         self._master_alphabet = None
         self.language_families = OrderedDict()
+        self._id_to_name = OrderedDict() #dict to support stable removal later
         self.language_count = 0
+        self.family_count = 0
 
     def add_language_family(self, name):
         """
@@ -106,8 +114,10 @@ class LanguageCollection:
         :param name: The name of the family as a string.
         :return: The instantiated LanguageFamily object.
         """
-        language_family = LanguageFamily(len(self.language_families), name)
-        self.language_families[name] = self.language_families[language_family.id] = language_family
+        language_family = LanguageFamily(self.family_count, name) #TODO: will screw up if we remove a family and later ad annother.
+        self.language_families[name] = language_family
+        self._id_to_name[language_family.id] = name
+        self.family_count += 1
         self._master_alphabet = None
         return language_family
 
@@ -139,21 +149,20 @@ class LanguageCollection:
                          ]
             self._master_alphabet = get_master_alphabet(alphabets, reindex=True)
         return self._master_alphabet
-
-    def get_alphabet_for_languages(self, languages):
-        alphabets = [None] * len (languages)
-        for i in range(len(languages)):
-            alphabets[i] = self.find_language(languages[i]).alphabet
-
-        return get_master_alphabet(alphabets, reindex = True)
-
+    
+    @property
+    def alphabet(self):
+        return self.get_master_alphabet()
+    
     def __len__(self):
-        return self.language_count
+        return len(self.language_families)
     
     def __iter__(self):
         return self.language_families.__iter__()
     
     def __getitem__(self,index):
+        if isinstance(index,int):
+            return self.langauge_families[self._id_to_name[index]]
         return self.language_families[index]
     
     def keys(self):
@@ -175,3 +184,18 @@ class LanguageCollection:
             if language_name in one_family.languages:
                 return one_family.languages[language_name]
         raise KeyError("{} not found".format(language_name))
+    
+    def get_alphabet_for_subset(self, families, languages):
+        """
+        This is a mistake, and it's gross and hackish to do it this way.
+        I no longer have the energy to do it the right way, and as long as this keeps
+        a certain project partner happy without breaking the correct behaviour,
+        maybe that's good enough.
+        """
+        
+        sub_alphabets = list()
+        for fam in families:
+            sub_alphabets.append(self[fam].get_master_alphabet())
+        for lang in languages:
+            sub_alphabets.append(self.find_language(lang).alphabet)
+        return get_master_alphabet(sub_alphabets, reindex=True)
