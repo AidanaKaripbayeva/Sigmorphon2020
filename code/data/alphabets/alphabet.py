@@ -58,13 +58,14 @@ class Alphabet(AlphabetConverterMixin, object):
                                     (Alphabet.unknown_token, Alphabet.unknown_integer)]
                                     )
         self.__quickstring = None #str
-        self.counts = None #AlphabetCounts()
+        self.counts = AlphabetCounts([(l,0) for l in self.letters])
         
         #works for any iterable, thus also a copy constructor for an Alphabet
         for i in sorted(in_str):
             #TODO: an assertion that this is a character and not a string.
             if not i in self.letters: #someone might provide duplicates even here.
                 self.letters[i] = len(self.letters)
+                self.counts[i] = 0
         
         self.__quickstring = "".join(list(self.letters.keys()))
         if in_counts is not None:
