@@ -38,18 +38,40 @@ class DumberEncoder(torch.nn.Module):
 class DumberDecoder(torch.nn.Module):
     def __init__(self, alphabet_size, tag_vector_dim, embedding_dim=40, hidden_dim=10, num_layers=3, output_length=50, num_languages=None):
         super().__init__()
+        self.max_output_length = output_length
+        self.alphabet_size = alphabet_size
         self.linear = torch.nn.Linear(embedding_dim, alphabet_size)
         self.sigmoid = torch.nn.Sigmoid()
         self.final_softmax = torch.nn.Softmax(dim=-1)
     
     def forward(self, family, language, tags, position, embedding, states, hidden):
         
-        x = self.linear(embedding)
-        x = self.sigmoid(x)
-        y = self.final_softmax(x)
+        output_sequence = torch.zeros(self.max_output_length, dtype=torch.int32)
+        output_probs = torch.zeros((self.max_output_length, self.alphabet_size))
+        
+        output_sequence[0] = Alphabet.start_integer
+        output_sequence[1:] = Alphabet.stop_integer #pading
+        
+        output_probs[0,Alphabet.start_integer] = 1.0
+        output_probs[1:,Alphabet.stop_integer] = 1.0
+        
+        for output_i in range(1, min(self.max_output_length, embedding.shape[0]) ):
+            
+            #import pdb; pdb.set_trace()
+            x = self.linear(embedding[output_i])
+            x = self.sigmoid(x)
+            y = self.final_softmax(x)
+            
+            output_symbol = y.argmax(-1)
+            
+            output_sequence[output_i] = output_symbol
+            output_probs[output_i,:] = y
+            
+            if output_symbol == Alphabet.stop_integer:
+                break
         
         
-        return y
+        return output_probs[:output_i+1] #no probs past predicted end.
         
         
 
@@ -85,6 +107,10 @@ class DumberTransducer(torch.nn.Module):
         assert isinstance(lemmata, list) or isinstance(lemmata, tuple), str(type(lemmata)) + " Only lists are implemented"
         lengths = [len(i) for i in lemmata]
         
+        #
+        #The encoder uses layers that can do everything at once.
+        #ENCODE EVERYTHING
+        #
         packed_fam   = _rnn_utils.pack_sequence(families,  enforce_sorted=False)
         packed_langs = _rnn_utils.pack_sequence(languages, enforce_sorted=False)
         packed_lems  = _rnn_utils.pack_sequence(lemmata,   enforce_sorted=False)
@@ -100,9 +126,12 @@ class DumberTransducer(torch.nn.Module):
         # For each input in this batch ...
         for i in range(batch_size):
             
+            all_hiddens_for_single_item = tuple([h[:,i,:] for h in hidden])
+            
             y = self.decoder(families[i], languages[i], tags[i],
                                 padded_pos[:,i,:], padded_emb[:,i,:], padded_x[:,i,:],
-                                hidden)
+                                all_hiddens_for_single_item
+                            )
             
             outputs = y.argmax(-1)#y was already stacked.
             
