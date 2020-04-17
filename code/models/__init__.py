@@ -1,6 +1,8 @@
 from .dumbcopy import DumbCopy
+from .dumbertransducer import DumberTransducer
 from .seq2seq import Seq2Seq
 from .babytransducer import BabyTransducer
+
 import argparse
 import consts
 
@@ -9,7 +11,7 @@ class ModelFactory:
     """
     Factory class in charge of creating models and their corresponding argument parsers.
     """
-    architectures = ['seq2seq', "dummy", 'baby-transducer']
+    architectures = ['seq2seq', "dummy", "dumber", 'baby-transducer']
 
     @staticmethod
     def create_model(architecture_name, config, dimensionality):
@@ -35,6 +37,13 @@ class ModelFactory:
                            embedding_dim=int(config['dummy_embedding_dimension']),
                            hidden_dim=config['dummy_hidden_dimension'],
                            num_layers=config['dummy_num_layers'])
+        elif architecture_name == 'dumber':
+            return DumberTransducer(dimensionality[consts.INPUT_SYMBOLS],
+                           dimensionality[consts.NUM_LANGUAGES],
+                           dimensionality[consts.TAGS],
+                           embedding_dim=int(config['dumber_embedding_dimension']),
+                           hidden_dim=config['dumber_hidden_dimension'],
+                           num_layers=config['dumber_num_layers'])
         elif architecture_name == 'baby-transducer':
             return BabyTransducer(alphabet_size=dimensionality[consts.INPUT_SYMBOLS],
                                   tag_vector_dim=dimensionality[consts.TAGS][0],
@@ -73,6 +82,14 @@ class ModelFactory:
             parser.add_argument('--dummy-hidden-dimension', type=int, default=10,
                                 help='The dimension of the hidden layer in the LSTM unit in the encoder.')
             parser.add_argument('--dummy-num-layers', type=int, default=3,
+                                help='The number of layers in the LSTM units in the encoder and in the'
+                                     'decoder.')
+        elif architecture_name == 'dumber':
+            parser.add_argument('--dumber-embedding-dimension', type=int, default=40,
+                                help='The dimension of the output of the embedding layer.')
+            parser.add_argument('--dumber-hidden-dimension', type=int, default=10,
+                                help='The dimension of the hidden layer in the LSTM unit in the encoder.')
+            parser.add_argument('--dumber-num-layers', type=int, default=1,
                                 help='The number of layers in the LSTM units in the encoder and in the'
                                      'decoder.')
         elif architecture_name == 'baby-transducer':
