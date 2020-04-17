@@ -26,7 +26,7 @@ class LanguageFamily:
     """
     Data class holding the information about a language family, including its name, the names of its known languages
     and its master alphabet. A master alphabet is a hypothetical alphabet that is created by taking the union of the
-    alpabets of the langauges in this family.
+    alpabets of the languages in this family.
     """
     def __init__(self, language_family_id, name):
         """Protected method. Only to be used by LanngugeCollection."""
@@ -43,6 +43,9 @@ class LanguageFamily:
         return self.languages.__iter__()
     
     def __getitem__(self, index):
+        if isinstance(index,int):
+            return self.languages[self._id_to_name[index]]
+        return self.languages[index]
         return self.languages[index]
     
     def add_language(self, language):
@@ -71,7 +74,7 @@ class LanguageFamily:
 class LanguageCollection:
     """
     A data class containing a list of language families and their master alphabet. A master alphabet is a
-    hypothetical alphabet that is created by taking the union of the alpabets of of a langauge collection.
+    hypothetical alphabet that is created by taking the union of the alpabets of of a language collection.
     """
     
     @classmethod
@@ -162,7 +165,7 @@ class LanguageCollection:
     
     def __getitem__(self,index):
         if isinstance(index,int):
-            return self.langauge_families[self._id_to_name[index]]
+            return self.language_families[self._id_to_name[index]]
         return self.language_families[index]
     
     def keys(self):
@@ -192,8 +195,17 @@ class LanguageCollection:
         a certain project partner happy without breaking the correct behaviour,
         maybe that's good enough.
         """
+        if families is None:
+            families = list()
+        if languages is None:
+            languages = list()
         
-        sub_alphabets = list()
+        #no languages or families requested. All.
+        #Should have been handled in calling code.
+        #if 0==len(families) and 0 == len(languages):
+        #    families =
+        
+        sub_alphabets = list([Alphabet()])
         for fam in families:
             sub_alphabets.append(self[fam].get_master_alphabet())
         for lang in languages:
