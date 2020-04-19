@@ -3,6 +3,21 @@ import torch.nn as _nn
 import torch.nn.utils.rnn as _rnn_utils
 import numpy as _np
 
+class RNN_Absolute_Position(_nn.Module):
+    def __init__(self, num_freqs=0, dtype=_torch.float16):
+        self.num_freqs = num_freqs
+        self.dtype = dtype
+    
+    def create_matrix(self, L):
+        output_matrix = _torch.zeros(L,self.num_freqs+1)
+        
+        _torch.linspace(0.0,  L,steps=L,out=my_output[:,i,1])
+        
+        return output_matrix.detach()
+    
+    def forward(self, in_data)
+        pass
+
 class RNN_Position_Encoding(_nn.Module):
     def __init__(self,fourier_freqs=0,chebyshev_freqs=0):
         super(RNN_Position_Encoding,self).__init__()
@@ -23,7 +38,7 @@ class RNN_Position_Encoding(_nn.Module):
         #relative and absolute coordinates
         for i,l in enumerate(lengths):
             _torch.linspace(0.0,1.0,steps=l,out=my_output[0:l,i,0])
-            _torch.linspace(0.0,l,steps=l,out=my_output[0:l,i,1])
+            _torch.linspace(0.0,  l,steps=l,out=my_output[0:l,i,1])
         
         #fourier basis will be the same for all. It is absolute.
         #TODO: Rewrite this without the temporary storage for the fourier_basis

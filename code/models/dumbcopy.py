@@ -31,7 +31,7 @@ class DumbCopy(torch.nn.Module):
         batch_size = len(tags)
         batch_outputs = []  # Will hold the integral representation of the characters to be output for this batch.
         batch_probabilities = []   # Will hold the probability vectors for this batch.
-
+        
         # For each input in this batch ...
         for i in range(batch_size):
             #probabilities = []  # Will hold the probability vectors for this input.

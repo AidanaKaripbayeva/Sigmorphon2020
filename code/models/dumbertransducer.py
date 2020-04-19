@@ -40,7 +40,7 @@ class DumberDecoder(torch.nn.Module):
         super().__init__()
         self.max_output_length = output_length
         self.alphabet_size = alphabet_size
-        self.linear = torch.nn.Linear(embedding_dim, alphabet_size)
+        self.linear = torch.nn.Linear(hidden_dim, alphabet_size) #self.linear = torch.nn.Linear(embedding_dim, alphabet_size)
         self.sigmoid = torch.nn.Sigmoid()
         self.final_softmax = torch.nn.Softmax(dim=-1)
     
@@ -55,10 +55,11 @@ class DumberDecoder(torch.nn.Module):
         output_probs[0,Alphabet.start_integer] = 1.0
         output_probs[1:,Alphabet.stop_integer] = 1.0
         
+        #Need to change the extents of this loop.
         for output_i in range(1, min(self.max_output_length, embedding.shape[0]) ):
             
             #import pdb; pdb.set_trace()
-            x = self.linear(embedding[output_i])
+            x = self.linear(states[output_i]) #x = self.linear(embedding[output_i])
             x = self.sigmoid(x)
             y = self.final_softmax(x)
             
