@@ -257,7 +257,7 @@ class Experiment:
             self.optimizer.step()
 
             # Log the outcome of this batch.
-            total_loss += batch_loss
+            total_loss += float(batch_loss)#clears the computation graph history.
             logging.getLogger(consts.MAIN).info('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
                 self.current_epoch, batch_idx * self.config[consts.BATCH_SIZE], len(self.train_loader.dataset),
                 100. * batch_idx / len(self.train_loader), batch_loss.item() / batch_size))
