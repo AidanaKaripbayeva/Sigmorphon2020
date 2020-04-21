@@ -300,9 +300,9 @@ class Experiment:
                 for i in range(batch_size):
                     output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
                                           for integral in outputs[i]])
-                    language_family = \
-                        self.train_loader.dataset.language_collection.language_families[int(family[i][0])]
-                    language_object = language_family.languages[int(language[i][0])]
+                    language_family =\
+                        self.train_loader.dataset.language_collection[int(family[i][0])]
+                    language_object = language_family[int(language[i][0])]
                     logging.getLogger(consts.MAIN).debug(
                         "stem: {},"
                         "\ttarget: {},"
