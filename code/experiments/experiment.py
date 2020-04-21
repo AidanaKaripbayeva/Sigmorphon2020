@@ -238,18 +238,6 @@ class Experiment:
             batch_loss = 0.0
             batch_size = len(tags)
             for i in range(batch_size):
-                output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
-                                      for integral in outputs[i]])
-                language_family =\
-                    self.train_loader.dataset.language_collection[int(family[i][0])]
-                language_object = language_family[int(language[i][0])]
-                logging.getLogger(consts.MAIN).debug(
-                    "stem: {},"
-                    "\ttarget: {},"
-                    "\ttags: {}"
-                    "\tlanguage: {}/{}"
-                    "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], language_family.name,
-                                            language_object.name, output_str))
                 batch_loss += self.loss_function(probabilities[i], form[i])
 
             # Update model parameter.
@@ -258,9 +246,6 @@ class Experiment:
 
             # Log the outcome of this batch.
             total_loss += float(batch_loss)#clears the computation graph history.
-            logging.getLogger(consts.MAIN).info('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
-                self.current_epoch, batch_idx * self.config[consts.BATCH_SIZE], len(self.train_loader.dataset),
-                100. * batch_idx / len(self.train_loader), batch_loss.item() / batch_size))
             wandb.log({'Batch Training Loss': batch_loss})
             
         # Log and report the outcome of this epoch.
