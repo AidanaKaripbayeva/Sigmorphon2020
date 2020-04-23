@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#This is for CPU nodes.
 #PBS -l nodes=1:ppn=32:xe,walltime=5:00:00
 #PBS -q normal
 

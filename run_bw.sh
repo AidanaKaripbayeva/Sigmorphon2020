@@ -1,6 +1,7 @@
 #!/bin/bash
 
-#PBS -l nodes=1:ppn=1:xk,walltime=5:00:00
+#THis is for GPU nodes.
+#PBS -l nodes=1:ppn=16:xk,walltime=5:00:00
 #PBS -q normal
 
 module load gcc/5.3.0 cmake/3.9.4 cudatoolkit/9.1.85_3.10-1.0502.df1cc54.3.1 cray-libsci/18.12.1
