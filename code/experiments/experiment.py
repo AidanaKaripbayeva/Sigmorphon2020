@@ -219,8 +219,13 @@ class Experiment:
         self.model.train()
 
         total_loss = 0.0
+        
+        
+        batch_start_time = time.time()
+        
         # For each batch of data ...
         for batch_idx, (input_batch, output_batch) in enumerate(self.train_loader):
+            
             # Zero out the previous gradient information.
             self.optimizer.zero_grad()
 
@@ -266,6 +271,13 @@ class Experiment:
                 self.current_epoch, batch_idx * self.config[consts.BATCH_SIZE], len(self.train_loader.dataset),
                 100. * batch_idx / len(self.train_loader), batch_loss.item() / batch_size))
             wandb.log({'Batch Training Loss': batch_loss})
+            
+            #benchmark stuff
+            batch_end_time = time.time()
+            batches_per_second = 1.0/(batch_end_time-batch_start_time)
+            batch_start_time = batch_end_time
+            #benchmark Log the benchmark to wandb
+            wandb.log({"Batch Items/Sec":int(len(output_batch.lemma_str))*batches_per_second})
             
         # Log and report the outcome of this epoch.
         wandb.log({'Epoch Training Loss': total_loss / len(self.train_loader)})
