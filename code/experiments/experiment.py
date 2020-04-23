@@ -13,7 +13,7 @@ import wandb
 # Mark the start of the execution. This is used to generate a meaningful name for the execution.
 execution_identifier = str(time.time())
 if "WANDB_IDENTIFIER" in os.environ:
-    execution_identifier = os.environ["execution_identifier"]
+    execution_identifier = os.environ["WANDB_IDENTIFIER"]
 elif "PBS_JOBID" in os.environ:
     execution_identifier = os.environ["PBS_JOBID"]
 
