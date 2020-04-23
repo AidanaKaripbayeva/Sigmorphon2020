@@ -20,7 +20,8 @@ which python
 
 cd ${PBS_O_WORKDIR}
 
-aprun -d ${PBS_NUM_PPN} -n1 -N1 python code/main.py --export-dir $EXPORT_DIR --sigmorphon2020-root $DATA_ROOT --batch-size $BATCH_SIZE --languages eng \
+module load ccm
+ccmrun python code/main.py --export-dir $EXPORT_DIR --sigmorphon2020-root $DATA_ROOT --batch-size $BATCH_SIZE --languages eng \
 --language-info-file ./code/data/languages/individual_alphabets.tsv \
 --model dummy \
 --adadelta-lr 5.0
