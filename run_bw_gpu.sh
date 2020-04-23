@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#PBS -l nodes=1:ppn=1:xk,walltime=5:00:00
+#PBS -l nodes=1:ppn=16:xk,walltime=5:00:00
 #PBS -q normal
 
-module load gcc/5.3.0 cmake/3.9.4 cudatoolkit/9.1.85_3.10-1.0502.df1cc54.3.1 cray-libsci/18.12.1 
+module load gcc/5.3.0 cmake/3.9.4 cudatoolkit/9.1.85_3.10-1.0502.df1cc54.3.1 cray-libsci/18.12.1
 source /projects/eot/bbcj/bjlunt2/opt/miniconda3/bin/activate
 source activate torch
 
@@ -18,4 +18,4 @@ cd ${PBS_O_WORKDIR}
 aprun -d ${PBS_NUM_PPN} -n1 -N1 python code/main.py --export-dir $EXPORT_DIR --sigmorphon2020-root $DATA_ROOT --batch-size $BATCH_SIZE --languages eng \
 --language-info-file ./code/data/languages/individual_alphabets.tsv \
 --model dummy \
---adadelta-lr 5.0 
+--adadelta-lr 5.0
