@@ -89,7 +89,11 @@ class Experiment:
         # Instantiate the model indicated by the configurations.
         self.model = ModelFactory.create_model(config[consts.MODEL_ARCHITECTURE],
                                                self.config,
-                                               self.train_loader.dataset.get_dimensionality())
+                                               self.train_loader.dataset.get_dimensionality()
+                                               )
+        #TODO: Check about prefered device from commandline (CUDA, GPU, device)
+        model_device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+        self.model.to(model_device)
 
         # Instantiate the optimizer indicated by the configurations.
         self.optimizer = OptimizerFactory.create_optimizer(config[consts.OPTIMIZER], self.model, self.config)
@@ -264,20 +268,25 @@ class Experiment:
             # Update model parameter.
             batch_loss.backward()
             self.optimizer.step()
-
-            # Log the outcome of this batch.
-            total_loss += float(batch_loss)#clears the computation graph history.
-            logging.getLogger(consts.MAIN).info('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
-                self.current_epoch, batch_idx * self.config[consts.BATCH_SIZE], len(self.train_loader.dataset),
-                100. * batch_idx / len(self.train_loader), batch_loss.item() / batch_size))
-            wandb.log({'Batch Training Loss': batch_loss})
+            
             
             #benchmark stuff
             batch_end_time = time.time()
             batches_per_second = 1.0/(batch_end_time-batch_start_time)
             batch_start_time = batch_end_time
             #benchmark Log the benchmark to wandb
-            wandb.log({"Batch Items/Sec":int(len(output_batch.lemma_str))*batches_per_second})
+            items_per_sec = int(len(output_batch.lemma_str))*batches_per_second
+            wandb.log({"Batch Items/Sec":items_per_sec})
+
+            # Log the outcome of this batch.
+            total_loss += float(batch_loss)#clears the computation graph history.
+            logging.getLogger(consts.MAIN).info('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}\tItems/s {:.2f}: '.format(
+                self.current_epoch, batch_idx * self.config[consts.BATCH_SIZE], len(self.train_loader.dataset),
+                100. * batch_idx / len(self.train_loader), batch_loss.item() / batch_size),
+                items_per_sec)
+            wandb.log({'Batch Training Loss': batch_loss})
+            
+            
             
         # Log and report the outcome of this epoch.
         wandb.log({'Epoch Training Loss': total_loss / len(self.train_loader)})
