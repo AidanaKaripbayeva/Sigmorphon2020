@@ -92,8 +92,7 @@ class Experiment:
                                                self.train_loader.dataset.get_dimensionality()
                                                )
         #TODO: Check about prefered device from commandline (CUDA, GPU, device)
-        model_device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-        self.model.to(model_device)
+        self.model = self.model.to(self.config[consts.DEVICE])
 
         # Instantiate the optimizer indicated by the configurations.
         self.optimizer = OptimizerFactory.create_optimizer(config[consts.OPTIMIZER], self.model, self.config)
