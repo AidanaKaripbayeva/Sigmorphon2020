@@ -39,7 +39,8 @@ class DumbCopy(torch.nn.Module):
 
             # Encode
             # lemmata[i].shape == (seq_length,)
-            x = self.embedding(lemmata[i]).float()
+            x = lemmata[i].to(self.embedding.weight.device)
+            x = self.embedding(x).float()
             
             x = self.linear(x)
             x = self.sigmoid(x)
