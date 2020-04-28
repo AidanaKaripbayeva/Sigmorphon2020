@@ -12,7 +12,9 @@ import wandb
 
 # Mark the start of the execution. This is used to generate a meaningful name for the execution.
 execution_identifier = str(time.time())
-if "WANDB_IDENTIFIER" in os.environ:
+if "WANDB_AUTO_IDENTIFIER" in os.environ:
+    execution_identifier = str(time.time())
+elif "WANDB_IDENTIFIER" in os.environ:
     execution_identifier = os.environ["WANDB_IDENTIFIER"]
 elif "PBS_JOBID" in os.environ:
     execution_identifier = os.environ["PBS_JOBID"]
@@ -43,6 +45,10 @@ class Experiment:
                 target = torch.cat([target] + [torch.full((L_probs-L_target,),self.pad_index,dtype=torch.long)])
             
             return self.loss(probs,target)
+        
+        def to(self, target_device):
+            self.loss = self.loss.to(target_device)
+            return self
 
     def __init__(self, config, experiment_id, load_from_directory=None):
         """
@@ -91,8 +97,12 @@ class Experiment:
                                                self.config,
                                                self.train_loader.dataset.get_dimensionality()
                                                )
-        #TODO: Check about prefered device from commandline (CUDA, GPU, device)
+        
+        # Move to the preferred device
+        self.loss = self.loss.to(self.config[consts.DEVICE])
         self.model = self.model.to(self.config[consts.DEVICE])
+        if self.config[consts.DATA_PRALLEL]:
+            self.model = torch.nn.DataParallel(self.model)
 
         # Instantiate the optimizer indicated by the configurations.
         self.optimizer = OptimizerFactory.create_optimizer(config[consts.OPTIMIZER], self.model, self.config)
@@ -241,7 +251,9 @@ class Experiment:
             tags_str = output_batch.tags_str
             lemma_str = output_batch.lemma_str
             form_str = output_batch.form_str
-
+            
+            #TODO: Unless the dataloader is sending the data to the appropriate device, maybe handle it here.
+            
             # Run the model on this batch of data.
             probabilities = self.model(family, language, tags, lemma)
             outputs = [torch.argmax(probability, dim=1) for probability in probabilities]
