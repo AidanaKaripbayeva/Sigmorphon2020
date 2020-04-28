@@ -60,6 +60,10 @@ def get_parser():
     # Model options
     parser.add_argument('--model-architecture', type=str, default=[ModelFactory.architectures[0]], nargs='*',
                         choices=ModelFactory.architectures, help='Model architecture(s)')
+    
+    # Parallelism Optoions, affect various
+    parser.add_argument('--loader-threads', type=int, default=0, help='Data loading threads. Default to 0 (load in main)')
+    parser.add_argument('--use-dataparallel', action='store_true', help='Use torch.nn.DataParallel to wrap the model?')
 
     return parser
 

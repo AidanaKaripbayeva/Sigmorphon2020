@@ -12,6 +12,12 @@ import wandb
 
 # Mark the start of the execution. This is used to generate a meaningful name for the execution.
 execution_identifier = str(time.time())
+if "WANDB_AUTO_IDENTIFIER" in os.environ:
+    execution_identifier = str(time.time())
+elif "WANDB_IDENTIFIER" in os.environ:
+    execution_identifier = os.environ["WANDB_IDENTIFIER"]
+elif "PBS_JOBID" in os.environ:
+    execution_identifier = os.environ["PBS_JOBID"]
 
 
 class Experiment:
@@ -39,6 +45,10 @@ class Experiment:
                 target = torch.cat([target] + [torch.full((L_probs-L_target,),self.pad_index,dtype=torch.long)])
             
             return self.loss(probs,target)
+        
+        def to(self, target_device):
+            self.loss = self.loss.to(target_device)
+            return self
 
     def __init__(self, config, experiment_id, load_from_directory=None):
         """
@@ -85,7 +95,14 @@ class Experiment:
         # Instantiate the model indicated by the configurations.
         self.model = ModelFactory.create_model(config[consts.MODEL_ARCHITECTURE],
                                                self.config,
-                                               self.train_loader.dataset.get_dimensionality())
+                                               self.train_loader.dataset.get_dimensionality()
+                                               )
+        
+        # Move to the preferred device
+        self.loss_function = self.loss_function.to(self.config[consts.DEVICE])
+        self.model = self.model.to(self.config[consts.DEVICE])
+        if self.config[consts.DATA_PRALLEL]:
+            self.model = torch.nn.DataParallel(self.model)
 
         # Instantiate the optimizer indicated by the configurations.
         self.optimizer = OptimizerFactory.create_optimizer(config[consts.OPTIMIZER], self.model, self.config)
@@ -215,8 +232,13 @@ class Experiment:
         self.model.train()
 
         total_loss = 0.0
+        
+        
+        batch_start_time = time.time()
+        
         # For each batch of data ...
         for batch_idx, (input_batch, output_batch) in enumerate(self.train_loader):
+            
             # Zero out the previous gradient information.
             self.optimizer.zero_grad()
 
@@ -229,7 +251,9 @@ class Experiment:
             tags_str = output_batch.tags_str
             lemma_str = output_batch.lemma_str
             form_str = output_batch.form_str
-
+            
+            #TODO: Unless the dataloader is sending the data to the appropriate device, maybe handle it here.
+            
             # Run the model on this batch of data.
             probabilities = self.model(family, language, tags, lemma)
             outputs = [torch.argmax(probability, dim=1) for probability in probabilities]
@@ -255,13 +279,30 @@ class Experiment:
             # Update model parameter.
             batch_loss.backward()
             self.optimizer.step()
+            
+            
+            #benchmark stuff
+            batch_end_time = time.time()
+            batches_per_second = 1.0/(batch_end_time-batch_start_time)
+            batch_start_time = batch_end_time
+            #benchmark Log the benchmark to wandb
+            items_per_sec = int(len(output_batch.lemma_str))*batches_per_second
+            wandb.log({"Batch Items/Sec":items_per_sec})
 
             # Log the outcome of this batch.
             total_loss += float(batch_loss)#clears the computation graph history.
-            logging.getLogger(consts.MAIN).info('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
-                self.current_epoch, batch_idx * self.config[consts.BATCH_SIZE], len(self.train_loader.dataset),
-                100. * batch_idx / len(self.train_loader), batch_loss.item() / batch_size))
+            logging.getLogger(consts.MAIN
+                ).info('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}\tItems/s {:.2f}: '.format(
+                                self.current_epoch, batch_idx * self.config[consts.BATCH_SIZE],
+                                len(self.train_loader.dataset),
+                                100. * batch_idx / len(self.train_loader),
+                                batch_loss.item() / batch_size,
+                                items_per_sec
+                            )
+                        )
             wandb.log({'Batch Training Loss': batch_loss})
+            
+            
             
         # Log and report the outcome of this epoch.
         wandb.log({'Epoch Training Loss': total_loss / len(self.train_loader)})
@@ -300,9 +341,9 @@ class Experiment:
                 for i in range(batch_size):
                     output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
                                           for integral in outputs[i]])
-                    language_family = \
-                        self.train_loader.dataset.language_collection.language_families[int(family[i][0])]
-                    language_object = language_family.languages[int(language[i][0])]
+                    language_family =\
+                        self.train_loader.dataset.language_collection[int(family[i][0])]
+                    language_object = language_family[int(language[i][0])]
                     logging.getLogger(consts.MAIN).debug(
                         "stem: {},"
                         "\ttarget: {},"
