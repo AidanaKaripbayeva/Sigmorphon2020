@@ -268,6 +268,14 @@ class Experiment:
             batch_loss = 0.0
             batch_size = len(tags)
             for i in range(batch_size):
+                batch_loss += self.loss_function(probabilities[i], form[i])
+            
+            # Update model parameter.
+            batch_loss.backward()
+            self.optimizer.step()
+            
+            #DEBUG OUTPUT
+            for i in range(batch_size):
                 output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
                                       for integral in outputs[i]])
                 language_family =\
@@ -280,11 +288,7 @@ class Experiment:
                     "\tlanguage: {}/{}"
                     "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], language_family.name,
                                             language_object.name, output_str))
-                batch_loss += self.loss_function(probabilities[i], form[i])
-
-            # Update model parameter.
-            batch_loss.backward()
-            self.optimizer.step()
+            
             
             
             #benchmark stuff
@@ -345,6 +349,18 @@ class Experiment:
                 # Compute the loss and the accuracy on this batch.
                 batch_size = len(tags)
                 for i in range(batch_size):
+                    #I don't even care that we calculate this twice. It's cleaner to separate the loops
+                    output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
+                                          for integral in outputs[i]])
+                    # Keep track of loss and accuracy.
+                    padding = torch.LongTensor([Alphabet.stop_integer] * (len(outputs[i]) - len(form[i])))
+                    target = torch.cat([form[i], padding])
+                    test_loss += float(self.loss_function(probabilities[i], target))
+                    if target == output_str:
+                        correct += 1
+                
+                #DEBUG OUTPUT
+                for i in range(batch_size):
                     output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
                                           for integral in outputs[i]])
                     language_family =\
@@ -357,13 +373,8 @@ class Experiment:
                         "\tlanguage: {}/{}"
                         "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], language_family.name,
                                                 language_object.name, output_str))
-                    # Keep track of loss and accuracy.
-                    padding = torch.LongTensor([Alphabet.stop_integer] * (len(outputs[i]) - len(form[i])))
-                    target = torch.cat([form[i], padding])
-                    test_loss += self.loss_function(probabilities[i], target)
-                    if target == output_str:
-                        correct += 1
-
+                    
+            
             # Compute and log the total loss and accuracy.
             test_loss /= len(self.test_loader.dataset)
             test_accuracy = correct / len(self.test_loader.dataset)
