@@ -35,6 +35,9 @@ def get_parser():
     parser.add_argument('--debug', action='store_true', help='Show debug messages')
     parser.add_argument('--export-dir', type=str, required=True, help='Export directory')
     parser.add_argument('--no-gpu', action='store_true', help='Use CPU')
+    
+    parser.add_argument("--wandb-directory", type=str, default="../wandb")
+    parser.add_argument("--disable-wandb", action="store_true", help="No Wandb logging")
 
     # Data options
     parser.add_argument('--batch-size', type=int, default=[16], nargs='*', help='Batch size(s)')
