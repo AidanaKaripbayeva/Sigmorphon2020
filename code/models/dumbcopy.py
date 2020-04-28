@@ -23,7 +23,16 @@ class DumbCopy(torch.nn.Module):
         # Create the embedding layer for the encoder.
         self.embedding = torch.nn.Embedding(alphabet_size, embedding_dim)
         # Create the LSTM unit for the encoder.
-        self.linear = torch.nn.Linear(embedding_dim, alphabet_size)
+        
+        layers = list()
+        layers.append(torch.nn.Linear(embedding_dim, hidden_dim))
+        layers.append(torch.nn.Sigmoid())
+        for n in range(1,self.num_layers):
+            layers.append(torch.nn.Linear(hidden_dim, hidden_dim))
+            layers.append(torch.nn.Sigmoid())
+        layers.append(torch.nn.Linear(hidden_dim, alphabet_size) )
+        
+        self.linear = torch.nn.Sequential(*layers)
         self.sigmoid = torch.nn.Sigmoid()
         self.final_softmax = torch.nn.Softmax(dim=-1)
 

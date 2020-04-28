@@ -15,7 +15,7 @@ class RNN_Absolute_Position(_nn.Module):
         
         return output_matrix.detach()
     
-    def forward(self, in_data)
+    def forward(self, in_data):
         pass
 
 class RNN_Position_Encoding(_nn.Module):
