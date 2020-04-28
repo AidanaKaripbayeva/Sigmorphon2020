@@ -101,7 +101,7 @@ class Experiment:
         # Move to the preferred device
         self.loss_function = self.loss_function.to(self.config[consts.DEVICE])
         self.model = self.model.to(self.config[consts.DEVICE])
-        if self.config[consts.DATA_PRALLEL]:
+        if self.config[consts.DATA_PARALLEL]:
             self.model = torch.nn.DataParallel(self.model)
 
         # Instantiate the optimizer indicated by the configurations.
