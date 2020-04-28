@@ -35,6 +35,10 @@ class Experiment:
             L_probs = probs.shape[0]
             L_target = target.shape[0]
             
+            
+            probs = probs.to(self.device)
+            target = target.to(self.device)
+            
             if L_probs < L_target:
                 #TODO: Fewer assumptions about the shape of probs
                 extra_probs = torch.zeros(L_target-L_probs, probs.shape[1],device=self.device)
@@ -43,10 +47,8 @@ class Experiment:
                 
             
             if L_target < L_probs:
-                target = torch.cat([target] + [torch.full((L_probs-L_target,),self.pad_index,dtype=torch.long)])
+                target = torch.cat([target] + [torch.full((L_probs-L_target,),self.pad_index,dtype=torch.long,device=self.device)])
             
-            probs = probs.to(self.device)
-            target = target.to(self.device)
             return self.loss(probs,target)
         
         def to(self, target_device):
