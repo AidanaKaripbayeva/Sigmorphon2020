@@ -46,12 +46,12 @@ class Experiment:
                 target = torch.cat([target] + [torch.full((L_probs-L_target,),self.pad_index,dtype=torch.long)])
             
             probs = probs.to(self.device)
-            target = probs.to(self.device)
+            target = target.to(self.device)
             return self.loss(probs,target)
         
         def to(self, target_device):
             self.device = target_device
-            self.loss = self.loss.to(target_device)
+            self.loss = self.loss.to(self.device)
             return self
 
     def __init__(self, config, experiment_id, load_from_directory=None):
