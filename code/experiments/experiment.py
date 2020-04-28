@@ -124,7 +124,7 @@ class Experiment:
         # Initialize the WandB module to log the execution of this experiment.
         with wandb.init(project='TurkicWorkgroup', reinit=True,
                         name="Identifier: {} - Experiment: {:03d}".format(execution_identifier, self.id),
-                        config=self.config, dir='../wandb', resume=self.config[consts.CONTINUE],
+                        config=self.config, dir=self.config[consts.WANDB_DIRECTORY], resume=self.config[consts.CONTINUE],
                         id="{}-{}".format(execution_identifier, self.id)):
             # Have WandB monitor the state of the model.
             wandb.watch(self.model)
