@@ -99,7 +99,7 @@ class Experiment:
                                                )
         
         # Move to the preferred device
-        self.loss = self.loss.to(self.config[consts.DEVICE])
+        self.loss_function = self.loss_function.to(self.config[consts.DEVICE])
         self.model = self.model.to(self.config[consts.DEVICE])
         if self.config[consts.DATA_PRALLEL]:
             self.model = torch.nn.DataParallel(self.model)
