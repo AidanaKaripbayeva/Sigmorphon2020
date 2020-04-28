@@ -99,6 +99,12 @@ class DumberTransducer(torch.nn.Module):
         
         self.decoder = DumberDecoder(alphabet_size, tag_vector_dim, embedding_dim)
         
+        self.device = None
+        
+    def to(self, target_device):
+        self.device = target_device
+        super().to(self.device)
+        return self
 
     def forward(self, families, languages, tags, lemmata):
         batch_size = len(tags)
@@ -107,6 +113,13 @@ class DumberTransducer(torch.nn.Module):
         
         assert isinstance(lemmata, list) or isinstance(lemmata, tuple), str(type(lemmata)) + " Only lists are implemented"
         lengths = [len(i) for i in lemmata]
+        
+        #DEVICE MOVEMENT
+        if None is not self.device:
+            families = [i.to(self.device) for i in families]
+            languages = [i.to(self.device) for i in languages]
+            tags = [i.to(self.device) for i in tags]
+            lemmata = [i.to(self.device) for i in lemmata]
         
         #
         #The encoder uses layers that can do everything at once.

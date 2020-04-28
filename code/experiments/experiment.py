@@ -296,7 +296,7 @@ class Experiment:
             # Log the outcome of this batch.
             total_loss += float(batch_loss)#clears the computation graph history.
             logging.getLogger(consts.MAIN
-                ).info('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}\tItems/s {:.2f}: '.format(
+                ).info('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}\tItems/s: {:.2f} '.format(
                                 self.current_epoch, batch_idx * self.config[consts.BATCH_SIZE],
                                 len(self.train_loader.dataset),
                                 100. * batch_idx / len(self.train_loader),
