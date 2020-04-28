@@ -130,6 +130,12 @@ class Experiment:
                         id="{}-{}".format(execution_identifier, self.id)):
             # Have WandB monitor the state of the model.
             wandb.watch(self.model)
+            
+            
+            if hasattr(self.model,"pretrain"):
+                self.model.pretrain(self.train_loader)
+                self.make_checkpoint()
+            
 
             # At each epoch ...
             while self.current_epoch < self.config[consts.NUM_EPOCHS]:
