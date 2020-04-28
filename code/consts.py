@@ -40,3 +40,5 @@ SIGMORPHON2020_ROOT = 'sigmorphon2020_root'
 TAGS = 'tags'
 TEST = 'test'
 TRAIN = 'train'
+WANDB_DISABLED = "disable_wandb"
+WANDB_DIRECTORY = "wandb_directory"
