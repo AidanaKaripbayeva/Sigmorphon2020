@@ -267,7 +267,8 @@ class Experiment:
             #TODO: Unless the dataloader is sending the data to the appropriate device, maybe handle it here.
             
             # Run the model on this batch of data.
-            probabilities = self.model(family, language, tags, lemma)
+            #probabilities = self.model(family, language, tags, lemma
+            probabilities = self.model(family, language, tags, lemma, form) #with teacher-forcing
             outputs = [torch.argmax(probability, dim=1) for probability in probabilities]
 
             # Compute the batch loss.
@@ -280,7 +281,7 @@ class Experiment:
             batch_loss.backward()
             self.optimizer.step()
             
-            #DEBUG OUTPUT
+            #DEBUG OUTPUT #TODO: This is slow, don't execute this code at all if not requested
             for i in range(batch_size):
                 output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
                                       for integral in outputs[i]])

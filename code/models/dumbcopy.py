@@ -27,7 +27,7 @@ class DumbCopy(torch.nn.Module):
         self.sigmoid = torch.nn.Sigmoid()
         self.final_softmax = torch.nn.Softmax(dim=-1)
 
-    def forward(self, families, languages, tags, lemmata):
+    def forward(self, families, languages, tags, lemmata, target=None):
         batch_size = len(tags)
         batch_outputs = []  # Will hold the integral representation of the characters to be output for this batch.
         batch_probabilities = []   # Will hold the probability vectors for this batch.

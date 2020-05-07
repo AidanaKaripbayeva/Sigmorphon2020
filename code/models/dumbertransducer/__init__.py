@@ -158,7 +158,7 @@ class DumberTransducer(torch.nn.Module):
                                 languages[:,i], tags[i],
                                 emb[:,i,:], rnn_states[:,i,:],
                                 all_hiddens_for_single_item,
-                                tf_forms=tf_forms
+                                tf_forms=tf_forms[:,i]
                             )
             
             outputs = y.argmax(-1)#y was already stacked.
@@ -184,7 +184,7 @@ class DumberTransducer(torch.nn.Module):
             tags = [i.to(self.device) for i in tags]
             lemmata = [i.to(self.device) for i in lemmata]
             if tf_forms is not None:
-                assert isinstance(tf_forms, list), "only lists are implemented"
+                assert isinstance(tf_forms, list) or isinstance(tf_forms, tuple), "only lists are implemented"
                 tf_forms = [t.to(self.device) for t in tf_forms]
         
         #
@@ -194,8 +194,11 @@ class DumberTransducer(torch.nn.Module):
         padded_fam = _rnn_utils.pad_sequence(families, batch_first=False, padding_value=Alphabet.stop_integer)
         padded_langs = _rnn_utils.pad_sequence(languages, batch_first=False, padding_value=Alphabet.stop_integer)
         padded_lems = _rnn_utils.pad_sequence(lemmata, batch_first=False, padding_value=Alphabet.stop_integer)
+        if tf_forms is not None:
+            tf_forms = _rnn_utils.pad_sequence(tf_forms, batch_first=False, padding_value=Alphabet.stop_integer)
         
         padded_emb, padded_x, hidden = self.encoder(padded_fam, padded_langs, tags, padded_lems)
+        
         
         batch_probabilities, batch_outputs = self.do_decode(padded_fam, padded_langs, tags, padded_emb, padded_x,
                             hidden, tf_forms=tf_forms)
