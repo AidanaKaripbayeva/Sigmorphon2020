@@ -7,35 +7,8 @@ import torch
 
 import torch.nn.utils.rnn as _rnn_utils
 
-import experiments.experiment
-
-class EncodingWindows(torch.nn.Module):
-    def __init__(self, before, after):
-        super().__init__()
-        self.before = before
-        self.after = after
-    
-    def forward(self, padded_data):
-        #TODO: This is probably quite slow
-        
-        is_packed = isinstance(padded_data,_rnn_utils.PackedSequence)
-        if is_packed:
-            padded_data, lens = _rnn_utils.pad_packed_sequence(padded_data,padding_value=Alphabet.stop_integer)
-        
-        y = torch.cat([padded_data[0:1] for i in range(self.before)] + [padded_data] + [padded_data[-1:] for i in range(self.after)])
-        y = y.unfold(0,self.before+1+self.after,1)
-        if padded_data.ndim == 1:
-            pass
-        elif padded_data.ndim == 2:
-            y = y.reshape(y.shape[0],-1)
-        elif padded_data.ndim >= 3:
-            newshape = [int(i) for i in y.shape[:-2]] + [-1]
-            y = y.reshape(*newshape)
-        
-        if is_packed:
-            return _rnn_utils.pack_padded_sequence(y, lens, batch_first=False, enforce_sorted=False)
-        return y
-        #return y.unfold(0,self.before+1+self.after,1)
+from .attention import *
+from .windows import *
 
 
 class DumberEncoder(torch.nn.Module):
@@ -81,16 +54,6 @@ class DumberEncoder(torch.nn.Module):
         
         return pos, emb, lstm_output, lstm_hidden
         
-
-class KeyValueAttention(torch.nn.Module):
-    def __init__(self, ff_layer):
-        super().__init__()
-        self.ff = ff_layer
-        self.softmax = torch.nn.Softmax(-1)
-    
-    def forward(self, q, k, v):
-        x = self.ff(q)
-        return self.softmax(x@k.T)@v
 
 class DumberDecoder(torch.nn.Module):
     def __init__(self, alphabet_size, tag_vector_dim, embedding_dim=40, hidden_dim=10, num_layers=3, output_length=50, num_languages=None):
@@ -174,7 +137,7 @@ class DumberTransducer(torch.nn.Module):
         super().to(self.device)
         return self
 
-    def forward(self, families, languages, tags, lemmata):
+    def forward(self, families, languages, tags, lemmata, teacher_forcing=None):
         batch_size = len(tags)
         batch_outputs = []  # Will hold the integral representation of the characters to be output for this batch.
         batch_probabilities = []   # Will hold the probability vectors for this batch.
@@ -182,7 +145,7 @@ class DumberTransducer(torch.nn.Module):
         assert isinstance(lemmata, list) or isinstance(lemmata, tuple), str(type(lemmata)) + " Only lists are implemented"
         lengths = [len(i) for i in lemmata]
         
-        #DEVICE MOVEMENT
+        #DEVICE MOVEMENT #TODO: move out of here.
         if self.device is not None:
             families = [i.to(self.device) for i in families]
             languages = [i.to(self.device) for i in languages]
@@ -225,85 +188,4 @@ class DumberTransducer(torch.nn.Module):
         # Report the results of this batch.
         return batch_probabilities
         
-    def pretrain(self, dataloader):
-        import time
-        import logging
-        import consts
-        # Put the model in training mode.
-        self.train()
-        
-        pretrain_loss_function = torch.nn.CrossEntropyLoss(ignore_index=-1)
-        pretrain_temp_model = torch.nn.Sequential(self.encoder.embedding.ff,
-                                                        torch.nn.Linear(self.encoder.embedding_dim, self.alphabet_size),
-                                                        torch.nn.Softmax()
-                                                 )
-        
-        batch_start_time = time.time()
-        pretrain_opt = torch.optim.SGD(pretrain_temp_model.parameters(), lr=0.01, momentum=0.9)
-        
-        # For each batch of data ...
-        for batch_idx, (input_batch, output_batch) in enumerate(dataloader):
-            
-            # Zero out the previous gradient information.
-            pretrain_opt.zero_grad()
-
-            # Split the batch into semantic parts.
-            family = input_batch.family
-            language = input_batch.language
-            tags = input_batch.tags
-            lemma = input_batch.lemma
-            form = output_batch.form
-            tags_str = output_batch.tags_str
-            lemma_str = output_batch.lemma_str
-            form_str = output_batch.form_str
-            
-            #TODO: Unless the dataloader is sending the data to the appropriate device, maybe handle it here.
-            
-            # Run the model on this batch of data.
-            probabilities = [ pretrain_temp_model(lemma[i]) for i in range(len( lemma )) ]
-            outputs = [torch.argmax(probability, dim=1) for probability in probabilities]
-            
-            # Compute the batch loss.
-            batch_loss = 0.0
-            batch_size = len(tags)
-            for i in range(batch_size):
-                batch_loss += pretrain_loss_function(probabilities[i], lemma[i])
-                
-
-            # Update model parameter.
-            batch_loss.backward()
-            pretrain_opt.step()
-            
-            #Logging to console
-            for i in range(batch_size):
-                output_str = "".join([dataloader.dataset.alphabet_input[int(integral)]
-                                      for integral in outputs[i]])
-                language_family =\
-                    dataloader.dataset.language_collection[int(family[i][0])]
-                language_object = language_family[int(language[i][0])]
-                logging.getLogger(consts.MAIN).debug(
-                    "PRETRAIN stem: {},"
-                    "\ttarget: {},"
-                    "\ttags: {}"
-                    "\tlanguage: {}/{}"
-                    "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], language_family.name,
-                                            language_object.name, output_str))
-            
-            
-            
-            #benchmark stuff
-            batch_end_time = time.time()
-            batches_per_second = 1.0/(batch_end_time-batch_start_time)
-            batch_start_time = batch_end_time
-            #benchmark Log the benchmark to wandb
-            items_per_sec = int(len(output_batch.lemma_str))*batches_per_second
-
-            # Log the outcome of this batch.
-            logging.getLogger(consts.MAIN
-                ).info('PRETRAIN Loss: {:.6f}\tItems/s: {:.2f} '.format(
-                                batch_loss.item() / batch_size,
-                                items_per_sec
-                            )
-                        )
-            
-            
+    
