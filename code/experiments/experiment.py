@@ -10,6 +10,8 @@ import time
 import torch
 import wandb
 
+from .lossfuncs import *
+
 # Mark the start of the execution. This is used to generate a meaningful name for the execution.
 execution_identifier = str(time.time())
 if "WANDB_AUTO_IDENTIFIER" in os.environ:
@@ -24,40 +26,6 @@ class Experiment:
     """
     The class steering the flow of an experiment, persisting its intermediary results and reporting its final result.
     """
-
-    class AutoPaddedLoss(object):
-        def __init__(self, loss, pad_index=Alphabet.stop_integer, device=None):
-            self.loss = loss
-            self.pad_index = pad_index
-            self.device = device
-        
-        def __call__(self, probs, target):
-            L_probs = probs.shape[0]
-            L_target = target.shape[0]
-            
-            
-            probs = probs.to(self.device)
-            target = target.to(self.device)
-            
-            if L_probs < L_target:
-                #TODO: Fewer assumptions about the shape of probs
-                #extra_probs = torch.zeros(L_target-L_probs, probs.shape[1],device=self.device)
-                #extra_probs[:,self.pad_index] = 1
-                #probs = torch.cat([probs, extra_probs])
-                
-                #This version should ensure that the last probs contribute to the gradient
-                probs = torch.cat([probs] + [probs[-1:]]*(L_target-L_probs))
-                
-            
-            if L_target < L_probs:
-                target = torch.cat([target] + [torch.full((L_probs-L_target,),self.pad_index,dtype=torch.long,device=self.device)])
-            
-            return self.loss(probs,target)
-        
-        def to(self, target_device):
-            self.device = target_device
-            self.loss = self.loss.to(self.device)
-            return self
 
     def __init__(self, config, experiment_id, load_from_directory=None):
         """
@@ -75,7 +43,8 @@ class Experiment:
         self.current_epoch = 0
         self.best_test_score = float('inf')
         self.best_epoch_number = -1
-        self.loss_function = self.AutoPaddedLoss(torch.nn.CrossEntropyLoss(ignore_index=Alphabet.unknown_integer) )
+        self.loss_function = AutoPaddedLoss(torch.nn.CrossEntropyLoss(ignore_index=Alphabet.unknown_integer) )
+        self.test_loss_function = self.loss_function
         self.model = None
         self.optimizer = None
         
@@ -119,7 +88,7 @@ class Experiment:
         # If the `load_from_directory` argument is given, load the state of the experiment from a file.
         if load_from_directory is not None:
             self.deserialize(load_from_directory)
-
+    
     def run(self):
         """
         Executes the experiment and reports the results.
@@ -252,33 +221,19 @@ class Experiment:
         batch_start_time = time.time()
         
         # For each batch of data ...
-        for batch_idx, (input_batch, output_batch) in enumerate(self.train_loader):
-            
+        for batch_idx, one_batch in enumerate(self.train_loader):
             # Zero out the previous gradient information.
             self.optimizer.zero_grad()
-
-            # Split the batch into semantic parts.
-            family = input_batch.family
-            language = input_batch.language
-            tags = input_batch.tags
-            lemma = input_batch.lemma
-            form = output_batch.form
-            tags_str = output_batch.tags_str
-            lemma_str = output_batch.lemma_str
-            form_str = output_batch.form_str
             
-            #TODO: Unless the dataloader is sending the data to the appropriate device, maybe handle it here.
+            probabilities, outputs = self.prediction_helper( one_batch, with_teacher_forcing=True )
             
-            # Run the model on this batch of data.
-            #probabilities = self.model(family, language, tags, lemma
-            probabilities = self.model(family, language, tags, lemma, form) #with teacher-forcing
-            outputs = [torch.argmax(probability, dim=1) for probability in probabilities]
-
+            input_batch, output_batch = one_batch
+            
             # Compute the batch loss.
             batch_loss = 0.0
-            batch_size = len(tags)
+            batch_size = len(input_batch.tags)
             for i in range(batch_size):
-                batch_loss += self.loss_function(probabilities[i], form[i])
+                batch_loss += self.loss_function(probabilities[i], output_batch.form[i])
             batch_loss /= batch_size
             
             # Update model parameter.
@@ -286,21 +241,7 @@ class Experiment:
             self.optimizer.step()
             
             #DEBUG OUTPUT #TODO: This is slow, don't execute this code at all if not requested
-            _ = """
-            for i in range(batch_size):
-                output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
-                                      for integral in outputs[i]])
-                language_family =\
-                    self.train_loader.dataset.language_collection[int(family[i][0])]
-                language_object = language_family[int(language[i][0])]
-                logging.getLogger(consts.MAIN).debug(
-                    "stem: {},"
-                    "\ttarget: {},"
-                    "\ttags: {}"
-                    "\tlanguage: {}/{}"
-                    "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], language_family.name,
-                                            language_object.name, output_str))
-            """
+            self.log_batch(outputs, one_batch, logging.DEBUG)
             
             
             #benchmark stuff
@@ -343,49 +284,19 @@ class Experiment:
         correct = 0
         with torch.no_grad():
             # For each batch of data ...
-            for batch_idx, (input_batch, output_batch) in enumerate(self.test_loader):
-                # Split the batch into semantic parts.
-                family = input_batch.family
-                language = input_batch.language
-                tags = input_batch.tags
-                lemma = input_batch.lemma
-                form = output_batch.form
-                tags_str = output_batch.tags_str
-                lemma_str = output_batch.lemma_str
-                form_str = output_batch.form_str
-
-                # Run the model on this batch of data.
-                probabilities = self.model(family, language, tags, lemma)
-                outputs = [torch.argmax(probability, dim=1) for probability in probabilities]
-
-                # Compute the loss and the accuracy on this batch.
-                batch_size = len(tags)
-                for i in range(batch_size):
-                    #I don't even care that we calculate this twice. It's cleaner to separate the loops
-                    output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
-                                          for integral in outputs[i]])
-                    # Keep track of loss and accuracy.
-                    padding = torch.LongTensor([Alphabet.stop_integer] * (len(outputs[i]) - len(form[i])))
-                    target = torch.cat([form[i], padding])
-                    test_loss += float(self.loss_function(probabilities[i], target))
-                    if target == output_str:
-                        correct += 1
+            for batch_idx, one_batch in enumerate(self.test_loader):
                 
+                
+                probabilities, outputs = self.prediction_helper( one_batch, with_teacher_forcing=False )
+                
+                input_batch, output_batch = one_batch
+                
+                one_batch_loss, one_batch_correct = self.test_accuracy_helper(one_batch, probabilities, outputs)
+                test_loss += one_batch_loss
+                correct += one_batch_correct
                 #DEBUG OUTPUT
                 if self.current_epoch % 10 == 0:
-                    for i in range(batch_size):
-                        output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
-                                              for integral in outputs[i]])
-                        language_family =\
-                            self.train_loader.dataset.language_collection[int(family[i][0])]
-                        language_object = language_family[int(language[i][0])]
-                        logging.getLogger(consts.MAIN).debug(
-                            "stem: {},"
-                            "\ttarget: {},"
-                            "\ttags: {}"
-                            "\tlanguage: {}/{}"
-                            "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], language_family.name,
-                                                    language_object.name, output_str))
+                    self.log_batch(outputs, (input_batch, output_batch), logging.DEBUG)
                     
             
             # Compute and log the total loss and accuracy.
@@ -407,3 +318,83 @@ class Experiment:
         """
         self.train()
         return self.test()
+    
+    def log_batch(self, outputs, one_batch, loglevel=logging.DEBUG):
+        input_batch, output_batch = one_batch
+        
+        batch_size = len(input_batch.family)
+        
+        #TODO: Don't calculate this at all if we are not actually outputting it.
+        for i in range(batch_size):
+            output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
+                                  for integral in outputs[i]])
+            language_family =\
+                self.train_loader.dataset.language_collection[int(input_batch.family[i][0])]
+            language_object = language_family[int(input_batch.language[i][0])]
+            logging.getLogger(consts.MAIN).log(loglevel,
+                "stem: {},"
+                "\ttarget: {},"
+                "\ttags: {}"
+                "\tlanguage: {}/{}"
+                "\toutput: '{}'".format(output_batch.lemma_str[i], output_batch.form_str[i], output_batch.tags_str[i], language_family.name,
+                                        language_object.name, output_str))
+    
+    def prediction_helper(self, one_batch, with_teacher_forcing=False):
+        
+        input_batch, output_batch = one_batch
+        
+        # Split the batch into semantic parts.
+        family = input_batch.family
+        language = input_batch.language
+        tags = input_batch.tags
+        lemma = input_batch.lemma
+        form = output_batch.form
+        tags_str = output_batch.tags_str
+        lemma_str = output_batch.lemma_str
+        form_str = output_batch.form_str
+        
+        #TODO: Unless the dataloader is sending the data to the appropriate device, maybe handle it here.
+        
+        # Run the model on this batch of data.
+        #probabilities = self.model(input_batch.family, language, tags, lemma
+        probabilities = self.model(family, language, tags, lemma, form) #with teacher-forcing
+        outputs = [torch.argmax(probability, dim=1) for probability in probabilities]
+        
+        return probabilities, outputs
+    
+    def test_accuracy_helper(self, one_batch, probabilities, predictions=None, keep_tree=False):
+        
+        input_batch, output_batch = one_batch
+        
+        
+        batch_loss = 0.0
+        batch_size = len(input_batch.tags)
+        batch_num_correct = 0
+        
+        # Split the batch into semantic parts.
+        family = input_batch.family
+        language = input_batch.language
+        tags = input_batch.tags
+        lemma = input_batch.lemma
+        form = output_batch.form
+        tags_str = output_batch.tags_str
+        lemma_str = output_batch.lemma_str
+        form_str = output_batch.form_str
+        
+        
+        # Compute the batch loss.
+        for i in range(batch_size):
+            batch_loss += self.loss_function(probabilities[i], output_batch.form[i])
+        
+        # Compute the loss and the accuracy on this batch.
+        for i in range(batch_size):
+            #TODO: Implement this, the way it was written didn't work anyway.
+            pass
+            #if target == output_str:
+            #    correct += 1
+            
+        if not keep_tree:
+            batch_loss = float(batch_loss)
+            batch_num_correct = float(batch_num_correct)
+        
+        return batch_loss, batch_num_correct
