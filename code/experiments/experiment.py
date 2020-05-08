@@ -323,8 +323,14 @@ class Experiment:
         return self.test()
     
     def log_batch(self, outputs, one_batch, loglevel=logging.DEBUG):
-        input_batch, output_batch = one_batch
+        """ Helper function to log the predictions from a batch.
+        """
+        #skip this function alltogether if it won't actually write output
+        the_logger = logging.getLogger(consts.MAIN)
+        if not the_logger.isEnabledFor(loglevel):
+            return
         
+        input_batch, output_batch = one_batch
         batch_size = len(input_batch.family)
         
         #TODO: Don't calculate this at all if we are not actually outputting it.
@@ -342,6 +348,8 @@ class Experiment:
                 "\toutput: '{}'".format(output_batch.lemma_str[i], output_batch.form_str[i], output_batch.tags_str[i], language_family.name,
                                         language_object.name, output_str))
     
+    
+    ######
     def prediction_helper(self, one_batch, with_teacher_forcing=False):
         
         input_batch, output_batch = one_batch
