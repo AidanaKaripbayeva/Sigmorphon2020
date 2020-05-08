@@ -44,9 +44,10 @@ class Experiment:
         self.best_test_score = float('inf')
         self.best_epoch_number = -1
         self.loss_function = AutoPaddedLoss(torch.nn.CrossEntropyLoss(ignore_index=Alphabet.unknown_integer) )
-        self.test_loss_function = self.loss_function
+        #self.test_loss_function = self.loss_function #TODO: Option for a separate test loss?
         self.model = None
         self.optimizer = None
+        self.schedule = None
         
         # Find the corresponding dataset.
         assert config[consts.DATASET] in [consts.SIGMORPHON2020]
@@ -84,6 +85,8 @@ class Experiment:
 
         # Instantiate the optimizer indicated by the configurations.
         self.optimizer = OptimizerFactory.create_optimizer(config[consts.OPTIMIZER], self.model, self.config)
+        
+        #TODO: We would also like to have a schedule.
 
         # If the `load_from_directory` argument is given, load the state of the experiment from a file.
         if load_from_directory is not None:
@@ -92,7 +95,7 @@ class Experiment:
     def run(self):
         """
         Executes the experiment and reports the results.
-
+        
         :return: The highest score achieved by this experiment across the epochs.
         """
         # Initialize the WandB module to log the execution of this experiment.
@@ -103,21 +106,21 @@ class Experiment:
             # Have WandB monitor the state of the model.
             wandb.watch(self.model)
             
-            
+            #TODO: Implement a better pretraining regime
             if hasattr(self.model,"pretrain"):
                 self.model.pretrain(self.train_loader)
                 self.make_checkpoint()
             
-
+            
             # At each epoch ...
             while self.current_epoch < self.config[consts.NUM_EPOCHS]:
                 # Make a checkpoint every other `CHECKPOINT_STEP` epoch, starting with epoch 0.
                 if self.current_epoch % self.config[consts.CHECKPOINT_STEP] == 0:
                     self.make_checkpoint()
-
+                
                 # Run an epoch of training.
                 epoch_test_score = self.run_epoch()
-
+                
                 # Compare the results of the epoch to the best results so far and update the record if necessary.
                 if epoch_test_score <= self.best_test_score:
                     self.best_test_score = epoch_test_score
