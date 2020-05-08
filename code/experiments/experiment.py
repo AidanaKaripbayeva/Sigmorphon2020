@@ -41,9 +41,12 @@ class Experiment:
             
             if L_probs < L_target:
                 #TODO: Fewer assumptions about the shape of probs
-                extra_probs = torch.zeros(L_target-L_probs, probs.shape[1],device=self.device)
-                extra_probs[:,self.pad_index] = 1
-                probs = torch.cat([probs, extra_probs])
+                #extra_probs = torch.zeros(L_target-L_probs, probs.shape[1],device=self.device)
+                #extra_probs[:,self.pad_index] = 1
+                #probs = torch.cat([probs, extra_probs])
+                
+                #This version should ensure that the last probs contribute to the gradient
+                probs = torch.cat([probs] + [probs[-1:]]*(L_target-L_probs))
                 
             
             if L_target < L_probs:
@@ -276,12 +279,14 @@ class Experiment:
             batch_size = len(tags)
             for i in range(batch_size):
                 batch_loss += self.loss_function(probabilities[i], form[i])
+            batch_loss /= batch_size
             
             # Update model parameter.
             batch_loss.backward()
             self.optimizer.step()
             
             #DEBUG OUTPUT #TODO: This is slow, don't execute this code at all if not requested
+            _ = """
             for i in range(batch_size):
                 output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
                                       for integral in outputs[i]])
@@ -295,7 +300,7 @@ class Experiment:
                     "\tlanguage: {}/{}"
                     "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], language_family.name,
                                             language_object.name, output_str))
-            
+            """
             
             
             #benchmark stuff
@@ -367,19 +372,20 @@ class Experiment:
                         correct += 1
                 
                 #DEBUG OUTPUT
-                for i in range(batch_size):
-                    output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
-                                          for integral in outputs[i]])
-                    language_family =\
-                        self.train_loader.dataset.language_collection[int(family[i][0])]
-                    language_object = language_family[int(language[i][0])]
-                    logging.getLogger(consts.MAIN).debug(
-                        "stem: {},"
-                        "\ttarget: {},"
-                        "\ttags: {}"
-                        "\tlanguage: {}/{}"
-                        "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], language_family.name,
-                                                language_object.name, output_str))
+                if self.current_epoch % 10 == 0:
+                    for i in range(batch_size):
+                        output_str = "".join([self.train_loader.dataset.alphabet_input[int(integral)]
+                                              for integral in outputs[i]])
+                        language_family =\
+                            self.train_loader.dataset.language_collection[int(family[i][0])]
+                        language_object = language_family[int(language[i][0])]
+                        logging.getLogger(consts.MAIN).debug(
+                            "stem: {},"
+                            "\ttarget: {},"
+                            "\ttags: {}"
+                            "\tlanguage: {}/{}"
+                            "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], language_family.name,
+                                                    language_object.name, output_str))
                     
             
             # Compute and log the total loss and accuracy.

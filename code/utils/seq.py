@@ -5,19 +5,50 @@ import numpy as _np
 
 class RNN_Absolute_Position(_nn.Module):
     def __init__(self, num_freqs=0, dtype=_torch.float16):
+        super().__init__()
         self.num_freqs = num_freqs
         self.dtype = dtype
     
-    def create_matrix(self, L):
-        output_matrix = _torch.zeros(L,self.num_freqs+1)
+    def create_matrix(self, L,out=None):
+        if out is None:
+            out = _torch.zeros(L,self.num_freqs)
         
-        _torch.linspace(0.0,  L,steps=L,out=my_output[:,i,1])
+        _torch.linspace(0.01,  L*0.01 + 0.01,steps=L,out=out[:L,0])
+        out[L:,0] = L
+        for i in range(1,self.num_freqs):
+            _torch.sin(_np.pi * out[:,0] * _np.power(i,1.0),out=out[:,i])
         
-        return output_matrix.detach()
+        #return out
+        return out.detach()
     
     def forward(self, in_data):
-        pass
+        raise NotImplementedError("sorry")
 
+class RNN_Relative_Position(_nn.Module):
+    def __init__(self, num_freqs=0, dtype=_torch.float16):
+        super().__init__()
+        self.num_freqs = num_freqs
+        self.dtype = dtype
+        self.whitening = 0.00001
+    
+    def create_matrix(self, L, t,out=None):
+        if out is None:
+            out = _torch.zeros(L,self.num_freqs)
+        
+        _torch.linspace(self.whitening,  1.0-self.whitening,steps=t,out=out[0:t,0])
+        out[t:,0] = 1.0
+        for i in range(1,self.num_freqs):
+            #The first chebyshev polynomial is just y = x, which we already have.
+            _torch.cos((i+1)*_torch.acos(out[:,0]), out=out[:,i])
+        
+        #return out
+        return out.detach()
+    
+    def forward(self, in_data):
+        raise NotImplementedError("sorry")
+
+
+#DEPRICATED
 class RNN_Position_Encoding(_nn.Module):
     def __init__(self,fourier_freqs=0,chebyshev_freqs=0):
         super(RNN_Position_Encoding,self).__init__()

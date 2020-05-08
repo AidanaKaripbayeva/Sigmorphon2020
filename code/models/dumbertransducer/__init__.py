@@ -32,7 +32,7 @@ class LetterContextEncoder(torch.nn.Module):
         
         #LAYERS
         # Create the embedding layer for the encoder.
-        self.embedding = BRNN.RNN_Input_Embedding(torch.nn.Embedding(alphabet_size, embedding_dim))
+        self.embedding = BRNN.RNN_Input_Embedding(torch.nn.Embedding(alphabet_size, self.embedding_dim))
         
         self.context_embedder = torch.nn.Sequential(torch.nn.Linear(self.embedding_dim, self.context_dim))
         
@@ -69,20 +69,41 @@ class LetterContextEncoder(torch.nn.Module):
         
 
 class DumberDecoder(torch.nn.Module):
-    def __init__(self, alphabet_size, tag_vector_dim, embedding_dim=40, hidden_dim=10, num_layers=3, output_length=50, num_languages=None):
+    def __init__(self, alphabet_size, tag_vector_dim, embedding_dim=40, hidden_dim=10, num_layers=3, output_length=50, context_dim = 20, num_languages=None):
         super().__init__()
         self.max_output_length = output_length
         self.alphabet_size = alphabet_size
-        #self.linear = torch.nn.Linear(tag_vector_dim + alphabet_size + embedding_dim + hidden_dim, alphabet_size) #self.linear = torch.nn.Linear(embedding_dim, alphabet_size)
-        self.linear = torch.nn.Linear(embedding_dim, alphabet_size)
-        self.sigmoid = torch.nn.Sigmoid()
-        self.final_softmax = torch.nn.Softmax(dim=-1)
+        self.embedding_dim = embedding_dim
         
-        self.position = BS.RNN_Position_Encoding(20,20)
+        self.context_dim = context_dim
+        self.abs_freqs = 60
+        self.rel_freqs = 60
+        
+        
+        #self.linear = torch.nn.Linear(tag_vector_dim + alphabet_size + embedding_dim + hidden_dim, alphabet_size) #self.linear = torch.nn.Linear(embedding_dim, alphabet_size)
+        self.ff = torch.nn.Sequential(
+            torch.nn.Linear(embedding_dim, alphabet_size),
+            torch.nn.Sigmoid(),
+            torch.nn.Softmax(dim=-1)
+            )
+        
+        self.abs_position = BS.RNN_Absolute_Position(self.abs_freqs)
+        self.rel_position = BS.RNN_Relative_Position(self.rel_freqs)
+        
+        tmp_linear = torch.nn.Linear(self.abs_freqs,self.abs_freqs)
+        torch.eye(tmp_linear.weight.shape[0], tmp_linear.weight.shape[1],out=tmp_linear.weight)#set the positional attention to just start out as identity
+        
+        #self.pos_attention = KeyValueAttention(
+        #        torch.nn.Sequential(tmp_linear, torch.nn.Sigmoid()),
+        #        False
+        #    )
         
         self.pos_attention = KeyValueAttention(
-                torch.nn.Sequential(torch.nn.Linear(42,42), torch.nn.Sigmoid())
+                torch.nn.Identity(self.abs_freqs,self.abs_freqs),
+                False
             )
+        
+        self.re_context_embedder = torch.nn.Sequential(torch.nn.Linear(self.embedding_dim, self.context_dim))
     
     def forward(self, family, language, tags, embedding, states, hidden, tf_forms=None):
         
@@ -96,13 +117,17 @@ class DumberDecoder(torch.nn.Module):
         output_probs[1:,Alphabet.stop_integer] = 1.0
         
         #Need to change the extents of this loop.
+        abspos = self.abs_position.create_matrix(embedding.shape[0])
         
         #faster? FASTER!
-        x = self.linear(embedding)
-        x = self.sigmoid(x)
-        y = self.final_softmax(x)
+        attended = self.pos_attention(abspos,abspos,embedding)
+        #print("ATTENDED SHAPE :", attended.shape, embedding.shape)
+        #print("DIFFERENCE ", (attended-embedding).mean())
+        y = self.ff(attended)
+        #y = self.ff(embedding)
         output_symbols=y.argmax(-1)
         output_probs[:y.shape[0]] = y
+        
         
         for output_i in range(1, min(self.max_output_length, embedding.shape[0])):
             if(output_symbols[output_i] == Alphabet.stop_integer):
@@ -158,7 +183,7 @@ class DumberTransducer(torch.nn.Module):
                                 languages[:,i], tags[i],
                                 emb[:,i,:], rnn_states[:,i,:],
                                 all_hiddens_for_single_item,
-                                tf_forms=tf_forms[:,i]
+                                tf_forms=None if tf_forms is None else tf_forms[:,i]
                             )
             
             outputs = y.argmax(-1)#y was already stacked.
