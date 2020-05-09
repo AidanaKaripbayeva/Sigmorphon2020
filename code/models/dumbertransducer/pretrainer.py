@@ -1,84 +1,86 @@
-_ = """def pretrain(self, dataloader):
-    import time
-    import logging
-    import consts
-    # Put the model in training mode.
-    self.train()
-    
-    pretrain_loss_function = torch.nn.CrossEntropyLoss(ignore_index=-1)
-    pretrain_temp_model = torch.nn.Sequential(self.encoder.embedding.ff,
-                                                    torch.nn.Linear(self.encoder.embedding_dim, self.alphabet_size),
-                                                    torch.nn.Softmax()
-                                             )
-    
-    batch_start_time = time.time()
-    pretrain_opt = torch.optim.SGD(pretrain_temp_model.parameters(), lr=0.01, momentum=0.9)
-    
-    # For each batch of data ...
-    for batch_idx, (input_batch, output_batch) in enumerate(dataloader):
-        
-        # Zero out the previous gradient information.
-        pretrain_opt.zero_grad()
+import time
+import logging
+import consts
 
-        # Split the batch into semantic parts.
-        family = input_batch.family
-        language = input_batch.language
-        tags = input_batch.tags
-        lemma = input_batch.lemma
-        form = output_batch.form
-        tags_str = output_batch.tags_str
-        lemma_str = output_batch.lemma_str
-        form_str = output_batch.form_str
-        
-        #TODO: Unless the dataloader is sending the data to the appropriate device, maybe handle it here.
-        
-        # Run the model on this batch of data.
-        probabilities = [ pretrain_temp_model(lemma[i]) for i in range(len( lemma )) ]
-        outputs = [torch.argmax(probability, dim=1) for probability in probabilities]
-        
-        # Compute the batch loss.
-        batch_loss = 0.0
-        batch_size = len(tags)
-        for i in range(batch_size):
-            batch_loss += pretrain_loss_function(probabilities[i], lemma[i])
+import torch
+import torch.nn
+
+from experiments import *
+from experiments.experiment import *
+
+class TWGPretrainer(object):
+    
+    class PretrainEmbedding(torch.nn.Module):
+        def __init__(self, a_model):
+            super().__init__()
+            self.ff = torch.nn.Sequential(a_model.encoder.embedding.ff,
+                torch.nn.Linear(a_model.encoder.embedding_dim, a_model.alphabet_size),
+                torch.nn.Softmax()
+            )
+            
+            #This choice makes it a bit fragile when I decide on a different way to decode.
+            #self.ff = torch.nn.Sequential(a_model.encoder.embedding.ff,
+            #    a_model.decoder.ff
+            #)
             
         
-        # Update model parameter.
-        batch_loss.backward()
-        pretrain_opt.step()
-        
-        #Logging to console
-        for i in range(batch_size):
-            output_str = "".join([dataloader.dataset.alphabet_input[int(integral)]
-                                  for integral in outputs[i]])
-            language_family =\
-                dataloader.dataset.language_collection[int(family[i][0])]
-            language_object = language_family[int(language[i][0])]
-            logging.getLogger(consts.MAIN).debug(
-                "PRETRAIN stem: {},"
-                "\ttarget: {},"
-                "\ttags: {}"
-                "\tlanguage: {}/{}"
-                "\toutput: '{}'".format(lemma_str[i], form_str[i], tags_str[i], language_family.name,
-                                        language_object.name, output_str))
-        
-        
-        
-        #benchmark stuff
-        batch_end_time = time.time()
-        batches_per_second = 1.0/(batch_end_time-batch_start_time)
-        batch_start_time = batch_end_time
-        #benchmark Log the benchmark to wandb
-        items_per_sec = int(len(output_batch.lemma_str))*batches_per_second
+        def forward(self, data):
+            probs = list()
+            for d in data:
+                probs.append(self.ff(d))
+            return probs
+    
+    def __init__(self, config, model, train_loader, test_loader):
+        self.config = config
+        self.train_loader = train_loader
+        self.test_loader = test_loader
+        self.pretrain_this_model = model
+        self.model = None #The model we actually train
+        self.max_epochs = 20
+        self.loss_function = torch.nn.CrossEntropyLoss(ignore_index=-1)
+        self.model = self.PretrainEmbedding(self.pretrain_this_model)
+        self.optimizer = torch.optim.SGD(self.model.parameters(), lr=5.0, momentum=0.1)
+        self.schedule = None
+    
+    def run(self):
+            
+        """
+        Train the model for a single epoch.
 
-        # Log the outcome of this batch.
-        logging.getLogger(consts.MAIN
-            ).info('PRETRAIN Loss: {:.6f}\tItems/s: {:.2f} '.format(
-                            batch_loss.item() / batch_size,
-                            items_per_sec
-                        )
-                    )
+        :return: The average training loss in this epoch, as a floating point number.
+        """
+        # Put the model in training mode.
+        self.pretrain_this_model.train()
+        self.model.train()
         
+        total_loss = 0.0
+        batch_start_time = time.time()
         
-
-"""
+        for e in range(self.max_epochs):
+            # For each batch of data ...
+            for batch_idx, one_batch in enumerate(self.train_loader):
+                # Zero out the previous gradient information.
+                self.optimizer.zero_grad()
+                input_batch, output_batch = one_batch
+                
+                # Run the model on this batch of data.
+                probabilities = self.model(input_batch.lemma) #with teacher-forcing
+                
+                # Compute the batch loss.
+                batch_loss = 0.0
+                batch_size = len(input_batch.tags)
+                for i in range(batch_size):
+                    batch_loss += self.loss_function(probabilities[i], input_batch.lemma[i])
+                batch_loss /= batch_size
+                
+                # Update model parameter.
+                batch_loss.backward()
+                self.optimizer.step()
+            
+            if self.schedule is not None:
+                self.schedule.step()
+                
+            logging.getLogger(consts.MAIN).info("Pretraining epoch {} done. ".format(e))
+            #TODO: Something to decide when to accept.
+        
+        logging.getLogger(consts.MAIN).info("Done pretraining.")

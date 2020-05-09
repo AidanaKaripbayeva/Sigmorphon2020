@@ -44,12 +44,16 @@ class OffsetWindows(torch.nn.Module):
         self.offset = offset
         self.inclusive=inclusive
     
-    def forward(self, padded_data):
+    def forward(self, padded_data,step=False):
         #TODO: This is probably quite slow
+        #TODO: Totally rewrite this shite.
         
         is_packed = isinstance(padded_data,_rnn_utils.PackedSequence)
         if is_packed:
             padded_data, lens = _rnn_utils.pad_packed_sequence(padded_data,padding_value=Alphabet.stop_integer)
+        
+        if step:
+            padded_data = padded_data[self.offset-1:]
         
         cat_list = list()
         
@@ -70,6 +74,8 @@ class OffsetWindows(torch.nn.Module):
         else:
             y = padded_data
         
+        if step:
+            y = y[-1:]
         
         if is_packed:
             return _rnn_utils.pack_padded_sequence(y, lens, batch_first=False, enforce_sorted=False)

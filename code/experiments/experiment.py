@@ -72,6 +72,7 @@ class Experiment:
             raise Exception('Unsupported dataset.')
 
         # Instantiate the model indicated by the configurations.
+        #TODO: Move this to main.
         self.model = ModelFactory.create_model(config[consts.MODEL_ARCHITECTURE],
                                                self.config,
                                                self.train_loader.dataset.get_dimensionality()
@@ -87,6 +88,7 @@ class Experiment:
         self.optimizer = OptimizerFactory.create_optimizer(config[consts.OPTIMIZER], self.model, self.config)
         
         #TODO: We would also like to have a schedule.
+        self.schedule = None
 
         # If the `load_from_directory` argument is given, load the state of the experiment from a file.
         if load_from_directory is not None:
@@ -107,9 +109,13 @@ class Experiment:
             wandb.watch(self.model)
             
             #TODO: Implement a better pretraining regime
-            if hasattr(self.model,"pretrain"):
-                self.model.pretrain(self.train_loader)
+            if hasattr(self.model,"pretrainer"):
+                print("WILL DO PRETRAINING")
+                pretrainer = self.model.pretrainer(self.config, self.model, self.train_loader, self.test_loader)
+                pretrainer.run()
                 self.make_checkpoint()
+                print("DONE PRETRAINING")
+            #import sys; sys.exit(1)
             
             
             # At each epoch ...
@@ -244,7 +250,7 @@ class Experiment:
             self.optimizer.step()
             
             #DEBUG OUTPUT #TODO: This is slow, don't execute this code at all if not requested
-            self.log_batch(outputs, one_batch, logging.DEBUG)
+            #self.log_batch(outputs, one_batch, logging.DEBUG)
             
             
             #benchmark stuff
@@ -305,6 +311,7 @@ class Experiment:
             # Compute and log the total loss and accuracy.
             test_loss /= len(self.test_loader.dataset)
             test_accuracy = correct / len(self.test_loader.dataset)
+            
             logging.getLogger(consts.MAIN).info('Test set: Average loss: {:.4f}, Accuracy: {}/{} ({:.2f}%)'.format(
                 test_loss, correct, len(self.test_loader.dataset), 100. * test_accuracy))
             wandb.log({'Epoch Test Loss': test_loss, 'Epoch Test Accuracy': test_accuracy})
